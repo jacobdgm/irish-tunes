@@ -1,0 +1,53 @@
+2021-07-20t17:07:11
+
+path_to_model: ./2021-07-19.1/results/checkpoint-19810
+
+parameters:
+    max_length: 128
+    temperature: 0.9
+    no_repeat_ngram_size: 4
+    do_sample: True
+    top_k: 50
+
+=========
+
+test 1:
+prompt:
+a
+
+
+a B | A2 F A d B A F | B E E E2 B | c A F B E E F | G2 B A A2 E | F A d e f g | a b d e f e d | B E A B E E3 | F A B d B A2 | G4 B A :||: c2 e f d d c B | A c e f d f g | f2 e f b a f | e c e f g2 e | f2 a g e f e | d e d g e f g d | B2 e f a f g
+
+a c G A F | E B B B c B | A G F E D F | G A d c B c | d2 B A F A | G F G A B c | 1 d2 A2 F F2 :| 2 d2 A F2 d | | |: f3 a f d | c A c e c2 | d3 a f a | g f e d c A | B2 d2 d c | d d2 B2 A | B3 B c d | e3 f e c | d3 e f a | 1 g f e f d c :| 2 g
+
+a, D G, E D :|F | G B B B d B | D2 A A F A | B c B A G F | G B d B B A | G B e d B d | e f g e e e | d2 d d d3 :| a a f g a2 a | b a f g e3 | a f g b f3 | a a f a g a | b g e f3 | e d ^c B A G | F A d A F D | G B G d B A | B ^c B E G F | 1 E D E
+
+a B c d c A A | f g f e d B2 d | | e a a a f g e | =c c e e c e A | c e e e c A e | a a g f e g a | a a a g e d B d | 1 c2 A A A c A :| 2 c2 A G2 G | |A |: B G A B G G (3 B B c d | e c B A F G F E | f e d c B A G | B G A (3 B c d e f d | e A A A F E
+
+a d2 c | B2 d f a a g | a2 f g a f | B G A B G | A2 d c B G | F A A A2 d | c3 B G G | A B A G B d | e2 d c2 B G | 1 A2 d e d c :| 2 A2 d2 d e a | | |: a b g a3 | f a f g d f | e2 c e c | d2 d f g d | e f g a a a b | f3 c B G B | a3 f g d B |
+
+a/ A/ G/ F d | c/ B/ d e/ d/ | c B/ A/ F E/ | G A/ B/ A | c/ d/ e/ d c/ B | A > G/ F/ G/ d | c B c/ B B/ | =B/ A/ B G/ A/ | B/ G/2 d > B | c/ c/ B d =c/ B/ | A > A A > G | A > F/ G > d | c > B c/ A/ (3 G F G | F/ G A
+
+
+---------
+
+test 2:
+prompt:
+G F G A G A |
+
+
+G F G A G A | B2 e e/ d/ c A | B F G F G | A d d A B d | c A G A B | c A A G A G | B2 A e d A | g2 g g e | d B G A B d :| | |: g/ a/ a g d g/ e (3 d c | A > G F G2 A B | g/ a g f g a g | a/ a/ g a g d f | g/ g/ a b g a g/ e/ | d B c B A G |
+
+G F G A G A | E G d2 e | d e d c B A | B A B G E | G B G A G | F G A F G A | B G F A G2 | |E G | A B E A G E F E | D2 d c B G A B | A G B D E E2 D | E3 G A E F E :| G2 B c d e f g | a2 d g2 a g f | d g d (3 g g f g e c | e f (3 g d e f ( E A (3
+
+G F G A G A | c e d c B G | c/ c/ c B A2 A | [1 c e d B G | [1 A2 A c e :| [2 A2 A2 c e | | |: a3 a b a | b a a g f e | d f g d d c | a2 a b a a | f f g/ e/ d c B | c e c B B G | E2 A c B A | G A G B E D | 1 c A B A2 :| 2 c A B d2 A | ||: d |
+
+G F G A G A | F/ G/ A A B A G | F A g2 e | e3 f/ e/ d | B c d e f g | a2 a f d B | d e f d B A | F A e g2 e :|(3 f |: g f e f f e c | d c A G F G2 E | D G G B A2 (3 c d | g f e d c A B | c3 A G F2 (3 B c d | A B c d A G F E | D F G B2 (3 A
+
+G F G A G A | B3 A2 :| |G B e d B G G d | B c e f g a f e | d c B A G3 B | c2 B A A B c A | G B e f g f e d | d c d B c3 c | B d c B G A G e | d g g g2 b a g | d d c B c3 B :||: c2 f g b2 g a | b g a g f e2 e | d f e d c A A2 B :|A E |: F A A B A F
+
+G F G A G A | B G A G F G | A G F D D2 A | E G E F G A | E B G A2 :||: c | d f f a f d | g f e d f e | c e c e f c | d c d f a f | g f d d f d | (3 f f a a f e d | c e A f c e | c g f e f c e c | d B d f a e d | ( g f e (3 f e f e A d | ( F E G F D2 A :|
+
+
+---------
+
