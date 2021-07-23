@@ -1,0 +1,981 @@
+2021-07-23t13:25:33
+
+path_to_model: ./2021-07-23.2/results/checkpoint-7500
+
+parameters:
+    max_length: 128
+    temperature: 0.9
+    no_repeat_ngram_size: 4
+    do_sample: True
+    top_k: 50
+
+=========
+
+test 1:
+prompt:
+G
+
+
+G e B | B A2 B A c d c G | B A F D E D F | G2 B A B G A G | B2 A B c c d | e d B A c2 c | B2 G2 D G F | A B A B c A F | G F A G A | F2 G | G2 A G B c | B A G F G | B c B A G | G G F A B c | e d c B A F | F A G2 G | A2 B c d | d B c A G A F | D E
+
+G E F | D2 F F F D | F E F D D D D | F D A F D2 E | D D F A | B B A c B | d A F G F D :| |: e f | f2 g f e | g e f e d B | c B A F D | B c d A F | G A F F D D | B A F G D | A B A F F | E D D D F D | G F D F D D3 :|
+R: jig
+M: 6/8
+K: Gmajor
+|: G B G F
+
+G A G2 G E2 | f2 a2 f2 | f e B d B G A | A F G2 A2 | B c d e a2 b | e c e f'2 f2 |]
+R: waltz
+M: 3/4
+K: Bminor
+|: D3 D | F A B G B G | F D E D2 | F3 A B A | G2 D E F | F2 D E2 B | 1 F F E F2 D2 :| 2 F D F2 B A | | |: c B A F E2 | F F D
+
+G A D D D2 > D2 B A d B c | G2 G B c B c d d | e d B B c2 B c B A | d B d d B B d B d e | d B2 c2 B A B | B d B c B2 B c | B d2 B A2 B c2 | d B B B2 A B d B | d B c A2 G B2 :| |
+R: reel
+M: 4/4
+K: Dmajor
+G E E2 G B | A F G A B B2 | A F E
+
+G B A A D | A2 c d d | f a f f d | b b a f g f a | f2 f2 e d | c d d2 f2 f | g f g a g f a f d | c2 e d c f | e f f g f d f g | a a g f g e d | A d f d c | B A F G A | C/ | B c d c B c | B d d d c | A F A F D2 c | |
+R: waltz
+M: 3/4
+K: Gmajor
+d
+
+G A A G2 g e d | e2 B2 d e d c B | F G E2 A G2 A | G2 G A e f e | g2 f e d B A A | G E D E2 G B c | 1 E D2 A B2 A :| 2 E D3 A2 A2 | |
+R: reel
+M: 4/4
+K: Gmajor
+|: G | B3 D C G2 E G2 | d2 d e f g f e | B3 d2 B d | A3 G2 E D3 B | c B
+
+
+---------
+
+test 2:
+prompt:
+e
+
+
+e2 e | a A f e d e c e c A | d f d e c A B G | A B c A B c B A c | a f d e d c d e a | a f f g f d f d | B c d c e c B E | A B B c A c e | f e c B c e | d c B B c B c A | D B c d A G e f g | a f a f e d c | A B A B G3 :||: A | A G A B c2 e | d d c B c d |
+
+e b B G B G | A A B B G A F E | B d B B A | B2 A B G F E | D2 E D E D | D2 A B A F A | B A d B A F D | G2 G B d G F | D2 D2 B | A B2 A F G | D D2 D :||: D2 D F G2 D D | D D F G F A F D F | D A2 D F D F E D | F2 E D F D | D B,2 D D F A A D | F A
+
+e G4 | d/ c d e d B/ A/ f/ d/ d/ c/ G/ d > e/ d/ | d G B G/ d/ e/ | d/ B3/ A/ c/ d/ G/ e/ d3/ | (3 d e c A/ B/ A G/ | G/ F/ D/ G/ G/ A/ E/ | G E/ F/ G/ | F/ G c A B/ d/ B/ | d e/ c/ A/ A/ G/ B/ d4 | ^c/ ^
+
+e c d d A A2 A | B B A d e e c | B E d e e e f | | e B A2 A B | c A G B A B | d e f e f e | d B A G B G | B d e2 e f | a g e d e f | e f e d2 a | e f g a | e d B A B c | e e d e e2 a | f g e e e d | |
+R: reel
+M: 3/4
+K: Dmixolydian
+F E F A B B c | d F
+
+e A c c e e | f f d f d2 :| f2 a a f d | f e f a f e c A | f e a f e f e | f e d f a f f | e f e f d f e c | B A F A A2 :||: f f f e f2 e | f a f A e d f | f f e d c B A | f a e f f e | d e f a3 f | f b b e f e d | f a g f g a f | e d c A A F A | f f3 f
+
+e B e < > d > B/ < A > d2 | e > c > e > d < F | A < A > B < e < f < g | a < e < d < a f > e < d > c :| a > e > f d < e f | a > d < a > d > f < d < d < e | d < A < f < < e f < d/ G < e/ | A < f a < f < e < e < c < f | a < c < e < a < d < c < < e < g |
+
+
+
+---------
+
+test 3:
+prompt:
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E |
+
+
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 D E D E | E A B E B c E F | E E E A B A E D E :| | |: e e B B d e B | e e d B B d c | e e B e e A B A | e e2 e B A B e | e d B A B d e | 1 e e e B2 B e :| 2 e e e e d c B A | |
+R: polka
+M: 2/4
+|: f
+
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | A E A B A D E G E | A2 D D E E D C E | A B2 B A B E | G2 E E E F G B A | B2 g3 e | f2 e d e d d | B A G E3 E :| g2 f g2 f | g a a (3 f e d d c A | d2 e a2 | B A A2 D E G3 :|
+R: reel/4
+M: Dmajor
+
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E4 E A G F E | E3 A d B A F | E2 e g e d B | A B c d B A E | E2 E2 A F E2 :||: e | e f e d B A | e3 B A B | e f g e d2 A | e e f e g2 d | e2 d B A2 B A | G2 E2 B A F E E2 :|
+R: mazurka
+M: 3/4
+
+
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E E2 E E D E G E E E | E2 E G B E G A B A A | E2 (3 B A d g e d | e f e d e e d e | (3 e f e e a f e d | (3 f d e d e d d e | | c e d e2 g e f | g f e g =g e f e | f e d c A G A | (3 B e f e g e d
+
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 A B A B E E E | E E D B A A e | f e e d A B F A | A B A F E E E G | E2 d B E D E F | E2 e e e d B A | B A B A E D E E | D E G E2 E E D :| f a a a a b | (3 b g b f d e f | f e f e e f | e f d B A G F
+
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E E2 d A B F D | D2 E F D E F E | G E D E E F E D E | A d c A F E E | G2 d2 E D E D E F | G2 E E D D E F D | E2 e d c E2 D E F A | G2 e A c A D E | G e c A A G2 F | G E E D E C E D E/2,3 | G2
+
+
+---------
+
+test 4:
+prompt:
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B |
+
+
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G2 F G F A | G2 B A B | c3 d c | B A G A B c | d3 d2 c | d c B A | G G2 B G G | G2 A B c B | d e d c B | G A G G A B B | c d c3 | d3 f d | e d c A A A | G3 B3 | G3 :| g3 g f a g | e d B B c G | G3
+
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G B c | e d c d G | B B G E G F G | E3 D A B c | d B G G B G | E G A A B c A | B G G G A B c d | e d B A G A | B A c d B G A :||: B | d f g f g | g e f g e d | B g g f g e | g e d f g2 f | g f g a e d | d B c A
+
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G B G E B A G | G F G A B A G E | G3 E D :| |: B d d2 e d | c d B G F G | G3 B | G3 A G d e | (3 d e f d f d | c B G G D E | | G3 G B d e d | g2 e d e | c A B G F A | G3 F E D | G3 D3 :|
+R: jig d3 d B
+
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c2 B A | G2 G B c | c2 A G3 | G2 f a f | g2 g f e | d d c A A B | e2 c A A G | A2 G A B c | d3 A G | | A2 A G A | A2 c d c | e c d c A | G3 A A c | d2 g e | 1 d2 g f g f :| 2 d d f e | | |: e2 c B
+
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G G A B G A2 A | G3 G B G3 | G3 B c d2 e | g3 d c3 | B2 E F2 A | B2 B c3 A | G2 B A G3 | | G3 A B c3 | d3 B3 | d2 e g3 | g3 f g e d | B3 c3 | G2 A G3 :|
+R: reel
+M: 4/4
+K: Dmajor
+F3
+
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G3 A B c e | d2 B B G | G3 B G A B c | d2 e2 e | d3 B G2 G | D3 B A B c d | g2 e e e | d B G3 B | | G3 d B G B | c B G B d | e3 g e | d G3 B c | A3 B G | F2 c d :|
+R: polka
+M: 2/4
+K: Eminor
+|:
+
+
+---------
+
+test 5:
+prompt:
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ |
+
+
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A d/ c B/ A/ B/ c | e f/ g/ e/ d B/ | c g g f/ g f | e d/ B A/ B A | 1 G2 g/ e > f/ :| 2 G2 f/ g > e d/ | | |: f d/ e/ f/ | e e g/ b/ a/ a | e/ c' d f/ g | a b/ a g/ b | a/ g
+
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | D D C/ D > G | D F G > F | F G, D D a f/ | f/ g/ g/ e/ c/ | A B c/ d B | A/ G G d/ B | g2 e d/ | A/ B/ c2 B/ c | e/ d B/ A/ c/ A | G2 B/ d/ c/ B/ e | A F/ A D | F/ G A/ G/
+
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | G,/ A B/ C3 | D > E2 | G d/ c/ B/ G/ | G2 F G > F/ | D D/ F/ D/2 B/ | c/ d > c/ c/ c | B/ A > D F/2 | G2 A F D | D2 D A | G2 D > F/ :||: B/ c c/ B A/ c/ > B/ | A > G F2 d | c
+
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | d e d/ c/ B/ c f/ | g e c B B/ c | d g f e/ c/ c/ | e d c/ B A/ c | B/ d e d c d | e c/ c d/ B A c/ | B A F/ C/ G/ | F/ F G/ A/ A/ C/ F/ | F E/ F G | D D/ F2 G | E C/ D F/ =
+
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | d c/ c/ c A/ | G G G A | G G B e | f c c A/ d A | G A d e | g/ f/ e/ c/ | A G3 :||: c e g g | f d c/ e/ e/ | f d f/ g/ d g/ | g e/ f/ f/ a | g d e/ c | c d e ^c/ e/ d | c e g/ e/ f
+
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | B B F G/ E/ E | F > B c/ d B/ | A A F/ E/ D/ | F/ G/ A/ G2 F/ | F > A/ G/ E B/ d/ d/ | A F2 A/ D/ F/ | G/ F/ D e/ d/ e/ | f/ g/ f/ d/ g/ a/ | f d d/ B | A F/ D/ D/ E
+
+
+---------
+
+test 6:
+prompt:
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A
+
+
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A F | E2 D C E F D E | G E A B D F A F A | 1 E2 A B F G A :||: E F D D F D G | E2 E E D D B, | E F D F E A B, | F D F A, G E F | G E F E G c | B E E F G E G | A, C D E G G E F :||: A, | E E F D C C (
+
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A B | B2 A F G E F G | E D2 D A F G | A2 A2 B c2 F G :| d2 d2 e2 f2 | g f e d e f2 | d2 c d e f g | g2 f e d2 f e2 | f g2 f g f g e | d2 d e f e f2 f | g2 d c2 e f2 :|
+R: barndance
+M: 3
+
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A G | E2 F F G G E | F E F G E G B G A G F G | E F E F E D G2 e | e A F A F G E C | E2 E E G B, B, G, | E2 D G, C E | E | E2 e G d B G | E E E F G G F | A2 c A G F E | E G E G E B | E c B G G
+
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B G F E D G F D | F E F G d B2 e | d B A c B A G B | A F E F3 :||: A c A A A | G B A G2 A | D G A e d e2 | d B G c B G | E G F G2 :||: A | d2 d G B G F G | A B A G A2 G | A c G E F E F | A B d G F
+
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A G E | E F G G F G E F E | C2 G, D G, C B, | E G E E D2 A B, G F E | F2 E D E2 C G | F E D F G F | E2 G B G E E2 | G F E g e c B | c2 G3 F | E G F D E G A | c2 d c A B c | A2 B G E2 :||: c
+
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A B | d ^c c A B G B =D | E =f e =c A B | E E C G F G | F E F E G B, | E D F A B =c e | ^c A ^G A G E E | ^f A d A B c | c A G E | E E F E F G | =c A d e f f d | c c A G c e | c A =G A ^c e
+
+
+---------
+
+test 7:
+prompt:
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d |
+
+
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e/ f/ e/ c B G c | d/ e/ e/ d/ c/ B/ A | A/ B/ c/ d A | e/ e e/ f d/ B | G A/ F/ A/ G/ B/ d/ | e/ d c f/ e d | e c/ d/ g/ d/ f/ | g > e d/ d/ d :|
+R: polka
+M: 2/4
+|: g/ f | e
+
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | d3 f d c c e | d c A G A B | c3 B c d | c A B c A | d2 G F G A B c | d2 B c d c | d3 G B c | c B G F G2 | d2 A G c | d e a g d2 | c2 B2 c A | B c F A G B c2 | G2 B A A e | d A F G2 G A | g2 c B c
+
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | B2 B2 e f | f2 e2 c2 | d2 A B c d c e | d2 c B B c A G | F2 A G2 :| A | d e =f g e | d c2 A B | e2 B2 G A A | A G E F G | G2 B c d g e | f2 f g2 | f e d e f g | f2 g f g e | g e d c G A G | |
+
+
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | d4 B/ B/ c/ A/ B/ B d g d | e d B A2 | e d/ f d A | e d c/ B/ A/ :| d e f/ e | d c d/ B/ d/ c/ | d/ B g e f/ g/ | d e f g f/ g2 | e c d B A | |
+R: reel
+M: 4/4
+|: d | f d/2 d/ d/ g
+
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e d c B A G | A B c B G A | [1 B G B A B c | e d e d c | B A G B A G :| [2 G A G A2 | | |: e A A2 c f g | e A A A2 f e | g2 a g g | e d B d2 | e A2 f g a g | e f g e d | e2 A c d e | e A G A G | E A c A
+
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | c A > A B A | G3 B c d B | A2 B A3 | G2 B c B A2 :| c B A A2 G2 | c2 G A2 E E2 | D2 G2 E2 | c B c B d | e2 c B | e2 G A B | A3 G2 A2 | G2 A3 | c2 A B A d | e3 c B | G3 E3 | A3 D2 :|
+R
+
+
+---------
+
+test 8:
+prompt:
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 |
+
+
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 d e e e d2 F | A2 B2 B A G | B2 B2 D2 A | B2 f e d B | A2 A2 G A :| | B2 A d3 e2 A | G2 B A B d | B2 g e2 d e | d B2 A G A | B B c A2 B A | B d2 e2 c A | A2 e2 d c | B2 e2 B c
+
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | A B G F E2 |] [2 E2 E F B,2 E | A B A B E2 c | e f g3 :||: e | g f e f f | g a e f e | g a g f f e | f e d f e2 A | e B d B A2 :|
+R: reel
+M: 4/4
+K: Gmajor
+E2 G B, D E E | G2 F G A G F D | G
+
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B G B d e f g | e d f e d | e d B A G E E E | F3 E C E E2 |]
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: G | G2 A2 A | G A2 G E2 | G2 B G2 A B | G2 G2 A G | G3 A2 B/ c/ B/ d | c2 d2 B A | G2 F G G
+
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | E2 D G F E G, B, | E2 A B E G A | B2 G E F E2 B, :|
+R: reel
+M: 4/4
+K: Eminor
+|: B A F G F d | B c B A F E F G | B c d B d B A | B F E F A G E F | F E B d D F D | F G B E F E D | 1 F E F E F F
+
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | E2 D E3 F E | G E D2 B A2 | d B F E D3 | A,2 E F G A | B d B B A2 c | B3 F2 G2 | | d B c B A F2 E | A/ B/ e d c/2 d2 | e B c A | B c B B A F B | D D E2 G | A B c d2 d | f e d B A F |
+
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 E2 D D E E | F3 A2 B G A3 | B/ B/ G/ d > e e d c | B c/ A/ A/ G F D E D | D3 B D B G | B2 d e d c e | f e e d e f g f | b e a e d B A A | B A/ A B/ c/ d e f e | f2 e d ^d B A F A |
+
+
+---------
+
+test 9:
+prompt:
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G |
+
+
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F2 E A D D | D2 D3 D B,2 e | f e f d c A | 1 G3 G A3 :| 2 f e d e c | | g e d d B A | | |: G G B A B G | e e f d B | A G A A B | A e d c d | e f e d B A2 :|
+R: jig e c A G A3 | G A G A B | G3 B d B G2
+
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F D E F D D D D | A F A B d c e | 1 g e f d c A :| 2 e c c d c A | | B A B c A c | E B c E E F D | D E G F D C D | 1 A B A c f2 e :| 2 c B A F A F D | | |: B c B c d c | B2 d c E | B c B A c d B | c e B c d | c
+
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A c ^c d B G3 | e g g g g f d | e g e d B c d | e d B G G A | e g c A ^c d | c A A A A F E E D | F G d B G E2 :| | g g f g | g > f g d f g | e d g a g d | f g a b f e =c | =f g f d B d | c g f g e d | e e
+
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F G3 G E | c d2 f g | g g f g d | c A F G3 | A G A G3 :||: c2 e | g2 g | g f g f g | e c d B | c B c A G F A | c d c A F | G3 :|
+R: jigM: 6 d |: c c A G3 | c g a g e | d c d g e | c A G A B G | B c e3 |
+
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | c A G A G F E | D3 D E E2 | D2 C D E D2 D | F2 G A G A A | 1 c d c d d c :| 2 c d c A B c A | | | |: g f g f | g f a g g g | a f a c c | c d c e g f | (3 c e b g a g g e | (3 g f g c c B | (3 f d c d f g
+
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F E D D D D A G | f d e c B A G | d e g f e d B | g e f e d c | c2 A A B A | 1 B c d B A :| 2 B c d d B A G G | | |: g a f a g | g e c A B A G F | c d c B A B G | g a a b g | b a e c e | c A B c B c | c d A B G
+
+
+---------
+
+test 10:
+prompt:
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, |
+
+
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | E2 G G A B d e | e2 e2 g b g f | e2 f e g f g | e2 A B d B A F E :| B2 G F B A G A | F A B d g2 f | e A G F G A B G A | B A B d2 e3 | e2 d B d B d3 | e e a f g f d e | F2 F A d B d | e2
+
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | E2 E E F E E A, D | E2 A,2 D E E F A, A, | A, G, D C E G A, | F D C2 G A, E A, | [1 F D C B, A, A A, | | F F G d c d c | 1 d B A B G c d B :| 2 d B A G c A |
+R: jig
+M: 6/8
+K
+
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | B A G D E D E C C | A, D E D G, C A,2 E | D D E D D2 A, | E D E E D D E A c | d3 A c A c | B A B A c A G | E D D A2 D D | D E D A D D g | f d e c A c A | B A D E D3 D | f d A c A B c |
+R
+
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | F4 A G F G2 A2 A B | F G G F G G B A F A | A3 B G E G B,2 D | D F G A B | A c B c A F A G | F G A G F E2 :| | |: d3 g3 f3 | d3 f3 f | e c B c B G | d3 B c3 g | e3 f d3 | A3 f3 e2 |
+
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A2 D D2 A, D E F A, E | D2 E F D G D4 | E2 D D A B A B A | d2 d2 e c B G2 | d B A F A F A | d F G A B A G | d2 f d e f | e2 f e a a a f | e f e g f e | e2 d c B A F B c | d2 B A F E D
+
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A E C A G A, D E F G A F E | d B =D D A, E A, D | D A,2 A, B, E2 F E | D2 B F G A2 | D E D E A, ^G | 1 A, A, E B, G, E D :| 2 A, A A, D D G A | | |: A F A e d c | d e g g g f | a g
+
+
+---------
+
+test 11:
+prompt:
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g |
+
+
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | e a b f g f g | e d B A A f | g e a e f g e g | f e f e d B | 1 B G2 A A F D :| 2 B G E E D D D | | G3 B A B | A B A G B d | e d c B A F D | G2 E G E D E | G3 F A B A B d | 1 e d B G A F D :||:
+R: hornpipe
+M:
+
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a2 g2 e | e d c d c A A | G E E D E D | D D E A A B | A c B c B A A | 1 G E A B E D :| 2 G A G E D2 D | |
+R: reel
+M: 4/4
+K: Eminor
+|: D2 D2 A B A | c2 f e f e c e | B2 B c B c c e | d2 f f g f e |
+
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | b | f2 a c2 e g | f e c B2 A2 A2 | B < g e c e c e | d2 c B2 E2 :||: a/ a f e e d | B c A A G2 A | B/ B/ c/ d | e A B A B2 A | d e c A F A | B A2 e f/ e d | c A A A/ G A2 A/ | B c e d A2 G |
+
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | e c B A B A | d e c B g2 | e f e c a | e d c B A A | B c B A e | d g f e d B A | B A B c e3 :|
+R: slide
+M: 4/4
+K: Gmajor
+A | F A G A B G F A | d c c B G E3 | G A G A e c B | d c B c A G E | D A f e d c
+
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | b a f e d c' | e f f d c' e | b2 a g a2 c' | c' a b2 a | f e d' b a | b a g e d c | 1 A B A F D D :| 2 A B c B E D2 | | |: d A F D E D2 F | G3 F D2 E | D A F E D2 A | d3 e d c B | A A F D2 A2 |
+
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | g f e f g | g B G B G d | e B g a g g | e f B G B/ B/ A/ B/ c/ | B/ c B A2 G | B d g f g e | d B G G2 :| | |: B2 d B | c B g e g g | f g f g2 e | c B G2 G | A d g f e | d b g a g | a g f g a g2 | e
+
+
+---------
+
+test 12:
+prompt:
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A
+
+
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A F | > A B c A B c B A F E | D2 E A, D2 D | D > F (3 A, A, A F A, | D2 G A B d > A | G d A e A B A | G2 E (3 G B d e A c | | d f e d c d A | d B c d e d A | G B c d A B | d2 e f d c A | B
+
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | A d c d e c B A A | B G A d2 A A F A :| G (3 g a a | g f e d c B A G A | (3 A c B c d e e f | g2 a f e d B c A | d e a f d B c | c B c B A F E A | G2 (3 g f a e d c e | d e c d g f a | g e d
+
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | D A B A A F | G A A F G F A B | B > A F G E DK: 4/ A F E D A2 | d c e d B A G | F A B A B A G A | F A e c e d e2 | d B A B e e d B | A G A G F G A | d A F A d e e | f e d c A G F A | G A c e
+
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | B c G A G A A | c G G2 G B c d c | B A G G A G E | D G A B d c d c B | d G G A B A G E :||: c d c c d B c | B d A c d d B | c A G2 c d G E | G B c B d D G | G c d c d B G | E G A G2 :||: c B d e d c
+
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | E F D F D A | (3 c B A c A c d A | (B A c B c A A :| B F A F A c d | d d g d e f g | a a g f d2 e | 1 a b a b g f g :| 2 a b a g g f | | |: a g f g g f d | d A B c d (3 B c d | (3 d f g f g f e
+
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | G E F D C E F | E A2 F A2 F E | A d A B A A F | G F E2 A, A, | A, D C B, D F A, | G A, B A F D C | G E2 E G A A A | f e d d B | c A d e d d | c d c A A F E | G E E D2 A, D | G E c e A
+
+
+---------
+
+test 13:
+prompt:
+R: jig
+
+
+R: jig
+M: 6/8
+K: Eminor
+A2 A2 A2 d | e2 A A d c | e g g e2 d | B A B A2 d e | e2 d A B A B G | A2 A A B3 :||: [| e a e g a | e2 e d | e d B A A B | A A/2 A/ B/ A B c/ d | e3 a g e | e g e d e d | B G A B e d | 1 B A G3/2 d | 1 e A3 :| 2
+
+R: jig
+M: Gmajor
+(3 e2 B c | e f2 c B A d | B A B A A B | e2 A c d c A | B3 B G B A | B c A A G B A A | B d c B A G | B2 A G A G | G A A B A B d | B2 c A G A | e2 B A g | a2 e a a2 g | a g f2 e | [1 e2 d B A G :| [2 A G G B c B d | | |: g2 a g
+
+R: jig
+M: Fmajor
+|: G D F G E D E F E E C d c G | B A F G E G A F E D D C C C E | F G E C C F D F A,3 :||: d e d f e d | e e f e a f e d c | B2 A A F C A, E C3 :|
+R: waltz
+M: 3/4
+K: Gmajor
+g2 f e c3 | e2 d B G F | G3 D E D E =E | E F G A d c | e2
+
+R: jig
+M: 4/8
+K: Gmajor
+d d c A B B B | d d B B c B2 g | f d2 g e f e d | c A F2 A A c A | d e d B B B G F A2 | d B G B A B c | d2 (3 B c B d B G F G2 | d c d B2 B c | G F G D2 A F | G2 D F2 A B c2 | d (3 B B G E D2 E c A F | d2 g f B d
+
+R: jig
+M: 6/8
+K: Amixolydian
+G3 G | A B G G G E | G A G A d | B d c A G F | E G A a g | g f d B A | A2 E G2 B | c e e d | [1 c A E2 G :| [2 e A A G | |
+R: reel
+M: 4/4
+K: Dmajor
+|: G | (3 A B F E F G E F | G E2 B d | A2 G F A D F | (3 E F G A B
+
+R: jig
+R: reel
+M: 4/8
+K: Eminor
+|: c3 B A c | e c A B c A | (3 d c B c B G B | c B c e A c B A | c B F G c B A B | c2 A B A F D A | c c B2 G A G A | B c B A c d3 | | e c B e c B A G A B c | e B c B e g c | e e f g b a f g f | e2 b g e f g f e | e
+
+
+---------
+
+test 14:
+prompt:
+R: reel
+
+
+R: reel
+K: Edorian
+|: F E D D F F F E E D D | E G F G E F D E D | A d c A B F E | F D E G D D D | F D D E D D D :||: F E G E D G F G | A F G E D A B | F D F G A F D | A G A G F D | F G F A G F E | B c A G F A | D F D F D E :||: F2 E F D D F D D | D3 G F G F | F G
+
+R: reel
+M: 3/4
+K: Amajor
+|: E2 E2 c | B3 A2 B | A3 E G2 | A2 E E4 | E2 E4 | D D4 E | D4 E2 - | A2 A2 | B6 | E4 A3 | F4 E2 | F2 E2 | D2 E2 E > E2 | E4 E2 E | E2 D4 | E4 D2 | E6 | E2 A2 E2 D2 | A4 A2 | F4 G F2 | E2
+
+R: reel
+M: 44
+K: Dmajor
+B B B A F B B | A B E B d2 e d | e A B A F A B | e2 g g e d d B | A F A F B E F | F A B A E B d e | d e A F B A G d | e g e A d B A | A B A B A G E E | D A B d B A B d | A B e A B e d B | e A A B A3 :| | d g e f d A F | A e A B
+
+R: reel
+M: 4/4
+K: Edorian
+| B3 d | d2 d A B A G F D | G2 B c B c A | G3 B d B c B | B2 d2 A F A | G2 G2 B G G | G B d2 A G F E | G2 F2 D2 B d | A3 B A F A F | G2 E2 c | e3 d B A G | G2 d B c2 | G2 D2 D2 d2 | B2 A B a A g | e3 B A
+
+R: reel
+M: 4/4
+|: F E G | A G E2 F D G | A A/ d B A G E |]
+M: 3/4
+K: Dmajor
+|: E > E A2 G > D F | A F E E > A > F | E > F E > G E E | A > c E E C A > G | A e d c > A | A > F > G A G F > E | E > A2 A c > B c | d > f e d c A | 1 A F > F A (3 F E
+
+R: reel
+d c | f | g3 a a a b a | e g3 g | b2 g3 | e2 f e d | f3 a3 a | b3 e2 b a | f3 e d | e3 b a2 | g3 g a | f4 d2 | B2 c2 d | f e2 d c | e3 d3 d | e2 a3 e | e2 g2 g a | g2 e g a3/ | e3 g | | |
+R: reel- jig
+M: 4/4
+K: Edorian
+
+
+---------
+
+test 15:
+prompt:
+R: polka
+
+
+R: polka
+M: 4/4
+K: Gmajor
+|: A | G3 E F E E | E A G A F E E E | G E2 E D E | D B A G A A | B3 G E D | E3 B D E | G F E2 D E | E2 D D | G A B A A G | 1 A B A G E :| 2 A B A D E2 C | | |: E3 B c | d c A G B | A G E E D | C3 G E | D D C D D E | A B c
+
+R: polka
+M: 4/4
+K: Gmajor
+|: F G > G G | E2 F > G G/ F/ G/ G/ F2 | G/ G G2 F E | G B G E2 | E G F D E/ F/ F/ D/ | G B/ F/ A2 B | G G E/ G/ A A/ | G2 G/ F G | B/ c g g | f/ e d e | d d A G/ F | E G G/ A F D | G > E D :|
+R: reel
+M
+
+R: polka
+M: 3/4
+K: Amajor
+|: e2 e2 | e c/ c/ | B G A F | E F A G F | B A/ A A/ A/ B/ | c/ B/ A/ c/ d/ | e/ c/ B2 | A G F A/ A | c d4 :| | |: e a e/ g/ f/ d | e2 c/ e/ d | c d c/ B | c d/ c/ e e3 | A c/ d c/ d | B/ c/ c d | e
+
+R: polka4
+M: Amixolydian
+K: Eminor
+A G |: > B, | G2 A G > E G | B > c A < B | A > B A G > G | B2 B < d e | a > f e d > B2 :| e | f > g e d c < g | f e > c B2 | c > B A > A > G | E2 A G2 :||: B | A < e g f > f d | c < B < e g a | a > a g > g e > d | A > A e g D |
+
+R: polka
+M: 4/4
+K: Gmajor
+|: F|: G A B c | d c e c B A | A B c B A G2 | D D B, B, A, | G A B2 B c2 | d e c A B c2 :||: d | e2 d c B2 B | A2 c B2 c | c e a a c d | A2 G2 B c | B c c2 c e | f2 c d B | c A B A B c :||: A c d e2 f | a2 c B c2 - |
+
+R: polka
+M: 12/8
+K: Gmajor
+|: G E | G2 E G, G, G,/ B, | G A3 B | G c B A G2 | G E G G A B | G B d G B A | B D G3 :||: G3 | A d d e d B | c G A B A | c B G E C | G B G3 | G E D B, G B, | A3 G B G | G A B d e d | c A B A B A G | E G3 :||: e | g a g |
+
+
+---------
+
+test 16:
+prompt:
+R: waltz
+
+
+R: waltz
+M: 3/4
+K: Gmajor
+|: B2 | G G2 B | A B G2 | A2 B2 B | G2 A2 | G2 G2 | F2 G2 B G | G2 B2 | A4 B d | B2 G2 :||: d |: g2 g f | d2 g2 d | e2 g2 e | d2 b g2 | f2 g2 | e2 d B2 | c2 A2 :| 2 G2 G A B | d g2 | d2 f2 | g2 g2 f
+
+R: waltz
+M: 4/4
+K: Gmajor
+d | d B A G A F | E2 C > G A B A d | (3 B c B c A B A B c d | e > c B A F d d | e A B A G > c B | A2 A2 B A B | (3 A2 B c d B A F E | E2 D > D2 | D2 D2 D > E - | D2 A B A > A B | A B c2 A2 G > B | A4 G A | E2 F >
+
+R: waltz
+M: 4/4
+K: Dmajor
+|: B2 B c | B3 d B A G | A F D B c d | e2 d B A B G A | B2 G F d e d | e d B A A B d | e f d d e d B d | d B c d B A | B3 c d c d | d g d c d e g | f a g e d B e | c d2 d2 e d B | (3 d B B c d e d e | f e d B g e d | g B
+
+R: waltz
+: slide
+M: 4/8
+K: Gmajor
+A A F G B |: G | F F D E F D | G2 G A d | c2 B/ A F A G/ F/ | G E D G A B | c A B G G | D D D D B, | c2 G A G | c2 E D C | D2 E G F :| | B B c B d B g g e | B e g f e d g | G A B A B e | d B e g e g | B B e g A B d
+
+R: waltz
+K: Gmajor
+|: G e d d | d d G A B d | f d d c | d G A d B d d | f3 d d | e g d c B d | d2 B d d d f | g d c d B d | b a g f d | d g f e d | d B A G d | [1 B d g d e :| 2 B c d g d B | |
+R: jig
+M: 6/8
+K: Dmajor
+D > F A - D D > F | d2 d d2 A |
+
+R: waltz
+M: 4/4
+K: Gmajor
+|: F G | E2 C2 D2 G2 | E2 E2 F2 | E4 G2 D2 |] D3 A2 | B3 A2 G G | F2 F2 G4 | D2 D2 D4 d | f3 f2 d2 | B2 G2 D3 d | e3 f a2 a | [1 g3 g2 f2 | g3 e2 | f3 e d2 B | A F A2 d2 G | A4 - | F2 E3 F
+
+
+---------
+
+test 17:
+prompt:
+R: hornpipe
+
+
+R: hornpipe
+M: 4/4
+K: Dmixolydian
+|: F (3 B F F A | B A B A F G | E2 F E F E G | F E F G F G E F c | B B A B G C D | B2 (3 B A F E E E | D2 B F E F | D E A B E F E | C2 B A B E D | G F D E D G | E F2 D E2 :||: g e e c | d B D2 G F D | B A G E F2 | B d e e
+
+R: hornpipe
+M: 4/4
+K: Edorian
+a/4
+e d | c c g2 B c | c/ d B c d G G | A c e g B c | B c d2 c d c B | c B G A B c | A2 c d2 A G | E c e c d e | f g2 g2 | f d d2 e | c'2 d2 B c B | A c2 c d e c | c A2 c2 c | B A B c d c d | B c B c d e A | 1
+
+R: hornpipe
+K: Gmajor
+A G2 G G A | G G2 G A | A2 G G F G :| B c A2 B | G2 G2 G B | A2 e G A B | G B G A B G | G2 B G G | A2 d g2 e | G2 A G2 G F | G2 E F G A | B G2 G d2 | e d c B G | A B2 G A2 | G2 F G B | G4 A | G2 d e d | c2 c B A G | A4
+
+R: hornpipe
+M: Aminor
+|: D2 G A A B c d | e2 G d e f g b d | e a a2 b a f | g3 g f g a | e2 d e e d c | e3 g2 e e | f ef e g e A | | B/ f e d B e g | f a a g f a | e g f e d e | B G F A G2 :|
+R: reel
+M: 4/4
+K: Gmajor
+A B A2 G A G D | B d A B A G G
+
+R: hornpipe
+M: 4/4
+K: Gmajor
+D E2 | E3 D B, D | E D B, B, G, B, | E2 E D B A G | D E2 B, B,/ B, B | F G E G, A, B, :| | E G B d B d e | d B B d B2 | A B d d e e g | d B d B B G | A2 B d B e d | B B e d B d d | [1 A G3 d e :| [2 B G (3 B A
+
+R: hornpipe
+M: 4/4
+K: Gmajor
+E B D E E C | B B d g e | f g f g | e A f e d | d e d B A E D E | B A G E E D D E | A B d B d B | B A F E F D E | D E B A D E D | D D E D E D F | G E/ E E D E2 :||: a f f a g e | e f b b a b | e f g a f e d c | e g f g e e f | e
+
+
+---------
+
+test 18:
+prompt:
+R: slip jig
+
+
+R: slip jig
+M: 6/8
+K: Adorian
+E A E E | E F A F A | A B A E E B | A A D E E A | B A F E E | D A F A B | E3 E D A :| - A A A | A A A A f d | e e d f e | e d d a f e | d B A A | e d B A B | A B c d e | e e A A | a g e d e f | e d e d A :|
+R: reel
+M: 4/4
+
+R: slip jig
+M: Dminor
+K: Aminor
+|: e d d | e A2 c2 A A | B2 A A B A | A3 B A2 A | B3 G2 A A2 d | e f e d2 A2 | | e2 e f e c | e2 B A2 d2 :|
+R: reel
+M: 4/4
+K: Gmajor
+| E G E G A G2 | G2 B d A G A A | G E G G A2 G2 | 1 D G A B G G2 :| 2 D E G
+
+R: slip jig
+M: Dmajor
+K: Gmajor
+|: D A B B A G A | B e e B A | f e d B A A | G2 A B A B | d e e d B B A | G E G A B A | B2 d e f | e d B c A2 :| g | e c e c2 A | B A G2 A | | B d e e a g | e f a a a g e | B c d3 | B2 A G2 | |
+R: reel
+M: 4/4
+K: Adorian
+
+
+R: slip jig
+M: 6/8
+K: Gmajor
+|: D > G2 G > c | d c/ B/ G2 D F A, | D2 F A G G | d A/ c/ G/ B/ c/ d/ | d/ c/ c/ A/ B/ | A/ F G A G A | c/ B A B/ c | d/ A G G2 :||: G G B d B/ B/ d | d c A B/ B | c/ c d c B | c A/ A B/ A/ g/2 B |
+
+R: slip jig
+M: 6/4
+K: Gdorian
+|: G B2 A3 | B3 G2 G2 | G3 B A2 B | B3 A2 G | A3 A3 G | A B2 G2 A | G2 G3 :| A2 A3 A | E | G3 G | E3 E3 | B2 d e | d2 B3 A3 | G3 - G | E2 E3 B d | B3 g a g g | d3 g f | d2 e | d3 d3 | | e3 d3 d
+
+R: slip jig
+M: 6/8
+K: Adorian
+D A A F E | G A B A2 | G3 E2 A | g f e3 | d B3 d | g e e g3 | B d B3 | G33 A | G6 :||: G2 A B A | G3 c B G | G A3 A | B3 c B3 | d3 g3 | e3 e2 d | B3 A3 A3 | B3 G3 | G2 D3 d | e g3 a3 | e f g d3 | e d
+
+
+---------
+
+test 19:
+prompt:
+M: 4/4
+
+
+M: 4/4
+K: Dmajor
+A B A B A A D | F E F A d B d | c A B A B g e | e c d c d e g | e c A B c A | B A B e A | B c d e f g | e f d e g e | f d B d c d c | B G B A B c d | e c e f b g e | a f d B c B | d e c B A3 | B A A c e c d | B A G E D3 :|
+R: reel
+M
+
+M: 4/4
+K: Dmixolydian
+A c/2 c/2 A/2 G/ G/ B/ | c A/ d d/ | g/2 (3 g/ e f/2 | g2 g2 a f/2 f/2 a/ | g2 a/2 a f | g2 b2 b/2 g/2 f | e2 d2 G B | c/2 G2 A/ d/2 c A/ c/2 | B/2 G G A/2 B/2 | e/2 f g/2 a a/2 b
+
+M: 4/4
+K: Ddorian
+|: A3 G2 G2 | A d e f d c | A3 A B2 d2 c2 | A3 e e c2 f | g b a a g e c A2 | A2 d2 A2 f2 | e f a g a g2 | e a g a a g a2 | A' a g e f e d2 | A4 d e f | | e2 d g a2 g a2 e2 | A6 | | c2 A2 A A A2 B c A2 G | A2
+
+M: 4/4
+K: Dmajor
+A2 G A B d | d2 g a g e | d e d B G E F A | d2 d e d2 | A B G F G A F | d e2 e f | d2 e f g a g | d2 a g a g d | e g f d e f | a2 a g e d | d3 d | d E D B D E F A F | G d e f a a | g a b g e d c | A2 B G F D A | d e f d B G |
+
+M: 4/4
+: Gmajor
+K: Amixolydian
+|: B2 B3 G2 | c e2 A2 B2 | G2 G E2 G2 | B A B c2 G2 G F2 | G3 G2 G2 :||: A2 d | g f g f d d2 d2 | g2 g f d2 d | e2 d e2 e2 | d2 d c A2 B | B A G2 B/2 G G | E E3 G2 :||: c | d c d g g f d | e c A2 e g2 | a
+
+M: 4/4
+K: Edorian
+A | F2 c B A G F | D2 A B A F | E2 B G F E D | D F F G2 D2 | A B A B2 A F | A2 E2 E D | E2 F A2 D2 :||: B e d e f | g f e d e d B | A2 B A d B A | B2 A B e f g | a4 f d e d | g f a f d e | d B e d A B A | E2 D2 D2 :|
+R:
+
+
+---------
+
+test 20:
+prompt:
+M: 6/8
+
+
+M: 6/8
+K: Gmajor
+B2 B e | c e d e | d e f e (3 c B | c e e g | g e f f e a | g f e d c3 | d B A B G F | G3 D2 :| d | e f e e d e d | c e f e d B | c g e d e f | g e c d e g | f g f e a g | e A A B2 :| B G d e a a | g d c e d | e2 d B A F | G B G F
+
+M: 6/8
+K: Dmajor
+D A F E2 A | B d A B A | B e d B A F | A F E D E2 :| A A B A B A F E | D E E D E | A2 A F A F | G B G A B A G | E E F E E E E | A B e d A B | A B A A A F E F D | 1 E D2 D E :| 2 E2 E D E E | | |: B A B2 A | A B B A e f | e d B d B A
+
+M: 6/8
+K: Gmajor
+c A c B d | e e f g a b | g b a g g e | d B c B A F | G B B A F E B | 1 d e g e f g :| 2 d B A F F E2 | | | |: B c d e2 d | B A F2 B | A B c d c d | e f d f g e d | b B e2 d2 | B A B d e d | c d f g f g | 1 f d B A2 d :| 2 f d B c A
+
+M: 6/8
+K: Gmajor
+|: D E F G2 B | B G B G F G B | A F F G F G | B G d B G F A | F G G A F G | F G F A B d e | f g e f e | d B G G G B | d G F A G B A | B G G F G A B | B d e f | d e f e f | g e f g b g | d B f e f g | e d a b g f g | d d f g f a f | g g
+
+M: 6/8
+K: Gmajor
+E2 E E2 E | G G B c2 B | c A B c2 d c | B G B G A G | E3 F D | E D2 E G A | B2 A G2 :||: d2 d2 d | f2 g2 a | g2 g b a2 | g a b g d | f d G2 B | d2 d g2 :|
+R: reel
+M: 4/4
+K: Dmajor
+|: A F A B A F d A | B B A F3 D > d |
+
+M: 6/8
+K: Dmajor
+|: d A F E | d c B A F E F | E3 A F A B | d e c A F E E | d A B A F A F | E F D E D3 :| d c A c A F | d c e c d c A | d e d c A F F | E f d e f | d c A ^c A G E | d f e d e f d | 1 d c F F E F :| 2 d c A3 F E | | |: F A F E ^A B c | d
+
+
+---------
+
+test 21:
+prompt:
+M: 3/4
+
+
+M: 3/4
+K: Dmajor
+|: A F A E2 | A B c d B A A | F A B D F D F | A B F B A F E F | A A F A B c A F | d e f d B G E | F A G B A F F | d2 d B A F G | A d e f e d B | A E F D D A | B c d e f | (3 f g a e f a f d e | f d f d B A | f a f e f e a f | a f e d
+
+M: 3/4
+K: Amajor
+|: f/ f/ g/ e/ e/ | d/ d/ c/ d/ d2 | f/ g e/ f/ e/ d/ f/ f | e2 f/ | g/ g/ a/ f/ b/ g/ b/ | e/ f e/ d f/ e f/ f f/ a/ | a/ g/ f/ a g/ a | g/ a g f/ d/ a/ b/ a > f/ f B | A F > d/ f | f g/ g e c
+
+M: 3/4
+K: Gmajor
+|: F/ d/ B/ G/ B/ d/ c A | d/ e/ d/ f/ e/ | d/ f d/ e d/ B | | A G D D F | G A B/ c/ d/ d/ | e/ f/ c/ e/ e/ g/ | f/ g e d/ c/ c/ | d e/ e d | A G c/ B/ A/ | G F E D/ E/ G | |
+R: reel
+M: 4/4
+|: c2
+
+M: 3/4
+K: Dmajor
+A > F A A > d A | f > d f > e > B2 A < F | E > E B2 A > E | F2 A > A > A c A > E > E > D > F | D E2 D > F2 | F > F E F E2 C > A > ^A > F | E2 F > A > F > A B2 E2 | D2 C > F < G A < c | d2 e2 d2 D > A F > F | F > G F > F >
+
+M: 3/4
+K: Gmajor
+|: d2 A B d | B2 d2 | g3 e2 | e32 | B2 F2 A B | c2 B2 d | e2 e2 f | e2 d2 e2 | g2 e | f d2 e f | e3 g2 | e2 f e2 | [1 d3 e2 :| [2 e3 d2 d2 d | | | |: e3 e | f3 d2 e | e2 g2 e2 e | d2 e a2 | f2 g2 g2
+
+M: 3/4/4
+K: Dmajor
+|: D G2 B d e | d f e g g | e f e d c A B d | [1 e f g f g e d | B A A3 B | A B A A G3 :| 2 f d B A B A3 | | |: B f e f g | e d B g2 c | B c B A3 G | d e f g g e | d B g B3 | [1 B f e A A | G A3 A :| [2 F G B c A | | |
+R:
+
+
+---------
+
+test 22:
+prompt:
+M: 2/4
+
+
+M: 2/4
+K: Dmajor
+|: B | A > B B A2 B | A F > f e | d > B > e B c | A > (3 B A B A B | A2 G2 B | B > B A2 | c > d B A2 :| d | e/ e/ d > B A | c > B d c > B A > | e > B A A > B | A3 B > A | A3 f e2 | f e > e > B | d > d > B2 :|
+R: hornpipe
+M: 4/
+
+M: 2/4
+K: Dmajor
+| D > E (3 F A | G > B B d B G B | A > F A B G A | A > G E2 E D | D2 E F A > E | G2 G > F F | G > d B > G F | G2 A > G > F | G3 G > E | A > B d f | g > e B G B > G | B2 c > d B | d2 B2 G > G | A > A F D G > D | D > F G F G > D
+
+M: 2/4
+K: Dmajor
+|: B A A B | F2 G A B B | F A B d B c | d2 B G A B d | [1 F G A d f | g f e d B | A F A d d :| [2 g f e f d B | | |: e e d c e | f g2 a2 a | e d c B A | B2 d c e d | e f g2 | e d e d B A | 1 c d c A B d :| [1 c d e | |: c B A F G c
+
+M: 2/4
+K: Amajor
+|: F3 F F2 B | A2 G e f | 1 g2 a g f | g2 a2 e f | g4 e f | a2 e > c c | A2 B2 B2 - | d2 g4 | b2 f2 | a2 b > f a | g2 e2 f2 e | g2 A2 A2 | G2 F2 | D2 E2 D2 | F2 B2 F2 F2 B/ | A/ B2 c/2 c e | d2 B2 c
+
+M: 2/4
+K: Dmajor
+A B > B > D > D | D > F E F > A B > D E | 1 D2 E > G2 B > c d > e | f d > d e > A (3 F > F | D2 D > E > d > e :| 2 d2 g2 d > c > B | g2 g2 B > d > ^c A | D > E F =c > B > A | D2 F > E2 D2 | d > B B > A F A > B | G2 F > D B
+
+M: 2/4
+K: Dmajor
+|: E > E > E | D > A A2 B > A | d A F > E | F > D > F D | D2 A > F > G | F > B A F E2 | D4 :||: f e | f2 g3 f | e > f3 f | g2 f3 e | d > B A > G > :| g f a f g2 | f2 a2 g f | g f d > f d2 | e3 d c | f > e f2 |]
+R: barndance
+M: 4
+
+
+---------
+
+test 23:
+prompt:
+M: 9/8
+
+
+M: 9/8
+K: Dmajor
+|: D | B g g f e | d B B G F | D A F G A | B d g e | d d d c A | B G F G A F G | D G B G f g | f A d c g e | f a g e c | d g e f e c | B G B A G F G | F F G3 :||: B | A G D F F G | G G F G B | e g g a b | a b a g e | e d c A F G F | F G D
+
+M: 9/88
+K: Dmajor
+|:2 B2 d d | A3 B c d | e d c A F | A d3 A G F | A3 D D E | D3 E D2 | A3 c d e f | e d d3 | A A c B A | A3 F E D | G3 E D D E D | A3 A B c B | A3 d c d f | e f d d3 A | A G E D E D D | G2 D F D E D3 D | |
+R: reel
+M:
+
+M: 9/8
+K: Edorian
+E E E E E | E E B E2 E | E F E E2 E2 | E B E B A2 | E D E E E A2 E | G A B2 e2 d | e e d c A2 :||: e | e | g e f e d A2 | e d2 f g | d B e f e2 | g e d e f f | g e e d2 - | g e2 f e | e f e e f e | d B A F E2 E :|
+R: reel
+M
+
+M: 9/8
+K: Gmajor
+e a/ | e2 f e > d B A | F G2 D2 G | F G E F > E | F G F G2 A | e2 d B F | G2 G > D E | F2 F2 F | A2 G F E | A2 B A G | A2 d e2 | d2 A G | F2 D F | F2 A A G | d2 G F | F G3 A | F2 G | A3 G F | A3 B | A2 e2 d | 1 c
+
+M: 9/8
+K: Gmajor
+A A (3 A B c2 (3 | [1 G A A c A c | B d e2 (3 B c A A | G A G2 B c d | (3 G G A (3 G A B c d (3 e d | (2 c d c (3 B A (3 B g2 (3 g e f | (3 g f e d (3 c A B c e | d2 B A2 (3 G e f d | (6 A G A B (3 G (3 B (3 e f
+
+M: 9/8
+K: Dmajor
+|: G > F | B2 B A B c | d2 A F/ B/2 A A F | F G A B A F | G2 B A F A | F G B A F/2 :| [2 G/2 A/2 d f | d2 f g f g | a f3 g | a g f d f g | b a a g f | b a f g2 f | a g2 e f g | d2 e f d | e d f g2 :|
+R: slip jig
+M: 6/
+
+
+---------
+
