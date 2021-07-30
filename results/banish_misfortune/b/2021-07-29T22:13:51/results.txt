@@ -1,0 +1,2760 @@
+2021-07-29T22:13:51
+
+path_to_model: models/cooleys
+
+general_metadata:
+    model_name: cooleys
+    model_description: Using improved tokenization, individual tunes for training examples
+    dataset: tunes_v2
+    version: a
+    version_description: Initial run for cooleys
+
+=========
+
+model_metadata:
+    model_type: gpt2
+    vocab_size: 403
+    n_ctx: 512
+    n_embd: 384
+    n_head: 12
+    n_inner: 6
+    n_layer: 6
+    n_positions: 512
+
+=========
+training_metadata:
+    epoch: 19.89819527996298
+    global_step: 43000
+
+=========
+prompt 1:
+
+R: reel	M: 4/4	K: Edor	|: E2 B E d E B E |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 0
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B E d E B E | A B A G F D D2 | E2 B E d E B E :| A B A F A d F | A B A F A d F | A d d e f g e | d B A F A d F | A B G F E D B, E | A B A F A d F F | A B A F A d F A | B A F A d2 :|
+R: jig
+M: 6/
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 1
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B E d E B E | F3 F E D F A | d3 e f e d B | A B d e f e d B | A F E D E B E | G E D E D2 :| e | f d d A F G E B | f d d A F G E B, | E2 B E d E B E - | e d d B A F G E | g e f d e d B | A B d e f a
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 2
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B E d E B E | B A G A B/ A/ G F | E2 B E d E B E :| g e d B A d G A | B E E2 B E E d | g e d B A d G A | b e d B A d G A | B G A B/ A/ G F D E | g e d B A d G A :||: B2 B B B2 B2 | d e (3 f e f e
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 3
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | D2 F A F D F | A F A F D F E D | D2 F A F D F | 1 A F F G E2 E C :| 2 A F F G E2 A G | | |: c G G F G A F D | E2 B E B E B E | D2 F A F A D F | A F d A F D F D | E2 B E B E E B E | [1 d2 c d e f g f e | d2 A G A F A F A F D F :| [2 A F D F G B e2 A B A F D F B e d F D | | d E F A d A F G F e, B, D e E B A B E D A F D f :| [1 | | | d2 B, D2 A F F A F A F D E B A F D E B,2 A d D F A F D E A F F G E f d f D B, D F A F D F | | | | | | D2 A G E
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 4
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B E F D F | E2 B E A F D F | E2 B E d E B E | A2 F A d F A B | E2 B E B E d E | E D D C B, D D F | E2 B E d E E B E | E2 B E D E F D :| |: g | f2 d c d f a f | g2 e2 d e f g | a2 b a f d f a f | g e3 d f g f B c | d B c d e f e B c e a f f d f d B c/2 | f e f g d e f g | e f e B f g e f e c d e f a d B f g f | 1 g f g f a a2 f a b c d f B e f c g f e f | g e f e g e f d f | e c d f a a f d f e f e A g B f | | 1 a f A e A f e2 d e2 e g2 d e a f f e B f B a g c a a a | g b f e d c e c f e e f3 c d e d e g c a B A B c d e f | | | e c d e f B c A B A b g2 d e d A d a B e c d e c A B c d f g f e | A B B e f a | | e g c d e d f B e c g A | d e B f B g B a B c d e f e c B e B f a | | e2 e f e a B2 g e f B f e f e c e d e A g A g a g2 B f | g f d e d e f g f d e c d e f e c A e d e d e f B g | B f a2 f B e d e B f a B c A B g a f f | f e c f g f B g | f | A g B f d e B e f g a e c2 f B2 f B b f e g d f e B f | e c e | e d B g e c g e2 B A
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 5
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B E d E B E | F2 A F D F A | B E E d E B E E | E2 B E d E B e | 1 d B A F D F A :| 2 d B A F D F A d | | |: e3 f e d B d | e3 f e d B d | e2 f e d B d B | e3 f e d B d | 1 e3 f e d B d :| 2 e3 f e
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 6
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B E d E B E | F2 A F D F A | B E E d E B E E | E2 B E d E B e | 1 d B A F D F A :| 2 d B A F D F A d | | |: e3 f e d B d | e3 f e d B d | e2 f e d B d B | e3 f e d B d | 1 e3 f e d B d :| 2 e3 f e
+---
+
+---------
+
+prompt 2:
+
+R: jig	M: 6/8	K: Gmaj	|: G3 G A B |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 7
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | d3 d c A | G3 G A B | d3 d e f | d3 d c A | G3 F G A B | d3 d c A G | G3 G A B | d3 c A F | G3 G A B | d3 B A G | G3 G A B | 1 d3 d c A :| 2 d3 d c A | | |: A c e a g e | d c A A3 | A c e a g e | d
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 8
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c B A G E | D2 G A B | c B A G E D | G3 G A B | c B A B G E | D2 G D G A | B c B A G E | 1 D2 G G G, A B :| 2 D2 G G3 | | |: d3 B c d | g3 f e d | c B A B G E | D3 G3 | d3 B c d | g3 f d e | f g a b
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 9
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c B A c B A | G3 G A B | A3 A B G | c B A c B A | G E D C G G | A3 A B G | F A F E D C | D E D C B, D | C B, A, (3 F E D C B, | D E D C B,2 | D E D C B, D | A, D D C B, D |]
+R: barndance
+M: 4/4
+K
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 10
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c3 d c | B3 B A G | F3 F B A | G3 G A B | c3 d B A | B3 B A G | F3 G F E | 1 D3 D G :| 2 D3 D2 f | | e3 f e d | B3 B A G | F3 B A G | F A d e f g | f3 e d B | B3 B A G | F3 D F B A | G3 G A B/ c/ d B/ c/ A | c/ B/ d e/ d f/ A G | d3 B/ B/ B A G G B A G G B A G F G F | | A/ B A G F A G3 B A F E G B D G E | | D E D E E D E d G | | | G3 D3 B/ D E3 D3 B D d E3 | F D B E F B B A G F G | G B, D F D F E3 | G F c/ A d2 F d B A G |
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 11
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | d B G B A G | A B G G3 | d B G B A A | G3 G A B | d B G G B A | 1 A G E E D2 D :| 2 A G E E D D | | e a a b a g | e d e g3 | e a a b a g | e a a b a g | e g a b a g | e d e g2 g | e a a b a g | a g e e d B | A G B G A G2 :| | |
+R: reel
+M: 12/4
+M: 4/4
+K: Dmajor
+K: Dmajor
+|: d/2 | | | e/2 e/2 B/2 e/2 G/2 F/2 G/2 G/2 d/2 B/ A/2 d/2 B/2 G/2 e/2 B/2 B/2 d/2 G/2 A/2 e/2 A/2 G/2 G/2 G/2 G A/2 B/2 G/2 d/2 G/2 B/2 d/2 e/2 G/2 B/2 G/2 G/2 B/2 G D/2 G/2 G/2 G f/2 G/2 G/2 B A/2 A/2 G/2 G2 G2 G/2 B/2 G/ F/2 A/2 G A/2 G/2 G2 G/2 E/2 A/2 G/2 A/2 G/2 B/2 A/2 G e/2 E/2 G2 G/2 G/2 B/ A/2 G/2 B/2 B/2 G F/2 G A2 G2 e G/2 G G2 G2 G2 G/2 G A/2 G F/2 e/2 G e/2 G/2 G g/2 G/2 G/2 G2 G/ | | | G2 G a B/2 G/2 G A/2 A/2 B/2 G A/2 B/2 A/2 A/2 G/2 e/2 G/2 G A/2 G/2 d3/2 G/2 G2 G
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 12
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c3 c B A | G3 G A B | c3 B A B | c3 c B A | 1 G3 G A B :| 2 G3 G A B | | |: c3 c B A | c3 c B A | G2 G G A B | c3 c B c | c3 c B A | c3 d B A | c3 c B A | 1 c3 c B A :| 2 c3 c B A | | |: G3 G A B |
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 13
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c3 c B A | G3 G A B | c3 B A B | c3 c B A | 1 G3 G A B :| 2 G3 G A B | | |: c3 c B A | c3 c B A | G2 G G A B | c3 c B c | c3 c B A | c3 d B A | c3 c B A | 1 c3 c B A :| 2 c3 c B A | | |: G3 G A B |
+---
+
+---------
+
+prompt 3:
+
+R: polka	M: 2/4	K: Dmaj	d d B/ c/ d/ B/ |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 14
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A F D D | d B/ c/ d/ B/ c/ d/ B/ | e d d > c | A F D D | d B/ A/ G/ F/ G/ A/ B/ | A F D D | E/ F/ G/ A/ B/ c/ d/ B/ c | A F D D | |
+R: reel
+M: 4/4
+K: Amajor
+A F F E F E F | A
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 15
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A2 A > A | B2 B2 | A2 A > A | B2 e2 | A2 A > A | B4 | A2 A > A | B2 g2 | e2 g2 | f2 > e2 | d2 e2 | f2 e2 | d2 d2 | A2 A > A | B A G F | G4 | |: d2 d2 | d2 d2 | d2 d2 e2 | f
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 16
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A D B D | D/ D/ D F/ F/ E > D | F A d A/ F/ | G A B c | d B F E | D F/ D/ D2 :| d | d d d B/ c/ d/ B/ A/ | G3 A B d | d d d B/ c/ B/ A/ G/ D/ | D E F/ E > D | c A c A A D/ F/ | G
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 17
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A/ A/ A/ A/ A/ A A/ A/ A/ | B2 e d/ c/ d/ B/ | A > A/ A/ A/ A/ A2 | B2 e d/ c/ d | e d d c/ d/ | e d d c B | A2 A B/ c/ d/ B/ | e d d2 :|
+R: waltz
+M: 3/4
+K: Gmajor
+A B |: c2 B A c d2 | e2 e2 e d2 | f > d2 e2 | e2 d g B2 | d2 g2 | g2 f2 f2 g > e | | g2 g2 e2 e2 d2 | A2 | g2 a2 A2 d2 | d2 d2 G2 | e2 e2 d2 | g2 d2 - | | A2 d2 d >2 d2 B/2 | B/2 B/2 g/2 g/2 d/2 | g/2 g/2 | g/
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 18
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A D F A | G F G2 | A D D D | d d B/ c/ d | A d e/ f/ g/ e/ | d B/ c/ d B/ c/ d/ B/ :| A d | f d e2 | e d/ c/ B/ A/ B/ | A d d/ e/ f/ g/ e/ | f d e2 | e d/ B/ c/ d/ e/ | f d e e2 | e d/ c/ d/ c/ c/ B/ | d/ c/ B/ c/ A/ B/ A/ B/ A/ d/ c/ B/ B/ c/ A/ B/ B/ A/ e/ A/ B/ c/ A/ | | | | A/ d/ A/ c/ A/ d/ B/ B/ A/ B/ B/ d/ B/ | A/ G/ F/ B/ d/ B/ c/ c/ d/ A/ | | A/ F/ A/ c/ B/ d/ B/ A/ A/ B/ G/ d/ A/ c/ B/ G2 | | d/ F/ A/ A/ c/ B/ G/ A/ G/ d/ d/ B/ d2 d2 | | g/ B/ D/ c/ d/ c/ A/ A/ A/ B/ | d/ F/ F/ B/ F/ | B/ B/ | | | G/ B/ B/ ^G/ B/ F/ c/ B/ B/ G/ A/ F/ | | F/ E/ d/ A/ | d/ B/ G/ B/ E/ d/ F/ A/ | A/ A/ B/ G/ | | | | A/ F/ F/ d/ F/ | A/ F/ F/ G/ B/ F/ d/ F/ F/ D/ F/ A/ F/ A/ G/ B/ G/ F/ B/ G/ G/ | B/ A/ F/ A/ F/ F/ F/ G/ F/ A/ B/ F/ F/ F/ F/ B/ | | | | | | | A/ F/ F A
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 19
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A/ B/ c/ d/ B/ A/ B/ c/ d/ | e/ f/ e/ d/ c/ B/ A/ B/ c/ | d/ e/ f/ e/ d/ B/ c/ d/ B/ c/ | A/ B/ c/ B/ A/ B/ A/ B/ c/ B/ | A/ B/ A/ G/ F/ G/ A/ B/ c/ d/ B
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 20
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A/ B/ c/ d/ B/ A/ B/ c/ d/ | e/ f/ e/ d/ c/ B/ A/ B/ c/ | d/ e/ f/ e/ d/ B/ c/ d/ B/ c/ | A/ B/ c/ B/ A/ B/ A/ B/ c/ B/ | A/ B/ A/ G/ F/ G/ A/ B/ c/ d/ B
+---
+
+---------
+
+prompt 4:
+
+R: hornpipe	M: 4/4	K: Edor	|: B,2 | E D E F G F G A
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 21
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B2 B A F2 E F | E D E F G F G A F | B2 B A F2 E F :||: B2 B c d2 d c | B2 B c d2 d c | (3 B c d e f g a f d | e2 (3 e f e d2 d c | B2 B c B c d c | B2 B A F2 E F :|
+R: polka
+M: 2/4
+
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 22
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B2 B A B c d B | D F F F G F G A | B2 B d f e c A | B2 B A B c d e | f d c A G F ^E F | D E F G F G A A | B2 B A B c d2 | | e2 a g f e d B | B A B c d e c A | B A B c d B G B | A2 F G A F G
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 23
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B a g f e d e | f2 B2 B2 | d c d e f e d c | B3 A F F G A | B a g f e2 (3 F E E | F6 | | a d c b a g2 :| | b d' d'2 a d' d' b d'2 | b d' d' b d' b d' d' d' c'/ | b d' b d' b d
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 24
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B d d B A G E F | E D E F G F E D | E D E F G F G A :||: B g g f g f e f | e d B c d2 e f | g2 f g f e f e f | e d B c d B A G | A d d B A G E F | E2 E2 E2 :||: B c | d2 d d c B A G | F2 B c B d c A F | B2 d d c B A G E F A G E E F E F | | E D D E F A2 E2 B,2 E F G2 E2 E2 E F G F | E2 d E D E2 E2 E D E D :| | E F | E D E2 E D E2 E F G F2 E2 E2 E D F G A D2 D E2 E F2 A E F | | E2 E2 E F E F G A D E2 | E F G F G A B c | E F G F G
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 25
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B2 B c B A F2 | E3 F G F G A | B2 G B A F2 | E D E F G F G F | E D E F G F G A :| A | B c B c3 d | A F D A D B D | E D E F G F G A :||: B c B c d f e c | d f B c B3 d | A F D A F D A D | D E F G F G3 A | B c B c A F G F G F G F G A | A F G F G F F F G F A d e :| | A G F G F G F E D D D D E F G F G F G A | B c B, F | B, F E F F G B, B, D E F G F | | A G F G F G F G F G F D E F G F G F D E F G | | | 1 E A B, B, B, D E F G F A D E D E F G F E F E F E (3 D E F G F E F B, B, E F G F G F G F G F | | E D (3 A, G F G A | A :| A d D E F E F E | D E F G F D E D E F G A | | A | E F G F E D E D E F G F D E D E2 F G F B, B, A, D E F G F G F G F (3 E F G F G F A, D A | 1 A, D E F G F G F D E | | E D E D A, A, D E (3 E D C A, E F A |] | | | | | | d2 B, D E F A, D E D E F D E F A, D E F3 D F G F G F G F G F E D E E2 B, B, D E F E D E (3 B, | A | | B, E F D D E F E F G F G F G F G A, E F E F G F G F G | | | d2 | | E D E F G F E D E
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 26
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B A G F E D C | B,2 B,2 B,2 B,2 | E D E F G A B c | B A G F E D C B, | A,2 B,2 B,2 A,2 | B,2 B,2 A,2 C2 | B,2 B,2 B,4 | E D E F G F G F | E2 B,2 B,2 C2 | B,2 B
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 27
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B A G F E D C | B,2 B,2 B,2 B,2 | E D E F G A B c | B A G F E D C B, | A,2 B,2 B,2 A,2 | B,2 B,2 A,2 C2 | B,2 B,2 B,4 | E D E F G F G F | E2 B,2 B,2 C2 | B,2 B
+---
+
+---------
+
+prompt 5:
+
+R: waltz	M: 3/4	K: Gmaj	B2 B A B d |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 28
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e4 e2 | f4 e d | B4 B A | G4 B A | G4 B A | B4 B A | G4 B4 | B4 B A | G4 B2 | A6 A B | G4 B A | G4 B2 | | |: e4 e f | g4 g2 | f4 e d | B4 e f | g4 g2 | g4 g2 | f4 e g | f4 e d | B4 e
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 29
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | c2 B A G E | D F G E2 F G | A2 G F D F | G2 E2 F G | A2 G F E D | d2 d f e d | c2 B A G E | 1 D2 D2 G F :| 2 D2 D2 A B | | |: c2 c c c c | B G B d B A | c2 c c c c c | B G B d2 B | c2 c c c c c |
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 30
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | E2 D2 E G | E2 D E G | c e d c B A | e2 d e d c | d2 A B G A | G2 B A G A | G2 B A B d | G2 B A G A | G4 G2 :| | |: e2 g g a g | [1 e2 d e d B | d2 A B G A | B/ c/ d e f g/ a/ g/ | e2 d e d g
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 31
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e A A2 B/ A/ G | E2 E2 G F | E2 E2 G2 | A2 B/ A/ G E2 | E2 E3 G | A B d2 e2 | e4 d2 | e A A2 B/ A/ F | E2 E/ F/ G A2 | G4 E | E2 E2 G2 | A4 | | |: B/ c/ | d2 e d2 | e A A2 B/ c/ A/ | A/2 B/ G/ A/ A/ G E E F E E2 | B/ A/ D E E2 | D2 F2 G2 E2 E F/ F2 | E2 E2 E2 G2 | E4 E2 | | E2 D2 E2 E2 E3 B/2 E2 | G F/2 E2 E2 | | c/2 A/1 E2 E2 E/2 E2 E2 E2 E2 E2 | E2 G3 E2 E2 D2 G2 | | | E
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 32
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | A G F A D F | G B d e d | c A A B d d | A G F A D F | E2 B A B d | A G F G A, F | G B d e d c | 1 B2 A2 e f :| 2 B2 A2 A B | | |: d2 A2 D F | G2 B A B d | d2 A2 D F | G2 G2 B A | G2 B A B d | c A A A B d d B d d e | A G F F A D F | G F E F A B D G F G F | E A F A D F | G F2 A D E F F | | G F G F A A D E F G F2 E G F D F | | E2 G F A D E D F G F | | G F G F G F A D2 B,2 D G F A B, | D G F | G F A, | G F E2 E F A,2 B,2 B, A D F G | | | G F G E G F G F G F A,2 B, | | G A, B B,2 B,2 G F G F B, A, D G F | | G F E2 B, A, C2 B,2 B,2 g2 A, B,2 B, D G | | G A, D E F | | | G, D2 E F E D E D2 E F | | G,2 G,2 G E F F | | G E F A, D2 B, g | | d2 G D2 B,2 B,2 B, A,2 B,2 B, E F G, | | B,2 A, | 1 G B, | | E D A d2 B, G, E2 B, B, A, D D G, C E F | G,2 E :| D2 G, F G, E D G, G,2 E F G, | | | | | E E | | G | E2 B, D D2 B,2 B,3 E F E F | | E2 B,2 B, B, | E2 B,2 B, D G,2 D G
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 33
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e2 e d B G | A2 A B d d | e2 e d B G | B2 B A B d | e2 d B G G | A2 A B d B | e2 e d B G | A4 A B | e2 e d B G | 1 A4 A B :| 2 A4 A B | | |: e2 e d B G | e2 e d B G | A3 A B d | e2 e d B d | e2 e
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 34
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e2 e d B G | A2 A B d d | e2 e d B G | B2 B A B d | e2 d B G G | A2 A B d B | e2 e d B G | A4 A B | e2 e d B G | 1 A4 A B :| 2 A4 A B | | |: e2 e d B G | e2 e d B G | A3 A B d | e2 e d B d | e2 e
+---
+
+---------
+
+prompt 6:
+
+R: slip jig	M: 9/8	K: Emin	|: B2 E G2 E F3 |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 35
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 E G2 E F3 | A2 F D2 E F3 | B2 E G F G D2 E :||: B2 E G2 E F3 | D2 F D2 E F3 | B3 E G2 E F3 | D2 B D2 E F3 | G2 E G2 E F3 | D3 D2 E F3 | B2 E B2 E F3 | 1 D2 F D2 E F3 :| 2
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 36
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 E G2 E F3 | c2 B c2 B A2 G | F2 E D2 F E3 :||: B2 E G2 E F3 | E3 F G2 E F3 | B2 E D2 E F3 | [1 B2 E G2 E F3 D :| [2 B2 E G2 E F3 D | |
+R: jig
+M: 6/8
+K: Gmajor
+|: D | G3 G
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 37
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | A2 B c2 e f g f2 e | c2 B A2 B c2 B | A2 B c2 e f g e c2 B | A2 B c2 d | c2 B A2 B c2 e f g f g f2 e | | f2 d d2 F A2 d | A2 B c2 e f g2 e | f2 f d2 F A2 B c2 B | c2 B A2 B c
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 38
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | D2 F F2 A3 G3 | F3 F2 E F2 E | B2 E G2 E E F3 :| B2 E G2 E F3 G3 | A2 B A F2 E F2 E | D2 F F2 A3 G A3 G3 :|
+R: reel
+M: 4/4
+K: Dmajor
+|: f3 a f g f e d | f A A A B c d e f | g e e c A G E c e g e g e | f e d c d A c e d (3 c d | | f A G d (3 d e d f A A B d B c A A f2 e f g A d f e d e f A A A d G | f f A G | d e c e d e A f e c A a A B | f A f A d c a g f A f B A d e d c A G | | | f A B d A a A d f A B f e e A c A f d A e c B
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 39
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 E G2 E F3 :|
+R: Cmajor
+M: 4/4
+K: Eminor
+|: F2 E | B3 A G3 | B3 A G3 | F2 E D E2 F | E3 E2 F D | B3 A G3 | B c d B G3 | B3 A G3 | B3 B A G3 | B6 :| | |: d | g3 e d B c | d2 e f2 d3 | g3 f e2 d2 e2 c | d2 d2 e2 d2 d | g3 | c2 B2 B2 d2 c2 B2 f2 g2 d | f2 e2 d2 e | B2 d2 c2 d2 c | d2 e2 d2 B2 B | g2 e2 B > c > e2 d | g2 d2 B | d2 d2 e f2 e2 g2 c2 B2 B | B2 B2 d | g2 e2 f2 B2 g2 B | d2 e2 g | d2 e2 c2 g2 e f | d2 e2 B | g2 e2 B | B2 c2 B2 e2 B | e | d2 d2 g2 g2 g2 e | e2 g2 d2 g2 e2 g2 e | g2 e2 B2 A2 g | d2 g2 e2 e2 g2 g2 e | d2 e2 f2 f2 B2 e2 g2 g2 A | d2 e | e2 f2 e | e2 e2 e2 g2 e2 e | d2 B | e | g2 d2 g2 A2 a2 B2 g2 f2 e | e2 e2 d | e2 d2 e | d2 e2 d2 B | d2 e2 g2 B2 g2 B | d2 d2 e2 f2 B | g2 e2 B | g2 B | d2 B2 e2 d2 e2 e | e2 g2 B | g2 e2 d2 B2 e | d2 g2 f2 B | e2 B2 f2 e2 c2 B | f2 e
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 40
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 E G2 E G2 E | B2 E G2 E F3 | 1 B2 E G2 E F3 :| 2 B2 E G2 E F3 | |
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A2 B A A2 B A | G2 B G d G B G d | G2 B G d G B G
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 41
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 E G2 E G2 E | B2 E G2 E F3 | 1 B2 E G2 E F3 :| 2 B2 E G2 E F3 | |
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A2 B A A2 B A | G2 B G d G B G d | G2 B G d G B G
+---
+
+---------
+
+prompt 7:
+
+R: jig	M: 6/8	K: Dmix	f e d c A G |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 42
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F G A B c d | e f a g f g | a f d f e d | c A G A B c d | e f a b a g | f g e d c A G | F G A A B c d | e f a b g f g | a f d f e c A | 1 G E E D C D C :| 2 G E E D C D C | | |: B, E G B, C D E | C E G E D C E
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 43
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | c A A A B A | c A A c e g | a g f d3 | f e d c A G | c A A G2 D | C A,3 C B, | C D G A2 D | C A, A, G,2 D | C A, A, A, A, B, | C D G G3 :| A2 | d c B d B G | c A A c e g | a2 f g e d | c A A A
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 44
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A B E E D | d c A F D | f e d c A G | A B E B E E | d c A F D | f e ^d e c A | d _B/ =A/ G E D | 1 e d c A G G :| 2 e d c A G c | | |: d g g/ f/ e d c | d g/ f/ e d c A | c3 A3 | A B c/ d/ c d f | d
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 45
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F A A B A G | D E F D E D | 1 E F D E D E :| 2 E F D E D E | | D E F D2 A | B A G E E D | F A A B A G | F F D E D E | D E F D2 A | B c d B A G | F D E D E F | G A G E E D | 1 E F D E F D :| 2 E F D E D E | |]
+R: jig
+M: reel
+M: 4/4
+K: Eminor
+D/ F/ G/ G/ G/ G/ A/ | F/ G/ | G/2 A/2 F/ G/2 A/2 G/2 A/2 G/2 | A/2 G/2 F/2 B/2 A/2 G/2 d B/2 B D G/2 B A/2 A/2 F G/2 B A F G/2 D E A G/2 G/2 A B2 A G/2 B/2 A B/
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 46
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F D D B, D | F D D/ B/ c d c/ A G | F D D B, D D | F D D B, D D | e d c d2 e | f d (3 c d e c d | [1 e c A c B G | F D D B, D D :| [2 e c A c B G | F D F B, D D | | |: g3 f e f | g3 f e f | g3 f g f e | f e d e f e d d c d c d B | e c A G d e d B | f E c e d B c A | A d B A c d f e d e c | | f e G c d B d e f B g f d B c d c d e c d e | | f B d e G | g f e | G d B c e B g f e c A A c d B g B g d B a G A c d e | g g B a B G | B g d B d B A g f e | G | e G | c d e d f F g B d | f d e d e G | d A c B d e d d B A A c A f g B d e G | g d B g g e G | g G f d e | d e d e A g | d f | d c A e G | [1 d e g A c A g/ c A f d f d e f2 e c g2 c e G B d B G | g | e G | g A B g A g > c B A g | e G | g A g A d B A g3 d3 g A B g | g e g a c A c e A G | c e G | f g | e d B f | G | g f3 d e d B g A e d f d B A f B d B G f g f f B g e f2 A d e G | e G | | f e d B g A e G | F G | d2 e A e g2 e G | A a a G B G | e g f2 e c A F G f B c A B c d B d B B g A c d e F
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 47
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A d d c A G | F D D C A, G, | A, D D C A, G, | A d d c A G | 1 F D D C A, G, :| 2 F D D C A, G, | | |: A d d c A G | A d d d c A G | F D D c A G | F D D C A G, | A d d c A G G | F D D C A, G,/ G, | A
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 48
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A d d c A G | F D D C A, G, | A, D D C A, G, | A d d c A G | 1 F D D C A, G, :| 2 F D D C A, G, | | |: A d d c A G | A d d d c A G | F D D c A G | F D D C A G, | A d d c A G G | F D D C A, G,/ G, | A
+---
+
+---------
+
+prompt 8:
+
+R: reel	M: 4/4	K: Dmin	A,2 D A, F A, D A, |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 49
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A,2 D E F A, A, | B,2 D E F D D | A,2 D E F A, D | B,2 D E F D D A, | B,2 D E F A, A, B, | A,2 D E F A D A | B,2 D E F D D D | A,2 D E F D D D | | E A A A A B c B A | d e f d
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 50
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | B, D D F A d A | B e e d c A G F | D C D E F D A, A, | B, D D F A A, F A | B e e d c A G G F | D C D E F D4 :| g2 f g a a g f | e f d e f e d B | A d d G A F E D | f2 a g f a g f | e f d e f
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 51
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | F D B, C D F A | B A B c d A F D | A,2 D E F A, D | 1 E F G A D D2 A, :| 2 E F G A D2 d c | | B A B c d A F D D | B, D D E F A, D F | B A B c d A F D A | B A B c d A F A | B A B c d A f d |
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 52
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | D F A G F G A | B d d B/ c/ B A G F | E F G A B/ c/ d B | e d c B A G F | E F G A G F G A | B d d d B/ c/ B A G | F G A B/ c/ d B A G F | E F G A A3 B | A d d c B A G F | E F A G A B/ c/ d B A c/ d | B/ c/ d A G E F A G F E G F E G F A G | | E F G A B/ A/ G2 A G F G F D G F E F/ G A G F A G F G F G F | | E E F/ A G F F G A G A/ E G D E F G F E G F A G A B/ G F A | | | E/ F E F G A/ E F F G A/ A G A B/ G F G A G A B/ F G2 E
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 53
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | G, B, D C E F G | A B A F G E E2 | D3 F A, F A, D | G, B, D C E F D F | G, B, D C E F E F G | A B A F G2 F A, | G, B, D C D E F G | 1 A F G E F D F A, :| 2 A F G E F2 D E | | F2 G A B D G A F D D E A, | G, F G, D F E D C D F G, C D E E F D A, D | | | G, D G, G, C B, G, C F B, B, G, D E F F A,3 A,2 G, =C D E F G, A, D C D D G, | | G, A, G, B, D F D C C A, B, B, D A, D G, | | F D2 B, D C A,2 D B, A, D C D E F E F D =C E F A, G, C D B, C D E F E G, E F A, A, D2 | | C | G, B, D C D _C D F A, | E F G, D A, A, D C D D C | A, A,2 A, D B, G, A, | G, | G, D C D G, A, A, A, D =C D _B, D C B, D =C D C B, D E D E C D E F D C F D E F D F A, | | G, | G, D F G, A, D C D G, A, A,/ C _F G, A, D G, B, D C A, G, C D C D A, D E F B, C | A, A, D E F A, C E F G, A, A, D A, | G, D G, =F D E F | D A, | D G, A, A, C D C D F A, A, | | | D C D E E F A, D =C A
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 54
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A,2 D A, F A, D | A,2 D E F A, D | A,2 D F A, D F | A,2 D E F A, A, D | A,2 D F E F A, A, | B,2 D E F A, A, A, | A,2 D E F A,2 | A,2 D E F A, B, A, | A,2 D F E F A
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 55
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A,2 D A, F A, D | A,2 D E F A, D | A,2 D F A, D F | A,2 D E F A, A, D | A,2 D F E F A, A, | B,2 D E F A, A, A, | A,2 D E F A,2 | A,2 D E F A, B, A, | A,2 D F E F A
+---
+
+---------
+
+prompt 9:
+
+R: jig	M: 6/8	K: Adow	|: a3 b a g |
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 56
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f3 f e d | e d B A G F | E3 E D c | d3 e f g | f a f e d | e d B A G A | 1 B c B A G F :| 2 B c B A G F | | |: E3 E F G | A G E E2 A | D3 E F G | A G E E F G | A G E E2 D | D3 E F G | A G A B c d | e d
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 57
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a3 g3 | a3 b a g | a3 b a g | a3 f e d | B A d/ B/ A F E | D3 E3 :| f2 d f g f | e c B e d B | A2 d - B A F | E3 - E c B A | g3 - A B3 | e c B e d B | A d/ B/ A F E E | f2 d f g f | e c e a g
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 58
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a3 b a g | a3 b d g | a3 b a g | a e d e g d | e a3 b a g | a3 b2 a | a3 b =g e | d3 - f e d | 1 e d d g g f :| 2 e d g f g/ g/ a | |: b a a2 g | B3 B2 E | D F F A d F A d | B3 B2 E | d3 - f e
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 59
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f d f a2 f | d3 d2 A | B3 f e d | c d e d c B | A3 A2 a | 1 g f e f2 A :| 2 g f e f2 A | | |: F A d f e d | c d c B A G | A B c B A G | F A d f e d | c A d f e d | c d c A G E | 1 g f e f2 A :| [2 g f e f e f2 A | | g f e f e f e f e f2 f3 | | | | a f2 d e f3 g a3 d B e f e f g f2 A f | | | f A B f e f g f e f e f a c d f e f e f e d B c | | | e f e f a g c2 d e f B2 f a c a d c | | | | f A A d c f f g f g f2 a a e f e | | | f e f e d e c e f
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 60
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f a b a g | f d c d c A | B A B A c B | A d - A d f a | f a b a g | f d e f e c | d c d c A F | 1 A d - A F E :| 2 A d - A F E F | | |: D E |: F E e c A E | F E e c A E | F E c A2 F | A d - A F E F | D E D E F G A | F E A c E A G A E F A | F E A c A c A B | c A c A B c A B A | A F d B G F E E A F E F E | A c A B F A c A | | A F A E F A c E c B c E F A E | D B e F E E E A c E E A c E F E F D F | | 1 D c E c E c E F A | D c E D c E c E G | D B D e | c E F E E B A F | 1 A F A F G F E F E | E F E c E c E c E A c E F B A A B, E A E c C E F A E d4 A c | | D E | E F A B E F | F A B E c E D c E c E c E F A F G | E F A F A F A F E F E F B E | | B A F E c E F E A B, D E | | E c E c E c E A c D E F G | B A B C E F E c E c E c E c E | F E c E d | F D E B D F D E c E F E | E c E c E c E c E c E F A | F A B G E c E d E c E | [ | E F E c E c E c | | | E d E d E c E c E | A F E c E F A E c E c E F D E D c E d E F E E c E c E c E E F E d E c E c E F A d E c E | | D | E c E c E
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 61
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a3 b a g | a3 g e d | e a a g e d | e a a g e g | a3 b a g | a b a g e d | e a a a g e | e a a g e d | 1 e a a g e d :| 2 e a a g e d | | |: e a a g e g | e a a a g e g | e a a g e g | e d g e d g | e a a a
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 62
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a3 b a g | a3 g e d | e a a g e d | e a a g e g | a3 b a g | a b a g e d | e a a a g e | e a a g e d | 1 e a a g e d :| 2 e a a g e d | | |: e a a g e g | e a a a g e g | e a a g e g | e d g e d g | e a a a
+---
+
+---------
+
+prompt 10:
+
+R: reel	M: 4/4	K: Dmaj	A |: F A (3 A A A B A F A
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 63
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F A (3 A A A B A f A | F A (3 A A A A B A F A | F E (3 A A A B A F A :||: d | B e e f e d B d | B e e f e d B A | B e e e f e d B | B e e f e d B d :||: (3 e d c d c d B A F A | B e e f e d B d B |
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 64
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | d B B A F E2 | F A (3 A A A B A A F A | d B B A F A d2 | d B B B A F E2 | F A A (3 A A A B A F | d B B B A F E2 :||: F A | B E E2 E B E A | B E E2 E B E B E | B e e2 a f f e | d B B B A F E
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 65
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | B E E D G F E D | D2 D E A D D F A | c A (3 A A A B A F (3 A A B | A B c d B A F A | 1 G E E D C D E :| 2 G E E D C D E F | | |: G A B g g f d B | G A B g f d f | c B c d B d e f | g f e f d e d
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 66
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | d f e d f e d | c F A c B A F A | d f e d c A F A | d f e d c d e f | g b b a g f e g | f a f d f e d c | 1 d A F E F E D2 :| 2 d A F E F E D2 | | |: F A (3 A A A A B A F A | d2 f2 f2 e d | c F A F A c A c B A d e A c A F A F A | | (3 A F E F D F A (3 A A B A A E G F D (3 A e A A F A A F A A D F F A | d A B A (3 B A | d e F A (3 A B A F A B A | | d A F A (3 B A B A (3 A E F A F A B A | d A d A B A F A F A F A d A | | d e f e B d A F A F
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 67
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F A (3 A A A B A d e | F A (3 A A A B c d e | f a g f e d c A | B A (3 A A A B A F E | F A (3 A A A B e A d e | f a g f e d B | 1 A F (3 A A A B A d e :| 2 A F (3 A A A B A F E |]
+R: jig
+M: 6/8
+K: Eminor
+|: F | D E F E F G B E A G E A2 D E A G | D E F A G D E E D E D | | F A2 D F E D E A G A B, | D B, D E E D E | F D B, | D B, B, D E D E G | D E D E F | D E B, | | E G A, D E F G | A, D D E G A, D E | D E D B, D E2 A, | D E E D D B, | | D E F | F E E A, D E E F E G E F A, | E D D E D A, G, G, | D B, D | A, A, D E D B, D E D E A, | D E F G, D E A, | D E D B, E A, | D E F D E | A, D E D E D E D E A, | D A, D D E | D A, D E D E G, D D E A, | E | A, | E D D E D E D E | E D E E E | E A, | D B, B, | D E G, D E D E D A, | D D A, | D E D E D E | A, | D D E D E D A, | D B, | D | D E G, | E D E D E D E D E F | F A, | D E D E D E C D E F D E E G, | G, G, | F | D E A, | D B, E D E A, | | A, B, | | d
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 68
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F A (3 A A A A B A F A | (3 A A A B A F A B A | F A (3 A A A B A A F A | (3 A A A (3 A A A B A B A F | F A (3 A A A B c d e | f e d c B A F A | 1 (3 A A A A B A2 (3 A A A :| 2 (3 A A A A
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 69
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F A (3 A A A A B A F A | (3 A A A B A F A B A | F A (3 A A A B A A F A | (3 A A A (3 A A A B A B A F | F A (3 A A A B c d e | f e d c B A F A | 1 (3 A A A A B A2 (3 A A A :| 2 (3 A A A A
+---
+
+---------
+
+prompt 11:
+
+R: jig
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 70
+R: jig
+M: 6/8
+K: Dmajor
+|: a3 e2 d | c2 B A B A | G E E G E G | A2 B A B A | G E E E G E | A2 B A B A | G A B d A G | A2 B A B A | 1 G E E D E G :| 2 G E E D E F | | |: G2 B d2 e | d B B d2 e | d B B d A G | A2 B A2 B | G2 B d2 e | d B d A G
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 71
+R: jig
+M: 6/8
+K: Gmajor
+|: G E E D E | G E E D E | G E E F G E | G E E D E | G2 B B A B | G E E D E | G E F G E F | G E E D E :| D3 d e f | d3 d e f | g e d e B B | A3 d e f | g e d e g a | b g a b g a | b g a f B e | d3 d e f | g e e d e B | A3 d
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 72
+R: jig
+M: 6/8
+K: Dmixolydian
+|: A B/ A/ G E D | E G G A2 B | A A B/ A/ G E D | G3 G A B | A F G E3 :||: A B c B A G | A B c B A G | A B A G F G | A B c B A G | E G B A2 B | A B c B A G | A G F G E3 :|
+R: reel
+M: 4/4
+K: Gminor
+|: d B d B g B A G | c
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 73
+R: jig
+M: 6/8
+K: Eminor
+E E E B G E | E E B G A B | c B A B c A | E E E B G E | E E B B A3 | c B A B c A | E F E E B G E | E E B A3 :| B A A B c A | B A A A B c A | B A A B c A | B A G E2 F | E E B A3 | c B A B c e | f e d c B A | B A A A B c A :||: a e d d d e3 c B A A | a d e c A e d e d A B c A | B c B A B c A | d A B A B d e d e d B c A | B g e d A e A c A | a | a G A B A d A c e e d e d c e d B d A a | B A e A A B c d e G E | B A B A B c A B c | e A e c A f | | e d2 e e d B e d c B c A g A a | f
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 74
+R: jig
+M: 6/8
+K: Gmajor
+|: G A D D D | G A D D D | G A D G D | G A D D D | G E D D D D | G A D D D D | G A D D A D | G A D D D D | E G G E D D | G A D D D D :||: B d e f2 e | g d c A G A | B d ^c d e f | B d e f d ^c | B d e f2 e | g d e f d B | A F D D E F D D D D A :|
+R: jig
+M: 9/2 | G3 F D E F G E F A | G A D D A D E G F G A B c E F A D D | | G A F G B D E F G A B, D D D D D | G E F G F E F G F | | D G F A G G E F G A | D A D E D A D A B, D E G F G A | G E F A E | D D D E G A | | D D D D G A, D D D D D E E D D D E D B, | d D E G F | | G B, D F A D E D F G A D E G A G, B D E D D D D D D E D G D D G D | G D | | G A, D D D A, | E F D D | A D E | G, D E D B, | G E/ E F G A D D G A, | G E A, D F | G E F G | G E A, D c E D D E D E A, c D G A, D E D D G F | G, | B, D D E D D | A, | | | G | G A, D E E F G | G D D E F D F D E F D G A, D D G D D D D E D B, D E D A, |
+R:::::: jig | G D D E A, | G D E D E G A, B, D G E F G A, D E F D E G D E D E F G F D E B, D B, B, | A,
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 75
+R: jig
+M: 6/8
+K: Gmajor
+|: D G G G G G | D G G G G G | A B c B A G | A B c B A G | D G G G G A | B c B A G E | D G G G G A | B A B c B A | A B c B A G | 1 A B c B A G :| 2 A B c B A G | | |: A B c d e f | g f e d B G | A B c d e f | g f g e d B G | A B c
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 76
+R: jig
+M: 6/8
+K: Gmajor
+|: D G G G G G | D G G G G G | A B c B A G | A B c B A G | D G G G G A | B c B A G E | D G G G G A | B A B c B A | A B c B A G | 1 A B c B A G :| 2 A B c B A G | | |: A B c d e f | g f e d B G | A B c d e f | g f g e d B G | A B c
+---
+
+---------
+
+prompt 12:
+
+R: reel
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 77
+R: reel
+M: 4/4
+K: Gmajor
+|: B2 G A B G E D | E2 G A B G E2 | B2 G A B G E D | G2 G A B G E2 | B d e d B A2 | B d e d B A2 :||: d2 g d B B2 e d | g2 b g a g e f | g2 b g a g e f g | d2 g d B B2 e d :|
+R: jig
+M: 6/8
+K: Dmajor
+B/ c/ d |: e
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 78
+R: reel
+M: 4/4
+K: Dmajor
+|: A | d2 c A d c A A | d2 c A d c A B | c d c A d B G G2 | A, D D F A d c A | d2 c A d c A F | G F E D E F G E | F A D D F A d c A | d c A G E F G E | F A D D D2 :|
+R: reel
+M: 4/4 | A2 F2 D E F G | A2 F2 D E F G d
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 79
+R: reel
+M: 4/4
+K: Eminor
+D2 | D2 | F F d2 c d e d | c A d A F D D F | E D A c B A F G | B d c B A F D F | E D A c B A G A | F G A F D E F | E D A c B A F A | 1 G2 G2 G3 A :| 2 G2 G2 G E ^D A | | |: G2 B3 A B d | e A e A F A d e | f e d c B A F
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 80
+R: reel
+M: 4/4
+K: Eminor
+(3 E F B B c d3 e | f a a f e d B A | G F E D B, D E | (3 E F B B c d3 e g | f a a f e d B A :| | |: (3 B A G | F A A G A3 B | (3 c B A G d2 (3 d e f | g f e d B A G F | A d c B A g f e | 1 d f e d B A B A :| 2 d f e d B A2 (3 A A F A F | | | | |: d F2 A A B A B/ A/2 A/2 G/2 A/2 A/2 A/2 A G A/2 A/2 F/2 d e f A/2 F/2 A/2 d/2 B/2 A/2 A/2 G/2 F/2 G/2 A/2 D/2 F/2 B/2 G/2 d e B/2 G g F/2 F/2 B/2 G A/2 A/2 B/2 G/
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 81
+R: reel
+M: 4/4
+K: Gmajor
+|: (3 A B c | B d g e d B A G | F G A c B A G2 | B d g e d B A G :| E A A2 B c3 | B d g e d B A G2 | a B A2 e c3 | B d g e d B e d | c d e d B e3 | g2 g e d B A G | F G G A c B A G :|
+R: reel
+M: 4/44
+K: Dmajor
+F2 E G A F D2 D D E F D E | D E G2 D G A2 B, C D E G | A,2 C D F G, A, D2 F E D E G A, A, D | D E G, D2 E G,2 B,2 A,2 | | D G,2 A, G, D C E D C E G, A,2 E D E A,2 G,2 D E2 | D E G,2 A, E F D G, C D G, C A,2 | | | E G, D G, A,2 D G,2 E A, E E D G, D E G,2 B,2 B, B, B, D E G, G, A, D D2 | | D E F G, D G, A, G, D G,2 E D E D D E G, B, C D G, C D E A,2 C E D2 D E G, C A, G, B, G, D E G, :| | D A, D E D E D G, D E G, D E G, C D E G, E G, F G, | D G, E C D D E2 E G, B, B, D G, D | | E D E D F2 A, D C G, G, B, E G, B, G, G, B, E D E D G, G, B, G, G, E | | | | D E G, A, D G, C D C A, D E G, D E D E A, B, B, A,2 B, B, E D E F G, A,2 D E G, B, E G, D E D
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 82
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A G F G A B c A | G2 B G d G B d | g2 B G d G B G | 1 A G F G A B c A :| 2 A G F G A B c A | | |: d g g f g a g f | d g g f g a g e | d g g f g a g f | 1 d g g f g a g f :| 2 d g g f g a g f
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 83
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A G F G A B c A | G2 B G d G B d | g2 B G d G B G | 1 A G F G A B c A :| 2 A G F G A B c A | | |: d g g f g a g f | d g g f g a g e | d g g f g a g f | 1 d g g f g a g f :| 2 d g g f g a g f
+---
+
+---------
+
+prompt 13:
+
+R: polka
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 84
+R: polka
+M: 2/4
+K: Gmajor
+|: B > c B A | G F E D | E2 E D | E2 E D | E F G A | B > c B A | G F E2 :||: B > c d e | f2 f f | g2 e d | c2 d2 | B > c d e | f2 f > f | g2 e d | c2 B2 | A2 E D | E2 E D | 1 E2 E D :| 2 E2 E D | |
+R: reel
+M: 4/4
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 85
+R: polka
+M: 2/4
+K: Dmajor
+|: A | B A B/ A/ | B A B/ A/ | B d d | e f g | a e B | A B/ A/ B/ A/ | B A B/ c/ d/ e/ | d B/ A/ G/ F/ G/ | A B A/ A/ | B d d | e d B d | e d B d | e d d2 :||: A B/ c/ d g/ f/ | g2 a g/ f/ e/ | d B/ A/
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 86
+R: polka
+M: 2/4
+K: Gmajor
+G > A | B A B > G | B A B > G | F D D2 | G > A d B | A B d2 | A D D2 | G > A d B/ c/ | B B A B > G | F D D > D/ D/ D/ | E > G G2 :||: g2 f > g | a f d2 | f a d2 B | [1 d2 e > f | g e d > B | c2 d > g | a f d2 | f >
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 87
+R: polka
+M: 2/4
+K: Dmajor
+|: d2 d > d | A2 B > A | G > F E > F | G > G B > A | G > F E > D | E2 (3 D E F | G > F E > F | G2 B > A | G > F E2 | E2 (3 D E F | E2 B > A | G > F E < F | G > F E2 :|
+R: reel
+M: 4/4
+K: Dminor
+g2 f g a f d | e f g c B A F A F2 d F F A | A B c B A F D E B F G | c F A B d F G E F G | G A g2 d e F G F G2 G A B c A G F D F | | G A B c G F G f2 A B g2 B E2 e | G F G E G A g2 G c | g2 (3 B G c B2 g d g2 f e2 =c2 e2 e g2 G | | G f g2 g f G F g2 B2 B B2
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 88
+R: polka
+M: 2/4
+K: Adorian
+|: e a a e | g a e d | c A A/ B/ c | d c B A | G B G B/ d/ | e a a e | g a e d/ c/ | d c B A | G B G/ A/ B/ c/ | d c B A | 1 G G G d :| 2 G G G > D | | |: e a a e | g a g/ f/ g/ a/ | g a e d | c A B/ c/ d/ | e a a a e | g a e d/ e/ e/ f/ g/ f/ d/ e/ f/ e/ | g/ g/ g/ g/ e/ e/ f/ e/ g/ | g/ g/ f/ | g/ e/ f/ g/ | | g/ f/ f/ d/ e/ e/ e/ e/ f/ e/ e/ e/ e/ d/ d/ e/ e d/ f/ e d/ c/ e/ d/ | | g/ e d/ e/ d/ e/ e/ g/ e/ e/ e/ f/ d/ d/ e/ e/ e/ | g/ e/ e/ e/ e/ e/ | d/ | g/ e/ d/ d/ e/ d/ e/ e A/ d/ e/ e/ e/ f/ g/ d/ e/ e/ e/ d B/ d/ e/ e/ d/ e/ e/ f/ a/ c/ g/ e/ d/ e/ e/ e/ A/ e/ e/ c/ | | | d/ e/ d/ e/ e f/ e/ c/ f/ d/ e/ e/ d/ d/ c/ e/ e/ d/ d c/ e/ e/ e/ e/ g/ e/ d/ e/ d/ e/ f/ g/ e/ d/ e/ | | d/ e/ d/ g/ e/ d/ e/ c/ c/ d/ e/ g/ e/ e/ g/ e/ | g/ d/ e/ g/ e/ d/ g/ e/ e/ | | g/ e/ | | | | A/ e/ e/ | g/ e d
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 89
+R: polka
+M: 2/4
+K: Gmajor
+|: G > A B > A | G > A B > A | G2 G > A | B > A B > A | G2 G2 | G > A B > A | G4 :||: G > A B > A | G2 B > A | G2 G2 | B > A B > A | G4 :|
+R: jig
+M: 6/8
+K: Gmajor
+|: D G G A B | c B A G E | D G G A B | c B A B G E | D G
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 90
+R: polka
+M: 2/4
+K: Gmajor
+|: G > A B > A | G > A B > A | G2 G > A | B > A B > A | G2 G2 | G > A B > A | G4 :||: G > A B > A | G2 B > A | G2 G2 | B > A B > A | G4 :|
+R: jig
+M: 6/8
+K: Gmajor
+|: D G G A B | c B A G E | D G G A B | c B A B G E | D G
+---
+
+---------
+
+prompt 14:
+
+R: waltz
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 91
+R: waltz
+M: 3/4
+K: Dmajor
+A B |: A G E E D2 | E2 e d e2 | d2 d A2 | G E E D2 | E2 e f e d | e2 e d e2 | d2 d c B A | G E E D2 | E2 E D E2 | E2 e d e2 | e d B A2 | G E E D2 | | e2 e d e2 | e2 e d e2 | e d B d B A | G E E D2 | e2 e d
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 92
+R: waltz
+M: 3/4
+K: Gmajor
+|: d2 | c2 B2 c2 | e2 c2 A2 | d2 d2 A2 | c2 B2 c2 | c2 B2 c2 | B2 G2 F2 | E D C D2 | G2 G2 G2 | A2 c2 A2 | d2 f2 g2 | d2 d2 A2 | B2 G2 F2 | [1 E2 G2 G2 | A2 c B A2 | d2 f2 g2 :| [2 E2
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 93
+R: waltz
+M: 3/4
+K: Adorian
+f3 a f e | d4 e2 d | B d A2 B d | G2 E2 G A | B2 A2 G A | B3 - B2 G | A4 B d | G4 | d4 e3 | e3 b a ^g ^g | a2 d2 D2 | E6 | A2 A2 B d | e4 - e3 | e2 e4 | d2 e2 d2 | B4 G A | B4 - | d4 e3 | g f d
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 94
+R: waltz
+M: 3/4
+K: Gmajor
+B2 | C3 B A G | F2 B2 B2 | C3 B A G | c2 B2 B2 | c3 B A G | F2 B2 G2 | A4 B2 | c2 B2 G2 | F4 B2 | c6 | c2 B2 B2 | c4 B2 | c4 A2 | F2 B G F | E4 G2 | F2 B2 G2 | c2 B2 B2 | c2 B2 B2 | A4 B2 | c4 B2 | B2 A G2 F2 | G2 G4 B2 | c2 B2 | c2 d2 | B2 F2 F2 F2 B2 B2 d2 B2 B2 G2 | c2 | c2 B2 d2 e2 | | c2 c2 c2 G2 c2 F2 B2 B2 B2 B2 B2 | G2 | G2 c2 | G2 A2 B2 | c2 E2 B2 B2 B2 | d2 G2 B2 B2 E2 | | F
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 95
+R: waltz
+M: 3/4
+K: Dmajor
+|: E | D2 A2 A2 | d2 f2 d2 | e2 c2 B2 | G4 G2 | F2 A2 A2 | d2 f4 | e2 c2 B2 | G2 F2 A2 | d2 f2 d4 | e2 c2 B2 | c2 c2 B2 | G6 | | B2 c2 B2 | G4 G A | B2 c2 B2 | G2 F4 | G4 G A | B2 c B2 | A2 d2 c2 B2 | G4 B2 B2 | G2 c2 B2 B2 | G2 c2 A2 G2 | d2 c2 G2 A2 | G2 B2 G2 d2 | B2 | G4 G2 F2 G2 G2 | E2 d2 B2 d2 | | G2 B2 d2 B2 G2 B2 g2 F2 d2 B2 G2 |2 F2 | A2 d2 G2 F2 c2 c2 G2 | B2 G2 B2 | F2 B2 c2 G2 F2 | | F2 F2 A2 e2 f2 G2 d2 | G2 | G2 E2 G2 d2 B2 | F2 B2 d2 g2 A2 B2 c2 | | | G2 d2 G2 F2 d2 | d2 d2 c2 d2 G2 c2 | d2 B2 B2 A2 D2 | G2 B2 d2 g2 d2 c2 f2 d2 F2 d2 G2 | | E2 B2 G2 G2 G2 G2 d2 d2 d2 B2 | c2 | G2 | | D2 d2 e2 e4 A2 B2 G2 c2 | G2 B2 E2 F2 f2 B2 B2 G2 A2 c2 c2 c2 | G2 | A2 d2 G2 D2 | | | E2 d2 B2 B2 | E2 g2 G2 G2 E2 | G2 G2 d2 c2 B2 e2 B2 G2 | G2 G2 B2 B2 | d2 B2 G2 c2 F2 c
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 96
+R: waltz
+M: 3/4
+K: Gmajor
+|: D2 | G2 B2 d2 | e2 d2 B2 | G2 B2 d2 | c2 B2 A2 | G2 B2 d2 | G2 B2 d2 | g2 B2 d2 | e2 d c B A | G2 B2 d2 | e4 e2 | d2 B2 d2 | c2 B A G F | G2 B2 d2 | e6 | d2 B2 d2 | e2 d d c B A | G2 B
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 97
+R: waltz
+M: 3/4
+K: Gmajor
+|: D2 | G2 B2 d2 | e2 d2 B2 | G2 B2 d2 | c2 B2 A2 | G2 B2 d2 | G2 B2 d2 | g2 B2 d2 | e2 d c B A | G2 B2 d2 | e4 e2 | d2 B2 d2 | c2 B A G F | G2 B2 d2 | e6 | d2 B2 d2 | e2 d d c B A | G2 B
+---
+
+---------
+
+prompt 15:
+
+R: hornpipe
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 98
+R: hornpipe
+M: 4/4
+K: Amixolydian
+|: A2 c d e f e c | d2 d c d e f e c | A2 c d e f e c | A2 e d c d e f e c | d2 f g a f d2 | A2 c d e f e c A | d2 d c d e f e | 1 d2 f g a f d2 :| 2 d2 f g a f d2 | | c d e f g a f d2 | c d e f g a f d e | c d e f g
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 99
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: d B | G2 A G G E D E | G2 A G A B d B | d B A B d2 d B | G2 A G G E2 | d B A B d2 d B :||: G B d g g3 e | e d e d B A G E | G2 A G A B d e | g f g f g3 e | e d e d B d2 d B :|
+R: reel
+M: 4/4
+K: Adorian
+|: c B A G E D
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 100
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: B > A | G2 G > A B > G D2 | c > B c > d e > d g > B | A > B A > G E2 A > G | G > B A > B d > g d > B | c > B c > d e > g d > B | c > B A > G E2 A > B | G > B A > G E < D D > B | c > B c > G E2 A > G | A > B A > G E < D D
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 101
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: c B | A2 G2 G2 B A | B2 B2 A2 A2 | B2 B2 A2 B A | G2 G2 G2 B A | B6 B A | B2 B2 A2 G2 | A2 G2 G2 B A [| B2 B2 A2 G2 | E4 E F G | A2 G2 G2 B A :| G2 G2 G2 E2 | F2 D2 A2 d2 | A4 d2 d2 | A2 G2 G2 G2 G2 B2 E2 G2 | G2 G2 G2 G2 B A2 | G2 G2 G2 E2 d2 G2 B2 G2 B2 | d2 G2 G2 G2 | G2 E2 E2 E2 B2 G2 | A2 G2 d2 G2 d2 G2 G2 | e2 G2 G2 E2 G2 | | B2 G2 B2 B2 G2 G2 E2 G2 G2 d2 B2 G2 | d2 G2 A2 G2
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 102
+R: hornpipe
+M: 4/4
+K: Dmajor
+|: d B | c2 B A G F G A | B E E E B A G F | D E F G A B c d | e a a g f e d B | c2 B A G F E F | D E F G A B c e | 1 d e f e d B A F :| 2 d e f e d B A F | | |: G B d e f g d B | G B d e f g d B | A B d e f g d B | c2 B A G F A F E F | D E F G A d B c e d B c A A F | 1 d B c d e f g d e f e f A B A d B A F A F A G | | 1 d f e g e B d e d e f e f e f g d e f d B B d c d B A G B ( | | A B A B d e d e f e f g A d e f B f e d F A F B d e F d e f g d e f g f e G A F ( | | | e f e d d a A F A B c e A e g d e f g e F g B d e d B g e f g d e f a g B A F | G F c B c e f d B g f a f d B A d B d B c e d d B f e d B g d B g f :| e f d B d e f g | | | | | G A e f a e f e f ( | d e f e f B F | | g a f e d f A e f A d e d e f e f e f e d B g A f a g B g f e f e d B b A a a A e B A B d e f e d F | e d e f d c e f d e d e f A c A d e d e d B d A f e f A b A e f g3 d B g | | | | | d B d e d e f a d e d B g2 c g f d B f d e f B f a f e f B f d B f e f B f A d B A d e c d B e B e2 d f A B d e f B f
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 103
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: D2 | G2 G2 B2 d2 | e2 d2 B2 A2 | G2 G2 G2 B2 | d2 B2 d2 B2 | e2 d2 B2 A B | G2 G2 G2 :||: d2 | g2 g2 g2 f2 | e2 d2 B2 d2 | g2 g2 f2 e2 | d2 B2 A2 B2 | G2 G2 G2 G2 | B2 d2 B2 d2 | e
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 104
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: D2 | G2 G2 B2 d2 | e2 d2 B2 A2 | G2 G2 G2 B2 | d2 B2 d2 B2 | e2 d2 B2 A B | G2 G2 G2 :||: d2 | g2 g2 g2 f2 | e2 d2 B2 d2 | g2 g2 f2 e2 | d2 B2 A2 B2 | G2 G2 G2 G2 | B2 d2 B2 d2 | e
+---
+
+---------
+
+prompt 16:
+
+R: slip jig
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 105
+R: slip jig
+M: 9/8
+K: Dmajor
+|: F2 A A2 F A2 F | G2 F G2 F G2 F | E2 F G2 F G2 F | G2 F G2 F E2 F | G2 F G2 F e2 B :| f2 f e2 d B2 e | f2 f e2 d B2 e :| f2 f e2 d B2 A | B2 f e2 d B2 e | g2 f e2 d B2 e | d2 f e2 d B2 e | 1 f
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 106
+R: slip jig
+M: 9/8
+K: Gmajor
+d2 B G2 B | A G F E D E F G | A G F E D2 A | d2 B G2 B | A G F G E D E F G | A G F G E D3 :| d2 B c2 B c2 B | A G F E D3 A | d2 B c2 B c2 B :|
+R: jig
+M: 6/8
+K: Gmajor
+B c |: d B G3 G | c A c A B A F | G2 B G
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 107
+R: slip jig
+M: 9/8
+K: Gmajor
+|: E | F G G G2 G B d | e f g2 e d B G | F G G G2 G B d d | e f g2 e d2 A | D G G G2 B d g | e f g f g f e d | 1 c A F G A B c d :| 2 c A F G A B c d | | g2 g d g2 B d | g2 g d g2 e d | c A F G A B c d | g f g d g2 B
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 108
+R: slip jig
+M: 9/8
+K: Dmajor
+|: D2 A F A3 A3 | D2 A F A F A3 A3 | D2 E F A3 A3 A3 | D2 A F2 A A3 A3 | D2 A F D3 A3 :||: d2 A F B d e f g2 f | d2 A F B d e f g e3 | d2 A F B d e f e d c A F E E3 d :|
+R: reel
+M: 4/4
+K: Dmajor
+|: (3 D E F G D E D E2 G2 A B2 A2 d F2 e2 d2 | d2 d2 d2 B2 A B2 ^c2 d2 d2 | d2 B2 d2 A2 | g2 e2 A2 F2 d2 d2 | A2 d2 B2 F B2 d2 d2 e2 | d2 d2 A2 d2 | A2 F2 B2 | A2 A2 d2 d2 d2 A2 e2 d2 A2 | d2 B2 A2 f2 d2 f2 d
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 109
+R: slip jig
+M: 9/8
+K: Dmajor
+|: A3 F A d B A F | A3 F A d B A F | E F G E D E G E D :||: d3 d e f d d A | d3 d e f d d A | B2 d e f d d A F | G B d e f d d A | d3 c d e f d d | d3 d e f d d A :| | |: d3 f b a f e d | e g f e d e d c A A | d3 f b a f e d f | e f a f e f d d e d e d e d e d e f d e f d g e f a | | B f e f g e f g d e d e f d e f d e d e f d B f d e d d c d B e d e f d B A | d e f a d B a | e f a c d e f e f d g f g f f d e2 e a f e f e d f d e f d e f d e d d B | d e f e f e f d e d e f d | a | g f e f f d A d e f e f a f e f | d e f e f d e f d e d e d e f f d c f d e g e B f a f | g f e f d e a f e f a f a e2 e f e f d g f a a b d3 f d e d e f B f a | e f d f d a b | e d d e d a b a | a f g e f d e f g a g | d e f d e f g a d e f f d f e d e d f d e f e d d e A A B f g | d d g2 e d e f b d e f e | | g e f d e f d a f d e f d g f d e f g f A g f d A g f d c A A f e f e f e f d e d | d e d e f a d e f e f d e f a f d e d e f | a e f a d e d | g a e f a d e f e d g a f g a g e f d e d A
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 110
+R: slip jig
+M: 9/8
+K: Gmajor
+|: G2 B B A G E D E | G2 B B A G E D2 | G2 B B A G E D E :| G2 B B A G E D2 G | G2 B B A G E D3 | G2 B B A G E D D2 G | G2 B B A B G E D2 G | G2 B G A G E D2 G :|
+R: jig
+M: 6/8
+K: Gmajor
+|: D | G2 B B A G | A
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 111
+R: slip jig
+M: 9/8
+K: Gmajor
+|: G2 B B A G E D E | G2 B B A G E D2 | G2 B B A G E D E :| G2 B B A G E D2 G | G2 B B A G E D3 | G2 B B A G E D D2 G | G2 B B A B G E D2 G | G2 B G A G E D2 G :|
+R: jig
+M: 6/8
+K: Gmajor
+|: D | G2 B B A G | A
+---
+
+---------
+
+prompt 17:
+
+M: 4/4
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 112
+M: 4/4
+K: Dmajor
+|: d2 f d e d B d | d2 f d e d B d | A2 f d e d B d | d B A F D E F D | E2 F G A B d e | f d e d B d B d | A2 f d e f d B | A2 f d e d B d :||: f a a f d f a f | b a f g f e d B | e f a a f d f a | f a a f d f a f | e2 f e d B d B :|
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 113
+M: 4/4
+K: Eminor
+|: E2 E F E D E F | G3 B A G E F | G3 B A G E D | E2 E F E D E F | c3 B A G E G | 1 A F D E F D E F :| 2 A F D E F D E F | | |: G A B d e d e | f3 d e d B A | B E E2 E F D F | c3 B A G E F | G A B d e d e | f2 f d e d B A | B e e
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 114
+M: 4/4
+K: Dmajor
+d2 A F G E c E | A E F A A F G E | E2 A F G E F G E | A E F A A d2 B2 | A2 A F G E c E | e f g d e d B A | d2 A F G E c E | E22 A F G E F G | E2 A F G E c e | d2 A F G E B | A E F A A d2 B d | e f g d e d B A :| | |: B2 g2 a
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 115
+M: 4/4
+K: Bminor
+|: (3 E F G | A2 A F D E F | G2 F E D3 F | A2 c2 d2 d e | f2 f e d B B | A2 A F D E F | E4 F2 | | d2 | f2 f e d B B | e2 e2 d2 f e | f2 f e d B B B | A2 A F D2 E F | G2 F E D3 E | F2 F E D3 F | G2 F E D3 F :| | |: G D2 E2 E B2 E D E d e2 e D | E D C | E2 F A2 A B2 c B,2 E F E F G A, B, A, B, B, | F D A, | G | A,2 B,2 E2 c2 E G, E F B,2 E D E F E B, B,2 | E2 E D | G, B, B, B, | A,2 E2 g2 B,2 E D E F | G,2 E2 F | E2 c | G | B
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 116
+M: 4/4
+K: Amajor
+|: A > B c > A A > B A > F | E > F G > E F < G B > G | A > c e > A A > B A > F | A > B c > A A2 f > a | g > e f > e d > B G > G | A > B c > A A2 B > c | d > e f > e d > B G2 | | c > d B > A A > B A > F | G > E E > E F < G B > G | D > E E D > E E A > B A2 A > B A2 A > F A > F | G
+R:: jig | G2 A2 A2 A2 F2 A2 F2 A2 A > B > B/2 A2 A2 B2 D2 :| | A > G > G2 B > B > B > B > F | G F2 E2 A2 A > F2 G > B > B2 B2 B2 B > A > F > A2 A > F < G | A > G | A > B > D2 F | G | A2 G2 B2 B > A2 G >2 e > G2 G2 A2 B > G2 A2 A2 B2 B,2 B > F/2 A2 | G > A2 F | G > G >2 B > A2 - A2 A2 G > G2 d >2 B >2 | F >2 d > G > F | G > F2 D > B > F > F > F2 B2 D > E > B,2 A2 G | A >2 |] G >2 B2 B > B2 G > A2 A2 A/2 A/2 B > G | E > B > D2 (3 B3 G > F >2 A >2 B > B2 | G | A > G F2 B > G2 d2 A2 G | G2 | E2 e > G | G > G A2 (3 D2 B2 | A2 E2 G2 E > B2 A2 A2 | E2 A2 (3 G2 c > B > > B2 A >2 B2 (3 B >2 D2 G2 f >2 D > > F > A >2 (3
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 117
+M: 4/4
+K: Gmajor
+|: G2 B G A G E D | G2 B G A G E G | G2 B G A G E D | E G A B G A G E | G A B G A G E D | G A B G A G E G | 1 G2 B G A G E D :| 2 G2 B G A G E D | | |: G2 B G A G E G | D G G B G A G E | D G G B G A G E G | D G B G A G E G | G A B G
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 118
+M: 4/4
+K: Gmajor
+|: G2 B G A G E D | G2 B G A G E G | G2 B G A G E D | E G A B G A G E | G A B G A G E D | G A B G A G E G | 1 G2 B G A G E D :| 2 G2 B G A G E D | | |: G2 B G A G E G | D G G B G A G E | D G G B G A G E G | D G B G A G E G | G A B G
+---
+
+---------
+
+prompt 18:
+
+M: 6/8
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 119
+M: 6/8
+K: Gmajor
+|: G > A B > A G2 G | G > A B > A G2 G2 | G > A B > A G2 g2 | G > A B > A G > B d > B | c > A E > A G2 G | G > A G > A B > A G > D | G > A B > A G2 :||: c > d | e > d c > B A > B c > d | e > d c > e A > B c > d | e > e e > d c > B A
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 120
+M: 6/8
+K: Edorian
+|: B3 B A G | B3 B A G | B3 B c d | e d B A F A | B3 B A G | B2 B A G | B3 B c d :||: B2 e e f g | a2 e f g | d B (3 B c d e f | e d B A F A | 1 B2 e e f g | a2 g f g f :| 2 B2 e e f g | | |: a2 e f g e | d B (3 B c d e c | B2
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 121
+M: 6/8
+K: Aminor
+G,3 E E G | B A D E D B, | G, B, D G B A | G E D B, E G | A B d e g e | d B B A G A | B A D E D B, | 1 C D E G G D :| 2 C D E G A B | | |: A B d e g e | g a f g e d | G A B d e g | e B A B c d | e g a a g e | 1 D G G B A G A :| 2 D
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 122
+M: 6/8
+K: Gmajor
+|: G A B A G E | F2 G E D D | (3 G G G G G D D | E G A B A G | F2 G E D D | G A B A G E | F2 D E F G | 1 A G F G2 E :| 2 A G F G2 E | | |: G A B A G A | G A B A G A | G A E D E F G | E G A B A G A | G A F G2 E | F A G A B A | G A B A G A G A B A G A | G F G E E E D E D | G A B A G A2 E E G A | G E D E D E D E E D | | 1 1 G A G F E G3 D E D E E F G A F | | A B, D E D E2 E F G F G A B A E D | G A G A G E E2 E E E D | G E A | E D E F G A B A B A G E G A B A G A | E D E D | G A B A
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 123
+M: 6/8
+K: Dmajor
+|: F E D E F A | B A G F G F | F E D E F A | B B A G F G | F E D E F A | B A F A2 A | B A G F G F | 1 G F E D E F :| 2 G F E D E F | | |: G2 d B A G | F2 G A F D | G2 f e2 d | c B A B G F | G2 d B A G | F2 A F2 D | G2 B G A G | F2 e f e B A G F A G F | 1 F2 G A F D E F A F | 1 G E D E F G2 A2 A | 1 F G F E D E F :| F D E D E D E D E F G | | E D E2 F A G F A F A | | B A G A F G F A F G F E F A G F G F G F E F A G F | | D E2 G F G F G A F E F A G A G F D E F | 1 F E F D E F G F | | E2 G F G F G E D E F :| | G F G A G F G F G F A F D E D E F A B A B B, G F D E F | | D E F G F G A A F G F G F G A G F | G A D2 B, E F A | | | | G F D E F D E F G E F A F G A G A G F A F G F G F G | E D E F G | | | G F G F G F E F E F A G A E F E F G F G F A D E F D E F E F G F G F G | | | | | :| :| E D | | G F D E D E F G A G F A B,2 A G F G A D E F :| [1 F G A G F D E D E D E | E D E A2 D E D E D E F E F E D E F G F G F G F G A | | D E F A G F D E F G F G A d c A F A G F E F D E F D E F D E F E F
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 124
+M: 6/8
+K: Gmajor
+|: D G G G2 B | c B A G E D | D G G G2 B | c B c d e g | d B G G2 B | c B A G A B | c B A G E D | 1 G G G G2 B :| 2 G G G G2 B | | |: c B c d e f | g e d B G B | c B c d e g | a g e d B G | c B c d e g | 1 d B G G2 B :| 2 d B G G2 B
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 125
+M: 6/8
+K: Gmajor
+|: D G G G2 B | c B A G E D | D G G G2 B | c B c d e g | d B G G2 B | c B A G A B | c B A G E D | 1 G G G G2 B :| 2 G G G G2 B | | |: c B c d e f | g e d B G B | c B c d e g | a g e d B G | c B c d e g | 1 d B G G2 B :| 2 d B G G2 B
+---
+
+---------
+
+prompt 19:
+
+M: 3/4
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 126
+M: 3/4
+K: Gmajor
+|: D E | D2 G A B c | d2 c2 B2 | G2 A2 G2 | A4 A2 | A2 B2 c2 | d2 c2 B2 | A2 B2 c2 | B4 G2 | A2 B2 c2 | A2 B2 c2 | G2 A2 G2 | F2 G2 A2 | A4 A2 | A2 d2 c2 | B6 | A2 B2 c2 | d6 | e4 c2 | d2 c2
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 127
+M: 3/4
+K: Dmajor
+|: A2 A G F D | E F G A B G | A2 A G F D | A2 A G F D | E F E F G A | B2 A G F D | E F G G A B G | A2 A G A B G | A2 A G E F D | E F G A2 A G | F2 D2 D2 :||: A2 | d2 d2 d c B | c2 B G A B G | A2 A G G F D | E F G A B c d | e
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 128
+M: 3/4
+K: Gmajor
+D3 | D E F G A | B > d B G E2 | D3 G A | B > d B G E | D3 B A G | B > d B G E2 | 1 B c d B2 | D3 G A :| 2 B c d B G E | | D3 E F | G2 G > A B G | A > G E F D2 | D3 F G A | B > A B G E2 | D3 G A B | c d > B G E2 | B c d B G
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 129
+M: 3/4
+K: Gmajor
+|: d2 | c2 B2 A2 | G2 D2 D2 | G2 G2 E2 | D2 G2 G2 | A2 A2 E2 | G2 D2 D2 | D2 G2 G2 | G2 D2 D2 | A2 A2 A2 | G2 D2 D E | G2 D2 G2 | A2 A2 A2 | B2 A2 A2 | G4 G2 | A2 A2 G E | D2 G2 G2 | A4 B2 | A2 A2 A2 A2 | B2 B2 A2 A2 G2 A2 | E2 B2 A2 A2 | G2 G2 G2 A2 :| | G2 A2 A2 A2 A2 A2 B2 c2 | B2 G2 A2 B2 A2 A2 A2 | A2 D2 A2 G2 | G2 A2 A2 A2 E2 G2 d2 | B2 A2 A2 B2 A2 G2 A2 A2 G2 B2 | | G2 | B2 E2 E
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 130
+M: 3/4
+K: Dmajor
+A2 | d4 e2 | f4 e2 | e4 d2 | c4 A2 | B4 B2 | d4 e2 | f4 f2 | e4 d2 | c4 d2 | c4 B2 | A2 d4 | c4 A2 | B4 B e | f4 e2 | d4 e2 | f4 g f | a4 a2 | f4 e2 | f4 g f | e4 d2 | c4 A A2 | B4 B e | f6 | g4 e4 f2 | d4 e2 | e4 e2 | g2 | g2 d2 | f4 f2 | f4 g4 f2 | | a4 d2 f2 | f4 e2 d2 d2 | d2 | e2 | f4 e2 | f2 | g f2 a2 f4 e2 | g2 | e4 e2 c2 | d2 | a4 d2 f2 | e2 d4 c2 | a2 d2 | e2 f2 g2 e2 g2 c2 e2 g4 e2 | | d2 d2 | c2 a2 B2 | a2 | d2 d2 | f2 f2 | e2 | g2 e2 | a2 | c2 f2 e2 e2 | d2 e2 g2 d2 f2 c2 e2 | A2 f2 e2 f2 d2 f4 B2 | a2 a2 | a2 e2 d2 g2 | | d2 | | A2 f32 e2 B2 e2 a2 a2 d2 :| a2 e2 | d2 f2 | | d2 | B2 | A2 A2 | a2 | | A2 d2 | e2 c2 f2 f2 | d2 e2 d4 d2 g2 b2 e2 d2 d2 e2 e2 c2 f2 | d2 e2 | d2 | d2 | d2 f2 | d2 a2 | f2 a2 g2 A2 | e2 e2 e2 f2 | g2 c2 A2 c2 g2 d2 e2 e2 c2 B2 | f2 d2 d2 A2 c2 d2 f2 | B
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 131
+M: 3/4
+K: Gmajor
+|: D2 | G2 G2 G2 | G2 G2 G2 | D2 G2 G2 | A2 B2 A2 | G2 G2 G2 | B2 G2 G2 | G4 G2 | G4 G2 | G2 G2 B2 | A2 B2 A2 | B2 G2 G2 | D4 G2 | G4 G2 | |
+R: jig
+M: 6/8
+K: Gmajor
+|: G2 B d2 B | G2 B d2 B |
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 132
+M: 3/4
+K: Gmajor
+|: D2 | G2 G2 G2 | G2 G2 G2 | D2 G2 G2 | A2 B2 A2 | G2 G2 G2 | B2 G2 G2 | G4 G2 | G4 G2 | G2 G2 B2 | A2 B2 A2 | B2 G2 G2 | D4 G2 | G4 G2 | |
+R: jig
+M: 6/8
+K: Gmajor
+|: G2 B d2 B | G2 B d2 B |
+---
+
+---------
+
+prompt 20:
+
+M: 2/4
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 133
+M: 2/4
+K: Dmajor
+|: f2 e e d B | A F D F A d f | e d e f d B | A F D F A d (3 f f f | e d e f d B | 1 A F D F A d f :| 2 A F D F A d f | | |: a2 a g e f d | e2 e e d B | A F D f e d B | A F D F A B d f | e d e f d B B | A F D F A d f a | 1 g f e d B e
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 134
+M: 2/4
+K: Gmajor
+|: G2 B G A G E | D D B c A G E | D D B c A d c | B A G F D D2 | G2 B G A G E | D F G A G E D | D D B c A G E | 1 D E D E G D D2 :| 2 D E D E G D g | | |: f e d B A G F | G A (3 B A G A B d | e f e d B A G F | G2 B G A G E | 1 D E D
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 135
+M: 2/4
+K: Edorian
+B3 c B d | c3 B A E | F A A B2 E | B3 c B d | c3 B A F | E F A A B2 E | F A A B3 :||: g2 g g f g | e2 d B G A | B3 c B d | c3 d B A | B4 g2 | g2 g g f g | e2 a f a2 | f3 e f d | c3 B A E | F2 A B2 E | F A A A B2 E | F
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 136
+M: 2/4
+K: Gmajor
+g2 f g3 e | d2 g e b2 e g | g2 f g3 e | d B A d e f d2 | e2 d2 B2 e g | f2 a2 d2 | g2 f g3 e | d2 g2 a2 b2 | g2 f g3 e | 1 d2 B2 A2 :| 2 d2 B2 A2 | | |: g2 f g3 e | d2 B2 A2 | A2 B2 d2 | e2 c2 e2 | d2 B2 B2 A2 d2 A2 | e2 B2 A2 G2 E2 d2 | d2 B2 d2 G2 E2 G2 | | A2 d2 B2 B2 B2 e2 B2 | e2 c2 A2 g2 d2 A2 d2 e2 G2 | | B2 A2 e2 e2 A2 d2 G2 c2 c2 B2 d2 | | G2 B2 d2 B2 A2 B2 d2 B2 B2 e2 | | e2 d2 e2 G2
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 137
+M: 2/4
+K: Dmajor
+|: A | B3 d B2 | d e f e d B | A A A A2 f | g e d B2 | B3 d B2 | d e | f2 a f2 | g e d B2 | B3 c d B | A3 A2 f | g e d B2 :||: F A | B2 E F G A | B2 E F G A | F A d c d B | A3 A2 f :|
+R: waltz
+M: 3/4
+K: Gmajor
+|: D B, D F G A3/ B/ A/ G/ G/ F/ | D/ G/ G/ F/ G/ F/ F G/ G/ F/ | D/ D/ G/ G/ G/ G/ G/ F/ F G/ G A/ G/ A/ F E/ F/ F/ F/ D/ D/ | | D/ F G/ F/ D/ G/ G/ B/ F/ E/ D/ F/ F/ D/ F/ G/ G A/ G/ G/ F G A/ D/ F/ F/ B/ A/ G/ D/ G/ G/ F/ F/ G/ B/ E/ G/ D/ D/ F/ G/ A/ D/ F/ F/ D/ D/ D/ G/ D/ G/ A/ A > E/ D/ F/ G/ D/ G/ E/ D/ D/ F/ G/ D/ F D/ G/ G/ F/ D/ G/ D/ A/ B/ G/ | G/ B/ B/ A/ G/ | d/ G/ G/ C/ G/ F/ G/ E/ G/ G/ D/ F/ G/ F/ G/ F/ D/ G/ G | G/ G/ F/ G/ | D/ G/ D/ F/ G/ G/ F/ D/ F A/ | d/ F/ F/ F/ D/ G/ G/ F/ G3 D/ D/ | D/ F/ E/ F/ F/ G/ | | D/ G/ E/ F/ F/ B/ | G/ F/ G/ A/ D/ G/ F/ G/ F/ G/ G/ D/ A/ G/ F
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 138
+M: 2/4
+K: Gmajor
+|: G A | B2 B A G E | D E G A B A | B2 B A G E | G A B G E D | G A B G E D | D E G A B A | B A G E D D | G A B G E D | 1 G A B G E D :| 2 G A B G E D | | |: B2 B A G E | B2 B A G E | D2 D E G A | B2 B A G E D | B2 B A G E D | G A B
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 139
+M: 2/4
+K: Gmajor
+|: G A | B2 B A G E | D E G A B A | B2 B A G E | G A B G E D | G A B G E D | D E G A B A | B A G E D D | G A B G E D | 1 G A B G E D :| 2 G A B G E D | | |: B2 B A G E | B2 B A G E | D2 D E G A | B2 B A G E D | B2 B A G E D | G A B
+---
+
+---------
+
+prompt 21:
+
+M: 9/8
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 140
+M: 9/8
+K: Dmajor
+F3 F3 F3 | A3 F3 F2 E | D3 F3 A3 | A3 F3 F3 E | D3 F3 F3 | A3 A F3 E3 | D3 F3 A3 | A2 B c d3 e3 | d3 c2 d3 e | d3 c2 B A3 | B3 c d3 e3 | d3 c3 A3 | B3 c d3 e2 | d3 c2 B A3 | A3 F3 E3 | D3 F
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 141
+M: 9/8
+K: Fmajor
+F2 A A F A F G E | F2 A A F A F G E | f2 d c A F2 E F | F2 A A F A F G2 E | F2 A A F A F A F G E | F2 d c A F2 E F | 1 F2 A A F A2 F A :| 2 F2 A A F A3 f | | |: g2 e e d e d e d | f2 d c A F2 E c | d e f a e f g2 a | b2
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 142
+M: 9/8
+K: Dmajor
+|: D | F A d2 d B A F2 A | d B A d F E2 D2 D2 | F A d2 F G A F2 A | d e f g f g e c2 c | d2 e d B A F2 A | d2 d d2 B A F2 A | d B A F E2 D2 D2 :||: D | E2 F A2 c d2 e | d2 B A2 B A F2 A | B2 d B A F E2 D B, :|
+R:
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 143
+M: 9/8
+K: Amixolydian
+|: c2 A A G A2 G | c2 A A2 G A2 G | c2 A A G A2 G | G A A A2 G A2 G | c3 A2 G A2 G :| c3 e2 g a2 g | e2 a a2 g a2 g | e2 a g2 g a2 g | e2 a e2 g a2 g | e2 A a2 g a2 g | e2 A A g A B A A :||: G A B c d e d B g | G A A A B c d B c A A G A G A2 G A G A | G A A2 G A2 G A G A2 G A G A B c2 G | | G A2 G A G A B c B A G A G A G A2 G A2 G A B c2 G A B c B c | | | G A2 G A2 G A2 G A e2 G A A B2 G A G A B A2 G A2 G A B2 G A A G A B c2 G A G A2 G A B c2 G
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 144
+M: 9/8
+K: Aminor
+|: d2 B G2 B A G2 d | e2 c c2 F E2 A2 B | c2 d B G2 B A G2 d | c2 d c2 A G2 d | e2 c c B c2 d c2 d | e2 c c2 F c2 B | 1 c2 a c2 f B2 G :| 2 c2 a c2 f B2 G | | |: g2 e g f e2 d c2 B | c3 A B d c B A2 d | g2 e g f e g f e2 a2 d c2 d c2 B2 d c2 A | e2 d c2 c2 f2 B c B c2 c2 B | d2 e2 e2 B2 G B2 d c2 d c2 B c2 B2 f | g2 B2 g2 d2 B2 e2 d c2 B c2 A B | B2 e2 e2 A B2 B2 f | c2 g | e2 c2 B2 B2 g | g2 f2 B c2 B e2 f2 d2 F2 A2 d2 d f2 e2 B2 g2 d e2 A2 B | c2 g2 f2 f2 f2 B2 f2 d2 B2 B | c2 e2 B2 d2 e2 B2 d2 B2 e2 e2 d2 c2 d2 d2 B2 d2 g :||: d | B2 g | d2 c2 (3 c2 B2 g2 A2 c2 B2 c2 g2 c2 B2 B2 d2 B2 d c2 e2 f2 a c2 d | c2 B2 g2 B2 A2 g2 B2 B2 B2 d2 c2 d e2 f2 B2 B2 B2 e | c2 B2 d2 e g2 A2 (3 d | c2 B2 g2 B | e2 G2 B2 d2 B2 d2 e2 B2 f2 e2 c2 B2 :||: g2 g2 c2 g2 d2 e2 g2 c2 d2 B2 A2 B2 c2 g2 d2 e2 c2 B | g2 c2 B2 g2 B2 A | c
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 145
+M: 9/8
+K: Dmajor
+|: A2 A A2 A2 A2 A | A2 A A2 A2 A B2 A | A2 A A2 A A2 A B2 A | [1 A2 A A2 A B2 A :| [2 A2 A A2 A B2 A |]
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A2 A A B A G E D | G2 B G d G B d G | G2 B
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 146
+M: 9/8
+K: Dmajor
+|: A2 A A2 A2 A2 A | A2 A A2 A2 A B2 A | A2 A A2 A A2 A B2 A | [1 A2 A A2 A B2 A :| [2 A2 A A2 A B2 A |]
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A2 A A B A G E D | G2 B G d G B d G | G2 B
+---
+
+---------
+
+prompt 22:
+
+G
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 147
+G2 A > B | c2 A > B A > B | c2 A > B c > B A > G | F2 A > B A > B c > e | 1 f > e d > c B2 A > B :| 2 f > e d > c B2 A2 | | |: d > e f > d B > d B > d | A > e f > d B > d B2 | d > e f > d B > d f > d | e > f d > c B2 A2 | d > e f > d B2 e2 | d >
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 148
+G d d e | (3 B c d2 d2 :||: f2 | a2 f e f | d e f g a | b2 g2 b | a2 f e f | d e d e f | g b a g f | g f g f e | (3 B c d e d e | f2 g2 b | a2 f e2 | d e d e f | g b2 g b | b2 g2 b | a2 g g f e | f e d e f | g f g f e | |
+R: waltz
+M: 3/4
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 149
+G G G A2 | E A A d B | G3 G3 | E G A d B | G B G G3 | G A d B d | G G A2 E | E A A d B | G G B G3 | E A A d B | G B G G3 :| | |: c A A A B | c/ e/ f g e d | c B G c d e | d B G G3 | c A A A B | c/ e b g e d | c B G d2 B | G G B G3 :| |: c f e e f
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 150
+G G A G E | A2 E F G A | B2 G G E G | A2 F G A B | c4 d e | f d c B d e | f d c B c B | A4 :|
+R: reel
+M: 4/4
+K: Gmajor
+A2 | B2 c f e d c A | B2 c f e d c A A | B2 c f e d c B | A2 B c f e d c A | B2 g f e d c A | B2 c d e d c A | B2 c f g e d d c A | B A F A f e d c A f d c A f A f A | | B2 B G f A f2 e d c e d c B c e d c A | | B e d c f B2 f e d c f2 A F A | f f e d c g A f e d c A f e d c A f d c f :| | f A f |]
+R: | d e d f | B2 c d c | f2 c a4 d f e d c e A e d e d e d e d e d
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 151
+G D E D4 | |
+R: strathspey
+M: 4/4
+K: Dmajor
+|: B < A A D A B d | e < f g2 e d B < A | d < e f < d A d B d | e < a a < b a f < d e < d | B < A A D A B d d | e < f g2 e d e < A | d < e f < d e d B < A | d < e B < d A d B < d | | e < a a < b a f A < d | e < a a a > b a < < < b a f a f < d e < d f < d d e < A2 e < d e < d | | d e < b2 e < a < < < a f < d g f < d e < d B < a d e < d e < < < e f < d B < < e < e > f | d e d e < A B e < e2 g | d g f < < < b2 d | A | e < d e < < < < < < d e a e < a d d e d B < f e < < d e < B A e < A B < B < d f | e < d B < B < a B < a > e < d e < d e < f e < d e d B < < A d B < d B < < a A |] (3 e (3 a :| a A | (3 | d g e B/ g2 A (3 B e f f | (3 A B d e d B e B f < < < f < a c < < e (3 a e | | e g (3 B g a e d e B d g | f < < a | e f g a A A B a d B < < < a f a e g e < < < < a d e e a f a d | e f (3 d e B < a e < < a | d e f < f A B < d e f d B d (3 e < < e a a d (3 g f < < < a | g f g b d e g f < e (3 B d e f < < e f a f < d e d e < A (3 f < < < e < e < d e d e < <
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 152
+G A B c d e f | g f e d c B A G | F G A B c d e f | g e d c B A G F | G2 G2 G2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A G F G A B c A | G2 B G d G B d | g2 B G d G B G | 1 A G F G A B c A :| 2 A G F G A B c A | | |: d g g
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 153
+G A B c d e f | g f e d c B A G | F G A B c d e f | g e d c B A G F | G2 G2 G2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A G F G A B c A | G2 B G d G B d | g2 B G d G B G | 1 A G F G A B c A :| 2 A G F G A B c A | | |: d g g
+---
+
+---------
+
+prompt 23:
+
+e
+
+
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 154
+e | d c B c A G | E A B A A G | E A B A G A | E A B A G A | E D E D2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 G F G A B c | d2 d e f g e d | B2 d e g e d B | G2 G F G A B c | B2 d e f g e d | B A G A B A G A | E A A B A G A B c | d2 d e g e d B | G A B
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 155
+e | e d c B c d B G B | A2 A c B c2 :| B2 | d2 g f e d c B | c2 A c B c d B | e d c B c d B G | A2 A c B c2 d e | f d d d e c e f | g2 g f e d c B | c e a c B c d B | A2 A c B c2 d B | e d c B c d e f | g2 g f e d e f | g2 g f e a f2 | g2 g f
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 156
+e f e c d2 a f | g d (3 e f g f2 e c | d B G B d g2 :|
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: d2 | g d B d B e d f | g b a f g f e f | g d B d B e d B | g b a f g f e f a | b c' b a f g f e c | d f d B e2 B/ c/ | d B G B d B e d | B g b a f g f e f | 1 g
+---
+test_parameters:
+    max_length: 256
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 157
+e d B3 d | e g g e d B G B | 1 A G A2 E D E :| 2 A G A2 E D E | | |: E G A B A G E | E G A B A G E D | E G A B A G E G | E G A B A G E D :| |
+R: reel
+M: 4/4
+K: Emajor
+|: B c | B c B A G F G A | B c B A G F G A B c | B c B A G F E E2 | B c B A G F G A A B c | B c B A B c B A G F E F G F B c B A G A | A c d B c E F E F G A B c A G F F G A | E F A c B c e F G A B c A | A B c e F G F G A G F :||: B c E2 B c E E F G A G F | | B c E B c E c E c B c E F d B c E c G E c E c B c c E A B c E c E F c E c E2 E F c
+---
+test_parameters:
+    max_length: 512
+    temperature: 0.8
+    no_repeat_ngram_size: 10
+    do_sample: True
+    top_k: 50
+
+=========
+model_output:
+X: 158
+e c | d d d d c A G F | G E E2 D E C2 | G F E2 D E F2 | G3 c2 A G F | G E E2 D2 | | d c d e f g f e | d c d e f g f e d | c B A2 G A2 | B A G E E2 D E | F3 G c2 A G | F G E E2 D E F | G2 c2 A G F E | D2 D2 D2 :||: f3 | e c c c2 A G F | D2 d c c2 B2 A G ^c2 A G F2 c2 | A G F2 A G A2 d2 d2 | d2 d2 c2 g f2 A G F2 d c2 | d2 A2 F2 F2 | A2 F2 f2 d2 f2 d c2 F2 | E2 B2 e2 F2 D2 d2 | e2 B2 A2 f2 d2 G2 f2 A2 A2 d2 | d2 f2 G c2 | d2 e2 d2 d2 A2 f2 A2 c2 d2 e2 d2 G2 F2 e2 F2 d2 d2 d2 d2 | d2 B2 g2 | g2 | d2 e2 d2 f2 G2 d2 d2 A2 d2 G A2 d2 A2 | g2 | g2 B2 (32 a2 f2 A2 | e2 d2 f2 d2 d2 | ^c2 d2 A2 | d2 A2 c2 d2 c2 | d2 B2 c2 d2 f2 f2 f >2 | B2 e2 a2 c2 A2 f2 d2 f2 | G2 | f2 B2 f2 f2 B2 d2 d2 d2 A2 | d2 d2 c2 d2 B2 f2 d2 f2 d2 d2 d2 e2 B2 f2 (32 d2 f2 B2 f2 d2 | e2 | c2 B2 A2 f2 f2 f2 | f2 A2 d2 B2 d2 g2 E2 c2 | a2 | c2 f2 f2 d2 g2 f2 d
+---
+test_parameters:
+    max_length: 128
+    temperature: 0.6
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 159
+e f e d c A | B G G G2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A G F G A B c A | G2 B G d G B d | g2 B G d G B G | A B c d e f g e | d B G A B c A F | G2 B G D G B G | A B c d e d c B | A G F G A B c d | g2 B G d G B d |
+---
+test_parameters:
+    max_length: 128
+    temperature: 1.0
+    no_repeat_ngram_size: 10
+    do_sample: False
+    top_k: 50
+    num_beams: 5
+
+=========
+model_output:
+X: 160
+e f e d c A | B G G G2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 B G d G B G | G2 B G d G B G | A G F G A B c A | G2 B G d G B d | g2 B G d G B G | A B c d e f g e | d B G A B c A F | G2 B G D G B G | A B c d e d c B | A G F G A B c d | g2 B G d G B d |
+---
+
+---------
+

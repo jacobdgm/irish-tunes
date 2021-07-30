@@ -1,0 +1,6972 @@
+<html>
+<meta charset="UTF-8"/>
+<script src="http://moinejf.free.fr/js/abcweb-1.js"></script>
+<script src="http://moinejf.free.fr/js/snd-1.js"></script>
+<style>svg {display:block}</style>
+<title></title>
+</head>
+<body bgcolor="#faf0e6"><p>2021-07-29T22:18:13</p>
+<p>path_to_model: models/cooleys</p>
+<p>general_metadata:
+<ul>
+<li>model_name: cooleys
+</li>
+<li>model_description: Using improved tokenization, individual tunes for training examples
+</li>
+<li>dataset: tunes_v2
+</li>
+<li>version: a
+</li>
+<li>version_description: Initial run for cooleys
+</li>
+</ul>
+</p>
+<p>model_metadata:
+<ul>
+<li>model_type: gpt2
+</li>
+<li>vocab_size: 403
+</li>
+<li>n_ctx: 512
+</li>
+<li>n_embd: 384
+</li>
+<li>n_head: 12
+</li>
+<li>n_inner: 6
+</li>
+<li>n_layer: 6
+</li>
+<li>n_positions: 512
+</li>
+</ul>
+</p>
+<p>training_metadata:
+<ul>
+<li>epoch: 13.837638376383763
+</li>
+<li>global_step: 7500
+</li>
+</ul>
+</p>
+<p>rompts:
+<ul>
+<li><a href="#prompt1">Prompt 1 - R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E |</a></li>
+<li><a href="#prompt2">Prompt 2 - R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B |</a></li>
+<li><a href="#prompt3">Prompt 3 - R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ |</a></li>
+<li><a href="#prompt4">Prompt 4 - R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A</a></li>
+<li><a href="#prompt5">Prompt 5 - R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d |</a></li>
+<li><a href="#prompt6">Prompt 6 - R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 |</a></li>
+<li><a href="#prompt7">Prompt 7 - R: jig
+M: 6/8
+K: Dmix
+f e d c A G |</a></li>
+<li><a href="#prompt8">Prompt 8 - R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, |</a></li>
+<li><a href="#prompt9">Prompt 9 - R: jig
+M: 6/8
+K: Adow
+|: a3 b a g |</a></li>
+<li><a href="#prompt10">Prompt 10 - R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A</a></li>
+<li><a href="#prompt11">Prompt 11 - R: jig</a></li>
+<li><a href="#prompt12">Prompt 12 - R: reel</a></li>
+<li><a href="#prompt13">Prompt 13 - R: polka</a></li>
+<li><a href="#prompt14">Prompt 14 - R: waltz</a></li>
+<li><a href="#prompt15">Prompt 15 - R: hornpipe</a></li>
+<li><a href="#prompt16">Prompt 16 - R: slip jig</a></li>
+<li><a href="#prompt17">Prompt 17 - M: 4/4</a></li>
+<li><a href="#prompt18">Prompt 18 - M: 6/8</a></li>
+<li><a href="#prompt19">Prompt 19 - M: 3/4</a></li>
+<li><a href="#prompt20">Prompt 20 - M: 2/4</a></li>
+<li><a href="#prompt21">Prompt 21 - M: 9/8</a></li>
+<li><a href="#prompt22">Prompt 22 - G</a></li>
+<li><a href="#prompt23">Prompt 23 - e</a></li>
+</ul>
+</p>
+<h3 id="prompt1">Prompt 1 - R: reel	M: 4/4	K: Edor	|: E2 B E d E B E |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 0
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E3 E E E2 A F E | E2 E2 E A B E F E | E2 E E2 A B A F E | E2 E2 A E F A | E2 E2 e e d B A | 1 E2 E2 E E E :| 2 E E E2 E2 E E E | | F E E2 E2 E2 | | |: B d B d B A2 | B d B d B d f | e d e d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 0
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|E3EEE2AFE|E2E2EABEFE|E2EE2ABAFE|E2E2AEFA|E2E2eedBA|1E2E2EEE:|2EEE2E2EEE||FEE2E2E2|||:BdBdBA2|BdBdBdf|eded
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 1
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | G A2 e e d B G E | A B G E D G B, G E | E2 E E A B E D E | E2 B d e d :| g2 f2 e d e f | g2 a2 f g e d d | A A A B A G E F | E2 E2 B E F G | E2 E B,2 G, B, | E2 G2 B A G E E | E2 E B2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 1
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|GA2eedBGE|ABGEDGB,GE|E2EEABEDE|E2Bded:|g2f2edef|g2a2fgedd|AAABAGEF|E2E2BEFG|E2EB,2G,B,|E2G2BAGEE|E2EB2G2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 2
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E > G d F E D F | E2 F A F d =c A G | B/ A > F D E F D E | C2 A B A F D F E | E2 A2 d F B d | e2 f e d B | E C2 F A B/ c/ d/ | e g f g f e/ c | e2 f e f | e e d c/ d/ c/ d B/ | e f e c a g</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 2
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|E>GdFEDF|E2FAFd=cAG|B/A>FDEFDE|C2ABAFDFE|E2A2dFBd|e2fedB|EC2FAB/c/d/|egfgfe/c|e2fef|eedc/d/c/dB/|efecag
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 3
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 F G G A c B E F | D2 E2 E G B, | E2 E2 E F A c e d | e A d c d e f | e e e d B c | B2 E F E B,2 :| | E2 F2 F2 D2 A F | E F2 F2 F2 G B | E2 e e d e c B | A2 F2 E2 A | E4 E2 F2 A B | c2 e f d c B E F | E2 F2 E2 A B c | B2 B2 A F2 | D2 F2 E2 A2 | B2 F2 D2 E2 D2 | F2 E2 A2 F E2 :|
+R: jig
+M: 6/8
+K: Gmajor
+|: D D E D G | B A G A A G E | D D D E D G A | B A G A G A G | D E D E D G E | G E D D E G A | B2 A G A G | E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 3
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|E2FGGAcBEF|D2E2EGB,|E2E2EFAced|eAdcdef|eeedBc|B2EFEB,2:||E2F2F2D2AF|EF2F2F2GB|E2eedecB|A2F2E2A|E4E2F2AB|c2efdcBEF|E2F2E2ABc|B2B2AF2|D2F2E2A2|B2F2D2E2D2|F2E2A2FE2:|
+R:jig
+M:6/8
+K:Gmajor
+|:DDEDG|BAGAAGE|DDDEDGA|BAGAGAG|DEDEDGE|GEDDEGA|B2AGAG|E
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 4
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E G B d B A B A F E | G A B E E E D E2 | G2 E2 B B d B A B A | G A B E D E D E | G E D E D C D E B | G B A B E D E | G E E E A B A B | A B c A B A A G E | [1 B c B c A F E :| [2 B A c B E A F E | |
+R: jig
+M: 6/8
+K: Amajor
+B A B A B B | f E f e f a | e f e f g a f | e d B A B B | A B A B B B | A B B A B | a f e a f a | e d f e B B | A B A B A B | A B B A B A B | A B A B B B | f a f a3 | f e f e d B | A B A B A B | B2 B A B A | A A B3 B | A B A B A B | e f e f2 d | e f e e d B | A B A B A A | B A B A B B | A B e f e d | A B e f d B B | e A e f e f | e f e d B d B | A B e f a3 | e f e f e | e a f e d B d B | A B A B A B A | B B A B A B |]
+R: reel
+M: 4/4 Edorian
+|: B2 B G F E D F | G F G G F E2 B, F G, | B2 B, G B, B, D2 | D G E G F G F E F G | D D B, G D B, G, | 1 B, B, B, B, B,2 B,2 :| 2 B, B, C B, B, B, B, B c, B, B, | E3 D F D B, | B, C B, B, G, B, B, B, | G, B, G B, B, B, B, | B, G, B, E E D B, D |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 4
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|EGBdBABAFE|GABEEEDE2|G2E2BBdBABA|GABEDEDE|GEDEDCDEB|GBABEDE|GEEEABAB|ABcABAAGE|[1BcBcAFE:|[2BAcBEAFE||
+R:jig
+M:6/8
+K:Amajor
+BABABB|fEfefa|efefgaf|edBABB|ABABBB|ABBAB|afeafa|edfeBB|ABABAB|ABBABAB|ABABBB|fafa3|fefedB|ABABAB|B2BABA|AAB3B|ABABAB|efef2d|efeedB|ABABAA|BABABB|ABefed|ABefdBB|eAefef|efedBdB|ABefa3|efefe|eafedBdB|ABABABA|BBABAB|]
+R:reel
+M:4/4Edorian
+|:B2BGFEDF|GFGGFE2B,FG,|B2B,GB,B,D2|DGEGFGFEFG|DDB,GDB,G,|1B,B,B,B,B,2B,2:|2B,B,CB,B,B,B,Bc,B,B,|E3DFDB,|B,CB,B,G,B,B,B,|G,B,GB,B,B,B,|B,G,B,EEDB,D|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 5
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 E2 E2 E2 E2 | E2 E2 E2 E2 B E2 | E2 E2 E2 A2 E2 | E2 E2 A2 E2 E2 | E2 E E2 E2 E2 | E2 A2 E2 E2 E2 | E4 E2 E2 E2 | E2 D2 E2 E2 | E2 E4 | E2 E2 E2 A2 | E2 E2 E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 5
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|E2E2E2E2E2|E2E2E2E2BE2|E2E2E2A2E2|E2E2A2E2E2|E2EE2E2E2|E2A2E2E2E2|E4E2E2E2|E2D2E2E2|E2E4|E2E2E2A2|E2E2E
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 6
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 E2 E2 E2 E2 | E2 E2 E2 E2 B E2 | E2 E2 E2 A2 E2 | E2 E2 A2 E2 E2 | E2 E E2 E2 E2 | E2 A2 E2 E2 E2 | E4 E2 E2 E2 | E2 D2 E2 E2 | E2 E4 | E2 E2 E2 A2 | E2 E2 E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 6
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|E2E2E2E2E2|E2E2E2E2BE2|E2E2E2A2E2|E2E2A2E2E2|E2EE2E2E2|E2A2E2E2E2|E4E2E2E2|E2D2E2E2|E2E4|E2E2E2A2|E2E2E
+
+</script>
+
+</p><h3 id="prompt2">Prompt 2 - R: jig	M: 6/8	K: Gmaj	|: G3 G A B |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 7
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G3 A B A | G2 B A A c | d2 B A G A | G3 G E D :| B3 G B d | e d d d B A | G3 B d | e d B A A | G3 G E G | B3 G E A | e d B d B A | G3 G E G | G3 D E G | B3 d B | B3 A G | G3 D G A | G3 D E G | G3</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 7
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|G3ABA|G2BAAc|d2BAGA|G3GED:|B3GBd|edddBA|G3Bd|edBAA|G3GEG|B3GEA|edBdBA|G3GEG|G3DEG|B3dB|B3AG|G3DGA|G3DEG|G3
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 8
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G F G G ^A d g e | f/ g/ b/ e d c | A B G F G =F | G A G d g e | f/ c/ ^d e/ d | c A G G G F | G/ F G/ d3 | | g/ b3 a/ b/ b/ g/ a | g g/ a/ g/ f/ d/ e/ d/ c/ | A B c G G F/ D | G A G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 8
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|GFGG^Adge|f/g/b/edc|ABGFG=F|GAGdge|f/c/^de/d|cAGGGF|G/FG/d3||g/b3a/b/b/g/a|gg/a/g/f/d/e/d/c/|ABcGGF/D|GAG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 9
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c3 d > e | d3 G2 G | B c3 A | c2 E2 G E | A3 G2 E | G3 - G3 | G3 B2 A | G3 G3 F | G3 E G3 | G3 :||: G3 G3 | B3 | c3 e3 d | c3 d3 | e3 f g3 | a3 g3 g | B3 f3 | d e3 e33 | f3 g3 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 9
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|c3d>e|d3G2G|Bc3A|c2E2GE|A3G2E|G3-G3|G3B2A|G3G3F|G3EG3|G3:||:G3G3|B3|c3e3d|c3d3|e3fg3|a3g3g|B3f3|de3e33|f3g3|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 10
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | A B d e d | e3 e d | e3 f e d | e3 d B | G G2 A B | e3 a g | e3 a g | e3 c B | B3 e d | e3 d B | e3 g e3 | e g3 d | e3 e3 d | e3 B c | e3 d B d | e3 d B | 1 G3 AR: polka
+M: 2/4
+K: Dmajor
+|: e/ a/ | d/ f/ e/ | d/ f/ g/ e/ | d/ c/ e/ f/ g/ | d f/ e/ e/ f/ | d/ d/ e/ d B/ | c/ d/ c/ e/ e/ | d2 e/ f/ g/ | d/ d/ e/ d/ c/ | d/ e/ d/ d/ e/ | d/ e/ e/ d/ d/ | 1 d2 :| 2 d3 d/ | | |: d/ c/ d/ | A d/ c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 10
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|ABded|e3ed|e3fed|e3dB|GG2AB|e3ag|e3ag|e3cB|B3ed|e3dB|e3ge3|eg3d|e3e3d|e3Bc|e3dBd|e3dB|1G3AR:polka
+M:2/4
+K:Dmajor
+|:e/a/|d/f/e/|d/f/g/e/|d/c/e/f/g/|df/e/e/f/|d/d/e/dB/|c/d/c/e/e/|d2e/f/g/|d/d/e/d/c/|d/e/d/d/e/|d/e/e/d/d/|1d2:|2d3d/|||:d/c/d/|Ad/c
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 11
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | A3 B A c | A3 G B A | A3 G3 G | A3 A2 F | G3 E3 | A3 B c A | d3 d3 | B3 d3 | B3 G3 | A3 G3 | 1 A3 A3 :| 2 A3 A3 | | B3 d3 | B3 B3 | A3 G3 | A3 A3 | B3 A3 | B3 A3 | A3 A3 | G2 B3 | B3 A3 | A3 F3 | A3 A3 | A3 A3 | B3 G3 | | |: A3 A3 | A3 B3 | A3 e3 | B3 d3 | B3 A3 | | B3 d3 A G3 | A3 | G33 :| B3 A3 | A3 B3 | c3 |]
+R: reel
+M: 4/4
+K: Gmajor
+A B2 A G2 B A B B | d B B d c B A d | B A D D B G2 B A G | B2 B G B A B A G | B2 d B c d3 | B2 B A B c A G B | d2 B2 B d c B A | G2 A B2 G B A | B G F G A B d c | B2 B2 G2 A B G | B2 B2 G A B | G2 B2 G A B2 G A | B2 G A B2 G B c | B2 A A G F G A | B2 A B A G | B2 G2 G F A B A | B2 G A B2 G2 | B2 G2 B2 G B | B2 G2 A G2 A | B2 B2 G2 A B c | B2 G A G A B c | e2 e g2 e2 d B | B2 d e g2 B A | B2 d e f3 a | B2 G A B A G A B A | B2 G B2 G B d | B2 B A G A B c | B2 G d e g2 | B2 B2 A B A G | B2 B A B A B2 | G2 B G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 11
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|A3BAc|A3GBA|A3G3G|A3A2F|G3E3|A3BcA|d3d3|B3d3|B3G3|A3G3|1A3A3:|2A3A3||B3d3|B3B3|A3G3|A3A3|B3A3|B3A3|A3A3|G2B3|B3A3|A3F3|A3A3|A3A3|B3G3|||:A3A3|A3B3|A3e3|B3d3|B3A3||B3d3AG3|A3|G33:|B3A3|A3B3|c3|]
+R:reel
+M:4/4
+K:Gmajor
+AB2AG2BABB|dBBdcBAd|BADDBG2BAG|B2BGBABAG|B2dBcd3|B2BABcAGB|d2B2BdcBA|G2AB2GBA|BGFGABdc|B2B2G2ABG|B2B2GAB|G2B2GAB2GA|B2GAB2GBc|B2AAGFGA|B2ABAG|B2G2GFABA|B2GAB2G2|B2G2B2GB|B2G2AG2A|B2B2G2ABc|B2GAGABc|e2eg2e2dB|B2deg2BA|B2def3a|B2GABAGABA|B2GB2GBd|B2BAGABc|B2Gdeg2|B2B2ABAG|B2BABAB2|G2BG2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 12
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G3 G A B A | G3 G G A B | G3 G A B | G3 A B A | G3 G3 | G3 A B | G3 G3 | G3 G3 | G3 A3 | G3 G3 | G3 B3 | G3 A3 | G3 A3 | G3 B3 | G3 G3 | G3 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G | G2 G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 12
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|G3GABA|G3GGAB|G3GAB|G3ABA|G3G3|G3AB|G3G3|G3G3|G3A3|G3G3|G3B3|G3A3|G3A3|G3B3|G3G3|G3:|
+R:reel
+M:4/4
+K:Gmajor
+|:G|G2G
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 13
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | G3 G A B A | G3 G G A B | G3 G A B | G3 A B A | G3 G3 | G3 A B | G3 G3 | G3 G3 | G3 A3 | G3 G3 | G3 B3 | G3 A3 | G3 A3 | G3 B3 | G3 G3 | G3 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G | G2 G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 13
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|G3GABA|G3GGAB|G3GAB|G3ABA|G3G3|G3AB|G3G3|G3G3|G3A3|G3G3|G3B3|G3A3|G3A3|G3B3|G3G3|G3:|
+R:reel
+M:4/4
+K:Gmajor
+|:G|G2G
+
+</script>
+
+</p><h3 id="prompt3">Prompt 3 - R: polka	M: 2/4	K: Dmaj	d d B/ c/ d/ B/ |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 14
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | c/ d/ B/ B/ c/ B/ c/ e/ | d c/ c/ B/ | A F/ F/ G/ | A/ F/ D/ G/ | F/ F/ F/ B/ A/ F/ | F/ G/ F/ E/ F/ | F/ E/ F/ A/ F/ A/ | B/ d/ c/ d/ | B/ c/ d/ B/ c/ | B/</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 14
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|c/d/B/B/c/B/c/e/|dc/c/B/|AF/F/G/|A/F/D/G/|F/F/F/B/A/F/|F/G/F/E/F/|F/E/F/A/F/A/|B/d/c/d/|B/c/d/B/c/|B/
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 15
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A2 c2 A | B c F E E/ | G G B c/ d/ | e c B/ c/ c/ | B/ A/ G/ F E/ | G A B c/ B/ | c/ d c/ c/ B/ | G/ B A F/ E/ :|
+R: reel
+M: 4/4
+K: Dmajor
+|: A3 F G F E2 | F2 D G E2 F D2 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 15
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|A2c2A|BcFEE/|GGBc/d/|ecB/c/c/|B/A/G/FE/|GABc/B/|c/dc/c/B/|G/BAF/E/:|
+R:reel
+M:4/4
+K:Dmajor
+|:A3FGFE2|F2DGE2FD2|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 16
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | B3 | B c B c/ B/ c/ e/ | f/ a > f/ f f/ g/ | a f e2/2 | B3 e/ | f2 f/2 e/2 d/ | B/6 | e3/ d/ c/2 | d3/2 | |
+R: reel
+M: 4/4
+K: Cmajor
+B |: a g f e d e2 (3 d c d (3 B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 16
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|B3|BcBc/B/c/e/|f/a>f/ff/g/|afe2/2|B3e/|f2f/2e/2d/|B/6|e3/d/c/2|d3/2||
+R:reel
+M:4/4
+K:Cmajor
+B|:agfede2(3dcd(3B
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 17
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | c B/ B/ A/ F/ F/ E/ F/ E/ F/ | A/ F A F/ E/ G/ F/ | A c/ B/ B/ A/ B/ G/ | A/ F G/ F/ E/ F/ F/ | F/ G/ F/ F/ G/ | A/ F/ F/ A/ B/ B/ | c/ B/ c/ B/ A/ E/ | F/ F/ A/ | F/ F/ F/ F/ F/ E/ E/ | F/ F/ F/ A/ F/ E/ | F/ F/ F A | E/ F/ F/ F/ G/ A | F/ F/ F/ F/ :|
+R: reel
+M: 4/4
+K: Dmajor
+|: d A d c A F A F | d f A B A F A F | d c A F A F A F E F | d d c A F A F | d A F d A F A F2 :||: c d d c A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 17
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|cB/B/A/F/F/E/F/E/F/|A/FAF/E/G/F/|Ac/B/B/A/B/G/|A/FG/F/E/F/F/|F/G/F/F/G/|A/F/F/A/B/B/|c/B/c/B/A/E/|F/F/A/|F/F/F/F/F/E/E/|F/F/F/A/F/E/|F/F/FA|E/F/F/F/G/A|F/F/F/F/:|
+R:reel
+M:4/4
+K:Dmajor
+|:dAdcAFAF|dfABAFAF|dcAFAFAFEF|ddcAFAF|dAFdAFAF2:||:cddcA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 18
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | e2 d/ c/ B/ A/ | F/ C D/ E D/ C/ E/ | F/ G A F/ G/ E/ | F/ G2 B/ d/ e/2 | f e/ e/ d/ c/ B/ A/ | G/ F/ F/ G/ A/ F/ F/ G/ | F/ F/ G/ F/ E/ D/ G/ F/ | D D E/ D/ F/ F/ | F E G/ D/ G/ A/ B/ | d c/ B/ c/ e/ d/ c/ | G D2 | A F/ F/ D/ D/ D/ D/ F/ G/ A/ | d/ e d B/ G/ A/ G/ F/ | 1 D/ D/ D/ D/ D/ G/ F/ E/ A/ G/ | D/ D B/ A/ D/ G/ D/ | E2 A/ D/ A/ G/ A/ |]
+R: reel
+M: 4/4
+K: Amixolydian
+g |: a ^g e d/ c c/ A c d e =e | a a a ^g e d c e e e d B A/ | c A A B A G A A e | a b g e c d e d e d e | a a b a f e d c e e | a a a g d e d e | a a g a e d e d e | 1 a f a g a g e d B :| 2 a f g e d e d e d | |
+R: jig
+M: 6/8
+K: Dmajor
+A B B A B A d B | c A B A B A B | A B A A F A F | B A B A B A d | c A B A B A | G A B A B A | A A B A B d2 e | f A B A F | A A B d e A | f a f A A c B | A B A B A d c e | a a A a f e | f A A B d d B | A B2 A B2 :| d a a a a A A | f e f d A d | e d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 18
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|e2d/c/B/A/|F/CD/ED/C/E/|F/GAF/G/E/|F/G2B/d/e/2|fe/e/d/c/B/A/|G/F/F/G/A/F/F/G/|F/F/G/F/E/D/G/F/|DDE/D/F/F/|FEG/D/G/A/B/|dc/B/c/e/d/c/|GD2|AF/F/D/D/D/D/F/G/A/|d/edB/G/A/G/F/|1D/D/D/D/D/G/F/E/A/G/|D/DB/A/D/G/D/|E2A/D/A/G/A/|]
+R:reel
+M:4/4
+K:Amixolydian
+g|:a^ged/cc/Acde=e|aaa^gedceeedBA/|cAABAGAAe|abgecdedede|aabafedcee|aaagdede|aagaedede|1afagagedB:|2afgededed||
+R:jig
+M:6/8
+K:Dmajor
+ABBABAdB|cABABAB|ABAAFAF|BABABAd|cABABA|GABABA|AABABd2e|fABAF|AABdeA|fafAAcB|ABABAdce|aaAafe|fAABddB|AB2AB2:|daaaaAA|fefdAd|ed
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 19
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | c/ c/ B/ c/ B/ | c/ c/ c/ B/ c/ | c/ B/ c/ B/ c/ | d/ c/ c/ B/ | c/ B/ c/ c/ B/ | A/ c/ c/ B/ | c B/ c/ B/ c/ | A/ c/ B/ B/ | c/ c/ d/ c/ | c/ c/ B/ B/ c/ |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 19
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|c/c/B/c/B/|c/c/c/B/c/|c/B/c/B/c/|d/c/c/B/|c/B/c/c/B/|A/c/c/B/|cB/c/B/c/|A/c/B/B/|c/c/d/c/|c/c/B/B/c/|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 20
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | c/ c/ B/ c/ B/ | c/ c/ c/ B/ c/ | c/ B/ c/ B/ c/ | d/ c/ c/ B/ | c/ B/ c/ c/ B/ | A/ c/ c/ B/ | c B/ c/ B/ c/ | A/ c/ B/ B/ | c/ c/ d/ c/ | c/ c/ B/ B/ c/ |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 20
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|c/c/B/c/B/|c/c/c/B/c/|c/B/c/B/c/|d/c/c/B/|c/B/c/c/B/|A/c/c/B/|cB/c/B/c/|A/c/B/B/|c/c/d/c/|c/c/B/B/c/|
+
+</script>
+
+</p><h3 id="prompt4">Prompt 4 - R: hornpipe	M: 4/4	K: Edor	|: B,2 | E D E F G F G A</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 21
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B d B B d B | B e d B d B A F | E2 G2 A G A | B d B d B d B | e d B d B2 :| e d B d B g | e B d B d B g a | g B e d B d B | e d B d g B | e d B d B d B | e d e d B A | e A B d2 B d | e d B d B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 21
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|BdBBdB|BedBdBAF|E2G2AGA|BdBdBdB|edBdB2:|edBdBg|eBdBdBga|gBedBdB|edBdgB|edBdBdB|ededBA|eABd2Bd|edBdBA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 22
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | A d e f g f | e B A B A E D | E D E G2 | E2 E D F G A | B2 A2 A G A | E G D E G E | F E G B2 G A | B2 e e f | g f e d c | B A G E G A | B A A E E D | E2 D E G A :||: B A A | B A A2 A | B A B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 22
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|Adefgf|eBABAED|EDEG2|E2EDFGA|B2A2AGA|EGDEGE|FEGB2GA|B2eef|gfedc|BAGEGA|BAAEED|E2DEGA:||:BAA|BAA2A|BABA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 23
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A2 | (3 G E F D F G F G | c B2 A F E G/2 | F D D F G E F A F | G f A B G2 (3 B2 A B G | A F E F E F d2 | E F c A G F A G | F G E F G F G2 | F G E F G F G A | F G F G F G G2 | F D D F2 F A2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 23
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA2|(3GEFDFGFG|cB2AFEG/2|FDDFGEFAF|GfABG2(3B2ABG|AFEFEFd2|EFcAGFAG|FGEFGFG2|FGEFGFGA|FGFGFGG2|FDDF2FA2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 24
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | E2 D C C E D | A,2 E G A, D F | E G2 B, A,2 | D E4 B, B, | E4 D E4 | E E F G A F | A, D E D F G | E G E F G A2 | B, C G,4 :|
+R: jig
+M: 6/8
+K: Adorian
+E |: G, A, A B E | F E2 E D | A c A B A c | A A B c3 | d e c A G | A B A F E :||: A, F A B E | E2 F E c | A A B A F | C E F A B c A | A2 E F E | A, B, E F D | E F A B c e | d c B3 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: G | B2 B G2 B2 | G3 G B G2 B B | A2 B2 G A B2 | G3 A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 24
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|E2DCCED|A,2EGA,DF|EG2B,A,2|DE4B,B,|E4DE4|EEFGAF|A,DEDFG|EGEFGA2|B,CG,4:|
+R:jig
+M:6/8
+K:Adorian
+E|:G,A,ABE|FE2ED|AcABAc|AABc3|decAG|ABAFE:||:A,FABE|E2FEc|AABAF|CEFABcA|A2EFE|A,B,EFD|EFABce|dcB3:|
+R:reel
+M:4/4
+K:Gmajor
+|:G|B2BG2B2|G3GBG2BB|A2B2GAB2|G3A
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 25
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | A B d e e e | d B A F G A B | A d e e e g e f | e B A B A G | E F E D2 :| e | g e f e e f g | e e d B A F G | E d e f e f | g e e e f g | e f e e f e | | d B A F E2 B c | d e e f e g | e d B A G | F E d B d e f | g f e f e | g e f e d B | e2 f e f e | e d B A F | E2 e f e g | f e a f e d | A F E2 E2 :|
+R: jig
+M: 6/8
+K: Gmajor
+|: d B G E G2 D | E G G B G A | G3 G G2 B | c B G2 A G | G3 G A2 :||: B | c A c d e g2 f | g e g g e f g | f e d e2 f | g e d c B G | A B A G F G2 :| a f g g e d | g f g a g e f | g d e2 e g | f g f g e g f e | g e d A G A | B G G2 B G | A G G2 E | A e d G A2 :||: B d g g e d c | B G G3 | B d e d c d | G B G3 :|
+R: waltz
+M: 3/4
+K: Amixolydian
+|: B G2 c2 B2 c | A2 B c2 A2 | G2 c2 B2 A2 | c2 B2 c2 | A4 c2 | c2 B2 A2 | B2 c2 A2 :||: B2 c3 c2 | B2 G2 c2 | B2 G2 c2 A2 | B2 c2 e2 | f2 f2 c2 | B2 c2 c2 | B2 c2 c3 | c2 c2 e2 | f3 c2 c2 | B2 c2 A2 | B2 c f2 c2 | d2 G2 A2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 25
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|ABdeee|dBAFGAB|Adeeegef|eBABAG|EFED2:|e|gefeefg|eedBAFG|Edefef|geeefg|efeefe||dBAFE2Bc|deefeg|edBAG|FEdBdef|gfefe|gefedB|e2fefe|edBAF|E2efeg|feafed|AFE2E2:|
+R:jig
+M:6/8
+K:Gmajor
+|:dBGEG2D|EGGBGA|G3GG2B|cBG2AG|G3GA2:||:B|cAcdeg2f|geggefg|fede2f|gedcBG|ABAGFG2:|afgged|gfgagef|gde2eg|fgfgegfe|gedAGA|BGG2BG|AGG2E|AedGA2:||:Bdggedc|BGG3|Bdedcd|GBG3:|
+R:waltz
+M:3/4
+K:Amixolydian
+|:BG2c2B2c|A2Bc2A2|G2c2B2A2|c2B2c2|A4c2|c2B2A2|B2c2A2:||:B2c3c2|B2G2c2|B2G2c2A2|B2c2e2|f2f2c2|B2c2c2|B2c2c3|c2c2e2|f3c2c2|B2c2A2|B2cf2c2|d2G2A2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 26
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B A B A F G F G | E2 E F G A F G A | B A B A B A F G | E2 E F G F G A | B2 B A B A F G | E2 B A F G A | B2 B A G F G | E2 E2 F G A | B2 B A F G A | B2 A B A F G | E2 E2 E F G A | B2 B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 26
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|BABAFGFG|E2EFGAFGA|BABABAFG|E2EFGFGA|B2BABAFG|E2BAFGA|B2BAGFG|E2E2FGA|B2BAFGA|B2ABAFG|E2E2EFGA|B2BA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 27
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B A B A F G F G | E2 E F G A F G A | B A B A B A F G | E2 E F G F G A | B2 B A B A F G | E2 B A F G A | B2 B A G F G | E2 E2 F G A | B2 B A F G A | B2 A B A F G | E2 E2 E F G A | B2 B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 27
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|BABAFGFG|E2EFGAFGA|BABABAFG|E2EFGFGA|B2BABAFG|E2BAFGA|B2BAGFG|E2E2FGA|B2BAFGA|B2ABAFG|E2E2EFGA|B2BA
+
+</script>
+
+</p><h3 id="prompt5">Prompt 5 - R: waltz	M: 3/4	K: Gmaj	B2 B A B d |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 28
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e3 e2 d B | A2 G A G A B | A2 G E D E | G A B d e d B | A2 d B G A | G2 E A B d | c2 e d B | A2 B A G E F | G A B G E D | G2 G B d B | c2 B A B c B | A2 G E D | G2 B G B d | e2 d B G B | A2 A G E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 28
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|e3e2dB|A2GAGAB|A2GEDE|GABdedB|A2dBGA|G2EABd|c2edB|A2BAGEF|GABGED|G2GBdB|c2BABcB|A2GED|G2BGBd|e2dBGB|A2AGE
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 29
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e3 g f a | e3 d c B | A2 A2 B A | B4 A2 B | B2 A2 B A | B3 d c e | B G2 B c2 | B2 B3 A | B2 A2 B2 | B2 c d e c | B2 B2 B2 d B | A2 A2 A | B2 A2 G F | G2 B2 A B A | B2 G2 | B2 A2 B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 29
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|e3gfa|e3dcB|A2A2BA|B4A2B|B2A2BA|B3dce|BG2Bc2|B2B3A|B2A2B2|B2cdec|B2B2B2dB|A2A2A|B2A2GF|G2B2ABA|B2G2|B2A2B
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 30
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | f4 e/ f/ f/ | e/ =D E G A B A B A | d2 f f/ a/ f/ | e/ d/ g A B A/ | c/ f b/ f/ a/ a a | g e c e A | G F G A B A | f2 c/ a/ a g f/ | e A B A/ G/ :| | A A B E d2 | A G E A d | B/ c/ A A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 30
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|f4e/f/f/|e/=DEGABABA|d2ff/a/f/|e/d/gABA/|c/fb/f/a/aa|geceA|GFGABA|f2c/a/agf/|eABA/G/:||AABEd2|AGEAd|B/c/AA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 31
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | B2 G A G2 | B2 B2 c2 | B2 B2 A G2 A | B2 B4 - B A2 | B2 B2 G2 G2 | B2 A B2 (3 B c2 | B2 B2 B2 B2 | B2 G c2 G2 | B2 B2 G2 - | B2 B2 A2 G2 | B2 G A2 B2 | B2 B2 c22 | B2 B2 A2 | B2 B2 A2 G2 :| B2 B2 G A | B2 B2 G2 G2 A2 | B2 B2 G2 | 1 B2 d2 G2 E2 | B2 B2 A2 | G2 B2 G2 | B2 E2 B2 G2 | B2 d2 c2 B2 | B2 c2 B2 | B2 B2 A2 G | B2 E2 E2 :||: A2 B c2 d c | e2 B2 c2 G2 A | G2 G2 G2 | B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 31
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|B2GAG2|B2B2c2|B2B2AG2A|B2B4-BA2|B2B2G2G2|B2AB2(3Bc2|B2B2B2B2|B2Gc2G2|B2B2G2-|B2B2A2G2|B2GA2B2|B2B2c22|B2B2A2|B2B2A2G2:|B2B2GA|B2B2G2G2A2|B2B2G2|1B2d2G2E2|B2B2A2|G2B2G2|B2E2B2G2|B2d2c2B2|B2c2B2|B2B2A2G|B2E2E2:||:A2Bc2dc|e2B2c2G2A|G2G2G2|B
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 32
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | a g f e d | g2 e f e | d2 B A G F | G6 e | d ^c A G A | 1 d c A G F :| 2 d e d ^c d | | |: a f g a g | a a g a g | f d e d | f g f a g | a f g d e | 1 f e f g e d :| 2 d c A G F G | |
+R: jig
+M: 6/8
+K: Gmajor
+E G A G A G G | G G A B d B | g2 f g e d | 1 d B d B G :| 2 d B A F A G | | G G B d g | e d B A F G | G A B d e | d B A F A D | G2 A d g f | e3 g e | d B d A G F | G2 G D | G G B d G A | G B d B A | G F G E G A | G G A B G A | G B d B A :|
+R: reel
+M: 4/4
+K: Gmajor
+B2 B | A B c B A G A G | E2 G B d2 B G A | G2 A G B G G A | B c B B c A G A | B B c B A G A G | F G A B A G A | E2 B c B A G A | B2 B A G A B | E2 B c B G A G A | E B c d B A G A | F A B A B A G A | B B c B c B A | B2 c B c d2 | B2 B c B A G A G | E E2 c B c A | B2 c B c A G A | B c B A G2 G A | B c B A B A | B2 c A G B A G A | |
+R: jig
+M: 9/8
+K: Amajor
+|: E2 E2 D B c B c | A2 d2 c A B c2 A | B2 c A2 B G A c B c B A2 | c2 B c2 c d c B A B c A | A2 - E2 A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 32
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|agfed|g2efe|d2BAGF|G6e|d^cAGA|1dcAGF:|2ded^cd|||:afgag|aagag|fded|fgfag|afgde|1fefged:|2dcAGFG||
+R:jig
+M:6/8
+K:Gmajor
+EGAGAGG|GGABdB|g2fged|1dBdBG:|2dBAFAG||GGBdg|edBAFG|GABde|dBAFAD|G2Adgf|e3ge|dBdAGF|G2GD|GGBdGA|GBdBA|GFGEGA|GGABGA|GBdBA:|
+R:reel
+M:4/4
+K:Gmajor
+B2B|ABcBAGAG|E2GBd2BGA|G2AGBGGA|BcBBcAGA|BBcBAGAG|FGABAGA|E2BcBAGA|B2BAGAB|E2BcBGAGA|EBcdBAGA|FABABAGA|BBcBcBA|B2cBcd2|B2BcBAGAG|EE2cBcA|B2cBcAGA|BcBAG2GA|BcBABA|B2cAGBAGA||
+R:jig
+M:9/8
+K:Amajor
+|:E2E2DBcBc|A2d2cABc2A|B2cA2BGAcBcBA2|c2Bc2cdcBABcA|A2-E2A
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 33
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e2 e2 f2 | g2 e2 f2 | g2 f2 e2 | g2 f2 e2 | d2 B2 B2 | A2 B2 A2 | B2 B2 A2 | B2 G2 A2 | B2 B2 B2 | A2 A2 A2 | B2 A2 A2 | B2 B2 G2 | B2 A2 A2 | G2 B2 A2 | B2 A2 G2 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 33
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|e2e2f2|g2e2f2|g2f2e2|g2f2e2|d2B2B2|A2B2A2|B2B2A2|B2G2A2|B2B2B2|A2A2A2|B2A2A2|B2B2G2|B2A2A2|G2B2A2|B2A2G2|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 34
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e2 e2 f2 | g2 e2 f2 | g2 f2 e2 | g2 f2 e2 | d2 B2 B2 | A2 B2 A2 | B2 B2 A2 | B2 G2 A2 | B2 B2 B2 | A2 A2 A2 | B2 A2 A2 | B2 B2 G2 | B2 A2 A2 | G2 B2 A2 | B2 A2 G2 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 34
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|e2e2f2|g2e2f2|g2f2e2|g2f2e2|d2B2B2|A2B2A2|B2B2A2|B2G2A2|B2B2B2|A2A2A2|B2A2A2|B2B2G2|B2A2A2|G2B2A2|B2A2G2|
+
+</script>
+
+</p><h3 id="prompt6">Prompt 6 - R: slip jig	M: 9/8	K: Emin	|: B2 E G2 E F3 |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 35
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 B A B A F | E2 E F E2 E | B2 B c A B A | B2 B A B A F | B3 G F E2 :| G B2 G2 A | B2 G F G3 | B2 A G F E | B3 c B A | B3 G F3 | B2 G3 E3 | B2 B2 G A | B2 G F G3 | |
+R: reel
+M:</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 35
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|B2BABAF|E2EFE2E|B2BcABA|B2BABAF|B3GFE2:|GB2G2A|B2GFG3|B2AGFE|B3cBA|B3GF3|B2G3E3|B2B2GA|B2GFG3||
+R:reel
+M:
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 36
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | E2 E F G2 A B B | E2 B G A F G | B2 A G E2 B B | c2 e d B2 d | c2 B c B2 B | c2 B c2 B | E2 G2 E2 | E2 E2 E2 d | e2 e2 d B | c2 B2 A2 d | e2 e2 d B2 B | c2 c2 A2 F | E2 E2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 36
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|E2EFG2ABB|E2BGAFG|B2AGE2BB|c2edB2d|c2BcB2B|c2Bc2B|E2G2E2|E2E2E2d|e2e2dB|c2B2A2d|e2e2dB2B|c2c2A2F|E2E2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 37
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | G2 B A F E C3 B F | A B e d c B A F | 1 G6 A F G2 :| 2 G E2 F D2 B c | | | 6/ d3 c A B F D3 ^c | d6 c d c | d3 B A F G3 | ^F3 D3 A G | F G E F E3 C |]
+R: reel
+M: 4/4
+K: Gmajor
+|: (3</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 37
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|G2BAFEC3BF|ABedcBAF|1G6AFG2:|2GE2FD2Bc|||6/d3cABFD3^c|d6cdc|d3BAFG3|^F3D3AG|FGEFE3C|]
+R:reel
+M:4/4
+K:Gmajor
+|:(3
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 38
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | F2 G A G2 E | G B A B G F | B3 B =c B | A B d e d c | G2 G2 :| f2 f e d2 c | B c B c B c | B2 c A B | B2 c F G2 | B2 g g a | a2 a f2 c | B c c c A B | G3 g2 e c | B2 c B G2 :||: A2 B d c B | A2 G G2 G | G2 A B c | d B c B2 c | B c d e c B G | A F G A2 B | d2 c d c B c | B2 c B c2 :|
+R: reel
+M: 4/4
+K: Dmajor
+|: A3 a2 > f e d c | A3 F A A d e | c3 d e A d c | A3 F A d e | f3 e d c e A | d3 f d c e | d3 d3 e d | c3 f e c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 38
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|F2GAG2E|GBABGF|B3B=cB|ABdedc|G2G2:|f2fed2c|BcBcBc|B2cAB|B2cFG2|B2gga|a2af2c|BcccAB|G3g2ec|B2cBG2:||:A2BdcB|A2GG2G|G2ABc|dBcB2c|BcdecBG|AFGA2B|d2cdcBc|B2cBc2:|
+R:reel
+M:4/4
+K:Dmajor
+|:A3a2>fedc|A3FAAde|c3deAdc|A3FAde|f3edceA|d3fdce|d3d3ed|c3fec
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 39
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | E2 E E E3 | A B2 d A2 F | E F D d2 A2 B | d2 A F2 A2 E | c d2 e A F | 1 E2 A d2 e :| 2 f e d d2 e/2 f/2 d/2 f/2 e/2 c | | |: d2 d2 c/2 e/2 e/2 d/2 a/2 f/2 a/2 d/2 g/2 e/2 f/2 f/2 e/2 d/2 d/2 e/2 f/2 f e/2 e/2 f/2 f | e2 d2 e2 e/2 f/2 d/ A/2 d/2 e/2 f e/2 e/2 d > f/2 e d/2 c/2 A/2 f/2 e/2 f/2 e/2 f e/2 f/2 d/2 e/2 c/2 B/2 e/2 A F d/2 d e | d/2 A/2 A/2 A/2 A2 A2 A/2 D3/2 F |]
+R: jig
+M: 6/8
+K: Gmajor
+|: e d B c B | d3 G B B c | e e d B G | A3 G B c | d d B G B c | d3 B G B | A3 B c | d e d G B c | 1 A3 D :| 2 A3 G3 |] |: A c d B | G3 c e | d3 g3 | a a g g g | a3 B B B | A3 G F | 1 A3 D3 :| 2 G3 D3 | |
+R: reel
+M: 4/4
+K: Dmajor
+|: E2 A E A B c B | A D D E D D E | E3 D B G A F G | A B D G F D E D | E2 E3 c A B3 | A D E D D D3 | 1 E3 D D D3 :| 2 E3 E2 F D3 | | |: e | | |: f d2 d2 A d2 e2 | B2 d2 A F A d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 39
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|E2EEE3|AB2dA2F|EFDd2A2B|d2AF2A2E|cd2eAF|1E2Ad2e:|2fedd2e/2f/2d/2f/2e/2c|||:d2d2c/2e/2e/2d/2a/2f/2a/2d/2g/2e/2f/2f/2e/2d/2d/2e/2f/2fe/2e/2f/2f|e2d2e2e/2f/2d/A/2d/2e/2fe/2e/2d>f/2ed/2c/2A/2f/2e/2f/2e/2fe/2f/2d/2e/2c/2B/2e/2AFd/2de|d/2A/2A/2A/2A2A2A/2D3/2F|]
+R:jig
+M:6/8
+K:Gmajor
+|:edBcB|d3GBBc|eedBG|A3GBc|ddBGBc|d3BGB|A3Bc|dedGBc|1A3D:|2A3G3|]|:AcdB|G3ce|d3g3|aaggg|a3BBB|A3GF|1A3D3:|2G3D3||
+R:reel
+M:4/4
+K:Dmajor
+|:E2AEABcB|ADDEDDE|E3DBGAFG|ABDGFDED|E2E3cAB3|ADEDDD3|1E3DDD3:|2E3E2FD3|||:e|||:fd2d2Ad2e2|B2d2AFAd
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 40
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 A B A B A | B2 B2 A B A | B2 B2 B A B A | B2 B2 B2 A | B2 B2 A B2 A | B2 B2 B2 A2 A | B2 B2 B2 B A | B2 B2 A2 A2 A | B2 B2 A2 A B | B2 B2 A2 A2 | B2 B2 A2 A2 B | B2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 40
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|B2ABABA|B2B2ABA|B2B2BABA|B2B2B2A|B2B2AB2A|B2B2B2A2A|B2B2B2BA|B2B2A2A2A|B2B2A2AB|B2B2A2A2|B2B2A2A2B|B2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 41
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 A B A B A | B2 B2 A B A | B2 B2 B A B A | B2 B2 B2 A | B2 B2 A B2 A | B2 B2 B2 A2 A | B2 B2 B2 B A | B2 B2 A2 A2 A | B2 B2 A2 A B | B2 B2 A2 A2 | B2 B2 A2 A2 B | B2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 41
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|B2ABABA|B2B2ABA|B2B2BABA|B2B2B2A|B2B2AB2A|B2B2B2A2A|B2B2B2BA|B2B2A2A2A|B2B2A2AB|B2B2A2A2|B2B2A2A2B|B2
+
+</script>
+
+</p><h3 id="prompt7">Prompt 7 - R: jig	M: 6/8	K: Dmix	f e d c A G |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 42
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A G G G G G G G | A/ c/ e c d c B | c A G G G G G | A/ c F G G G | A G F G G A A | c d c d c | c G G G G A G | A/ c/ d c B G | c A G G G | c/ d c d c B | c d c A G G | c d c A G | c A d c B G | c A G G A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 42
+R:jig
+M:6/8
+K:Dmix
+fedcAG|AGGGGGGG|A/c/ecdcB|cAGGGGG|A/cFGGG|AGFGGAA|cdcdc|cGGGGAG|A/c/dcBG|cAGGG|c/dcdcB|cdcAGG|cdcAG|cAdcBG|cAGGA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 43
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | E2 E A F G E | A c A B A F G | E2 F D E A B c | d B A F G F A | 1 E2 B G E c :| 2 E2 c d B G F G | | |: A A B G F E | A d e f e | f e c B B | A d e d c B | 1 A B A F G2 B :| 2 A G F G E | | |: A c | A A c A c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 43
+R:jig
+M:6/8
+K:Dmix
+fedcAG|E2EAFGE|AcABAFG|E2FDEABc|dBAFGFA|1E2BGEc:|2E2cdBGFG|||:AABGFE|Adefe|fecBB|AdedcB|1ABAFG2B:|2AGFGE|||:Ac|AAcAc
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 44
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | G d B G B G A B | D E G2 F | G E G2 A G B | d B A D G G2 G | A F G2 A d |R: strathspey
+M: 4/4
+K: Gmajor
+B e2 B A B G E | E2 G F E A B E D | E2 A4 e d | e A2 c e2 f | d2 e f e f g | e2 d e c A B | (3</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 44
+R:jig
+M:6/8
+K:Dmix
+fedcAG|GdBGBGAB|DEG2F|GEG2AGB|dBADGG2G|AFG2Ad|R:strathspey
+M:4/4
+K:Gmajor
+Be2BABGE|E2GFEABED|E2A4ed|eA2ce2f|d2efefg|e2decAB|(3
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 45
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A A B A G B | A3 A A G E | A c c A G E | A3 c B A G | A G E G G E | A3 E G E G | G3 D G E G | F G A B c d | e d c A G E D | D2 G G3 :|
+R: jig
+M: 6/8 [|
+K: Eminor
+|: B2 A | A2 e d B A | A2 A B d | A D E/ G E/ E | E2 A B A | A B G E G | A B A B/ d B A | G3 B | A G E/ G/ E :| E3 | |: E3 B A | B2 e e d | B2 A B A/ G/ | E F E3 | E E3 A | B2 B e d | e3 d | B2 e e d | e3 d2 f | e3 e d | B2 B B A | G E3 | E E G E 1 G2 F | E3 :| 2 E3 B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 45
+R:jig
+M:6/8
+K:Dmix
+fedcAG|AABAGB|A3AAGE|AccAGE|A3cBAG|AGEGGE|A3EGEG|G3DGEG|FGABcd|edcAGED|D2GG3:|
+R:jig
+M:6/8[|
+K:Eminor
+|:B2A|A2edBA|A2ABd|ADE/GE/E|E2ABA|ABGEG|ABAB/dBA|G3B|AGE/G/E:|E3||:E3BA|B2eed|B2ABA/G/|EFE3|EE3A|B2Bed|e3d|B2eed|e3d2f|e3ed|B2BBA|GE3|EEGE1G2F|E3:|2E3B
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 46
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | D G G E D F E E D D | c A c c A B | E D F G E F D D | D D G F G A D D | E D G E D G | F G F G F G A B c | d D D G A B | D F G E D D F D | D G A D D F D | A G G B c A G | d e d c A B A | D D F G F D | D D G F G A G | d B G B A G | A G B G G F D | D F G B D D D2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: B2 A B A | G F G B A G2 | B A B d2 B c A | G F G F G2 | B2 A G A B A G2 | B2 B2 B G A2 | 1 B2 A G A G :| 2 B c B G G A G2 | | |: B2 B c d e d | e f e d c d A2 c | B A A G F G2 | B2 B d g e d c A | B2 G A G2 B2 B2 | B2 G F G2 B A | 1 B c d c2 c A G2 :| 2 B A G F G A G2 | | |: c/ d e d c B A2 | d e d e d A2 A2 | B A G F G2 B A G2 | B2 A G F G2 | F G A G B A B A F | E2 A G2 G2 | 1 B2 c/ d e f2 e e d c :| 2 B2 c A c A2 G | | |: B2 A B2 c | A2 A G A A2 G2 | B2 c d e d c A | c2 B c B A A G | B A G A G2 A2 | B2 B A2 G2 | e2 e e f g | f e d c A c A2 | B2 A G2 :||: B2 A c A G4 | B2 G2 G | B2 A G2 A2 | B2 G2 G2 G2 | B c2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 46
+R:jig
+M:6/8
+K:Dmix
+fedcAG|DGGEDFEEDD|cAccAB|EDFGEFDD|DDGFGADD|EDGEDG|FGFGFGABc|dDDGAB|DFGEDDFD|DGADDFD|AGGBcAG|dedcABA|DDFGFD|DDGFGAG|dBGBAG|AGBGGFD|DFGBDDD2:|
+R:reel
+M:4/4
+K:Gmajor
+|:B2ABA|GFGBAG2|BABd2BcA|GFGFG2|B2AGABAG2|B2B2BGA2|1B2AGAG:|2BcBGGAG2|||:B2Bcded|efedcdA2c|BAAGFG2|B2BdgedcA|B2GAG2B2B2|B2GFG2BA|1Bcdc2cAG2:|2BAGFGAG2|||:c/dedcBA2|dededA2A2|BAGFG2BAG2|B2AGFG2|FGAGBABAF|E2AG2G2|1B2c/def2eedc:|2B2cAcA2G|||:B2AB2c|A2AGAA2G2|B2cdedcA|c2BcBAAG|BAGAG2A2|B2BA2G2|e2eefg|fedcAcA2|B2AG2:||:B2AcAG4|B2G2G|B2AG2A2|B2G2G2G2|Bc2G2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 47
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F G F G F G G | F G F G F G F G | F G F G F G G F G | F G F G G F G F G | F G G F G F G F | F G F G F G F G F G | A F G F G F G | F G A F G F G | F G F G A F G | F G F G F G B G | F G F G F G F | F G G F G F G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 47
+R:jig
+M:6/8
+K:Dmix
+fedcAG|FGFGFGG|FGFGFGFG|FGFGFGGFG|FGFGGFGFG|FGGFGFGF|FGFGFGFGFG|AFGFGFG|FGAFGFG|FGFGAFG|FGFGFGBG|FGFGFGF|FGGFGFG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 48
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F G F G F G G | F G F G F G F G | F G F G F G G F G | F G F G G F G F G | F G G F G F G F | F G F G F G F G F G | A F G F G F G | F G A F G F G | F G F G A F G | F G F G F G B G | F G F G F G F | F G G F G F G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 48
+R:jig
+M:6/8
+K:Dmix
+fedcAG|FGFGFGG|FGFGFGFG|FGFGFGGFG|FGFGGFGFG|FGGFGFGF|FGFGFGFGFG|AFGFGFG|FGAFGFG|FGFGAFG|FGFGFGBG|FGFGFGF|FGGFGFG
+
+</script>
+
+</p><h3 id="prompt8">Prompt 8 - R: reel	M: 4/4	K: Dmin	A,2 D A, F A, D A, |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 49
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | D E D E F A, | D E F D D2 A,2 F F | G2 A B A G E F A, | D D F G2 E D | D E D G A, A, A, E | D G, A, G A, A, | D E D F A, A, D | G3 F E D C | D E D D E D | D D D A B G | d d d d B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 49
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|DEDEFA,|DEFDD2A,2FF|G2ABAGEFA,|DDFG2ED|DEDGA,A,A,E|DG,A,GA,A,|DEDFA,A,D|G3FEDC|DEDDED|DDDABG|ddddBA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 50
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | G A B A A G E F D | D D D D A B, A, | D F G B A B A G E | D A G A B G A G | F A G F A G F D | A B G A G E | D D F A D A, A, B, D :| B, B, B, G, A, B, B, | B, E A, B, A, B,2 D | | F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 50
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|GABAAGEFD|DDDDAB,A,|DFGBABAGE|DAGABGAG|FAGFAGFD|ABGAGE|DDFADA,A,B,D:|B,B,B,G,A,B,B,|B,EA,B,A,B,2D||F
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 51
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | G2 G D2 D B, F/4 G/ D/ A,3 d | e d d2 d g | e d c A2 A :| B G G2 d e g | | g f d d g e d | g g d e f g e | f d g d2 d | g2 g a d2 d | B c A G G2 | E F D D G G3 | |
+R: jig
+M: 6/</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 51
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|G2GD2DB,F/4G/D/A,3d|edd2dg|edcA2A:|BGG2deg||gfddged|ggdefge|fdgd2d|g2gad2d|BcAGG2|EFDDGG3||
+R:jig
+M:6/
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 52
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A,2 A, C C A, C G,,/ C C A, | c A, F c B, A,2 C | F A, D E C E C E c | B, B, G A, G, B, C | C D B, B, G, C A, C A, | E C C c _F G2 | A B c B A B c B | A B A D G A, D C C C | A, D C C C C A, C | 1 C3 E C D :| 2 C2 C E,2 C, C C D E c | | d e d d A c | A c d e d e A c A2 | f e d d e d c A G c | A d c B e d e A c B c | A d e d c A d2 | 1 A B c d c A G A G E G :| 2 A d c d c A G E G | |
+R: jig
+M: 6/8
+K: Gmajor
+A |: G G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 52
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|A,2A,CCA,CG,,/CCA,|cA,FcB,A,2C|FA,DECECEc|B,B,GA,G,B,C|CDB,B,G,CA,CA,|ECCc_FG2|ABcBABcB|ABADGA,DCCC|A,DCCCCA,C|1C3ECD:|2C2CE,2C,CCDEc||deddAc|AcdedeAcA2|feddedcAGc|AdcBedeAcBc|AdedcAd2|1ABcdcAGAGEG:|2AdcdcAGEG||
+R:jig
+M:6/8
+K:Gmajor
+A|:GG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 53
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | B,2 C E C E D2 | A, A, E F A, C D A, | B,2 A, B, A, A, D E | B, E C A, D C D A, :| | | |: d d B d f g e | e d B d B d | c d B G A F E | B d d e f e | g d G B d d e | e d B A d e f g | e f g e a g e f | e d B d B d | c B d B d d (3 :|
+R: march
+M: 4/4
+K: Gmajor
+|: D > D F/ E/ D/ A/ B/ A/ B/ | c > d > B/ c/ B/ A/ F > E/ G/ | D > F/ A/ B/ A/ F/ F/ G/ E/ F/ | D > F G/ G > A/ F/ E/ | D E > F/ G/ F G/ A/ F/ G/ | E/ A/ G/ G/ E/ F/ E/ G/ | D/ D/ E/ G/ E/ F/ A/ B/ c/ | d B B/ A/ G/ F/ G/ | F/ F/ E/ E/ E/ E/ F/ G/ G/ | A/ F E/ A/ F/ E/ | D D/ D/ D/ G/ F/ G/ | F G G/ E/ E/ A/ G/ F/ | G/ A/ G/ E/ E/ G/ A/ F/ | D/ D/ F/ F G/ G/ | F/ A/ E/ F/ G/ F/ E/ F/ | G/ F G/ G/ E/ B/ | A E F/ c/ A/ E/ E/ E/ G/ D/ | D D/ C/ F/ D/ E/ | G E/ E/ G/ F/ E > D | F/ F/ F/ G/ E/ E/ G/ F/ G/ | F3 F/ G/ E/ D/ ^ | F G/ E/ D/ F/ E/ D</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 53
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|B,2CECED2|A,A,EFA,CDA,|B,2A,B,A,A,DE|B,ECA,DCDA,:||||:ddBdfge|edBdBd|cdBGAFE|Bddefe|gdGBdde|edBAdefg|efgeagef|edBdBd|cBdBdd(3:|
+R:march
+M:4/4
+K:Gmajor
+|:D>DF/E/D/A/B/A/B/|c>d>B/c/B/A/F>E/G/|D>F/A/B/A/F/F/G/E/F/|D>FG/G>A/F/E/|DE>F/G/FG/A/F/G/|E/A/G/G/E/F/E/G/|D/D/E/G/E/F/A/B/c/|dBB/A/G/F/G/|F/F/E/E/E/E/F/G/G/|A/FE/A/F/E/|DD/D/D/G/F/G/|FGG/E/E/A/G/F/|G/A/G/E/E/G/A/F/|D/D/F/FG/G/|F/A/E/F/G/F/E/F/|G/FG/G/E/B/|AEF/c/A/E/E/E/G/D/|DD/C/F/D/E/|GE/E/G/F/E>D|F/F/F/G/E/E/G/F/G/|F3F/G/E/D/^|FG/E/D/F/E/D
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 54
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A, D E F A, A, A, A, A, | A, B, A, A, A, A, B, A, A, | A, A, A, A, D A, A, A, | A, D E D A, A, A, A, | B, B, A, A, A, B, B, A, | A, A, D A, A, B, A, | A, A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 54
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|A,DEFA,A,A,A,A,|A,B,A,A,A,A,B,A,A,|A,A,A,A,DA,A,A,|A,DEDA,A,A,A,|B,B,A,A,A,B,B,A,|A,A,DA,A,B,A,|A,A
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 55
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | A, D E F A, A, A, A, A, | A, B, A, A, A, A, B, A, A, | A, A, A, A, D A, A, A, | A, D E D A, A, A, A, | B, B, A, A, A, B, B, A, | A, A, D A, A, B, A, | A, A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 55
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|A,DEFA,A,A,A,A,|A,B,A,A,A,A,B,A,A,|A,A,A,A,DA,A,A,|A,DEDA,A,A,A,|B,B,A,A,A,B,B,A,|A,A,DA,A,B,A,|A,A
+
+</script>
+
+</p><h3 id="prompt9">Prompt 9 - R: jig	M: 6/8	K: Adow	|: a3 b a g |</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 56
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | e2 g f e | d B A A B A2 G | d2 A A B A G | E E D E G2 E | E D E E G2 E | E2 G2 D2 E :| A | E E E D E E | E D E D E G | E D E A B B | d B A G E D E | E C E D E G | E D E D E D :|
+R: reel
+M: 4/4
+K</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 56
+R:jig
+M:6/8
+K:Adow
+|:a3bag|e2gfe|dBAABA2G|d2AABAG|EEDEG2E|EDEEG2E|E2G2D2E:|A|EEEDEE|EDEDEG|EDEABB|dBAGEDE|ECEDEG|EDEDED:|
+R:reel
+M:4/4
+K
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 57
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a b g a f f | e c' e e f | e g a g f | e c d e f :||: c2 e c c B2 f | d2 e c B A | g e c e c B2 | f g a b a | a e c' b g | a c' f a | e c' a g a | b a a f e | c' a g a | b a g f e | d c B2 e | c B c2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 57
+R:jig
+M:6/8
+K:Adow
+|:a3bag|abgaff|ec'eef|egagf|ecdef:||:c2eccB2f|d2ecBA|gececB2|fgaba|aec'bg|ac'fa|ec'aga|baafe|c'aga|bagfe|dcB2e|cBc2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 58
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | e c A B G | E E E B d c F | E3 A F D | B B A B A G | F E D2 B c | (3 B A B A F G | A F A D D | E F E D2 :| e c B A B A | F E F | F D E C C | d c A A F | D E F A, D | E F A B, | E F A B A B | c A F E E |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 58
+R:jig
+M:6/8
+K:Adow
+|:a3bag|ecABG|EEEBdcF|E3AFD|BBABAG|FED2Bc|(3BABAFG|AFADD|EFED2:|ecBABA|FEF|FDECC|dcAAF|DEFA,D|EFAB,|EFABAB|cAFEE|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 59
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | e < a g a g f | e a e e2 d | d A F A c d e | f a g e d | e d f b a g | a2 f e d | f g3 e | d e d B c | B A A F E | d2 e d | B A F E D E E | B A B F E E | B A d e f | g b a g e | d e e d B | B A D F E F | A F A d c | B A F D d | d e f e a | b a2 a | f e d B | B A F E D E | B A F E D E | B B d e f | a f a f e | d B A F D | B A D E E E D | B A F E F | B A F E F E | B A G E D E | B A B d e | f =c d e d | B A F E F E | B d A F E F | B A D E D F | d2 e f | a</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 59
+R:jig
+M:6/8
+K:Adow
+|:a3bag|e<agagf|eaee2d|dAFAcde|faged|edfbag|a2fed|fg3e|dedBc|BAAFE|d2ed|BAFEDEE|BABFEE|BAdef|gbage|deedB|BADFEF|AFAdc|BAFDd|defea|ba2a|fedB|BAFEDE|BAFEDE|BBdef|afafe|dBAFD|BADEEED|BAFEF|BAFEFE|BAGEDE|BABde|f=cded|BAFEFE|BdAFEF|BADEDF|d2ef|a
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 60
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | e c B G A G | A d g e e d | g e d B G A G | B d B c B G | A B c e g e | f g e d c A :| B f g | B B d B A | G B g e g B | f g g e d | B g B G E G | c d g g e | B B c B A G | A B c d e | B e g d B | c A c B A G | |
+R: reel
+M: 4/4
+K: Edorian
+|: D2 D2 C A2 G | A2 B c2 d2 | e2 d c B A G G | E2 F2 A2 G2 | A2 F G2 D2 :||: D2 F c d2 c2 c | A2 F2 c A F2 | D2 F2 c2 g2 | e2 c d c2 c | d2 c d2 B A G | F2 D E2 D2 E2 | D2 c2 B2 c d | e2 c2 d2 c2 | d c d e2 c2 G | A2 F2 d2 G2 | A2 F D2 D2 :||: D2 E2 F G2 G c | B A2 B A2 G F A | D2 F2 F2 B2 c | G2 E2 G2 (3 F E F | G2 E F2 D2 D2 | F2 A2 F G2 A2 | c2 c d2 c2 B G | D2 F2 D2 D2 | A2 F2 F2 D2 d2 | D2 G2 D2 | E2 D2 G F2 D2 | |
+R: slip jig
+M: 6/8
+K 6/8
+D2 D F E3 D | D2 B G F G3 | D2 B G F E D | D2 F G A F3 | D2 F G G B A | D2 D2 E F | D3 F G3 | D2 A F G3 | D2 B c A B A | f2 c A G2 G | D2 F E2 D3 | D3 F G | A3 D3 :||: D2 D</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 60
+R:jig
+M:6/8
+K:Adow
+|:a3bag|ecBGAG|Adgeed|gedBGAG|BdBcBG|ABcege|fgedcA:|Bfg|BBdBA|GBgegB|fgged|BgBGEG|cdgge|BBcBAG|ABcde|BegdB|cAcBAG||
+R:reel
+M:4/4
+K:Edorian
+|:D2D2CA2G|A2Bc2d2|e2dcBAGG|E2F2A2G2|A2FG2D2:||:D2Fcd2c2c|A2F2cAF2|D2F2c2g2|e2cdc2c|d2cd2BAG|F2DE2D2E2|D2c2B2cd|e2c2d2c2|dcde2c2G|A2F2d2G2|A2FD2D2:||:D2E2FG2Gc|BA2BA2GFA|D2F2F2B2c|G2E2G2(3FEF|G2EF2D2D2|F2A2FG2A2|c2cd2c2BG|D2F2D2D2|A2F2F2D2d2|D2G2D2|E2D2GF2D2||
+R:slipjig
+M:6/8
+K6/8
+D2DFE3D|D2BGFG3|D2BGFED|D2FGAF3|D2FGGBA|D2D2EF|D3FG3|D2AFG3|D2BcABA|f2cAG2G|D2FE2D3|D3FG|A3D3:||:D2D
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 61
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a2 e f e | d B A B A F E | E3 E F E E | E3 A B A F | E3 A B A F E | E3 F E E | E3 E F E | E3 A B A F | 1 E3 E E :| 2 E3 E3 | |
+R: reel
+M: 4/4
+K: Dmajor
+|: F E F E F E F E | F E F E F E E | F E F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 61
+R:jig
+M:6/8
+K:Adow
+|:a3bag|a2efe|dBABAFE|E3EFEE|E3ABAF|E3ABAFE|E3FEE|E3EFE|E3ABAF|1E3EE:|2E3E3||
+R:reel
+M:4/4
+K:Dmajor
+|:FEFEFEFE|FEFEFEE|FEF
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 62
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | a2 e f e | d B A B A F E | E3 E F E E | E3 A B A F | E3 A B A F E | E3 F E E | E3 E F E | E3 A B A F | 1 E3 E E :| 2 E3 E3 | |
+R: reel
+M: 4/4
+K: Dmajor
+|: F E F E F E F E | F E F E F E E | F E F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 62
+R:jig
+M:6/8
+K:Adow
+|:a3bag|a2efe|dBABAFE|E3EFEE|E3ABAF|E3ABAFE|E3FEE|E3EFE|E3ABAF|1E3EE:|2E3E3||
+R:reel
+M:4/4
+K:Dmajor
+|:FEFEFEFE|FEFEFEE|FEF
+
+</script>
+
+</p><h3 id="prompt10">Prompt 10 - R: reel	M: 4/4	K: Dmaj	A |: F A (3 A A A B A F A</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 63
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F A G F B A B G E | D3 E F A G A F A | A2 A F G A F E G | D F A B G A G F G | A F A B A F D D | A F E F A B A | A G F E D F D E | D A A B G A F2 | A F G F G A B | A F A2 A F G | A F G E G2 F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 63
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FAGFBABGE|D3EFAGAFA|A2AFGAFEG|DFABGAGFG|AFABAFDD|AFEFABA|AGFEDFDE|DAABGAF2|AFGFGAB|AFA2AFG|AFGEG2F
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 64
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | A A A B A B c d | f g f f d B | A A A D F A2 | (3 E F A F A B A F | A G A B A A | d2 f a f d e | a2 a g f a f | e2 f e2 d B | A F A B A F2 | A B A F2 F A | A B c e f f e d | A A B f e f e</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 64
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|AAABABcd|fgffdB|AAADFA2|(3EFAFABAF|AGABAA|d2fafde|a2agfaf|e2fe2dB|AFABAF2|ABAF2FA|ABceffed|AABfefe
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 65
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A F | A B A F A B c | d e f d A F A | G F A d A B A G | F A d B A A F | G G F A B d A B | G A F A F G | A G A2 D F A | c d c B B A A | (3 B c d c d3 B | c B G2 A G | B c d c3 A | c d e f d2 | (</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 65
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFAF|ABAFABc|defdAFA|GFAdABAG|FAdBAAF|GGFABdAB|GAFAFG|AGA2DFA|cdcBBAA|(3Bcdcd3B|cBG2AG|Bcdc3A|cdefd2|(
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 66
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | G A B E A c A A A | d c A B A d A | d c A A G A B e | f A g f d c A | d c A A G B d A | c A G E B c A | d c e d c A A | 1 c A G E E G A :| 2 c G E E D4 | | |: G E G G A2 | G G E D G B c A | G E G E G B A G A | G E D G2 A2 | G E D G B G A | G E E G G2 A B c | 1 d A G2 G A :| 2 d A G G E G2 | |
+R: reel
+M: 4/4 |: c e2 d e2 d2 | c2 e2 e2 d2 | c2 e2 d e2 e2 | c2 e2 e2 d e2 | c2 c2 e2 d2 B | c2 e2 e d2 e2 | c2 e d e c2 d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 66
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|GABEAcAAA|dcABAdA|dcAAGABe|fAgfdcA|dcAAGBdA|cAGEBcA|dcedcAA|1cAGEEGA:|2cGEED4|||:GEGGA2|GGEDGBcA|GEGEGBAGA|GEDG2A2|GEDGBGA|GEEGG2ABc|1dAG2GA:|2dAGGEG2||
+R:reel
+M:4/4|:ce2de2d2|c2e2e2d2|c2e2de2e2|c2e2e2de2|c2c2e2d2B|c2e2ed2e2|c2edec2d
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 67
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | d3 A F G A B G G A F | E2 D E2 E A G | A d c d c A | A d d c A A G A | D E D F A G A | B c d c A G | d c d d c A G | 1 D D D D D D :| 2 D D D D D A | | |: c A c A d f c | e d e c A A | c A B c A d | f d c d c A G | D E D D A G | c d c A d c | B c d c A c | 1 B d c d c A G :| 2 G D D D D D F | |
+R: waltz
+M: 3/4
+K: Dmajor
+|: D2 F2 A2 | G2 E2 F2 | E4 F2 | E2 F2 D2 | G2 F2 | G2 F2 E2 | D42 | G2 F2 E2 | ^A2 F2 | G F2 A2 | G2 F2 D2 | G2 E2 | E2 E2 | D2 G2 F2 | G2 E2 D2 | G2 E2 | D2 A2 F2 | D2 F2 G2 | D4 E2 | D2 D2 | F2 D2 E2 | G2 D2 | D2 F2 F2 | G4 G2 | E2 D2 | E2 E2 | F2 D2 F2 | A2 G2 E2 | E2 D2 F2 | G2 E2 F2 | D2 F2 | G2 G2 D2 | E2 F2 d2 | c d2 d2 | B2 G2 | A2 F2 E2 | D2 D2 E2 | G2 G F2 | D2 G2 | E4 D2 | G2 G2 | E2 A2 F2 | G2 G2 G2 | E2 E2 | E2 G2 F2 | D2 D2 F2 | G2 G2 E2 | D2 D2 | E2 F2 D2 | D2 F2 D2 | E2 F2 | E2 D2 D2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 67
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|d3AFGABGGAF|E2DE2EAG|AdcdcA|AddcAAGA|DEDFAGA|BcdcAG|dcddcAG|1DDDDDD:|2DDDDDA|||:cAcAdfc|edecAA|cABcAd|fdcdcAG|DEDDAG|cdcAdc|BcdcAc|1BdcdcAG:|2GDDDDDF||
+R:waltz
+M:3/4
+K:Dmajor
+|:D2F2A2|G2E2F2|E4F2|E2F2D2|G2F2|G2F2E2|D42|G2F2E2|^A2F2|GF2A2|G2F2D2|G2E2|E2E2|D2G2F2|G2E2D2|G2E2|D2A2F2|D2F2G2|D4E2|D2D2|F2D2E2|G2D2|D2F2F2|G4G2|E2D2|E2E2|F2D2F2|A2G2E2|E2D2F2|G2E2F2|D2F2|G2G2D2|E2F2d2|cd2d2|B2G2|A2F2E2|D2D2E2|G2GF2|D2G2|E4D2|G2G2|E2A2F2|G2G2G2|E2E2|E2G2F2|D2D2F2|G2G2E2|D2D2|E2F2D2|D2F2D2|E2F2|E2D2D2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 68
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F A A B A F A F A | F A B A F A B A F A | F A B A B A F A F A | A F A B A F A F A | A B A F A F A F A | A F A F A B A F A | A F A F A A F A | A F A F A F A F A | A A F A F A B A F | A F A F A F A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 68
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FAABAFAFA|FABAFABAFA|FABABAFAFA|AFABAFAFA|ABAFAFAFA|AFAFABAFA|AFAFAAFA|AFAFAFAFA|AAFAFABAF|AFAFAFA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 69
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F A A B A F A F A | F A B A F A B A F A | F A B A B A F A F A | A F A B A F A F A | A B A F A F A F A | A F A F A B A F A | A F A F A A F A | A F A F A F A F A | A A F A F A B A F | A F A F A F A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 69
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FAABAFAFA|FABAFABAFA|FABABAFAFA|AFABAFAFA|ABAFAFAFA|AFAFABAFA|AFAFAAFA|AFAFAFAFA|AAFAFABAF|AFAFAFA
+
+</script>
+
+</p><h3 id="prompt11">Prompt 11 - R: jig</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 70
+R: jig
+M: 6/8
+K: Dmajor
+|: d e c d | B A F E E E E | B A E D E E | B A F E E E E E | B A F E D E E | B A F E D E | B A F E E E E F | E D E D E E E | B A B A F E E E | B A F E E E | B d B A F E | B d A F E E F | B A d A F E | B A F E D E | F A F E D E E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 70
+R:jig
+M:6/8
+K:Dmajor
+|:decd|BAFEEEE|BAEDEE|BAFEEEEE|BAFEDEE|BAFEDE|BAFEEEEF|EDEDEEE|BABAFEEE|BAFEEE|BdBAFE|BdAFEEF|BAdAFE|BAFEDE|FAFEDEE
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 71
+R: jig
+M: 6/8
+K: Bminor
+|: B A B A B c | B c e c d | B e F A B c d | e E B A B c d | e c B e f d e d | c B c B A | B c B A F E A | B c e e f e d | e c d e f d c | B c B c B A G | B c E G B A :| | |: e g e e | f g f g f e f d | e c e f g e | f g e f e d |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 71
+R:jig
+M:6/8
+K:Bminor
+|:BABABc|Bcecd|BeFABcd|eEBABcd|ecBefded|cBcBA|BcBAFEA|Bceefed|ecdefdc|BcBcBAG|BcEGBA:|||:egee|fgfgfefd|ecefge|fgefed|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 72
+R: jig
+M: 4/8
+A B2 B2 | A3 B2 A F2 B | A2 A B2 B c2 | A2 A2 c2 B2 B | A2 c A2 B2 A G | A2 A F A2 G F2 | A3 A2 B2 B2 B | A3 c d2 B2 B | d2 c2 A2 B2 A | A2 G F2 G2 G2 :| A2 B c A B2 B2 c B | A2 c d2 e2 B | A2 G A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 72
+R:jig
+M:4/8
+AB2B2|A3B2AF2B|A2AB2Bc2|A2A2c2B2B|A2cA2B2AG|A2AFA2GF2|A3A2B2B2B|A3cd2B2B|d2c2A2B2A|A2GF2G2G2:|A2BcAB2B2cB|A2cd2e2B|A2GA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 73
+R: jig
+M: 4/4
+K: Dmajor
+|: F/ F F F/ d B d | d F F F A F | D3 F F D F E F | B d d e d | f d A F F G A | d f e d d B | c d A F E F | 1 A F2 F D :| 2 A F D D F D D | | |: e d B B B A | F A F F D D E d | e d B A F F | D D F D D F A | B d B A F | 1 A F D3 D F :| 2 A F D D2 D D :| 2 A D D D D | |
+R: reel
+M: 4/4
+K: Adorian
+|: A |: G G A B G A B2 | A B d G B c A B G | G A G A A B A B | A G G A d B c d B | 1 A G B G A B G B | A B d B c d A A :||: A G B c d B B A | B A G G B d B c | d g d (3 e f g e d B | G A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 73
+R:jig
+M:4/4
+K:Dmajor
+|:F/FFF/dBd|dFFFAF|D3FFDFEF|Bdded|fdAFFGA|dfeddB|cdAFEF|1AF2FD:|2AFDDFDD|||:edBBBA|FAFFDDEd|edBAFF|DDFDDFA|BdBAF|1AFD3DF:|2AFDD2DD:|2ADDDD||
+R:reel
+M:4/4
+K:Adorian
+|:A|:GGABGAB2|ABdGBcABG|GAGAABAB|AGGAdBcdB|1AGBGABGB|ABdBcdAA:||:AGBcdBBA|BAGGBdBc|dgd(3efgedB|GA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 74
+R: jig
+M: 6/8
+K: Gmajor
+|: d d2 B A | B A B d2 e | c2 d B A B | A B A B c | d e d B A A | B A B A B c | B A B d | A B d e f | e d A B A | d e2 B c | d e2 d B | A B A B c | B A A B A | B A B A B A | B A A B A | d3 B A | B A A B c B | d e2 f | e d B A A | B A B d2 A | c A B c B A | B A A d A B | a e a d2 | e d e d B | B A G A2 :||: d | e e A a e A | e A a a g | e A f g A2 | e A B c d | e2 d e | e A B A B | c a A a e A | f e | d A A A A B | A a g A f | e a A a A g | e A a e | e A B A a A | e A a A a - | d A a A A | a A e a A g | e A a g A | B A B A A B | e A A A a A | e A A A A A A | e A A A a A | e a A b a2 | | e A A a A a A a | e A a A a A A | e d e A d A | e a A d A | e A d e a2 :| |
+R: jig
+M: 6/8 A3 A3 | d3 A3 | g3 A A3 | G3 A3 | d3 d3 d | g3 e2 d | d3 A G3 | d3 A3 G3 :|
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: G A F2 G2 A2 | B2 B2 A G G2 A2 | B2 B2 G2 G2 G2 | G2 A B2 G2 A2 A2 | B2 d2 B2 A2 A2 | B2 G2 G2 G2 A2 A2 | G2 B2 G2 G2 A :| G2 A2 G2 G2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 74
+R:jig
+M:6/8
+K:Gmajor
+|:dd2BA|BABd2e|c2dBAB|ABABc|dedBAA|BABABc|BABd|ABdef|edABA|de2Bc|de2dB|ABABc|BAABA|BABABA|BAABA|d3BA|BAABcB|de2f|edBAA|BABd2A|cABcBA|BAAdAB|aead2|ededB|BAGA2:||:d|eeAaeA|eAaag|eAfgA2|eABcd|e2de|eABAB|caAaeA|fe|dAAAAB|AagAf|eaAaAg|eAae|eABAaA|eAaAa-|dAaAA|aAeaAg|eAagA|BABAAB|eAAAaA|eAAAAAA|eAAAaA|eaAba2||eAAaAaAa|eAaAaAA|edeAdA|eaAdA|eAdea2:||
+R:jig
+M:6/8A3A3|d3A3|g3AA3|G3A3|d3d3d|g3e2d|d3AG3|d3A3G3:|
+R:hornpipe
+M:4/4
+K:Gmajor
+|:GAF2G2A2|B2B2AGG2A2|B2B2G2G2G2|G2AB2G2A2A2|B2d2B2A2A2|B2G2G2G2A2A2|G2B2G2G2A:|G2A2G2G2G2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 75
+R: jig
+M: 6/8
+K: Gmajor
+|: G2 G2 G2 G | A2 G2 G2 G | A2 A2 G2 G | A2 B2 G2 G | A2 G2 A2 G | A2 G2 G2 B | A2 G2 G2 G2 | A2 G2 G2 G2 G | A3 G2 G2 G | A2 G A2 G2 G | A2 G2 B2 G | A2 G2 G2 A G | A2 G2 G2 G2 :|
+R:</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 75
+R:jig
+M:6/8
+K:Gmajor
+|:G2G2G2G|A2G2G2G|A2A2G2G|A2B2G2G|A2G2A2G|A2G2G2B|A2G2G2G2|A2G2G2G2G|A3G2G2G|A2GA2G2G|A2G2B2G|A2G2G2AG|A2G2G2G2:|
+R:
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 76
+R: jig
+M: 6/8
+K: Gmajor
+|: G2 G2 G2 G | A2 G2 G2 G | A2 A2 G2 G | A2 B2 G2 G | A2 G2 A2 G | A2 G2 G2 B | A2 G2 G2 G2 | A2 G2 G2 G2 G | A3 G2 G2 G | A2 G A2 G2 G | A2 G2 B2 G | A2 G2 G2 A G | A2 G2 G2 G2 :|
+R:</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 76
+R:jig
+M:6/8
+K:Gmajor
+|:G2G2G2G|A2G2G2G|A2A2G2G|A2B2G2G|A2G2A2G|A2G2G2B|A2G2G2G2|A2G2G2G2G|A3G2G2G|A2GA2G2G|A2G2B2G|A2G2G2AG|A2G2G2G2:|
+R:
+
+</script>
+
+</p><h3 id="prompt12">Prompt 12 - R: reel</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 77
+R: reel
+R: 4/4
+M: Gmajor
+K: Dmajor
+|: D2 D | D E F A A | B c A B A F | D D D D F A A | B c A F A F A | E D D2 D A | B c A B A F | F D D E D | D ^G A F A | d c A A F | F D D D A | D D F D D E | D D D A | B A D D F A | B d c d | B c d c A | B A D D D D |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 77
+R:reel
+R:4/4
+M:Gmajor
+K:Dmajor
+|:D2D|DEFAA|BcABAF|DDDDFAA|BcAFAFA|EDD2DA|BcABAF|FDDED|D^GAFA|dcAAF|FDDDA|DDFDDE|DDDA|BADDFA|Bdcd|BcdcA|BADDDD|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 78
+R: reel
+M: 4/4
+K: Gmajor
+D2 D E | F D F/ c/ d/ | G A/ G d > d | B c B c/ B/ c/ | A/ A/ E D E/ G B/ | G A G F G/ E/ | A/ A A/ G/ c/ d/ | e f/ g/ e/ f/ | g/ f/ | g3 e/ | d/ g/ f/ g/ a/ | b/ g/ f/ e/ g/ g/ | e/ f/ g</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 78
+R:reel
+M:4/4
+K:Gmajor
+D2DE|FDF/c/d/|GA/Gd>d|BcBc/B/c/|A/A/EDE/GB/|GAGFG/E/|A/AA/G/c/d/|ef/g/e/f/|g/f/|g3e/|d/g/f/g/a/|b/g/f/e/g/g/|e/f/g
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 79
+R: reel
+M: 4/4
+K: Gmajor
+B G2 E3 D2 | E4 E G | A2 c A2 e e | d A G G E2 B, | E3 E D E | D4 E2 E2 A B | c A G E G2 E | F3 E B E2 F | A3 A4 D4 :||: |: A3 A4 g | a2 g3 a3 e a | g3 e3 f d | a3 e e3 a a | b 9 d3 a e2 e | d c B G F G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 79
+R:reel
+M:4/4
+K:Gmajor
+BG2E3D2|E4EG|A2cA2ee|dAGGE2B,|E3EDE|D4E2E2AB|cAGEG2E|F3EBE2F|A3A4D4:||:|:A3A4g|a2g3a3ea|g3e3fd|a3ee3aa|b9d3ae2e|dcBGFG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 80
+R: reel
+M: 4/4
+K: Dmajor
+|: d2 B d c A | A d e f e | a c B d c A | e c B c d B | (3 d e f e e f d d | c A B2 A B | c B A B d A | (3 f e f e f e d | B A2 A B c | (3 B c B A B d | d e f e d c | (3 e f e f a g e | (3 f e d f e d e f | (3 g e f e d c | (3 c d c d e c e d | (3 e f e f d e f | e f A A A A c d | e f e f e f d | e f e c e d e | (3 e f g e d c d B | c e f a e c | (3 g e f e f e e | A2 c d e f e f | | d c a e a f A2 d | B A2 d f e f | e f g e c e | d e f e a f g a | f e d e d c B |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 80
+R:reel
+M:4/4
+K:Dmajor
+|:d2BdcA|Adefe|acBdcA|ecBcdB|(3defeefdd|cAB2AB|cBABdA|(3fefefed|BA2ABc|(3BcBABd|defedc|(3efefage|(3fedfedef|(3gefedc|(3cdcdeced|(3efefdef|efAAAAcd|efefefd|efecede|(3efgedcdB|cefaec|(3gefefee|A2cdefef||dcaeafA2d|BA2dfef|efgece|defeafga|fededcB|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 81
+R: reel
+M: 4/8
+K: Gmajor
+c c c e c e | c2 c e c c A D E E | D D D D E c | d c c A c A B A | c c A G E E D | c A B c A F E | D D D C E D D D A, D | D D3 A, D | E D G A B A c | d c c A G E A c | d c A G E D E | C D D C C D D | D C C D B, C | A, C D D D C C A, | C E D D C D G | C D C C D C B, D | 1 C E D D E F G D | C C D C C C A, C :| 2 C D C E D D | |
+R: jig
+M: 6/8
+K: Dmajor
+| D2 A2 c | A2 B B A | G2 D G F G | A2 A2 A | B2 A B c A | A2 A B2 d | e2 c B A2 :| f3 f a | g2 g2 f | g3 f a3 | e3 e2 d e | f3 a2 a3 | g3 g3 | f e3 g e | f3 f3 g | f3 b a2 f | g3 g d | f2 f g3 | e2 e3 c | d3 A B c |2 (3 d e c B A | d2 B c2 A | G2 A G2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: D E E D E D2 D2 G | c3 D E D D | G A B G E D2 D2 | G D E D E D G2 | G G3 D E D2 | E D E D E D D D2 | 1 D D E D D D3 D :| 2 D D D D D3 D2 | | |: d c d e d c e d | c A G A d e d | d g a a g g d c | d c d d e d e d | c A d c A G E D2 | |
+R: reel
+M: 4//4
+K: Amajor
+A3 C E F E2 F D E F | A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 81
+R:reel
+M:4/8
+K:Gmajor
+cccece|c2ceccADEE|DDDDEc|dccAcABA|ccAGEED|cABcAFE|DDDCEDDDA,D|DD3A,D|EDGABAc|dccAGEAc|dcAGEDE|CDDCCDD|DCCDB,C|A,CDDDCCA,|CEDDCDG|CDCCDCB,D|1CEDDEFGD|CCDCCCA,C:|2CDCEDD||
+R:jig
+M:6/8
+K:Dmajor
+|D2A2c|A2BBA|G2DGFG|A2A2A|B2ABcA|A2AB2d|e2cBA2:|f3fa|g2g2f|g3fa3|e3e2de|f3a2a3|g3g3|fe3ge|f3f3g|f3ba2f|g3gd|f2fg3|e2e3c|d3ABc|2(3decBA|d2Bc2A|G2AG2:|
+R:reel
+M:4/4
+K:Gmajor
+|:DEEDED2D2G|c3DEDD|GABGED2D2|GDEDEDG2|GG3DED2|EDEDEDDD2|1DDEDDD3D:|2DDDDD3D2|||:dcdedced|cAGAded|dgaaggdc|dcddeded|cAdcAGED2||
+R:reel
+M:4//4
+K:Amajor
+A3CEFE2FDEF|A
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 82
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 | A2 G2 G2 G2 | A2 B2 G2 G2 | A2 A2 G2 G2 | A2 G A2 G2 G2 | A2 B G2 G2 | A2 G2 A2 G2 | A2 G2 G A2 G2 | A2 G2 B2 G2 G | A2 G2 G2 A2 | A2 G2 G2 A2 G | A2 G2 G2 G2 G | A2 G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 82
+R:reel
+M:4/4
+K:Gmajor
+|:G2G2G2|A2G2G2G2|A2B2G2G2|A2A2G2G2|A2GA2G2G2|A2BG2G2|A2G2A2G2|A2G2GA2G2|A2G2B2G2G|A2G2G2A2|A2G2G2A2G|A2G2G2G2G|A2G
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 83
+R: reel
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 | A2 G2 G2 G2 | A2 B2 G2 G2 | A2 A2 G2 G2 | A2 G A2 G2 G2 | A2 B G2 G2 | A2 G2 A2 G2 | A2 G2 G A2 G2 | A2 G2 B2 G2 G | A2 G2 G2 A2 | A2 G2 G2 A2 G | A2 G2 G2 G2 G | A2 G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 83
+R:reel
+M:4/4
+K:Gmajor
+|:G2G2G2|A2G2G2G2|A2B2G2G2|A2A2G2G2|A2GA2G2G2|A2BG2G2|A2G2A2G2|A2G2GA2G2|A2G2B2G2G|A2G2G2A2|A2G2G2A2G|A2G2G2G2G|A2G
+
+</script>
+
+</p><h3 id="prompt13">Prompt 13 - R: polka</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 84
+R: polka
+M: 4/4
+K: Gmajor
+|: D2 | G2 G2 G G2 | G2 d2 e2 | c2 d2 B2 | A2 G2 A2 | B2 G2 G2 | G2 A2 G2 | A2 G2 G2 | G2 G2 G2 | A2 B2 G2 | A2 G2 G4 :||: B2 G G2 G | A2 G2 G2 | A2 A2 G2 | A2 G A2 G | A2 G2 B2 | A2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 84
+R:polka
+M:4/4
+K:Gmajor
+|:D2|G2G2GG2|G2d2e2|c2d2B2|A2G2A2|B2G2G2|G2A2G2|A2G2G2|G2G2G2|A2B2G2|A2G2G4:||:B2GG2G|A2G2G2|A2A2G2|A2GA2G|A2G2B2|A2G2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 85
+R: polka
+K: Dmajor
+|: B D2 G | D3 E A2 G | B d d B G | E3 F A | B d e d | g3 d B | 1 A B A G A :| 2 A B A G A | | | |: c3 d | F3 D A | D E F D2 d | e3 d B | c3 d B G | A G F D D | 1 A B3 D G :| 2 A B c d B G | | g3 g3 f | | |: g3 f d B | c B3 | A3</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 85
+R:polka
+K:Dmajor
+|:BD2G|D3EA2G|BddBG|E3FA|Bded|g3dB|1ABAGA:|2ABAGA||||:c3d|F3DA|DEFD2d|e3dB|c3dBG|AGFDD|1AB3DG:|2ABcdBG||g3g3f|||:g3fdB|cB3|A3
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 86
+R: polka
+M: 9/4
+K: Gmajor
+B c A B B | c d f e g | f g e d g | a f g g e d | A A d A B | c d f g a g | f d A A B | e c d e A A | 1 G c d B A B :| 2 G F G2 |]
+R: reel
+M: 4/4
+K: Eminor
+B2 G c B c e | d B c d B G A c B | d B e d B c A G E | B G c e g d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 86
+R:polka
+M:9/4
+K:Gmajor
+BcABB|cdfeg|fgedg|afgged|AAdAB|cdfgag|fdAAB|ecdeAA|1GcdBAB:|2GFG2|]
+R:reel
+M:4/4
+K:Eminor
+B2GcBce|dBcdBGAcB|dBedBcAGE|BGcegd
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 87
+R: polka
+M: 4/4
+K: Gmajor
+|: E3 B A e | a > A e A B A | d > B d c A B A | A3 B A > A B | c > e c A A B | A3 A A A A > A > B | c A A A2 A :| e2 d > c e > d | e2 e2 d c > A | A > e e f e d > A | A2 A A > A A2 | e2 c e d A > A A | e2 d c2 | e2 e2 B c > A > B | c2 A2 A > A B | c B A e > A G | A > A e d > d d c B | A2 e2 A2 A2 | c > e > c d > c A A | B > A e > B > A2 B | c2 A2 B A2 | A < e > A ^c d2 A | A2 G2 B > A G A | A2 B > A2 (3 A c A2 | B2 G2 A2 A2 | e2 d2 A > A2 B |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 87
+R:polka
+M:4/4
+K:Gmajor
+|:E3BAe|a>AeABA|d>BdcABA|A3BA>AB|c>ecAAB|A3AAAA>A>B|cAAA2A:|e2d>ce>d|e2e2dc>A|A>eefed>A|A2AA>AA2|e2cedA>AA|e2dc2|e2e2Bc>A>B|c2A2A>AB|cBAe>AG|A>Aed>ddcB|A2e2A2A2|c>e>cd>cAA|B>Ae>B>A2B|c2A2BA2|A<e>A^cd2A|A2G2B>AGA|A2B>A2(3AcA2|B2G2A2A2|e2d2A>A2B|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 88
+R: polka
+M: 4/4
+K: Gmajor
+|: D2 G2 | A2 B | c2 d2 d2 | e2 B2 | c2 A2 G2 | | c B2 B2 A2 | B2 A2 A2 | G2 B2 G2 | B2 G F2 :| A2 G A2 | G4 G2 | G4 G2 | F2 G A2 | d2 d2 | e2 d2 d2 | c A2 G2 | B2 G2 A2 | B2 c2 e2 | [1 e2 d2 d2 :| [2 e2 G2 B2 | | |: A2 A4 | A2 G2 F2 | G4 G2 | A4 B2 | A4 G2 | A2 (3 B c2 | d2 c2 c2 | A2 A2 | B2 E2 D2 | D2 G2 B2 | c2 A2 d2 | e2 d2 | c2 d2 c2 | 1 G4 G2 :| 2 G2 B2 | | |: G4 G4 | d2 | B2 A2 | G4 G2 | A4 G2 | G2 G2 | A2 G A2 | B2 B2 A2 | G4 G2 A | B2 G2 | B2 G4 | G6 | B2 G2 | G6 | B2 B2 | A2 B2 B2 | c2 A2 A B2 | G2 G2 | B2 G2 G2 | A6 | G2 d2 | e2 d2 | B2 B c2 B2 | c2 c2 | A2 G2 G2 | B2 A2 | A2 G2 G2 | G2 B2 G2 | |
+R: reel
+M: 4/4
+K: Dmajor
+A B c B A B c e c | f2 d2 B2 B c | A B c A B2 c e f | e2 d f g f e d c | d2 d B2 A B c B | d2 e d B c e f | e2 c A B c B2 | A A B c B c2 e f | f2 e2 d2 e c e | f2 d2 B A2 :||: a f f g f g f | f</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 88
+R:polka
+M:4/4
+K:Gmajor
+|:D2G2|A2B|c2d2d2|e2B2|c2A2G2||cB2B2A2|B2A2A2|G2B2G2|B2GF2:|A2GA2|G4G2|G4G2|F2GA2|d2d2|e2d2d2|cA2G2|B2G2A2|B2c2e2|[1e2d2d2:|[2e2G2B2|||:A2A4|A2G2F2|G4G2|A4B2|A4G2|A2(3Bc2|d2c2c2|A2A2|B2E2D2|D2G2B2|c2A2d2|e2d2|c2d2c2|1G4G2:|2G2B2|||:G4G4|d2|B2A2|G4G2|A4G2|G2G2|A2GA2|B2B2A2|G4G2A|B2G2|B2G4|G6|B2G2|G6|B2B2|A2B2B2|c2A2AB2|G2G2|B2G2G2|A6|G2d2|e2d2|B2Bc2B2|c2c2|A2G2G2|B2A2|A2G2G2|G2B2G2||
+R:reel
+M:4/4
+K:Dmajor
+ABcBABcec|f2d2B2Bc|ABcAB2cef|e2dfgfedc|d2dB2ABcB|d2edBcef|e2cABcB2|AABcBc2ef|f2e2d2ece|f2d2BA2:||:affgfgf|f
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 89
+R: polka
+M: 4/4
+K: Gmajor
+|: B2 B2 B2 | A2 B2 B2 | A2 A2 B2 | A2 B2 A2 | A2 B2 A2 | B2 A2 B2 | A2 A2 A2 | A2 B2 B2 A2 | A2 A2 A2 | B2 A2 A2 | A2 A2 B2 A2 | A2 G2 B2 | A2 A2 A B2 | A2 A2 A2 A2 | A2 G2 A2 | A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 89
+R:polka
+M:4/4
+K:Gmajor
+|:B2B2B2|A2B2B2|A2A2B2|A2B2A2|A2B2A2|B2A2B2|A2A2A2|A2B2B2A2|A2A2A2|B2A2A2|A2A2B2A2|A2G2B2|A2A2AB2|A2A2A2A2|A2G2A2|A
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 90
+R: polka
+M: 4/4
+K: Gmajor
+|: B2 B2 B2 | A2 B2 B2 | A2 A2 B2 | A2 B2 A2 | A2 B2 A2 | B2 A2 B2 | A2 A2 A2 | A2 B2 B2 A2 | A2 A2 A2 | B2 A2 A2 | A2 A2 B2 A2 | A2 G2 B2 | A2 A2 A B2 | A2 A2 A2 A2 | A2 G2 A2 | A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 90
+R:polka
+M:4/4
+K:Gmajor
+|:B2B2B2|A2B2B2|A2A2B2|A2B2A2|A2B2A2|B2A2B2|A2A2A2|A2B2B2A2|A2A2A2|B2A2A2|A2A2B2A2|A2G2B2|A2A2AB2|A2A2A2A2|A2G2A2|A
+
+</script>
+
+</p><h3 id="prompt14">Prompt 14 - R: waltz</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 91
+R: waltz
+M: 4/4
+K: Gmajor
+|: G2 G B G A F E | G2 G2 B2 G A G | A2 A B A G A | G2 G2 G B G F A | G2 G A B d B G | A2 A G2 G A | G2 B e d B G | A2 A G F G2 :| | A2 A2 A2 B c d | e2 e2 g2 | e2 e2 g2 | a2 g2 g2 | e2 e2 g g2 | e2 g</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 91
+R:waltz
+M:4/4
+K:Gmajor
+|:G2GBGAFE|G2G2B2GAG|A2ABAGA|G2G2GBGFA|G2GABdBG|A2AG2GA|G2BedBG|A2AGFG2:||A2A2A2Bcd|e2e2g2|e2e2g2|a2g2g2|e2e2gg2|e2g
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 92
+R: waltz
+M: 3/4
+K: Emixolydian
+E, | E E2 E D E | E3 E F E | E E2 E ^G | E3 E | E4 E2 B | A2 E2 E2 | E3 E D E C E | E2 E2 E2 | E3 E2 E2 | E E E4 :| G2 E C E2 | E2 E2 E2 | E2 E2 E2 E2 | E2 C2 E2 | E2 E2 E4 | E2 E2 E2 | E6 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 92
+R:waltz
+M:3/4
+K:Emixolydian
+E,|EE2EDE|E3EFE|EE2E^G|E3E|E4E2B|A2E2E2|E3EDECE|E2E2E2|E3E2E2|EEE4:|G2ECE2|E2E2E2|E2E2E2E2|E2C2E2|E2E2E4|E2E2E2|E6|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 93
+R: waltz
+M: 4/4
+K: Cmajor
+|: g > e > a | g > f > e > f > g | d > G > d > e A > d > f | g > e d < e > c < f | g > d > c < e > e A > B | A < G > d e > e > B | B > d e f > a > f d | G A > B d < e > d | g > e g f > e2 | A > e > a > d c > f | g > e f > g f |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 93
+R:waltz
+M:4/4
+K:Cmajor
+|:g>e>a|g>f>e>f>g|d>G>d>eA>d>f|g>ed<e>c<f|g>d>c<e>eA>B|A<G>de>e>B|B>def>a>fd|GA>Bd<e>d|g>egf>e2|A>e>a>dc>f|g>ef>gf|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 94
+R: waltz
+M: 4/4
+K: Gmajor
+|: dK: Dmajor
+|: G2 A d | e d B d B | A F D E | D2 G A B d | e d B d B d | e d B d B d d | A G A d B d | e d B d B G | A F A d d B | A2 E D E D | D D D D G2 | | A2 d B d d | e d B g f g | e f g e d B d | e d B d d | A F D D2 | D2 D2 :|
+R: jig
+M: 6/8
+K: Gmajor
+|: G G A B A | d d e g e d | B G A F G | f d d e g g | f g e d B d | G A F G A B A | G2 A G A e | d e f e d B | A G A B A B | d B G F G A d | 1 G A B c d :| 2 G A B A F A | | |: G2 A d e g | f g2 g2 f | g d e d B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 94
+R:waltz
+M:4/4
+K:Gmajor
+|:dK:Dmajor
+|:G2Ad|edBdB|AFDE|D2GABd|edBdBd|edBdBdd|AGAdBd|edBdBG|AFAddB|A2EDED|DDDDG2||A2dBdd|edBgfg|efgedBd|edBdd|AFDD2|D2D2:|
+R:jig
+M:6/8
+K:Gmajor
+|:GGABA|ddeged|BGAFG|fddegg|fgedBd|GAFGABA|G2AGAe|defedB|AGABAB|dBGFGAd|1GABcd:|2GABAFA|||:G2Adeg|fg2g2f|gdedB
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 95
+R: waltz
+M: 4/8
+K: Gmajor
+|: D B | G2 D G G A B G A | G2 D A A G G E D | G2 G A B c d | e f e d B G A | G B2 G E E G2 | B2 e f e d B | c B2 G A G G | B2 A G E G E G | D G A B G A | B2 G2 :| f e e d B G A G A | A2 B c d B A | G2 G2 G2 | B2 G B G F G A | G3 B G A | f e d B A G | F G A G A B d | e e d B G A | B2 G2 G2 A | G c B d B A | G A G B A G E2 | 1 F G2 G2 :| 2 G2 F G2 G2 A2 | |
+R: march
+M: 4/4
+K: Fmajor
+|: A A (3 A B c d e c | f2 a g e c B c | A A c d c e e A | a2 f g e d c B | A F G A d c e | f a f b a f e c d | A c A c e d c | A c d c c A2 :| f a e f g f e d | f2 f g d f d f | f2 e d e c A | a2 c d c e f e | f2 d d c d B A | a a f g a f d | g f e d c e c B A | a2 f d c d c B | c d2 e f d c d | a f e f e d c | A c A c A F E | E A a f e c A | c d c A d B A B | A F A G A F E D E | E A G A2 D E D | |
+R: reel
+M: 4/4
+K: Gmajor
+|: F G2 G2 d2 c2 | G2 G2 G2 B d2 | c2 G2 B2 G2 c2 | d2 c2 d2 c2 | d2 G2 A B G2 | G2 G2 F G2 d2 | | A2 G G2 G2 G2 G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 95
+R:waltz
+M:4/8
+K:Gmajor
+|:DB|G2DGGABGA|G2DAAGGED|G2GABcd|efedBGA|GB2GEEG2|B2efedB|cB2GAGG|B2AGEGEG|DGABGA|B2G2:|feedBGAGA|A2BcdBA|G2G2G2|B2GBGFGA|G3BGA|fedBAG|FGAGABd|eedBGA|B2G2G2A|GcBdBA|GAGBAGE2|1FG2G2:|2G2FG2G2A2||
+R:march
+M:4/4
+K:Fmajor
+|:AA(3ABcdec|f2agecBc|AAcdceeA|a2fgedcB|AFGAdce|fafbafecd|AcAcedc|AcdccA2:|faefgfed|f2fgdfdf|f2edecA|a2cdcefe|f2ddcdBA|aafgafd|gfedcecBA|a2fdcdcB|cd2efdcd|afefedc|AcAcAFE|EAafecA|cdcAdBAB|AFAGAFEDE|EAGA2DED||
+R:reel
+M:4/4
+K:Gmajor
+|:FG2G2d2c2|G2G2G2Bd2|c2G2B2G2c2|d2c2d2c2|d2G2ABG2|G2G2FG2d2||A2GG2G2G2G
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 96
+R: waltz
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 | G2 G2 G2 G2 | B2 G2 G2 G2 | A2 G2 G2 G2 G2 | G2 B2 G2 G2 | A2 B2 G2 G2 | A4 G2 G2 | A2 G2 B2 G2 | A2 G4 G2 | A2 G2 G2 | A2 A2 B2 G2 | A2 G2 A2 G2 | A2 G2 G4 | A2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 96
+R:waltz
+M:4/4
+K:Gmajor
+|:G2G2G2|G2G2G2G2|B2G2G2G2|A2G2G2G2G2|G2B2G2G2|A2B2G2G2|A4G2G2|A2G2B2G2|A2G4G2|A2G2G2|A2A2B2G2|A2G2A2G2|A2G2G4|A2G2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 97
+R: waltz
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 | G2 G2 G2 G2 | B2 G2 G2 G2 | A2 G2 G2 G2 G2 | G2 B2 G2 G2 | A2 B2 G2 G2 | A4 G2 G2 | A2 G2 B2 G2 | A2 G4 G2 | A2 G2 G2 | A2 A2 B2 G2 | A2 G2 A2 G2 | A2 G2 G4 | A2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 97
+R:waltz
+M:4/4
+K:Gmajor
+|:G2G2G2|G2G2G2G2|B2G2G2G2|A2G2G2G2G2|G2B2G2G2|A2B2G2G2|A4G2G2|A2G2B2G2|A2G4G2|A2G2G2|A2A2B2G2|A2G2A2G2|A2G2G4|A2G2
+
+</script>
+
+</p><h3 id="prompt15">Prompt 15 - R: hornpipe</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 98
+R: hornpipe
+M: 4/4
+K: Gmajor
+A F/ G A F G | A2 A G F G | G2 A B A F | G > G A G F G F | G2 G2 G A F | A2 G2 F G G | B G2 G F G G | A2 A B2 G F G | G2 A F G A G | A2 G2 F G | G2 G2 G2 G F | G2 G2 G2 G F G | A2 G2 F G A | G2 G2 G2 G A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 98
+R:hornpipe
+M:4/4
+K:Gmajor
+AF/GAFG|A2AGFG|G2ABAF|G>GAGFGF|G2G2GAF|A2G2FGG|BG2GFGG|A2AB2GFG|G2AFGAG|A2G2FG|G2G2G2GF|G2G2G2GFG|A2G2FGA|G2G2G2GA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 99
+R: hornpipe
+M: 4/8
+K: Dmajor
+|: G/ c > B G B D | G,2 E > G B | A > G B c B c > B | A > G B > A2 D | B, > D E E G2 :| A > B G A B c > c | B > G G G > B E | B > B G B > d c > c | B > G E > G G > A | F > D E > G2 d > f > c | B < G G A B < f > A > c | B ></pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 99
+R:hornpipe
+M:4/8
+K:Dmajor
+|:G/c>BGBD|G,2E>GB|A>GBcBc>B|A>GB>A2D|B,>DEEG2:|A>BGABc>c|B>GGG>BE|B>BGB>dc>c|B>GE>GG>A|F>DE>G2d>f>c|B<GGAB<f>A>c|B>
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 100
+R: hornpipe
+M: 4/4
+K: Adorian
+|: A4 A G E | G G c F A2 A | (3 c A G A G A < E :| | (3 A c/ d > f | [2 (3 d e f g | (3 e f g f f g e c | a2 d/ f/ g/ f/ | e2 c c B A | d c > c A G2 :| [2 c d e g/2 | e d ^c g2 | d c/2 d c e f | a2 g2 g2 e</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 100
+R:hornpipe
+M:4/4
+K:Adorian
+|:A4AGE|GGcFA2A|(3cAGAGA<E:||(3Ac/d>f|[2(3defg|(3efgffgec|a2d/f/g/f/|e2ccBA|dc>cAG2:|[2cdeg/2|ed^cg2|dc/2dcef|a2g2g2e
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 101
+R: hornpipe
+M: 4/4
+K: 9/4
+|: A F G F F D | F G B A F G < G F D | B2 (3 E D F G F F F D | D2 E F G2 F G A2 | B > G F G A G F G F | F2 F > G2 G F D F | D2 F G F G2 F G2 | F2 A F G F G2 F | A B > G B2 A F2 :| | G2 A2 F G2 D2 | A2 D2 D F D2 F | G2 F G2 F2 G2 | A2 F G E2 F2 | G2 F2 F2 F2 F2 | D2 G2 F2 D2 | A2 F D2 G2 | A2 E F2 D2 D F2 | G2 F2 E2 F2 D2 | G2 E2 G2 A2 | B2 F2 E2 F2 c2 | A2 D2 G F2 | G2 D2 D2 G2 c2 | d2 e2 d2 | A2 A2 A2 F2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 101
+R:hornpipe
+M:4/4
+K:9/4
+|:AFGFFD|FGBAFG<GFD|B2(3EDFGFFFD|D2EFG2FGA2|B>GFGAGFGF|F2F>G2GFDF|D2FGFG2FG2|F2AFGFG2F|AB>GB2AF2:||G2A2FG2D2|A2D2DFD2F|G2FG2F2G2|A2FGE2F2|G2F2F2F2F2|D2G2F2D2|A2FD2G2|A2EF2D2DF2|G2F2E2F2D2|G2E2G2A2|B2F2E2F2c2|A2D2GF2|G2D2D2G2c2|d2e2d2|A2A2A2F2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 102
+R: hornpipe
+M: 4/4
+K: Dmajor
+E A d2 c | A B d c E A | A F A d c A G A | A F A d c A d | A F A F A c d | c e f e A d | A F D F A d c | A d c A E F | A F A d c A F | A F A d3 :| | |: g |: e c B c d e f | g b a g e f g | a d e f e f d | g f e f e f | c A A d B A | A F d c A E | g2 d e f g | B d c A F A | f e c d c e | d A A E F A | A F D2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: D E G A G2 d c d | A c A G E G E G D | D E D E F D G E | F G E D D D B d d | e d c A G E3 | D G E D G2 :| B G E G E D2 | G B G E G B d g | e d B E D D2 | A G E G A B c G | A G E D E D2 | G E G E G E D D D | B G E G F2 :||: B d e d c B A | c e d c A G G2 | B A G A G E D D | |
+R: mazurka
+M: 3/4
+K: Gmajor
+d | G3 G G B G A | G3 G E E D | D3 G E G A2 | d3 c A B A2 | G3 G A G2 | B3 A G E G2 | G3 G G E2 :| d2 d2 c B A G | A3 G E F | G3 (3 G B c d2 | e3 d g2 | e3 d e2 | f3 d2 c2 | A3 G A G2 | B3 G E D | G3 G A G2 | |
+R: jig
+M: 6/8
+K: Adorian
+|: B c2 d | B2 c2 c2 B | A2 G A B c B | c2 d2 c2 A | B2 c2 A2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 102
+R:hornpipe
+M:4/4
+K:Dmajor
+EAd2c|ABdcEA|AFAdcAGA|AFAdcAd|AFAFAcd|cefeAd|AFDFAdc|AdcAEF|AFAdcAF|AFAd3:|||:g|:ecBcdef|gbagefg|adefefd|gfefef|cAAdBA|AFdcAE|g2defg|BdcAFA|fecdce|dAAEFA|AFD2:|
+R:reel
+M:4/4
+K:Gmajor
+|:DEGAG2dcd|AcAGEGEGD|DEDEFDGE|FGEDDDBdd|edcAGE3|DGEDG2:|BGEGED2|GBGEGBdg|edBEDD2|AGEGABcG|AGEDED2|GEGEGEDDD|BGEGF2:||:BdedcBA|cedcAGG2|BAGAGEDD||
+R:mazurka
+M:3/4
+K:Gmajor
+d|G3GGBGA|G3GEED|D3GEGA2|d3cABA2|G3GAG2|B3AGEG2|G3GGE2:|d2d2cBAG|A3GEF|G3(3GBcd2|e3dg2|e3de2|f3d2c2|A3GAG2|B3GED|G3GAG2||
+R:jig
+M:6/8
+K:Adorian
+|:Bc2d|B2c2c2B|A2GABcB|c2d2c2A|B2c2A2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 103
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 G2 | G2 G2 G2 G2 G2 | A2 G2 G2 G2 | A4 G2 G2 G2 | A2 B2 G2 G2 | A2 G4 G2 G2 | A2 G2 B2 G2 | A2 G2 G4 G2 | A2 G2 G2 B2 G2 | A4 G2 G4 | A4 G2 G2 | A4 G4 G2 | A4 G2 G2 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 103
+R:hornpipe
+M:4/4
+K:Gmajor
+|:G2G2G2G2|G2G2G2G2G2|A2G2G2G2|A4G2G2G2|A2B2G2G2|A2G4G2G2|A2G2B2G2|A2G2G4G2|A2G2G2B2G2|A4G2G4|A4G2G2|A4G4G2|A4G2G2|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 104
+R: hornpipe
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 G2 | G2 G2 G2 G2 G2 | A2 G2 G2 G2 | A4 G2 G2 G2 | A2 B2 G2 G2 | A2 G4 G2 G2 | A2 G2 B2 G2 | A2 G2 G4 G2 | A2 G2 G2 B2 G2 | A4 G2 G4 | A4 G2 G2 | A4 G4 G2 | A4 G2 G2 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 104
+R:hornpipe
+M:4/4
+K:Gmajor
+|:G2G2G2G2|G2G2G2G2G2|A2G2G2G2|A4G2G2G2|A2B2G2G2|A2G4G2G2|A2G2B2G2|A2G2G4G2|A2G2G2B2G2|A4G2G4|A4G2G2|A4G4G2|A4G2G2|
+
+</script>
+
+</p><h3 id="prompt16">Prompt 16 - R: slip jig</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 105
+R: slip jig
+M: Aminor
+|: D3 A2 A | A2 F E3 | G2 A B c | d2 A B A F A | G2 A F2 A | d2 A2 A | e2 A2 A | B2 A A2 A | G2 A2 A | G2 A2 A2 A | G2 A2 e | d2 A A B | G2 A2 A2 A | d2 A2 A | B2 A2 A | G2 A2 B A | G2 A2 A | G | G2 A2 A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 105
+R:slipjig
+M:Aminor
+|:D3A2A|A2FE3|G2ABc|d2ABAFA|G2AF2A|d2A2A|e2A2A|B2AA2A|G2A2A|G2A2A2A|G2A2e|d2AAB|G2A2A2A|d2A2A|B2A2A|G2A2BA|G2A2A|G|G2A2A
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 106
+R: slip jig
+M: 4/8
+K: Gmajor
+D2 F2 F D2 A | G2 B2 A c2 d2 c2 B c | d2 g f g2 f2 f | e2 g f2 f g2 c | d2 g e2 d2 c2 B c c | A4 d2 A2 f2 f | g2 f2 g2 f2 e | d2 d2 A G2 f g f | e2 c3 e2 d2 c | d2 B2 c d2 f f | e2 d2 g2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 106
+R:slipjig
+M:4/8
+K:Gmajor
+D2F2FD2A|G2B2Ac2d2c2Bc|d2gfg2f2f|e2gf2fg2c|d2ge2d2c2Bcc|A4d2A2f2f|g2f2g2f2e|d2d2AG2fgf|e2c3e2d2c|d2B2cd2ff|e2d2g2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 107
+R: slip jig
+M: 9/8
+K: 6/8
+d2 B c B B A F F | E2 B A G B c | d B c B B c B | A G D G B B :| A2 c A c c B B B c d | B B A2 e c d B c | e f d c B B B d | B G D F G B g d | c A G B c B c | B c G G B A B B | c e c c B G B | A G B2 A B | c B G B B c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 107
+R:slipjig
+M:9/8
+K:6/8
+d2BcBBAFF|E2BAGBc|dBcBBcB|AGDGBB:|A2cAccBBBcd|BBA2ecdBc|efdcBBBd|BGDFGBgd|cAGBcBc|BcGGBABB|ceccBGB|AGB2AB|cBGBBc
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 108
+R: slip jig
+M: 6/8
+K: Gmajor
+K: Dmajor
+G A c d | d2 e f f | g2 f f e | d2 A B | A2 A2 A | a g f2 f | g2 e | d2 e f | e2 e2 :||: e2 f g | g | a2 f g | f g2 f g | g a2 a | a2 f | e2 f g | d2 f | g f2 d | e2 d | e2 f2 g | a f e | a g2 f e | f2 d | e d2 e | f2 g a | f2 f | e2 g f2 f | e2 g | g3 g f | 1 a f e f | g2 f :| 2 e f2 e | |
+R: jig
+M: 6/8
+KK: Gmajor
+|: G2 | d B c B A | D E D D D F | G A G B A | g f e d B A | G B d B A | G E D D D D | D D D D D D | G G A G A B | d2 d B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 108
+R:slipjig
+M:6/8
+K:Gmajor
+K:Dmajor
+GAcd|d2eff|g2ffe|d2AB|A2A2A|agf2f|g2e|d2ef|e2e2:||:e2fg|g|a2fg|fg2fg|ga2a|a2f|e2fg|d2f|gf2d|e2d|e2f2g|afe|ag2fe|f2d|ed2e|f2ga|f2f|e2gf2f|e2g|g3gf|1afef|g2f:|2ef2e||
+R:jig
+M:6/8
+KK:Gmajor
+|:G2|dBcBA|DEDDDF|GAGBA|gfedBA|GBdBA|GEDDDD|DDDDDD|GGAGAB|d2dB
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 109
+R: slip jig
+M: 6/8
+K: Gmajor
+|: B d d e/ e/ e/ B/ B/ B/ | A A F E D D2 D | E E C F E E2 E | E F A A B A2 :||: d d d f g f | e d d c/ e/ d/ c/ | d c d e c | d A A G D E | E2 A/ B/ c/ d/ e | d c d c A G | 1 E D G G :| 2 G E D G B, D | | |: E E E G A B A G | E E D E2 G | A B c A B A G | E E G A B c A2 | B E E G B, D | A, A, D2 B, | A, A, B,2 A, | C E A, D B, B, C | G, E C E D3 | E C G A, E | G G E F G2 :|
+R: reel
+M: 4/4
+K: Dmajor
+|: d2 A2 d2 d2 d22 | d2 A d2 d2 d2 d2 | e2 A d2 d2 c | d2 A2 d2 d2 d e2 d2 | d2 d2 d e d2 d d2 d2 | e2 A d e2 A2 | d2 d2 d d2 e2 c d2 | e2 d A d2 e2 d2 | d2 d2 f d2 d2 d | e2 A d2 d2 d2 d4 | d2 A d2 d2 d d2 | d2 d2 d e2 d2 d2 d | d2 d2 d d d2 d2 d2 | g2 d2 d d e2 | d2 f2 A2 d2 d2 | d2 c d2 d2 d2 d2 | d2 d4 d2 d2 | d2 d2 d2 | e2 d4 d2 d2 | c d A d2 d c d | d2 d2 d2 d2 d2 | c2 d2 d2 c2 d2 | | d2 d2 d2 d2 c2 | d2 e A2 d2 e2 | d2 d d2 d2 f2 | d2 d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 109
+R:slipjig
+M:6/8
+K:Gmajor
+|:Bdde/e/e/B/B/B/|AAFEDD2D|EECFEE2E|EFAABA2:||:dddfgf|eddc/e/d/c/|dcdec|dAAGDE|E2A/B/c/d/e|dcdcAG|1EDGG:|2GEDGB,D|||:EEEGABAG|EEDE2G|ABcABAG|EEGABcA2|BEEGB,D|A,A,D2B,|A,A,B,2A,|CEA,DB,B,C|G,ECED3|ECGA,E|GGEFG2:|
+R:reel
+M:4/4
+K:Dmajor
+|:d2A2d2d2d22|d2Ad2d2d2d2|e2Ad2d2c|d2A2d2d2de2d2|d2d2ded2dd2d2|e2Ade2A2|d2d2dd2e2cd2|e2dAd2e2d2|d2d2fd2d2d|e2Ad2d2d2d4|d2Ad2d2dd2|d2d2de2d2d2d|d2d2ddd2d2d2|g2d2dde2|d2f2A2d2d2|d2cd2d2d2d2|d2d4d2d2|d2d2d2|e2d4d2d2|cdAd2dcd|d2d2d2d2d2|c2d2d2c2d2||d2d2d2d2c2|d2eA2d2e2|d2dd2d2f2|d2d
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 110
+R: slip jig
+M: 6/8
+K: Gmajor
+|: B A B A | B A B A B A | B A B B A B A | B A B A A B A | B A B A B B A | B A B A B A A | B A B A B A B A | B A A B A B A | B A A A B A | B A B A A A | B A B A A B A A | B A B A A A B A | B A A B A A A | B A A B A A B A | B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 110
+R:slipjig
+M:6/8
+K:Gmajor
+|:BABA|BABABA|BABBABA|BABAABA|BABABBA|BABABAA|BABABABA|BAABABA|BAAABA|BABAAA|BABAABAA|BABAAABA|BAABAAA|BAABAABA|BA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 111
+R: slip jig
+M: 6/8
+K: Gmajor
+|: B A B A | B A B A B A | B A B B A B A | B A B A A B A | B A B A B B A | B A B A B A A | B A B A B A B A | B A A B A B A | B A A A B A | B A B A A A | B A B A A B A A | B A B A A A B A | B A A B A A A | B A A B A A B A | B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 111
+R:slipjig
+M:6/8
+K:Gmajor
+|:BABA|BABABA|BABBABA|BABAABA|BABABBA|BABABAA|BABABABA|BAABABA|BAAABA|BABAAA|BABAABAA|BABAAABA|BAABAAA|BAABAABA|BA
+
+</script>
+
+</p><h3 id="prompt17">Prompt 17 - M: 4/4</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 112
+M: 4/4
+K: Gmajor
+|: A B c e | d B A B c A | d d B A B c | B c d e f e | d B B G A B | d B A G B c | d B d B G A | B d B c B e | d B A G A B | d B A B c d e | d B A B c e | d B A A B c | d B d B c d | d B B A G A | B d B A G B | d B A B c d e f | g B B A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 112
+M:4/4
+K:Gmajor
+|:ABce|dBABcA|ddBABc|Bcdefe|dBBGAB|dBAGBc|dBdBGA|BdBcBe|dBAGAB|dBABcde|dBABce|dBAABc|dBdBcd|dBBAGA|BdBAGB|dBABcdef|gBBA
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 113
+M: 4/4
+K: Dmajor
+|: A B A F | G F E G F E | D F A A e d | f e d c B A | B A F E D D | G F D E F E | E E F G2 :||: f | e d c d2 A | e f d c2 A | B A B A F D | F E F G | F E F G A e | f a d c d2 | e d c A B A | F E D C E F :|
+R: reel
+M: 4/4
+K: DmajorM</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 113
+M:4/4
+K:Dmajor
+|:ABAF|GFEGFE|DFAAed|fedcBA|BAFEDD|GFDEFE|EEFG2:||:f|edcd2A|efdc2A|BABAFD|FEFG|FEFGAe|fadcd2|edcABA|FEDCEF:|
+R:reel
+M:4/4
+K:DmajorM
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 114
+M: 4/4
+K: Gmajor
+D, F G e | g2 e f d B B G G | A B D E A | e/ f/ a2 e e B A F G2 | (3 B c B c B A d | g e f g2 f d | g e c B c B | A G E G A B2 G | A B G A2 F | G G B c d e :|
+R: reel
+M: 4/4
+K: Amajor
+g a/ e2 f a A (3 e c B | d e c A B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 114
+M:4/4
+K:Gmajor
+D,FGe|g2efdBBGG|ABDEA|e/f/a2eeBAFG2|(3BcBcBAd|gefg2fd|gecBcB|AGEGAB2G|ABGA2F|GGBcde:|
+R:reel
+M:4/4
+K:Amajor
+ga/e2faA(3ecB|decAB
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 115
+M: 4/4
+K: Adorian
+|: E D C E E | E D E C E D E A, E E | B E E F E G E | E F D E F E A, G, A, | E D G E B,2 F A, | E B, E E E E D c | 1 E E G E G E B :| 2 E E3 E E E D | | |: E E E F G E E E | E E E E E E F E | A E E E3 E | E3 E E E | E2 D E E E D | 1 E F G E E3 :| 2 E D E G :| 2 E E E D G E E | |
+R: jig
+M: 6/8
+K: Dmajor
+|: A B A F D | G E F D E D | c e d B A F | A d e d B | c A c A A F | G E E E E A2 :||: f e e c B | c A A B A F | G E F D E | G E F E D E | G A B G3 :||: d c d e f | f d e d3 | d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 115
+M:4/4
+K:Adorian
+|:EDCEE|EDECEDEA,EE|BEEFEGE|EFDEFEA,G,A,|EDGEB,2FA,|EB,EEEEDc|1EEGEGEB:|2EE3EEED|||:EEEFGEEE|EEEEEEFE|AEEE3E|E3EEE|E2DEEED|1EFGEE3:|2EDEG:|2EEEDGEE||
+R:jig
+M:6/8
+K:Dmajor
+|:ABAFD|GEFDED|cedBAF|AdedB|cAcAAF|GEEEEA2:||:feecB|cAABAF|GEFDE|GEFEDE|GABG3:||:dcdef|fded3|d
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 116
+M: 4/4
+K: Gmajor
+G c B A | d d B F G A G | B c e f g d | d B G A B A | B c A2 B G | d B G2 E G :| B | A B c d c E | B d c f g g | a b a g g f | g b g a a f | g a g d B | 1 A B c E E2 :| 2 B2 A2 A2 | | |: g e a g f g | g a g f g a e | B e g e f g | g a g g b g e | d B A2 E | 1 B c B E2 A G | 2 B A B d3 :| 2 B c B A G2 | |
+R: reel
+M: 4/4
+K: Amajor
+|: e c e d (3 e c d | c e c A A B c e c | a e c A (3 e c e c e | B c B A B c e | a e e c A c B c | c A2 e A3 e c | a a g e d c B c B | c e c A c e c e | | a e f a f e d c | 1 A2 A c e e c :| 2 A2 c B c e A | | |: a e c B E F B e c | a c a e c e c | B E2 c B A c c e g | a f e c B e c B | a a b a c e c B | c2 F A c e c e | | f e a f e c A c A B c | f a g e c B c | B2 e A c e c e | f e d c A B c B B | A c e c A A3 e | f a f e f e d c e | B2 c d c e c e | f a f a g f d c e | a3 a g f e c | 1 B2 f e c e c :| 2 B2 c A c e c e | |
+R: jig
+M: 6/8
+K: Edorian
+|: B G B G A F2 F | E E D G A2 F | E F G A2 B | B A B A F D | E F G A A3 | B G E F D2 A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 116
+M:4/4
+K:Gmajor
+GcBA|ddBFGAG|Bcefgd|dBGABA|BcA2BG|dBG2EG:|B|ABcdcE|Bdcfgg|abaggf|gbgaaf|gagdB|1ABcEE2:|2B2A2A2|||:geagfg|gagfgae|Begefg|gaggbge|dBA2E|1BcBE2AG|2BABd3:|2BcBAG2||
+R:reel
+M:4/4
+K:Amajor
+|:eced(3ecd|cecAABcec|aecA(3ecece|BcBABce|aeecAcBc|cA2eA3ec|aagedcBcB|cecAcece||aefafedc|1A2Aceec:|2A2cBceA|||:aecBEFBec|acaecec|BE2cBAcceg|afecBecB|aabacecB|c2FAcece||feafecAcABc|fagecBc|B2eAcece|fedcABcBB|AcecAA3e|fafefedce|B2cdcece|fafagfdce|a3agfec|1B2fecec:|2B2cAcece||
+R:jig
+M:6/8
+K:Edorian
+|:BGBGAF2F|EEDGA2F|EFGA2B|BABAFD|EFGAA3|BGEFD2A
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 117
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 | A2 G2 G2 G2 G2 | A2 B2 G2 G2 G2 | A4 G2 G2 G2 | A2 A2 B2 G2 | A2 G2 B2 G2 G2 | A2 G4 G2 | A2 G2 G2 B2 | A2 G2 G2 G4 | A2 G2 G2 G2 | A3 G2 G2 | A2 G2 A2 G2 | A4 G2 | A2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 117
+M:4/4
+K:Gmajor
+|:G2G2G2|A2G2G2G2G2|A2B2G2G2G2|A4G2G2G2|A2A2B2G2|A2G2B2G2G2|A2G4G2|A2G2G2B2|A2G2G2G4|A2G2G2G2|A3G2G2|A2G2A2G2|A4G2|A2G2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 118
+M: 4/4
+K: Gmajor
+|: G2 G2 G2 | A2 G2 G2 G2 G2 | A2 B2 G2 G2 G2 | A4 G2 G2 G2 | A2 A2 B2 G2 | A2 G2 B2 G2 G2 | A2 G4 G2 | A2 G2 G2 B2 | A2 G2 G2 G4 | A2 G2 G2 G2 | A3 G2 G2 | A2 G2 A2 G2 | A4 G2 | A2 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 118
+M:4/4
+K:Gmajor
+|:G2G2G2|A2G2G2G2G2|A2B2G2G2G2|A4G2G2G2|A2A2B2G2|A2G2B2G2G2|A2G4G2|A2G2G2B2|A2G2G2G4|A2G2G2G2|A3G2G2|A2G2A2G2|A4G2|A2G2
+
+</script>
+
+</p><h3 id="prompt18">Prompt 18 - M: 6/8</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 119
+M: 6/8
+K: Dmajor
+F2 A A A E | D F A B A2 A | D2 A B A B | A A F A B | A F E F A | d B A B A | d e d B A | B A F A B A | B d e d B | A F E F A | 1 d e f d B A | d e d B A :| 2 d e f d B A | | |: a a a b a f | e f e d B | A F A F A | d e g e f | a f e d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 119
+M:6/8
+K:Dmajor
+F2AAAE|DFABA2A|D2ABAB|AAFAB|AFEFA|dBABA|dedBA|BAFABA|BdedB|AFEFA|1defdBA|dedBA:|2defdBA|||:aaabaf|efedB|AFAFA|degef|afed
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 120
+M: 6/8
+K: Bminor
+|: B A E > F | d2 F2 F | D2 D B | c d2 G2 F | G2 d2 B A | B2 B2 B | c2 F G F G | 1 F2 A2 :| 2 F2 F2 D3 | | |: F2 e f2 B2 | A2 e2 e2 | f2 f2 e2 | f2 f2 e | B2 d B2 A | F2 e2 e2 | f2 f e2 d | f2 f2 e d | d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 120
+M:6/8
+K:Bminor
+|:BAE>F|d2F2F|D2DB|cd2G2F|G2d2BA|B2B2B|c2FGFG|1F2A2:|2F2F2D3|||:F2ef2B2|A2e2e2|f2f2e2|f2f2e|B2dB2A|F2e2e2|f2fe2d|f2f2ed|d
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 121
+M: 6/8
+K: Aminor
+F | E B d B | A B A F | D A B2 B | B A B d | f e g f g | 6 f g e | d c B A :||: A A2 A | B B d g | g f e d d B | A F E A | B2 B d2 F | G A d B | A B d d g2 b | b g e d d | A B A d :|
+R: jig
+K: Dmajor
+|: c | e e a | f2 e g2 a | f e/</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 121
+M:6/8
+K:Aminor
+F|EBdB|ABAF|DAB2B|BABd|fegfg|6fge|dcBA:||:AA2A|BBdg|gfeddB|AFEA|B2Bd2F|GAdB|ABddg2b|bgedd|ABAd:|
+R:jig
+K:Dmajor
+|:c|eea|f2eg2a|fe/
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 122
+M: 6/8
+K: Edorian
+|: A2 A d2 A B F | E2 D E F E | B2 B A G | B3 E2 E2 | E2 E F E | F2 E E F E | E2 D2 D2 A | B2 A2 D | B2 e2 d | B2 A G E2 | F2 E E | E2 A F E F | E2 A2 A F | E2 E D E | E2 F E2 E F | E2 E2 E | E2 E2 E2 E2 | E2 E2 D2 | E2 E2 E | F2 D2 E2 | E2 A2 A | B2 B2 A2 | B2 A2 F | E2 E2 E2 | E2 F2 F | E2 E3 | D2 E2 F2 | B2 A2 B | B2 E F2 :||: B A B2 | A2 A F2 | E2 F2 E | E2 E2 D2 | E4 | E2 A2 B A2 | B2 A2 | B2 D2 F2 | E F2 E2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 122
+M:6/8
+K:Edorian
+|:A2Ad2ABF|E2DEFE|B2BAG|B3E2E2|E2EFE|F2EEFE|E2D2D2A|B2A2D|B2e2d|B2AGE2|F2EE|E2AFEF|E2A2AF|E2EDE|E2FE2EF|E2E2E|E2E2E2E2|E2E2D2|E2E2E|F2D2E2|E2A2A|B2B2A2|B2A2F|E2E2E2|E2F2F|E2E3|D2E2F2|B2A2B|B2EF2:||:BAB2|A2AF2|E2F2E|E2E2D2|E4|E2A2BA2|B2A2|B2D2F2|EF2E2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 123
+M: 6/8
+K: Dmajor
+|: d e d e | B d B d g e | f e d B g | f e d B A | B d B e d g :| f g d B d e | f e d B A | B d A e f | f g f e d | e d B A c A | B d B B G | B d B d e | f a g d e | f d B B A | B d e f g e | B d B A d e | f e d B A | e d A B d A | B d e a f e | g f e d d B | B d e d A A | B d e A B | d B B d e | f g d B A | B d e d e | B d B A3 | B d e d B A | A d B d A | B A B d3 | B d e f g d | B d B A | B d e g g2 | a g a f | f d B A A B | B d f g e | d B B A e A | d B A F | B d B d B | d B d B A | B d A F d e | f g f g d B | A F A d e | f a f g f e | d B A F d | d B A F d e | f g a f d | f d B d B | f g f g a | f d f g f a | f g f e d B | B A D D D F |
+R: jig
+M: 6/8
+K: Gmajor
+A d B G F G F | E G A B G c | d B A G F A | G A G G G B c | d B G G B G G | A G A G F G | E G d B G | d B A F G B | d B d B G | 1 G A G B d G :| 2 F G A d e d | |: d B d B G | d B d B G G | G A G d B G B | d B d B G A | G B A G B d | d B d B G B c | d B A G A G A B G | d B G G B d | d B B G B G | d B d G A B G | d B G F G F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 123
+M:6/8
+K:Dmajor
+|:dede|BdBdge|fedBg|fedBA|BdBedg:|fgdBde|fedBA|BdAef|fgfed|edBAcA|BdBBG|BdBde|fagde|fdBBA|Bdefge|BdBAde|fedBA|edABdA|Bdeafe|gfeddB|BdedAA|BdeAB|dBBde|fgdBA|Bdede|BdBA3|BdedBA|AdBdA|BABd3|Bdefgd|BdBA|Bdegg2|agaf|fdBAAB|Bdfge|dBBAeA|dBAF|BdBdB|dBdBA|BdAFde|fgfgdB|AFAde|fafgfe|dBAFd|dBAFde|fgafd|fdBdB|fgfga|fdfgfa|fgfedB|BADDDF|
+R:jig
+M:6/8
+K:Gmajor
+AdBGFGF|EGABGc|dBAGFA|GAGGGBc|dBGGBGG|AGAGFG|EGdBG|dBAFGB|dBdBG|1GAGBdG:|2FGAded||:dBdBG|dBdBGG|GAGdBGB|dBdBGA|GBAGBd|dBdBGBc|dBAGAGABG|dBGGBd|dBBGBG|dBdGABG|dBGFGF
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 124
+M: 6/8
+K: Dmajor
+|: F E F E F E | F E F E F E F | F E F E F E E | F E F E F E F E | F E E F E E F E | F E F E E F E F E | F E E E F E F E | F F E F E F E F E F E | E F E F E F E F E E E | F E F E F E E F E | F E E F E F E E F E E | F E E F E F E F E F E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 124
+M:6/8
+K:Dmajor
+|:FEFEFE|FEFEFEF|FEFEFEE|FEFEFEFE|FEEFEEFE|FEFEEFEFE|FEEEFEFE|FFEFEFEFEFE|EFEFEFEFEEE|FEFEFEEFE|FEEFEFEEFEE|FEEFEFEFEFE
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 125
+M: 6/8
+K: Dmajor
+|: F E F E F E | F E F E F E F | F E F E F E E | F E F E F E F E | F E E F E E F E | F E F E E F E F E | F E E E F E F E | F F E F E F E F E F E | E F E F E F E F E E E | F E F E F E E F E | F E E F E F E E F E E | F E E F E F E F E F E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 125
+M:6/8
+K:Dmajor
+|:FEFEFE|FEFEFEF|FEFEFEE|FEFEFEFE|FEEFEEFE|FEFEEFEFE|FEEEFEFE|FFEFEFEFEFE|EFEFEFEFEEE|FEFEFEEFE|FEEFEFEEFEE|FEEFEFEFEFE
+
+</script>
+
+</p><h3 id="prompt19">Prompt 19 - M: 3/4</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 126
+M: 3/4
+K: Gmajor
+|: E2 F E E | D2 F E | E4 D E | D2 E2 F E | E2 D2 E | D2 D2 E F E | E2 E2 E | A2 F2 E F | E2 F E F | E2 E2 E E | E2 D2 E2 | E2 E2 F | E2 E2 E2 | E2 E2 F2 | E2 E F :|
+R: jig
+M: 6/8
+K: Dmajor
+|: B |: A2 A F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 126
+M:3/4
+K:Gmajor
+|:E2FEE|D2FE|E4DE|D2E2FE|E2D2E|D2D2EFE|E2E2E|A2F2EF|E2FEF|E2E2EE|E2D2E2|E2E2F|E2E2E2|E2E2F2|E2EF:|
+R:jig
+M:6/8
+K:Dmajor
+|:B|:A2AF
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 127
+M: 3/4
+K: Dmajor
+A B B d d | e2 a f e | f3 e B | A B B A G F | D D D B A d | e2 f g f e | f3 f e | d B B A F D | D F D B d e | f3 f e | f2 d B A F | E F3 D | D F B A B | A B E D D F | A B d e | f3 f e d | B B A B A | B d f e d | 1 B A F F D :| 2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 127
+M:3/4
+K:Dmajor
+ABBdd|e2afe|f3eB|ABBAGF|DDDBAd|e2fgfe|f3fe|dBBAFD|DFDBde|f3fe|f2dBAF|EF3D|DFBAB|ABEDDF|ABde|f3fed|BBABA|Bdfed|1BAFFD:|2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 128
+M: 3/4
+K: Dmajor
+|: d B d d f | A G B B2 | A F2 | A2 c d d | B A A B | A2 d A/ | G F A d e d | f d2 f d B | A B d d e d | 1 A2 E2 :| 2 A2 A2 D/ d | | |: f2 e g | d2 e d | c d e f a | g A B c B | A2 e2 b a g | e2 e f d | 1 A2 A2 :| 2 A2 c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 128
+M:3/4
+K:Dmajor
+|:dBddf|AGBB2|AF2|A2cdd|BAAB|A2dA/|GFAded|fd2fdB|ABdded|1A2E2:|2A2A2D/d|||:f2eg|d2ed|cdefa|gABcB|A2e2bag|e2efd|1A2A2:|2A2c
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 129
+M: 3/4
+K: Dmajor
+|: F/ A > G | B > A2 B/ | d/ g/ f/ d < e | d > B A G | B/ c/ d > B | B A B/ e/ | d d d f/ e/ g/ | b/ g/ f d > B | A/ A > B | d > e f2 | g > d B A | B B2 d | d > f/ f/ g/ e/ d/ | B/ A G > B | A/ B A/ B/ E | B A > B d | g > f e/ f/ | b/ a/ a/ g/ |: g/ e/ | d B/ B G A/ | B/ A/ B/ A/ A | B > A | B A B e | d2 f2 | | g e d/ d c/ B/ | d B/ A/ G/ | B/ A/ A/ B e | d/ d B A | B A G/ E | B/ E/ E/ | | G/ F/ F/ E/ E/ G | A/ B/ | G B/ A/</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 129
+M:3/4
+K:Dmajor
+|:F/A>G|B>A2B/|d/g/f/d<e|d>BAG|B/c/d>B|BAB/e/|dddf/e/g/|b/g/fd>B|A/A>B|d>ef2|g>dBA|BB2d|d>f/f/g/e/d/|B/AG>B|A/BA/B/E|BA>Bd|g>fe/f/|b/a/a/g/|:g/e/|dB/BGA/|B/A/B/A/A|B>A|BABe|d2f2||ged/dc/B/|dB/A/G/|B/A/A/Be|d/dBA|BAG/E|B/E/E/||G/F/F/E/E/G|A/B/|GB/A/
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 130
+M: 3/4
+K: Dmajor
+|: F/ D F E C g | d e d c A/ G/ F/ F/ F/ F/ | A A d e c/ e/ f/ | f e d c/ A A/ | F/ E/ F/ F/ D A G/ E2 :| f/ f F/ g e/ f d e | f A c e c/ d/ A/ c/ d/ | f/ e c A e c/ d/ c/ | f a2 g e/ f e | f/ e/ f g/ f/ f/ d/ | c/ e d c A > B | A/ F A e d c B | A/ c/ A/ d/ e/ f/ e/ e c/ d | A/ A/ F/ A/ E/ A/ B/ E/ | E/ d/ F/ F/ F/ G/ A/ E/ | F/ E/ A/ E/ F/ D2 :|
+R: reel
+M: 4/4
+K: Dmajor
+|: F3 E F E F E | F D F E d F A F E | F B d e d A F E | F3 E F F E D D | F E F E F E E F2 | G d e d A F F E | F3 F E F F E E | D3 A F E F D | F E E D F E F E F | D3 F E F E2 :| B E F E D B B | A F F E D E F | F F3 B A | c d d e A f A F | A F E F E F E D | F3 F E3 A | B d B d B A F | F3 B A F E F D | E3 A B E3 | D3 D E D | |
+R: polka
+M: 2/4
+K: Adorian
+|: B c d c | e f d d e c | B c d | d e d B A | B c d e | a f d B | A B c B | A c B d | e f e f d | e d c d B | 1 A B3 :| 2 A3 A B | | A3 A A | c e c B | c A e c | A c c e | B A A3 | A B c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 130
+M:3/4
+K:Dmajor
+|:F/DFECg|dedcA/G/F/F/F/F/|AAdec/e/f/|fedc/AA/|F/E/F/F/DAG/E2:|f/fF/ge/fde|fAcec/d/A/c/d/|f/ecAec/d/c/|fa2ge/fe|f/e/fg/f/f/d/|c/edcA>B|A/FAedcB|A/c/A/d/e/f/e/ec/d|A/A/F/A/E/A/B/E/|E/d/F/F/F/G/A/E/|F/E/A/E/F/D2:|
+R:reel
+M:4/4
+K:Dmajor
+|:F3EFEFE|FDFEdFAFE|FBdedAFE|F3EFFEDD|FEFEFEEF2|GdedAFFE|F3FEFFEE|D3AFEFD|FEEDFEFEF|D3FEFE2:|BEFEDBB|AFFEDEF|FF3BA|cddeAfAF|AFEFEFED|F3FE3A|BdBdBAF|F3BAFEFD|E3ABE3|D3DED||
+R:polka
+M:2/4
+K:Adorian
+|:Bcdc|efddec|Bcd|dedBA|Bcde|afdB|ABcB|AcBd|efefd|edcdB|1AB3:|2A3AB||A3AA|cecB|cAec|Acce|BAA3|ABc
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 131
+M: 3/4
+K: Gmajor
+|: G2 G2 G2 | G2 G2 G2 G2 | B2 G2 G2 | A2 G2 G2 G2 | A2 B2 G2 | A2 G2 B2 | A2 G2 G2 | A4 G2 | A2 G2 G2 | G2 B2 G2 | A4 G2 | G2 G2 G2 | A2 G4 | B2 G2 G2 | A4 G | A4 G2 | A4 G2 | G4 G2 | A2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 131
+M:3/4
+K:Gmajor
+|:G2G2G2|G2G2G2G2|B2G2G2|A2G2G2G2|A2B2G2|A2G2B2|A2G2G2|A4G2|A2G2G2|G2B2G2|A4G2|G2G2G2|A2G4|B2G2G2|A4G|A4G2|A4G2|G4G2|A2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 132
+M: 3/4
+K: Gmajor
+|: G2 G2 G2 | G2 G2 G2 G2 | B2 G2 G2 | A2 G2 G2 G2 | A2 B2 G2 | A2 G2 B2 | A2 G2 G2 | A4 G2 | A2 G2 G2 | G2 B2 G2 | A4 G2 | G2 G2 G2 | A2 G4 | B2 G2 G2 | A4 G | A4 G2 | A4 G2 | G4 G2 | A2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 132
+M:3/4
+K:Gmajor
+|:G2G2G2|G2G2G2G2|B2G2G2|A2G2G2G2|A2B2G2|A2G2B2|A2G2G2|A4G2|A2G2G2|G2B2G2|A4G2|G2G2G2|A2G4|B2G2G2|A4G|A4G2|A4G2|G4G2|A2
+
+</script>
+
+</p><h3 id="prompt20">Prompt 20 - M: 2/4</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 133
+M: 2/4
+K: Gmajor
+|: G E2 B A | G2 G E2 A | B2 G E2 | G2 G E2 B | G2 A B | G2 G2 A B | G2 A2 B | G2 A2 B | G3 A | G2 G2 E2 | G2 G2 A | G2 G2 A | B2 e2 d | A2 G2 E2 | G2 G4 | |
+R: waltz
+M: 3/4
+K: Gmajor
+d2 | B2 G2 B2 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 133
+M:2/4
+K:Gmajor
+|:GE2BA|G2GE2A|B2GE2|G2GE2B|G2AB|G2G2AB|G2A2B|G2A2B|G3A|G2G2E2|G2G2A|G2G2A|B2e2d|A2G2E2|G2G4||
+R:waltz
+M:3/4
+K:Gmajor
+d2|B2G2B2|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 134
+M: 2/4
+K: Dmajor
+|: F A > A F > G | B A F A A > B c | B > G F A > F A | B > F > A F A > F | B > F > A B c e > e | d > B > A > F > F | B > F > A F A > B F | A > F > F > A | B > B A B > F A > F | B > f e > f > f | d > e f > e > f > d | B > F > F B > A F ></pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 134
+M:2/4
+K:Dmajor
+|:FA>AF>G|BAFAA>Bc|B>GFA>FA|B>F>AFA>F|B>F>ABce>e|d>B>A>F>F|B>F>AFA>BF|A>F>F>A|B>BAB>FA>F|B>fe>f>f|d>ef>e>f>d|B>F>FB>AF>
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 135
+M: 2/4
+K: Gmajor
+A | B A B c d | e f g g | f g f g f g | f g a e g f | e f g d (3 B c | B A B c d e | f g f g e | f g a g f | g g e f d | e f g f g f | b a g g f | e (3 g d g f a f g | f g f g a g d | c B A A | d e A B G G | F G A c A | B G A G c | B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 135
+M:2/4
+K:Gmajor
+A|BABcd|efgg|fgfgfg|fgaegf|efgd(3Bc|BABcde|fgfge|fgagf|ggefd|efgfgf|baggf|e(3gdgfafg|fgfgagd|cBAA|deABGG|FGAcA|BGAGc|B
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 136
+M: 2/4
+K: Gmajor
+|: B | A A F A d | e d B G A | B G A F A | B d B G A | B d A B G | A F A | E G F A d | e d B A B G A | B A F G A | B d B G | :||: B d e d B g | e d B G B A | B d e d B | c B A G A | B d B d G A | B d e e d B | c B A G A G F | E F A d B A | 1 B A G A G :| 2 B A G E F A | |
+R: reel
+M: 4/4
+K: Gmajor
+G B G B c B G | A B B G G B c | A B B A B c B A G | A G B G A c d e g | d B d G G B G B | B B A B G B c2 | d B G B A B G2 :| g2 f a g b g d | e d B G2 (3 B G B c | A B A B A B c d | g2 a a</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 136
+M:2/4
+K:Gmajor
+|:B|AAFAd|edBGA|BGAFA|BdBGA|BdABG|AFA|EGFAd|edBABGA|BAFGA|BdBG|:||:BdedBg|edBGBA|BdedB|cBAGA|BdBdGA|BdeedB|cBAGAGF|EFAdBA|1BAGAG:|2BAGEFA||
+R:reel
+M:4/4
+K:Gmajor
+GBGBcBG|ABBGGBc|ABBABcBAG|AGBGAcdeg|dBdGGBGB|BBABGBc2|dBGBABG2:|g2fagbgd|edBG2(3BGBc|ABABABcd|g2aa
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 137
+M: 2/4
+K: Gmajor
+|: G2 | G F G3 E2 | G2 G2 G2 | D2 G2 G2 D2 | G2 A2 c2 | d2 e2 c2 | e2 e2 c2 | B2 D2 D | G4 G2 | A4 c2 | B2 G2 A2 | G2 A2 G4 | B2 G2 | G2 G2 G2 | B2 G2 | F4 G | B2 G2 A2 | B2 G4 | G4 E2 | G4 G4 | G4 G2 | F2 G2 B2 | A4 G2 | A4 G2 | A6 | A2 G2 | B2 G2 G2 | F2 D2 | G4 G2 | B2 G4 | A2 G2 | G3 A2 | B2 G2 A2 | B4 G | G2 d2 B2 | A4 | A2 G2 G4 | G4 | G4 | A4 G2 | G6 | A2 G6 | |
+R: reel
+M: 4/4
+K: Dmajor
+|: A/ e A A F D E | D/ D D D D D D D | A A F G A A F G | A d A A G A F F | E D D/ D D/ D/ D2 :| D | d A d A G F D | E D D D E D D/ F/ d | d A G A F D D D | D/ D/ D D D D A D D D | d d A G A G A | d d A G F D F | D D D D D D D/ D D | d D E D D D E D | D D/ D/ D D D D A/ D D/ D | |
+R: jig
+M: 6/8
+K: Gmajor
+|: D2 D D E D D D | G G G B G G F A | G2 E D D E | G2 B G A G F | D2 B G D D | G2 A D D G | G G E G D E | D2 D D D2 | G B G D D | G A G E F D D | c B c d3 | G2 D G c A | G D D E G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 137
+M:2/4
+K:Gmajor
+|:G2|GFG3E2|G2G2G2|D2G2G2D2|G2A2c2|d2e2c2|e2e2c2|B2D2D|G4G2|A4c2|B2G2A2|G2A2G4|B2G2|G2G2G2|B2G2|F4G|B2G2A2|B2G4|G4E2|G4G4|G4G2|F2G2B2|A4G2|A4G2|A6|A2G2|B2G2G2|F2D2|G4G2|B2G4|A2G2|G3A2|B2G2A2|B4G|G2d2B2|A4|A2G2G4|G4|G4|A4G2|G6|A2G6||
+R:reel
+M:4/4
+K:Dmajor
+|:A/eAAFDE|D/DDDDDDD|AAFGAAFG|AdAAGAFF|EDD/DD/D/D2:|D|dAdAGFD|EDDDEDD/F/d|dAGAFDDD|D/D/DDDDADDD|ddAGAGA|ddAGFDF|DDDDDDD/DD|dDEDDDED|DD/D/DDDDA/DD/D||
+R:jig
+M:6/8
+K:Gmajor
+|:D2DDEDDD|GGGBGGFA|G2EDDE|G2BGAGF|D2BGDD|G2ADDG|GGEGDE|D2DDD2|GBGDD|GAGEFDD|cBcd3|G2DGcA|GDDEG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 138
+M: 2/4
+K: Gmajor
+|: G2 G2 | A2 G2 G2 | A2 B2 G2 | A2 G2 A2 | B2 G2 G2 | A2 G2 B2 | A2 G2 G2 G2 | A2 A2 G2 | A2 G2 B | A2 G2 G2 | A4 G2 | A2 G2 | A2 G2 G | A2 A2 G2 | A4 G | A2 G2 G2 | A3 G2 | A2 G2 | A4 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 138
+M:2/4
+K:Gmajor
+|:G2G2|A2G2G2|A2B2G2|A2G2A2|B2G2G2|A2G2B2|A2G2G2G2|A2A2G2|A2G2B|A2G2G2|A4G2|A2G2|A2G2G|A2A2G2|A4G|A2G2G2|A3G2|A2G2|A4G2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 139
+M: 2/4
+K: Gmajor
+|: G2 G2 | A2 G2 G2 | A2 B2 G2 | A2 G2 A2 | B2 G2 G2 | A2 G2 B2 | A2 G2 G2 G2 | A2 A2 G2 | A2 G2 B | A2 G2 G2 | A4 G2 | A2 G2 | A2 G2 G | A2 A2 G2 | A4 G | A2 G2 G2 | A3 G2 | A2 G2 | A4 G2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 139
+M:2/4
+K:Gmajor
+|:G2G2|A2G2G2|A2B2G2|A2G2A2|B2G2G2|A2G2B2|A2G2G2G2|A2A2G2|A2G2B|A2G2G2|A4G2|A2G2|A2G2G|A2A2G2|A4G|A2G2G2|A3G2|A2G2|A4G2
+
+</script>
+
+</p><h3 id="prompt21">Prompt 21 - M: 9/8</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 140
+M: 9/8
+K: Gmajor
+A B A B | B A B B E B | G A B B A B | B B B A B A B | B B B B B A B A | B B A B B A B | B c B A A B A B :| d B G B B B B | A B A B A B A B | B B A A B B A | B B B B d B | A B d B A B | B B B A B B A | B A B B A A | B B B B A A | B B B G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 140
+M:9/8
+K:Gmajor
+ABAB|BABBEB|GABBAB|BBBABAB|BBBBBABA|BBABBAB|BcBAABAB:|dBGBBBB|ABABABAB|BBAABBA|BBBBdB|ABdBAB|BBBABBA|BABBAA|BBBBAA|BBBG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 141
+M: 9/8
+K: Dmajor
+c A c c | d c A B A F | d f e f a f | d e c B A F | d e d e c B | d c A F A F | E2 D E D F | d A F G F A | d e f e f | d c d d A F | e f2 d e f | d B A G F | D2 d e A F | d e f a f e a | d f e c A c | B A B A F A E | E2 d e f | d2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 141
+M:9/8
+K:Dmajor
+cAcc|dcABAF|dfefaf|decBAF|dedecB|dcAFAF|E2DEDF|dAFGFA|defef|dcddAF|ef2def|dBAGF|D2deAF|defafea|dfecAc|BABAFAE|E2def|d2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 142
+M: 9/88
+M: Gmajor
+F |: A | |: d2 G G2 E | D D G A | d2 c B A | G2 B A G2 | d2 c B | G2 D E G | D2 D B G | A B A d2 B A | 1 G2 G2 D :| 2 G4 G2 | |
+R: jig
+M: 6/8
+K: Gmajor
+|: B2 B g F | G E G G3 | (3 > B c A G A F | 1 G2 G2 G2 A :| 2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 142
+M:9/88
+M:Gmajor
+F|:A||:d2GG2E|DDGA|d2cBA|G2BAG2|d2cB|G2DEG|D2DBG|ABAd2BA|1G2G2D:|2G4G2||
+R:jig
+M:6/8
+K:Gmajor
+|:B2BgF|GEGG3|(3>BcAGAF|1G2G2G2A:|2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 143
+M: 9/8
+K: Aminor
+|: B A > B c e | d > B2 B A c | B2 d > c < B | B2 B2 c > c A | E > A c A > B | A2 B2 A > c | d2 e > f > B | d2 G > B c | B2 c < B2 A | B2 B2 G E > B | A2 A2 B | B2 A2 c B > B | d2 d > B A | B < c d e B | c2 A B2 | G2 E2 E | E2 D2 B, | | A > B2 G2 B | c2 B > c2 A | B2 c2 A2 | B2 B2 A | A2 A2 d2 | e2 f2 e | f2 d2 | d2 B2 B2 | B2 A2 | B2 G2 d2 | c2 B2 G A F | E2 G2 | | G3 B2 d2 d | | B2 A2 A2 B | B2 A B A2 | G2 G2 | B2 A2 | B2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 143
+M:9/8
+K:Aminor
+|:BA>Bce|d>B2BAc|B2d>c<B|B2B2c>cA|E>AcA>B|A2B2A>c|d2e>f>B|d2G>Bc|B2c<B2A|B2B2GE>B|A2A2B|B2A2cB>B|d2d>BA|B<cdeB|c2AB2|G2E2E|E2D2B,||A>B2G2B|c2B>c2A|B2c2A2|B2B2A|A2A2d2|e2f2e|f2d2|d2B2B2|B2A2|B2G2d2|c2B2GAF|E2G2||G3B2d2d||B2A2A2B|B2ABA2|G2G2|B2A2|B2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 144
+M: 9/8
+K: Gmajor
+B A B A A | B A B A B A A | B3 A B A A B | B A G A B A B | B G A B A A A | B A B A B A D B A | B A G3 :||: G B3 A A G | B A B d3 | B A B A G A B | c d A3 | B A A B A3 B | A B A B A G A | G3 B A B B A | B A A A A G3 :|
+R: reel
+M: 4/4
+K: Gmajor
+c2 B G B d B d B A G | A2 B d B d e d B A | G G B d B d B d c B G | A B d G d4 | e2 d c d e d d B A | G B d c d A B G2 | A2 d e d c d e d B | A2 d e A G B A | G B d e d d e d c B | G2 e d c d e d B A | |
+R: reel
+M: 4/8
+K: Gmajor
+d |: e | B2 B2 G F G2 | D D F G G2 G A2 | B2 G2 F G2 F2 | D G F G2 D2 :||: d | B2 B2 A F G F G2 | E F G c B2 G2 | F A D F G B A G2 | F G A G F G2 :||: B2 d B B G A4 | B2 d2 B2 G2 | D E D2 F G B2 | B2 B G F G2 F2 A B | B2 e d B A2 | (3 e f d B A G2 G2 | F D D2 A2 F2 :|
+R: waltz
+M: 3/4
+K: Adorian
+|: B2 E2 E2 G | A2 F2 G2 A | B2 B4 B2 | A2 G2 A B2 | A2 B4 E2 | A2 G F2 G2 | E2 E4 | B2 E2 G2 | B2 D2 E2 | B2 B2 B2 | A2 G2 E2 | B2 G2 G2 A2 | B2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 144
+M:9/8
+K:Gmajor
+BABAA|BABABAA|B3ABAAB|BAGABAB|BGABAAA|BABABADBA|BAG3:||:GB3AAG|BABd3|BABAGAB|cdA3|BAABA3B|ABABAGA|G3BABBA|BAAAAG3:|
+R:reel
+M:4/4
+K:Gmajor
+c2BGBdBdBAG|A2BdBdedBA|GGBdBdBdcBG|ABdGd4|e2dcdeddBA|GBdcdABG2|A2dedcdedB|A2deAGBA|GBdeddedcB|G2edcdedBA||
+R:reel
+M:4/8
+K:Gmajor
+d|:e|B2B2GFG2|DDFGG2GA2|B2G2FG2F2|DGFG2D2:||:d|B2B2AFGFG2|EFGcB2G2|FADFGBAG2|FGAGFG2:||:B2dBBGA4|B2d2B2G2|DED2FGB2|B2BGFG2F2AB|B2edBA2|(3efdBAG2G2|FDD2A2F2:|
+R:waltz
+M:3/4
+K:Adorian
+|:B2E2E2G|A2F2G2A|B2B4B2|A2G2AB2|A2B4E2|A2GF2G2|E2E4|B2E2G2|B2D2E2|B2B2B2|A2G2E2|B2G2G2A2|B2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 145
+M: 9/8
+K: Dmajor
+|: F E F E F E | F E F E F E F E F | F E F E F E F E E | F E F E F E E F E | F E F E E F E F E F E | F E E F E F E F E F E | E F E F E F E F E F E E F | F E F E F E E E F E F E | F E E E F E F E F E E F E E | F E F E E F E E F E F E E F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 145
+M:9/8
+K:Dmajor
+|:FEFEFE|FEFEFEFEF|FEFEFEFEE|FEFEFEEFE|FEFEEFEFEFE|FEEFEFEFEFE|EFEFEFEFEFEEF|FEFEFEEEFEFE|FEEEFEFEFEEFEE|FEFEEFEEFEFEEF
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 146
+M: 9/8
+K: Dmajor
+|: F E F E F E | F E F E F E F E F | F E F E F E F E E | F E F E F E E F E | F E F E E F E F E F E | F E E F E F E F E F E | E F E F E F E F E F E E F | F E F E F E E E F E F E | F E E E F E F E F E E F E E | F E F E E F E E F E F E E F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 146
+M:9/8
+K:Dmajor
+|:FEFEFE|FEFEFEFEF|FEFEFEFEE|FEFEFEEFE|FEFEEFEFEFE|FEEFEFEFEFE|EFEFEFEFEFEEF|FEFEFEEEFEFE|FEEEFEFEFEEFEE|FEFEEFEEFEFEEF
+
+</script>
+
+</p><h3 id="prompt22">Prompt 22 - G</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 147
+G A A | B G G2 A | d B G A G E G | G B2 A B d d | e2 g2 f | g2 g2 f2 | g2 a g2 | g2 g2 f2 g2 | g2 f g2 g2 | g2 g2 f2 | g3 g2 g2 a | g2 g2 g2 g2 | g2 g2 a2 | g2 g2 g2 g2 a | g2 g e2 f2 | g2 g2 g2 g | g2 g a g2 g2 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 147
+GAA|BGG2A|dBGAGEG|GB2ABdd|e2g2f|g2g2f2|g2ag2|g2g2f2g2|g2fg2g2|g2g2f2|g3g2g2a|g2g2g2g2|g2g2a2|g2g2g2g2a|g2ge2f2|g2g2g2g|g2gag2g2|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 148
+G c A D F A d | G E F A F A | G D3 F G d | e c d B c | G A F G :|
+R: reel
+M: 4/4
+K: Dmajor
+|: D C2 D2 D2 | F A B A C D2 | F3 F E F A | B2 c B A2 D2 | F3 D2 F2 D C2 | D2 A B A F | G2 D4 D2 | F2 D2 D B,2 | F2 D F A G2 | F2 F D2 F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 148
+GcADFAd|GEFAFA|GD3FGd|ecdBc|GAFG:|
+R:reel
+M:4/4
+K:Dmajor
+|:DC2D2D2|FABACD2|F3FEFA|B2cBA2D2|F3D2F2DC2|D2ABAF|G2D4D2|F2D2DB,2|F2DFAG2|F2FD2F
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 149
+G E E/ | B A d f3 f f d | e A B A B B2 f/ c B2 d | e A F F A2 f g | e A A F B c d | e A F E3 | e A B g e f | e A A B c d d | e A f A G/ e2 | e A/ A/ f/ a g a f e d | G B A F D B | G2 G F D D B, | e A e f g f d | e A a2 f e d | e A A2 D2 :|</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 149
+GEE/|BAdf3ffd|eABABB2f/cB2d|eAFFA2fg|eAAFBcd|eAFE3|eABgef|eAABcdd|eAfAG/e2|eA/A/f/agafed|GBAFDB|G2GFDDB,|eAefgfd|eAa2fed|eAA2D2:|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 150
+G c A G2 d > B2 | A3 B c2 A2 | A3 B A E2 F E | E2 E2 A |
+R: slide
+M: 4/4
+K: Gmajor
+|: A B A B A | G2 B c B A B | G2 G A B A B | g g g e d B B | G2 G G B B G | G2 B d B A B | A2 B2 D E E G | G2 c B A B A F | G2 G2 B2 B A G | G2 B d B2 B G | G2 B A G4 :||: |: G2 B c d | e2 g2 a g | d B A B d g | g2 d B A B A | G2 G2 B e d e | d B c A B A G A | G2 G F G B2 A | G2 G2 B c | B B d g2 g e | g2 e g2 d | c B d B2 G F A | G2 G2 E G G | G2 B | G2 G A B2 G A | B G2 A2 B G B |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 150
+GcAG2d>B2|A3Bc2A2|A3BAE2FE|E2E2A|
+R:slide
+M:4/4
+K:Gmajor
+|:ABABA|G2BcBAB|G2GABAB|gggedBB|G2GGBBG|G2BdBAB|A2B2DEEG|G2cBABAF|G2G2B2BAG|G2BdB2BG|G2BAG4:||:|:G2Bcd|e2g2ag|dBABdg|g2dBABA|G2G2Bede|dBcABAGA|G2GFGB2A|G2G2Bc|BBdg2ge|g2eg2d|cBdB2GFA|G2G2EGG|G2B|G2GAB2GA|BG2A2BGB|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 151
+G c | c A f e c c c | c B c3 c B A c | d c B c c c2 d c | c2 f d c2 f2 | c2 c B c c c c A B c | c2 A c c e c c2 | d c c2 c c c2 c | c4 :||: c2 B2 B c d c c2 | c2 B c B c A | B2 c2 d c B c2 | d d B c2 c A c | c2 c2 B2 c2 :|
+R: reel
+M: 4/4
+K: Amajor
+A2 A c | B2 F A A A B c | A6 c c | B2 A3 A B c | e2 e2 c A c B c | B2 B c3 A B | c2 e2 e2 d c | B2 e2 c B2 | A2 A2 A3 c | | B2 B2 c d3 f | e2 B2 c e g2 | f2 e2 f2 e2 | e2 c2 c B B A | B2 c2 c e2 | | e2 a2 a2 e2 a A2 | B2 A2 A c B c | a2 a2 a2 e | e2 c3 c B | c B e3 A | B2 c3 c B A | B3 c4 c | B2 B2 c2 c | B A2 A2 B c | d c B2 c2 B2 | A2 c A3 c | B c B2 d e A | d2 B2 A c B | d2 a2 B3 c | d2 c B c B A | A2 A2 A2 c | B2 A2 A2 c B | d2 c2 c3 c B | B2 B2 c B A | A2 A B c A2 | c2 e2 c B c B | c2 e2 c2 | d2 c B d c B | c2 A B2 c d | A2 B A2 c B | c2 d c2 B c | A2 A F A c | d2 c B c B A A | d2 d2 d2 a g | g2 b a f2 | d2 f2 d2 | c2 d2 g2 e2 | c2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 151
+Gc|cAfeccc|cBc3cBAc|dcBccc2dc|c2fdc2f2|c2cBccccABc|c2Accecc2|dcc2ccc2c|c4:||:c2B2Bcdcc2|c2BcBcA|B2c2dcBc2|ddBc2cAc|c2c2B2c2:|
+R:reel
+M:4/4
+K:Amajor
+A2Ac|B2FAAABc|A6cc|B2A3ABc|e2e2cAcBc|B2Bc3AB|c2e2e2dc|B2e2cB2|A2A2A3c||B2B2cd3f|e2B2ceg2|f2e2f2e2|e2c2cBBA|B2c2ce2||e2a2a2e2aA2|B2A2AcBc|a2a2a2e|e2c3cB|cBe3A|B2c3cBA|B3c4c|B2B2c2c|BA2A2Bc|dcB2c2B2|A2cA3c|BcB2deA|d2B2AcB|d2a2B3c|d2cBcBA|A2A2A2c|B2A2A2cB|d2c2c3cB|B2B2cBA|A2ABcA2|c2e2cBcB|c2e2c2|d2cBdcB|c2AB2cd|A2BA2cB|c2dc2Bc|A2AFAc|d2cBcBAA|d2d2d2ag|g2baf2|d2f2d2|c2d2g2e2|c2
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 152
+G G G G G G G G G G G | G G G G G G G G G B G | G G G G G G G B G G | G G G G G G B G G G | G G G G G B G G G G G | G G G B G G G G G G | G G B G G G G G G G G | B G G G G G G G G B | G G G G G G G G A B G | G G G G B G G G G | G G G G B G G B G | G G G G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 152
+GGGGGGGGGGG|GGGGGGGGGBG|GGGGGGGBGG|GGGGGGBGGG|GGGGGBGGGGG|GGGBGGGGGG|GGBGGGGGGGG|BGGGGGGGGB|GGGGGGGGABG|GGGGBGGGG|GGGGBGGBG|GGGG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 153
+G G G G G G G G G G G | G G G G G G G G G B G | G G G G G G G B G G | G G G G G G B G G G | G G G G G B G G G G G | G G G B G G G G G G | G G B G G G G G G G G | B G G G G G G G G B | G G G G G G G G A B G | G G G G B G G G G | G G G G B G G B G | G G G G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 153
+GGGGGGGGGGG|GGGGGGGGGBG|GGGGGGGBGG|GGGGGGBGGG|GGGGGBGGGGG|GGGBGGGGGG|GGBGGGGGGGG|BGGGGGGGGB|GGGGGGGGABG|GGGGBGGGG|GGGGBGGBG|GGGG
+
+</script>
+
+</p><h3 id="prompt23">Prompt 23 - e</h3>
+<p><p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 154
+e3 B c | d A c d c d e | d c A c B c | d e f d c B | d c A B c d | d c B c d d e | d c A G c d | d e f a f e | d c A G c d | c d c A c d | d c B c d e | e c c A c d | d c A A G | |
+R: jig
+M: 6/8
+K: Gmajor
+|: G2 G B G G | A2 G B A G | A2 B A G G |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 154
+e3Bc|dAcdcde|dcAcBc|defdcB|dcABcd|dcBcdde|dcAGcd|defafe|dcAGcd|cdcAcd|dcBcde|eccAcd|dcAAG||
+R:jig
+M:6/8
+K:Gmajor
+|:G2GBGG|A2GBAG|A2BAGG|
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 155
+e2 d f f | e c B A3 | B A B c e | 1 f e c B A2 :| 2 f e c A2 A | |
+R: jig
+M: 6/8
+K: Dmajor
+|: D2 d2 B | F3 A F E | D2 A B | D2 d B A B | D E D E | D3 F E | D2 d B A | B B A F E | D3 E3 :||: A2 d B | F2 E D | D3 | D3 D3 | D3 D3 :||: A A d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 155
+e2dff|ecBA3|BABce|1fecBA2:|2fecA2A||
+R:jig
+M:6/8
+K:Dmajor
+|:D2d2B|F3AFE|D2AB|D2dBAB|DEDE|D3FE|D2dBA|BBAFE|D3E3:||:A2dB|F2ED|D3|D3D3|D3D3:||:AAd
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 156
+e3 D | d g f d | d ^E/ G A F E, E | D2 E =A,E =D | E2 G B, F E2 A | d ^c A ^c B G | A d ^F E C E | E D G A, D/ G, E/ A, | G/ c A B B E F | A ^c d ^g a g | a g/ a/ g/ f/ a =c g/ | a =d2 b g a g | a g f a g a | a g g g f/ e'</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 156
+e3D|dgfd|d^E/GAFE,E|D2E=A,E=D|E2GB,FE2A|d^cA^cBG|Ad^FECE|EDGA,D/G,E/A,|G/cABBEF|A^cd^gag|ag/a/g/f/a=cg/|a=d2bgag|agfaga|agggf/e'
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 256
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 157
+e B/ B/ B F | A G A G F A | G A B d e d | G G F A B | d e g e | g e d d B | G A F A G | A d G A B A | F A D G A | B d B G A G | 1 A A D E G :| 2 A G E E G A | |
+R: jig
+M: 6/8
+K: Dmajor
+D2 D F2 A | B2 E2 F2 F | D E2 G2 F | F2 D2 D D | B2 c e d c | d B2 B A F | F2 E2 D | G2 A G F | B2 A G F | D2 D2 D | B2 D F A | B2 B2 c | d2 d e d f | g2 d e d2 c | B2 d c B2 :|
+R: reel
+M: 4/4
+K: Gmajor
+|: D E B c A G B | c2 e d B A B c | A2 B c B A G B c | d e d B G A G B | 1 D D B c A G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 157
+eB/B/BF|AGAGFA|GABded|GGFAB|dege|geddB|GAFAG|AdGABA|FADGA|BdBGAG|1AADEG:|2AGEEGA||
+R:jig
+M:6/8
+K:Dmajor
+D2DF2A|B2E2F2F|DE2G2F|F2D2DD|B2cedc|dB2BAF|F2E2D|G2AGF|B2AGF|D2D2D|B2DFA|B2B2c|d2dedf|g2ded2c|B2dcB2:|
+R:reel
+M:4/4
+K:Gmajor
+|:DEBcAGB|c2edBABc|A2BcBAGBc|dedBGAGB|1DDBcAG
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.8
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 158
+e:
+M: 2/8
+K: Edorian
+|: B2 F | F G B2 F | A2 F2 | D2 B A F | F2 F2 E | F2 F E F | B2 A F2 E F | F2 D | E4 F | 1 E3 F2 F :| 2 E4 E | | F3 F2 | E2 F2 | E F2 F2 | | A3 F2 F | G2 F2 | E2 E2 | G2 E2 F | A2 F2 | A6 | B2 d2 | f2 e2 | d2 B2 F | E F2 E F | D2 E2 F2 | G4 | B2 A F2 | 1 G3 F :| 2 E3 E F E F | | |: E3 F | E3 D2 E F | D2 F2 A2 | B2 B2 B2 | B2 E2 E2 | F E2 E2 F | E3 E D F | A G A2 F | 1 A3 A F E F :| 2 A3 A F | |
+R: reel
+M: 4/4
+K: Dmajor
+d B d A F F F D | D E E D E F F D E D | F E D F2 D E F D | D E2 A F A F | D F E F D D D F | 1 G E F E F D E F :| 2 G E F A c D E D | | |: E2 e d c c B c | d e d c d c d c | B e d d c e d c | d c d c d c d e | d e d c d c d c d e :||: d B c d c d d c d | B c d c d c A F D | E F A d c d2 :|
+R: reel
+M: 4/3 e A d e A F F | G B d B d A F G | E F D E F E B d E F D E | E D F D B A d B A G E | F D F D E F D E F G | D E F G F D D3 :| |
+R: reel
+M: 4 d2 e f d B c d B d | e2 e f e d B A B A | d g f e d B A B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 158
+e:
+M:2/8
+K:Edorian
+|:B2F|FGB2F|A2F2|D2BAF|F2F2E|F2FEF|B2AF2EF|F2D|E4F|1E3F2F:|2E4E||F3F2|E2F2|EF2F2||A3F2F|G2F2|E2E2|G2E2F|A2F2|A6|B2d2|f2e2|d2B2F|EF2EF|D2E2F2|G4|B2AF2|1G3F:|2E3EFEF|||:E3F|E3D2EF|D2F2A2|B2B2B2|B2E2E2|FE2E2F|E3EDF|AGA2F|1A3AFEF:|2A3AF||
+R:reel
+M:4/4
+K:Dmajor
+dBdAFFFD|DEEDEFFDED|FEDF2DEFD|DE2AFAF|DFEFDDDF|1GEFEFDEF:|2GEFAcDED|||:E2edccBc|dedcdcdc|Beddcedc|dcdcdcde|dedcdcdcde:||:dBcdcddcd|BcdcdcAFD|EFAdcd2:|
+R:reel
+M:4/3eAdeAFF|GBdBdAFG|EFDEFEBdEFDE|EDFDBAdBAGE|FDFDEFDEFG|DEFGFDD3:||
+R:reel
+M:4d2efdBcdBd|e2efedBABA|dgfedBAB
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 159
+e A A A A B c | B A A B c B c | B A A A B c | B A B c B c | B A A B c | B A B c A B c | B A B c A c | B A A B c A | B A A c B c | B A A A c | B A B c B c B | B A A B c | B A A A c B c | B A A B c B | B A A A c | B A A c B c | B c A B c B | B A A c B c | B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 159
+eAAAABc|BAABcBc|BAAABc|BABcBc|BAABc|BABcABc|BABcAc|BAABcA|BAAcBc|BAAAc|BABcBcB|BAABc|BAAAcBc|BAABcB|BAAAc|BAAcBc|BcABcB|BAAcBc|B
+
+</script>
+
+<p>test_parameters:
+<ul>
+<li>max_length: 128
+</li>
+<li>temperature: 1.0
+</li>
+<li>no_repeat_ngram_size: 10
+</li>
+<li>do_sample: False
+</li>
+<li>top_k: 50
+</li>
+<li>num_beams: 5
+</li>
+</ul>
+</p>
+model_output:
+
+<pre>X: 160
+e A A A A B c | B A A B c B c | B A A A B c | B A B c B c | B A A B c | B A B c A B c | B A B c A c | B A A B c A | B A A c B c | B A A A c | B A B c B c B | B A A B c | B A A A c B c | B A A B c B | B A A A c | B A A c B c | B c A B c B | B A A c B c | B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 160
+eAAAABc|BAABcBc|BAAABc|BABcBc|BAABc|BABcABc|BABcAc|BAABcA|BAAcBc|BAAAc|BABcBcB|BAABc|BAAAcBc|BAABcB|BAAAc|BAAcBc|BcABcB|BAAcBc|B
+
+</script>
+
+</p></body>
+</html>

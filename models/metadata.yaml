@@ -1,0 +1,27 @@
+models:
+  ashplant:
+    dataset: tunes_v1
+    description: First model. No type/mode/meter/type metadata. 
+    versions: 
+      a:
+        description: Initial run for ashplant
+  banish_misfortune:
+    dataset: tunes_v2
+    description: Using improved dataset to generate type/mode/meter
+    versions: 
+      a:
+        description: Initial run for banish_misfortune
+      b:
+        description: Longer training time than banish_misfortune-a
+      c:
+        description: Using increased window size num_positions
+      d:
+        description: Trying less layers but more complexity per layer
+  cooleys:
+    dataset: tunes_v2
+    description: Using improved tokenization, individual tunes for training examples
+    versions: 
+      a:
+        description: Initial run for cooleys
+      b:
+        description: Longer training time than cooleys-a
