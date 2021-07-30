@@ -1,0 +1,3571 @@
+<html>
+<meta charset="UTF-8"/>
+<script src="http://moinejf.free.fr/js/abcweb-1.js"></script>
+<script src="http://moinejf.free.fr/js/snd-1.js"></script>
+<style>svg {display:block}</style>
+<title></title>
+</head>
+<body bgcolor="#faf0e6"><p>2021-07-29t11:47:02</p>
+<p>path_to_model: ./models/cooleys/2021-07-27.2/results/checkpoint-15000-2</p>
+<p>parameters:
+<ul>
+<li>max_length: 512
+</li>
+<li>temperature: 0.6
+</li>
+<li>no_repeat_ngram_size: 4
+</li>
+<li>do_sample: True
+</li>
+<li>top_k: 50
+</li>
+</ul>
+</p>
+<ul><li><a href="#prompt1">Prompt 1 - R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E |</a></li>
+<li><a href="#prompt2">Prompt 2 - R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B |</a></li>
+<li><a href="#prompt3">Prompt 3 - R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ |</a></li>
+<li><a href="#prompt4">Prompt 4 - R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A</a></li>
+<li><a href="#prompt5">Prompt 5 - R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d |</a></li>
+<li><a href="#prompt6">Prompt 6 - R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 |</a></li>
+<li><a href="#prompt7">Prompt 7 - R: jig
+M: 6/8
+K: Dmix
+f e d c A G |</a></li>
+<li><a href="#prompt8">Prompt 8 - R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, |</a></li>
+<li><a href="#prompt9">Prompt 9 - R: jig
+M: 6/8
+K: Adow
+|: a3 b a g |</a></li>
+<li><a href="#prompt10">Prompt 10 - R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A</a></li>
+<li><a href="#prompt11">Prompt 11 - R: jig</a></li>
+<li><a href="#prompt12">Prompt 12 - R: reel</a></li>
+<li><a href="#prompt13">Prompt 13 - R: polka</a></li>
+<li><a href="#prompt14">Prompt 14 - R: waltz</a></li>
+<li><a href="#prompt15">Prompt 15 - R: hornpipe</a></li>
+<li><a href="#prompt16">Prompt 16 - R: slip jig</a></li>
+<li><a href="#prompt17">Prompt 17 - M: 4/4</a></li>
+<li><a href="#prompt18">Prompt 18 - M: 6/8</a></li>
+<li><a href="#prompt19">Prompt 19 - M: 3/4</a></li>
+<li><a href="#prompt20">Prompt 20 - M: 2/4</a></li>
+<li><a href="#prompt21">Prompt 21 - M: 9/8</a></li>
+<li><a href="#prompt22">Prompt 22 - G</a></li>
+<li><a href="#prompt23">Prompt 23 - e</a></li>
+</ul><h3 id="prompt1">Prompt 1 - R: reel	M: 4/4	K: Edor	|: E2 B E d E B E |</h3>
+<p>
+<pre>X: 1
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E E2 B A G E | E2 B, E G E G E | D E D E G A B A | G E G D D E D D D :||: E2 B c B c d e | f g e d B A B G | A G E D E D G A B | E E E2 G E D d B | c A G E G A G E A | G A B G E D D E G | D E G D E D3 B | | |: B3 B c B A G B | c3 B A B c d B | A B G A c B A B A G | E E D E2 G A A B :||: G E G G D G G E E | D D D E E D D G A G | G E E D G E A d B | d c B G E G B A G A | G G E D G D4 | | E E G G E G e d B G E | G E D C D D E B c B | | A2 G E G3 A B A d | G E F G E D4 | d B G A G B G E E G | E G E D3 D | | E G A E G E E A E D D B | E G G B D G E G | A E G D3 E G E2 | | E D E E G E B D D D B E G | | E2 E G E A G G E A E | D G E D B G E d | E G D G D E G E F | E E F G G E =A B | E D c E D E4 | | | A E A G E E E G A D E G d E | E G B G G E3 | | E B G E A B d E E G D | E D D2 E E E D | E G3 B G4 |] | G E A A G E F E G D B | | E A B E G E3 G E G4 | | G E B G A E D E | E d E G E d E D D3 E | | G G A G G D E E3 E G | d B E E D3 | | A G3 E G G G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 1
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|EE2BAGE|E2B,EGEGE|DEDEGABA|GEGDDEDDD:||:E2BcBcde|fgedBABG|AGEDEDGAB|EEE2GEDdB|cAGEGAGEA|GABGEDDEG|DEGDED3B|||:B3BcBAGB|c3BABcdB|ABGAcBABAG|EEDE2GAAB:||:GEGGDGGEE|DDDEEDDGAG|GEEDGEAdB|dcBGEGBAGA|GGEDGD4||EEGGEGedBGE|GEDCDDEBcB||A2GEG3ABAd|GEFGED4|dBGAGBGEEG|EGED3D||EGAEGEEAEDDB|EGGBDGEG|AEGD3EGE2||EDEEGEBDDDBEG||E2EGEAGGEAE|DGEDBGEd|EGDGDEGEF|EEFGGE=AB|EDcEDE4|||AEAGEEEGADEGdE|EGBGGE3||EBGEABdEEGD|EDD2EEED|EG3BG4|]|GEAAGEFEGDB||EABEGE3GEG4||GEBGAEDE|EdEGEdEDD3E||GGAGGDEE3EG|dBEED3||AG3EGGG
+
+</script>
+
+
+<pre>X: 2
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B A G E F | G E E2 B G E G | A F D E D D D D | E G E2 B B A E | E D E D E E G E G :||: d2 d e f g e d B | A G E G B d e g g | e d e f d B A B d | e2 e f g g e d e | d B A G B A G2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 2
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|E2BAGEF|GEE2BGEG|AFDEDDDD|EGE2BBAE|EDEDEEGEG:||:d2defgedB|AGEGBdegg|edefdBABd|e2efggede|dBAGBAG2:|
+
+
+</script>
+
+
+<pre>X: 3
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | c A B A B G E D | E G A B c d e B | A B A G E E D E | E G E G B E G E D :||: e g e d e c B A G | e g e c e d B A G B | d e d e d B G A A | e g d e e c B d B | A G E D E D E E D :||: E G A G B c B c B | A c B A A G E G E | E D E G B c d B B | A2 E G B G B c2 | A A G A G E2 E D :| E G E B E G c B c | A G A B G A B A2 | E G B A G A E D E2 | E E G E E G B B c | | E G D E G E F D E D | | E D D E G A D E D D D D | E D G D E D G E D :| | E G G E G G B d B G B d | e2 e B A G3 | d e B A B A A B G | E G3 A G B E D | D E G G A E G B d :| | E D C D E D3 G E D D G B | E G F E G E2 |] | E G | E D B E G2 D E E F D D E | G E G D D E D B D | E E D D C E D E A G | E E A G E F G E | | E E E G A E3 D E G D | E A G D E E E D | G E E E E d E D D | | G E D G B E E D G F E D | A G B G E G3 | E E F G G E A D E | | G G E E F E E D3 E D | B E G A2 E D D B | E D | e B E G B D E G3 B | E E3 E G E c | | A G D B E E E F B B G A G | | B E D E C E D D4 | | E3 E E E B E D G3 G |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 3
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|cABABGED|EGABcdeB|ABAGEEDE|EGEGBEGED:||:egedecBAG|egecedBAGB|dededBGAA|egdeecBdB|AGEDEDEED:||:EGAGBcBcB|AcBAAGEGE|EDEGBcdBB|A2EGBGBc2|AAGAGE2ED:|EGEBEGcBc|AGABGABA2|EGBAGAEDE2|EEGEEGBBc||EGDEGEFDED||EDDEGADEDDDD|EDGDEDGED:||EGGEGGBdBGBd|e2eBAG3|deBABAABG|EG3AGBED|DEGGAEGBd:||EDCDED3GEDDGB|EGFEGE2|]|EG|EDBEG2DEEFDDE|GEGDDEDBD|EEDDCEDEAG|EEAGEFGE||EEEGAE3DEGD|EAGDEEED|GEEEEdEDD||GEDGBEEDGFED|AGBGEG3|EEFGGEADE||GGEEFEED3ED|BEGA2EDDB|ED|eBEGBDEG3B|EE3EGEc||AGDBEEEFBBGAG||BEDECEDD4||E3EEEBEDG3G|
+
+</script>
+
+
+<pre>X: 4
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | G E G G A G E D | E2 B A B E E | D E D E E D E G | E G E G A B d e | g e d B A A B A2 :||: e f g e d g e g e | d B A G E G E D D :| | E D G G E G B G A B | d e f g d e d B G | E D E D D E E G E | D G E G D E G B d | e g e d c B A G G E | E D D D E G E E G | D E G G E D E2 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 4
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|GEGGAGED|E2BABEE|DEDEEDEG|EGEGABde|gedBAABA2:||:efgedgege|dBAGEGEDD:||EDGGEGBGAB|defgdedBG|EDEDDEEGE|DGEGDEGBd|egedcBAGGE|EDDDEGEEG|DEGGEDE2||
+
+
+</script>
+
+
+<pre>X: 5
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | E2 B2 E G E | E G E D E D D D | E G B A G B A B | A G E E D D E G E :||: E G B d B A B G | E G A B A G E D D | G G E G B B A B A | E G G B A A B A B :| | |: d B G B A E D D B D | E D G B A2 B A G | E D E G B E D D G E | | E G c A G A B E G E G | E E D E2 E D D2 :| | |: e A A B G d B G d A | e B G B d e e d B | d B G A G B d A G E | G E G E E G G E D | E E G E A D E A G E :| | E G D E G G A B G B E | B A G A G E G D G E D :| | E D D C E D E E G c B | E G2 D E G3 E | | A G G E E E D G E G G G E | D E D E B G B G A A B | | E D C E E E G A G D E E D :| :| | G G G B E G A E G B G E E | E E E A G B G B e |] | e G e d B G E A G G B d | E G F G E G A D E F | G E E A E G E2 | | E E C E D D (3 E E G D D E E E | | G A G G G G A E E G B e d | E E A B G E G3 | | E2 E G G c B c A B E D | | E A G A E D E g E D E c B :| | E A E D G c B E G B | E E c B G c d e | G E F E D E3 | E F E E D2 E G | | E c B A G e d E E D F D | E > E A E A G D3 | E G3 A B | E D3 E E D B | E A</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 5
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|E2B2EGE|EGEDEDDD|EGBAGBAB|AGEEDDEGE:||:EGBdBABG|EGABAGEDD|GGEGBBABA|EGGBAABAB:|||:dBGBAEDDBD|EDGBA2BAG|EDEGBEDDGE||EGcAGABEGEG|EEDE2EDD2:|||:eAABGdBGdA|eBGBdeedB|dBGAGBdAGE|GEGEEGGED|EEGEADEAGE:||EGDEGGABGBE|BAGAGEGDGED:||EDDCEDEEGcB|EG2DEG3E||AGGEEEDGEGGGE|DEDEBGBGAAB||EDCEEEGAGDEED:|:||GGGBEGAEGBGEE|EEEAGBGBe|]|eGedBGEAGGBd|EGFGEGADEF|GEEAEGE2||EECEDD(3EEGDDEEE||GAGGGGAEEGBed|EEABGEG3||E2EGGcBcABED||EAGAEDEgEDEcB:||EAEDGcBEGB|EEcBGcde|GEFEDE3|EFEED2EG||EcBAGedEEDFD|E>EAEAGD3|EG3AB|ED3EEDB|EA
+
+</script>
+
+
+<pre>X: 6
+R: reel
+M: 4/4
+K: Edor
+|: E2 B E d E B E | G E E D E D E | D E2 B A G E G | A B A B G A B A | G E G E D E E D :||: A E (3 G E G A B c d | e d B G B A G A B | A B d B A G D E E2 :| | |: B d e c A A A B A G | A E G E G G E E G E | G B A B A A G A G | E E G B E G G G E D | E G E E E G A A B c | d e g d B G A G E2 | | B d e d e d B A A B G | A G E E2 E D E G :| | E E E E D D E G E A B | G B d e B A G B G | E G G A B G E G B e | | e d e c B d e G e d B d | e2 e d B c B A A2 | E E D G E E A E G | E D E F G E G3 | | E E F G B A A A G B d | E D G A B d e A B A |] | A E F D E E E F D D E | | E D D G B G E E F A G D | E E d E G E F G A G A | E G A E G G B A | E F G3 B G E D |] | E G B A E G A G B A D | E D3 E E G G | E F E D E3 E D | | E G D E G G3 E D E c B | E G e/2 B G G E G/2 | E G3 E E D | D E D G G E F/2 G3 | E G4 | | E e A B G B d E A G A c A G | B G E A G E D D | E F D G E D G | E A E D E A | E E A G G E4 | | B E E E3 E G E2 D E D | G E D2 D E G B | E D | (3 E B c E G E4 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 6
+R:reel
+M:4/4
+K:Edor
+|:E2BEdEBE|GEEDEDE|DE2BAGEG|ABABGABA|GEGEDEED:||:AE(3GEGABcd|edBGBAGAB|ABdBAGDEE2:|||:BdecAAABAG|AEGEGGEEGE|GBABAAGAG|EEGBEGGGED|EGEEEGAABc|degdBGAGE2||BdededBAABG|AGEE2EDEG:||EEEEDDEGEAB|GBdeBAGBG|EGGABGEGBe||edecBdeGedBd|e2edBcBAA2|EEDGEEAEG|EDEFGEG3||EEFGBAAAGBd|EDGABdeABA|]|AEFDEEEFDDE||EDDGBGEEFAGD|EEdEGEFGAGA|EGAEGGBA|EFG3BGED|]|EGBAEGAGBAD|ED3EEGG|EFEDE3ED||EGDEGG3EDEcB|EGe/2BGGEG/2|EG3EED|DEDGGEF/2G3|EG4||EeABGBdEAGAcAG|BGEAGEDD|EFDGEDG|EAEDEA|EEAGGE4||BEEE3EGE2DED|GED2DEGB|ED|(3EBcEGE4|]
+
+
+</script>
+
+</p><h3 id="prompt2">Prompt 2 - R: jig	M: 6/8	K: Gmaj	|: G3 G A B |</h3>
+<p>
+<pre>X: 7
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | A G F G E D | G3 G G A | B A G F E D | D G A G E2 | G3 A B d | A GF G F G A | G F G F G3 :||: d B d e g d B | c2 e d c A A | B G G A B A G | d B d c e d B | 1 A G A G F A G :| 2 A G G F G2 E | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 7
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|AGFGED|G3GGA|BAGFED|DGAGE2|G3ABd|AGFGFGA|GFGFG3:||:dBdegdB|c2edcAA|BGGABAG|dBdcedB|1AGAGFAG:|2AGGFG2E||
+
+
+</script>
+
+
+<pre>X: 8
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c e d c A G | F G A F G A | G E F G A B/ c/ | d G G d B G A | F G E F D3 :||: B A G A G A | B A G E F E/ G/ G/ c/ d/ | d d e d G G A :| | f e d e c A G G | | F G G E F d c B | c G E E c E/ G F/ G/ | A F G E G E D :||: | G3 d e d B | c A G A c d e | d e d c e d d | c A A G c d e/ f/ g/ f/ | g d e d e d d e/ d/ B/ c | G3 G E F/ G3/2 G/2 | e f/2 g d e/2 d/2 e/2 e | d d d d e e d B/2 | G3 E F G3/4/2 | | f2 f2 f3/2 f4/2 B/2 B2 B/4 |2 c/2 e4/2 f2 B2 G/4 | A3/2 B4 B2 G3/3/2 c/4 | d2 e4 B2 B3/2 | c3/2 e2 d3/4 B2 | G E/2 E2 D3/2 E/2 G D3/4 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 8
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|cedcAG|FGAFGA|GEFGAB/c/|dGGdBGA|FGEFD3:||:BAGAGA|BAGEFE/G/G/c/d/|ddedGGA:||fedecAGG||FGGEFdcB|cGEEcE/GF/G/|AFGEGED:||:|G3dedB|cAGAcde|dedcedd|cAAGcde/f/g/f/|gdededde/d/B/c|G3GEF/G3/2G/2|ef/2gde/2d/2e/2e|ddddeedB/2|G3EFG3/4/2||f2f2f3/2f4/2B/2B2B/4|2c/2e4/2f2B2G/4|A3/2B4B2G3/3/2c/4|d2e4B2B3/2|c3/2e2d3/4B2|GE/2E2D3/2E/2GD3/4|||
+
+
+</script>
+
+
+<pre>X: 9
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c A G E D | G3 G G A | B A G G A B :||: g3 e d B | c B c A G A | G B B G G A G | B d g d e d B :||: c2 B G c A G | F G A G A B c | B A B G A G B | c2 B A G B d | c2 e d c B A | G2 B G G B d :||: e d e d c A G B A | c B A G A G G | G B c A B d B | e d e f g a g c | B c B A A G E G | F D E A G2 A | | B G G G G A A B c :||: d g d B G G | B G B G G d B G | d g d c B G B c | d e c A G c A | G G B G B d B G :||: d G G B A B d | | c3 e d c e B | d d e d g B A G | G G d e d G B G | c B G G c B d B c | E B G G E D G | B A A B G2 B c | | B d e d e g e d c d | c B d e B G A B G | G F G B A G D | | G2 G G B B d e2 G | B B G A d e2 B | B G A2 B c d | B G3 G3 | A G G3 G B A A | | G B A F E G B d c B d | ^c d e d2 B G | A G3 | B A c B G A c A G3 :| | | G3 B G3 d c B2 B | A G B G3 | | | G E G3 d B c B G E D2 B | G G G3 | E G G E3 | G3 | G2 D B G G3 B A B | d e3 | B G c B G3 - | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 9
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|cAGED|G3GGA|BAGGAB:||:g3edB|cBcAGA|GBBGGAG|BdgdedB:||:c2BGcAG|FGAGABc|BABGAGB|c2BAGBd|c2edcBA|G2BGGBd:||:ededcAGBA|cBAGAGG|GBcABdB|edefgagc|BcBAAGEG|FDEAG2A||BGGGGAABc:||:dgdBGG|BGBGGdBG|dgdcBGBc|decAGcA|GGBGBdBG:||:dGGBABd||c3edceB|ddedgBAG|GGdedGBG|cBGGcBdBc|EBGGEDG|BAABG2Bc||Bdedegedcd|cBdeBGABG|GFGBAGD||G2GGBBde2G|BBGAde2B|BGA2Bcd|BG3G3|AGG3GBAA||GBAFEGBdcBd|^cded2BG|AG3|BAcBGAcAG3:|||G3BG3dcB2B|AGBG3|||GEG3dBcBGED2B|GGG3|EGGE3|G3|G2DBGG3BAB|de3|BGcBG3-||
+
+
+</script>
+
+
+<pre>X: 10
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c B A G E D | G A G E E D | E D D G A B :||: c A c e d c | d/ c/ B A G A G A | c A B A G G B | c A A G E G E | c A G E A G E :||: c2 B c e d e | e d c G A G B | A G G E G c d | c A F D D D D A | G E G G c d e | d c B d c A G | B A G B G G E | G G E D G E G | c A c c e d | e d B G A G d | B A B G A B G | A G E B G E E | D G E D D D G :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 10
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|cBAGED|GAGEED|EDDGAB:||:cAcedc|d/c/BAGAGA|cABAGGB|cAAGEGE|cAGEAGE:||:c2Bcede|edcGAGB|AGGEGcd|cAFDDDDA|GEGGcde|dcBdcAG|BAGBGGE|GGEDGEG|cAcced|edBGAGd|BABGABG|AGEBGEE|DGEDDDG:||
+
+
+</script>
+
+
+<pre>X: 11
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c A G E D E | G E E G E G | A B A G E G E | G3 G G A B/ | c A A G E E D | G F G A B G E | A B G A B d e | c A B G G A G :||: B G G B d e g | e d B G B d G | A G A G E2 G | G G G G A d B | c B A A G B/ c/ d | e d c A G A B c | d B G G G E G :||: G E G G E D G | G E G F G E D | B G A G B G E D :||: B G B G A F | G E D D G A B D | E G E F G E E | G G E E E D G E | c B G G E A G | E G G G B E D | E D G B D G A G | B G E F E D D | E c A G G E/ c/ c/ B/ d | | |: e d c B c d c B A G | A A G G A3 | G E F D E D D |] | | E D E D E G A B E G E E |] | G E c B A B c B A d | G G B A B A B G | A E G G B c B/ c | e d e d c G B A G/ c/ | B A B/ c B A/ G E D/ c/ A/ B/ B/ | | G E A A G A E A E G E D |] | E D D E D G D E D | D E D A E A G E | E G A G A/4 | E G D D E/ E/ E D | | E E C D E G E c E D | A B E/ F G E G/ G C | E D F G E B/ A/ G/ c,/ | E E G G/ G2 | | E G3 G E E/2 G E G3 | | E3 G3/ A G E/ A/ E/ G/ E/ A G | | |: E G3 d E G E B E G | d B E G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 11
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|cAGEDE|GEEGEG|ABAGEGE|G3GGAB/|cAAGEED|GFGABGE|ABGABde|cABGGAG:||:BGGBdeg|edBGBdG|AGAGE2G|GGGGAdB|cBAAGB/c/d|edcAGABc|dBGGGEG:||:GEGGEDG|GEGFGED|BGAGBGED:||:BGBGAF|GEDDGABD|EGEFGEE|GGEEEDGE|cBGGEAG|EGGGBED|EDGBDGAG|BGEFEDD|EcAGGE/c/c/B/d|||:edcBcdcBAG|AAGGA3|GEFDEDD|]||EDEDEGABEGEE|]|GEcBABcBAd|GGBABABG|AEGGBcB/c|ededcGBAG/c/|BAB/cBA/GED/c/A/B/B/||GEAAGAEAEGED|]|EDDEDGDED|DEDAEAGE|EGAGA/4|EGDDE/E/ED||EECDEGEcED|ABE/FGEG/GC|EDFGEB/A/G/c,/|EEGG/G2||EG3GEE/2GEG3||E3G3/AGE/A/E/G/E/AG|||:EG3dEGEBEG|dBEG
+
+</script>
+
+
+<pre>X: 12
+R: jig
+M: 6/8
+K: Gmaj
+|: G3 G A B | c A G E D E | G E D G A B :| c B c B A G | G3 G G E | G3 D D E D | G B d c B A | G E G G E D D | G E E D D D E | d B A G E3 :||: B3 A G B | c B A c B A F | G3 d B A B | A B A G G E G | G E F G E D B | c d c B B A G :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 12
+R:jig
+M:6/8
+K:Gmaj
+|:G3GAB|cAGEDE|GEDGAB:|cBcBAG|G3GGE|G3DDED|GBdcBA|GEGGEDD|GEEDDDE|dBAGE3:||:B3AGB|cBAcBAF|G3dBAB|ABAGGEG|GEFGEDB|cdcBBAG:||
+
+
+</script>
+
+</p><h3 id="prompt3">Prompt 3 - R: polka	M: 2/4	K: Dmaj	d d B/ c/ d/ B/ |</h3>
+<p>
+<pre>X: 13
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A D D D F | A/ B/ c d e f | e/ f/ f/ c/ B/ A/ B G | A D/ D/ E D D F/ | A F D E D F | G E/ F G E D :||: A/ B A/ B c d e | f/ f d f d f | e c A A A B | c A G A B c | d/ A/ G/ A B c d | e > c A A B c/ d | e/ d/ e c A B G | F D G2 :||: A/ G G/ F D G F | G D E D G F G | B G E D D D | G D D D D E F | G A G E D | G E D F D G | G E G D C D | E D D C D D | | G E F G E =C D | D G D D F F | G4 | F D E G2 | G D F D D | E C D D D |] G E D C D G | A G E C D | D C E D D G | E E D C E G | E D C A E D | D D D C E F | D2 D A D E | G E E D D | F G E E G D | G A D G E D |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 13
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|ADDDF|A/B/cdef|e/f/f/c/B/A/BG|AD/D/EDDF/|AFDEDF|GE/FGED:||:A/BA/Bcde|f/fdfdf|ecAAAB|cAGABc|d/A/G/ABcd|e>cAABc/d|e/d/ecABG|FDG2:||:A/GG/FDGF|GDEDGFG|BGEDDD|GDDDDEF|GAGED|GEDFDG|GEGDCD|EDDCDD||GEFGE=CD|DGDDFF|G4|FDEG2|GDFDD|ECDDD|]GEDCDG|AGECD|DCEDDG|EEDCEG|EDCAED|DDDCEF|D2DADE|GEEDD|FGEEGD|GADGED|]
+
+
+</script>
+
+
+<pre>X: 14
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A F D F | G F G B/ c | d e d B/ | c A F D E | D F D F A | G F E D D/ D/ D | E D D D2 :| | |: B B/ c d e f | g e e d c | B G G A/ B/ c B | A G F G A F/ E/ | D F G E D D | E/ F/ G A B c | d B c d4 :||: A/ B G A B d | c A B A F E | D E G A B/ c A | A/ B c B A F | E G A G E D | G F A B c/ d | d c B c A d | c/ B/ B/ A G E G E | D D D D3 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 14
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|AFDF|GFGB/c|dedB/|cAFDE|DFDFA|GFEDD/D/D|EDDD2:|||:BB/cdef|geedc|BGGA/B/cB|AGFGAF/E/|DFGEDD|E/F/GABc|dBcd4:||:A/BGABd|cABAFE|DEGAB/cA|A/BcBAF|EGAGED|GFABc/d|dcBcAd|c/B/B/AGEGE|DDDD3:||
+
+
+</script>
+
+
+<pre>X: 15
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A G F F | E D E F G | A A G F E | D D D D2 | D D G F D | E D D D B/ c | d c B A G | F G G2 :||: B/ c d/ | B c d/ e/ f/ g/ | e/ f g f/ e d c | B/ c A B G A/2 | B/ ^c/ d/ e f d B/ B/ c2 | B c/ d e/ f d B | B c B A A/2 :||: B d/ c/ | B/ A/ G B A/ B/ A A/ c/ B | A G E D D G | A D D D G B/ c B | =c/ d e d/2 B/ c c/ d | B G D2 D2 | A D G B A G/2 | E/ F/ G/ E D D B d | E D G E D | E G D F G B | E D2 F G | | E G A F G D | A/ B d/ =c/ c/2 B A/2 B | B/2 B G4 | B/4 | | A/4 B/2 c/2 c B/2 | A/2 A/2 G B d/2 | G E E D E D | | E E D D A D D | E E G E D E | D E D D E D G | E D C B B c | E D B G2 | E D A D E D/2 | D B E D D | D E d > E D | D D E E D2 | E E E D G B | D E G E E G | E G E/2 | F G E D/ E D/ D | E/ E D E/2 D | E A/2 E D G/2 D/2 :| | E D/ A/2 D D G E | E D | A G D D/2 B D | E F/ A D E/ E E | E A D E G | D E E B | D D/ D D E | E/2 E A D | D/2 G E D2 E D | G G G |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 15
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|AGFF|EDEFG|AAGFE|DDDD2|DDGFD|EDDDB/c|dcBAG|FGG2:||:B/cd/|Bcd/e/f/g/|e/fgf/edc|B/cABGA/2|B/^c/d/efdB/B/c2|Bc/de/fdB|BcBAA/2:||:Bd/c/|B/A/GBA/B/AA/c/B|AGEDDG|ADDDGB/cB|=c/ded/2B/cc/d|BGD2D2|ADGBAG/2|E/F/G/EDDBd|EDGED|EGDFGB|ED2FG||EGAFGD|A/Bd/=c/c/2BA/2B|B/2BG4|B/4||A/4B/2c/2cB/2|A/2A/2GBd/2|GEEDED||EEDDADD|EEGEDE|DEDDEDG|EDCBBc|EDBG2|EDADED/2|DBEDD|DEd>ED|DDEED2|EEEDGB|DEGEEG|EGE/2|FGED/ED/D|E/EDE/2D|EA/2EDG/2D/2:||ED/A/2DDGE|ED|AGDD/2BD|EF/ADE/EE|EADEG|DEEB|DD/DDE|E/2EAD|D/2GED2ED|GGG|
+
+</script>
+
+
+<pre>X: 16
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | d d B | c A G A | B G G/ G/ | [B c A B A | G B G B/ | c A A B G | D G G/ c/ B/ c A | B/ A/ B/ G A B/ | | A G D E | G G G/ | G G/ B/ A B d | c A/ B G/2 c/ B | c/ A/ G/ B c A | G2 G A B d :| [2 G G2 d2 | | |: g > a g f g a | g > e e d c B | c B A G B/ c | d > e f d c B/2 | G > G G A B G |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 16
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|ddB|cAGA|BGG/G/|[BcABA|GBGB/|cAABG|DGG/c/B/cA|B/A/B/GAB/||AGDE|GGG/|GG/B/ABd|cA/BG/2c/B|c/A/G/BcA|G2GABd:|[2GG2d2|||:g>agfga|g>eedcB|cBAGB/c|d>efdcB/2|G>GGABG|]
+
+
+</script>
+
+
+<pre>X: 17
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | A/ A/ B/ A/ c/ B/ c | d/ f/ g d B/ A | B/ c d B/ B/ G/ B/ B | A/ B G/ c/ A/ A2 :||: d d d d/ d/ d d/ | d d d B A | d d B B A | A/ G/ F G/ A/ G G G | A/ F G A2 :||: A/ c B/ A G/ A G G | F/ G/ G/ A E/ F G2 | D D/ A/ F/ G B/ A c/ B | d/ c/ e/ d/ e/ f d e/ d | f/ f/ e/ c/ c/2 d/2 d :||: A/ B A G/ F/ A/ E F | G2 G2 G E | D D D D E/ F/ E/ F | D D G G G B | A G D E D | D D2 D D D :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 17
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|A/A/B/A/c/B/c|d/f/gdB/A|B/cdB/B/G/B/B|A/BG/c/A/A2:||:dddd/d/dd/|dddBA|ddBBA|A/G/FG/A/GGG|A/FGA2:||:A/cB/AG/AGG|F/G/G/AE/FG2|DD/A/F/GB/Ac/B|d/c/e/d/e/fde/d|f/f/e/c/c/2d/2d:||:A/BAG/F/A/EF|G2G2GE|DDDDE/F/E/F|DDGGGB|AGDED|DD2DDD:|
+
+
+</script>
+
+
+<pre>X: 18
+R: polka
+M: 2/4
+K: Dmaj
+d d B/ c/ d/ B/ | G > E/ F/ G/ E/ | F/ G > E G/ | F D D/ A/ | G/ F/ A/ G G | D D/ F/ E D/ | G F/ G A/ B/ c | d d d B A | G/ G/ A/ B A/ G B/ | d/ c/ B/ A/ c/2 :||: d > f d e d | c A B c/ d e/ f/ | g > f e d c/ B | d A/ B c/ B A G | F/ E/ F G2 :||: d/ g/ f/ f/ g/ e/ d/ | c e/ d c/ c/ c A B/ G | A/ B G A/ G/ F G | E/ F D G F E | D D F/ G2 | G/ A F G/ A B/ A G | | G E D D G E | D/ F | G/ E D D/ D/ G/ G E/ F | | G F G A/ E D | D D D D2 | | E/ G/ D/ E/ D/ D D/ E D E | D E D D | D G D2 :||: A/ A/ A A/ G E F | G F D D E | G E F D B/ E E | F D > G/ F D | E/ E/ E D C D D D :| | E D D D/ G A G/ c/ | A/ D D G/ E F/ G D | G/ D E D G F | D E A D D | A/ G D G A G | E D/ A D G E F/ E | D2 | G D D D E D | E D E/ D | D/ G D E F/ D | E G G A B | D D2 D | E E G F D | D E/2 | E D G D/2 | G E/ D E C/ G/ | D/ E A/ D/ A G/ E | E D C/ G E D | G G E D - | D D | E C D D/ C/ | G E C D E D |: E G | E G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 18
+R:polka
+M:2/4
+K:Dmaj
+ddB/c/d/B/|G>E/F/G/E/|F/G>EG/|FDD/A/|G/F/A/GG|DD/F/ED/|GF/GA/B/c|dddBA|G/G/A/BA/GB/|d/c/B/A/c/2:||:d>fded|cABc/de/f/|g>fedc/B|dA/Bc/BAG|F/E/FG2:||:d/g/f/f/g/e/d/|ce/dc/c/cAB/G|A/BGA/G/FG|E/FDGFE|DDF/G2|G/AFG/AB/AG||GEDDGE|D/F|G/EDD/D/G/GE/F||GFGA/ED|DDDD2||E/G/D/E/D/DD/EDE|DEDD|DGD2:||:A/A/AA/GEF|GFDDE|GEFDB/EE|FD>G/FD|E/E/EDCDDD:||EDDD/GAG/c/|A/DDG/EF/GD|G/DEDGF|DEADD|A/GDGAG|ED/ADGEF/E|D2|GDDDED|EDE/D|D/GDEF/D|EGGAB|DD2D|EEGFD|DE/2|EDGD/2|GE/DEC/G/|D/EA/D/AG/E|EDC/GED|GGED-|DD|ECDD/C/|GECDED|:EG|EG
+
+</script>
+
+</p><h3 id="prompt4">Prompt 4 - R: hornpipe	M: 4/4	K: Edor	|: B,2 | E D E F G F G A</h3>
+<p>
+<pre>X: 19
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B A G E F G E | F E D F G F E D | G, E D E G A B c | B A B G A G F E | D E D E D D D D2 :| | |: E D D E F E D D G | A G F G E F D E D | B A A G E A B c d | e d B G A B E D D | A G E E F D D D E D :| | |: B A G A B G E F E | F G E D F D E E D | F G A F G E E D D2 | e D D E G B G E D | D E F D F G E G E D :| :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 19
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|BAGEFGE|FEDFGFED|G,EDEGABc|BABGAGFE|DEDEDDDD2:|||:EDDEFEDDG|AGFGEFDED|BAAGEABcd|edBGABEDD|AGEEFDDDED:|||:BAGABGEFE|FGEDFDEED|FGAFGEEDD2|eDDEGBGED|DEFDFGEGED:|:|
+
+
+</script>
+
+
+<pre>X: 20
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B A G E E D E | F G E F G A B | c3 B A G F E | E D C E F G E D | E D D E F D E D E :||: B | c B c d c B A G | A B A G A B G E d | B A B A B c B A | G B A G B A A G E | F D E F A A G F G | E D G E D2 :||: B | e2 g3 e d e d | e d c B d B A G c | B A A B G A B A g | e d e f2 g e d e | d B A B G B A B d | B d e f g e d B A | d B G B d A B A2 | E G E F E F G D | E G D D E D D D E :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 20
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|BAGEEDE|FGEFGAB|c3BAGFE|EDCEFGED|EDDEFDEDE:||:B|cBcdcBAG|ABAGABGEd|BABABcBA|GBAGBAAGE|FDEFAAGFG|EDGED2:||:B|e2g3eded|edcBdBAGc|BAABGABAg|edef2gede|dBABGBABd|BdefgedBA|dBGBdABA2|EGEFEFGD|EGDDEDDDE:||
+
+
+</script>
+
+
+<pre>X: 21
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B d B d B A B | (3 A B A G F E D E D | B A F G E F G E | E D C D E F E D | (3 G E F D E F D (3 D E D :||: B,2 B e d e f d | (3 e f g e d B A (3 A A B | B A G E D E E D D E | B, D E D E G E D D D | ( D D D D E F F G A G E | B A d B A G (3 D B A | B A ( D E D G E E D E C | E D D C D2 E D D :||: B c d e d e d B | g f g e f d e d c | B A B A F D E D D | D D D F E E D C E D | E D F D E C D E D B | ( D E F A G F D E E G E | (3 D D G E G B A B G E D | | (3 d e f g f d e f e d c B | (2 e f g A B A (2 (3 A G G A B c | | (2 d e ^c B G A B A B c D E D |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 21
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|BdBdBAB|(3ABAGFEDED|BAFGEFGE|EDCDEFED|(3GEFDEFD(3DED:||:B,2Bedefd|(3efgedBA(3AAB|BAGEDEEDDE|B,DEDEGEDDD|(DDDDEFFGAGE|BAdBAG(3DBA|BA(DEDGEEDEC|EDDCD2EDD:||:BcdededB|gfgefdedc|BABAFDEDD|DDDFEEDCED|EDFDECDEDB|(DEFAGFDEEGE|(3DDGEGBABGED||(3defgfdefedcB|(2efgABA(2(3AGGABc||(2de^cBGABABcDED|]
+
+
+</script>
+
+
+<pre>X: 22
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B/ d B A G F E E | D E D E D D D E | A G A B c A B c | B A G E F G E D :||: B A G B c d c B | e A G B A G A G E | D C E G D E D G B | G E D E G B d c B A | B A B A G3 d :||: B A B d e d g d | B A A B d c d e2 | B A F G E F D D E A | B G E D D E D B d | B G A B A B c B c | d B A B E F D E E :| | D E E E D D G E D B | | A G E D G E G B D D B | A G D E G E D C D | E E D G A D D E G G | E D D C D E G F | E D G D E d E D E | G A G D D E E D B, | E E G D D D D3 | | B A c B A G G E E D E E | E D B D3 D D | B A E D E A D E G | E E E G E G D B, D | | E A E D B A D E D C G E D | E D C E D D B, C | D E G D C E E D | | D E A G E E E C D D D d | E G E C E D E C | E D4 | | B, A G E G A G A D E E C E G | D E F E D C | E G B G E G E E G | | E E A G D C D B D G E | | E D d B d E G E A A B E D | D E C3 | D E B D E D > D D E/ (3/ E/ | A G/ D B E/ E/ D D E F | E G D3/4 | G E G/2 G E D > E/ E D E/ | E D3/ D E D | A G G A G3 D E/2 | | E G/ E D D</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 22
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|B/dBAGFEE|DEDEDDDE|AGABcABc|BAGEFGED:||:BAGBcdcB|eAGBAGAGE|DCEGDEDGB|GEDEGBdcBA|BABAG3d:||:BABdedgd|BAABdcde2|BAFGEFDDEA|BGEDDEDBd|BGABABcBc|dBABEFDEE:||DEEEDDGEDB||AGEDGEGBDDB|AGDEGEDCD|EEDGADDEGG|EDDCDEGF|EDGDEdEDE|GAGDDEEDB,|EEGDDDD3||BAcBAGGEEDEE|EDBD3DD|BAEDEADEG|EEEGEGDB,D||EAEDBADEDCGED|EDCEDDB,C|DEGDCEED||DEAGEEECDDDd|EGECEDEC|ED4||B,AGEGAGADEECEG|DEFEDC|EGBGEGEEG||EEAGDCDBDGE||EDdBdEGEAABED|DEC3|DEBDED>DDE/(3/E/|AG/DBE/E/DDEF|EGD3/4|GEG/2GED>E/EDE/|ED3/DED|AGGAG3DE/2||EG/EDD
+
+</script>
+
+
+<pre>X: 23
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B G A B c A B c | B G E C D E D F | B, B E C G E d c | B A B G A F A c | B d c B A G E G | E D D D D G A G E2 :||: e c | d e f g f g e d | e c e d c A B G G | A G A d B G E G B | A B G E F G E D E D | E D G E D D G D2 :| | |: g e f g e f d B A | B3 B A G B d e | f e d c B d c A2 | g e f ^d e f d c A | G A G B c B d e d | f e g f g f d B =c | B G B c d e d e d c | d B A G G E D G B | E D C D D D2 :| |: E D G A B A B c B G | E E D D E D D B E D | F E G E D C E D D | E C D B, D E D B, G A, | E D B G E D A B, D | E E E D G D D F G D | E G E G E E D E G | D D E G E A G D E |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 23
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|BGABcABc|BGECDEDF|B,BECGEdc|BABGAFAc|BdcBAGEG|EDDDDGAGE2:||:ec|defgfged|ecedcABGG|AGAdBGEGB|ABGEFGEDED|EDGEDDGD2:|||:gefgefdBA|B3BAGBde|fedcBdcA2|gef^defdcA|GAGBcBded|fegfgfdB=c|BGBcdededc|dBAGGEDGB|EDCDDD2:||:EDGABABcBG|EEDDEDDBED|FEGEDCEDD|ECDB,DEDB,GA,|EDBGEDAB,D|EEEDGDDFGD|EGEGEEDEG|DDEGEAGDE|]
+
+
+</script>
+
+
+<pre>X: 24
+R: hornpipe
+M: 4/4
+K: Edor
+|: B,2 | E D E F G F G A | B2 B A G F G | F E D C E D C A | B G E G A B c B | A G F E F G E D C | F E C E D D C A, :||: d c | B2 d e c d B A | G2 G A B A G E D | F E G A c B A c | B G B A G B c B A | B E E G A G E G E D :||: G B | c e d c e d B A G | A A B c e d =c B A | c e B c e B A G c B | c B A G A G F D C | E C C E D2 c B A :| | |: A2 B B A G G E D F | E D D D E D C D C D | A G A B G A B d c | d c B d e d B G B | A2 B A B A B c A G | B G A G A E D C C D | | E D C F E D D2 C E D | E D G A G G A B B | d c d B G A A B A c B | B G G A G B A A c | E C E C C D2 |] | |: A G E F G A G C D C E C | E D F E D G D E D | G E D E G G A A A B | | A G E C E G A A F G A B | A B A2 G E D D E G | G E C D2 D2 | E E A G E A G D C E | | D E E G G E G G4 | D E G E G D E G D | E G E C C C E G | E D2 D D E F D :| | E G A D C E F E G4 | | A B G E D A G A d B G | A B c G A B2 |2 c d G B A B2 G | A G3 G E B | E G3 E D D | E E D D B E D C G E C | | E G G d E D D A E D E D E C | D3 A D E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 24
+R:hornpipe
+M:4/4
+K:Edor
+|:B,2|EDEFGFGA|B2BAGFG|FEDCEDCA|BGEGABcB|AGFEFGEDC|FECEDDCA,:||:dc|B2decdBA|G2GABAGED|FEGAcBAc|BGBAGBcBA|BEEGAGEGED:||:GB|cedcedBAG|AABced=cBA|ceBceBAGcB|cBAGAGFDC|ECCED2cBA:|||:A2BBAGGEDF|EDDDEDCDCD|AGABGABdc|dcBdedBGB|A2BABABcAG|BGAGAEDCCD||EDCFEDD2CED|EDGAGGABB|dcdBGAABAcB|BGGAGBAAc|ECECCD2|]||:AGEFGAGCDCEC|EDFEDGDED|GEDEGGAAAB||AGECEGAAFGAB|ABA2GEDDEG|GECD2D2|EEAGEAGDCE||DEEGGEGG4|DEGEGDEGD|EGECCCEG|ED2DDEFD:||EGADCEFEG4||ABGEDAGAdBG|ABcGAB2|2cdGBAB2G|AG3GEB|EG3EDD|EEDDBEDCGEC||EGGdEDDAEDEDEC|D3ADE
+
+</script>
+
+</p><h3 id="prompt5">Prompt 5 - R: waltz	M: 3/4	K: Gmaj	B2 B A B d |</h3>
+<p>
+<pre>X: 25
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e2 d2 B A | G A B c A B | d2 B G B A | d2 e d B A | e2 e d d d c | B A G B A B | A G A B d A B | E F G A B A B :||: d2 e B A G A | c2 e d c B A | B G G B A G E | D2 E D G A B | c2 B A G c B | A B G A B G E | E F D2 G G2 :| | |: B2 B G A G B | A3 B A B A | E F A E F E D | D B, C D E D E E | D D E D B, D E D | G A G G E D G E | A G d B A B G | E F E G A B/ c/ | | |: d | e f g f e d e | d e2 e g f g e | d c B G G G E | | D2 B G G A B B d | c A B A G F G | D E D G B D | E D D E E D2 | D G A G3 | | G2 B G E G B A E D | E G E D D G E D | | E D E G A G D D E G E | G E D E D D D E | G A E D E F G E |] | E D B G E D C D E G | E G F G E D B D | G E G E3 | | E A B G F G A G A G E E | | E F B G E E D E A G E D |] | E G3 D4 | | G4 | | E4 | | A4 | A G B G E A G B c B A G | A G E G A3 | G B E G E F | E D G3 A G E d | G F D D E2 | E G A E F G B | E D3 G E D2 E | E D C E F | B D B A G4 | E E D3 | G E E G E E E D | A G G A E c | E D4 | E G G E G G G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 25
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|e2d2BA|GABcAB|d2BGBA|d2edBA|e2edddc|BAGBAB|AGABdAB|EFGABAB:||:d2eBAGA|c2edcBA|BGGBAGE|D2EDGAB|c2BAGcB|ABGABGE|EFD2GG2:|||:B2BGAGB|A3BABA|EFAEFED|DB,CDEDEE|DDEDB,DED|GAGGEDGE|AGdBABG|EFEGAB/c/|||:d|efgfede|de2egfge|dcBGGGE||D2BGGABBd|cABAGFG|DEDGBD|EDDEED2|DGAG3||G2BGEGBAED|EGEDDGED||EDEGAGDDEGE|GEDEDDDE|GAEDEFGE|]|EDBGEDCDEG|EGFGEDBD|GEGE3||EABGFGAGAGEE||EFBGEEDEAGED|]|EG3D4||G4||E4||A4|AGBGEAGBcBAG|AGEGA3|GBEGEF|EDG3AGEd|GFDDE2|EGAEFGB|ED3GED2E|EDCEF|BDBAG4|EED3|GEEGEEED|AGGAEc|ED4|EGGEGGG
+
+</script>
+
+
+<pre>X: 26
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | B2 B A G F | G2 G F G A | B2 A G F G | A G F E D C | | d2 B2 B d | c A F G A F | G E G A F G | G F G E D C D | E G E F G F G :| | d e d e d B A B | =c A G B A G A | c B A G B c d | c B G B A B c | d e g f d e d | c2 A G B d c | B A G G F G D | E F G E G F G :||: | d f | g2 a g f g e | d B B d A B A | G2 B d e d c | d2 G B A =c G | B A B G G A B | d2 d e d d d | c d e d g e d | d B G2 B A2 | d2 e d c B A | d2 g2 d e f | d c A G B G A B A :| | G3 B c d e f g | g2 d c d e | d c B G G G F D D | | E G F E F G D C C D | | | B G G | E D G G2 | D D D G2 C B G | A D G E D D C | B,2 G D C D C | E D C E G F D G | | E D D D D C D D C G G G | | D4 | E D E C E G G E G D | B G A G B D G F | E G G3 | E G D C E D D E F | D G D2 E D | D C E F G A G | E G A D D C E | D E E D G | D E D D3 D | E D3 C E D C :| d d E D E F G | E F E D F G | D4 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 26
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|B2BAGF|G2GFGA|B2AGFG|AGFEDC||d2B2Bd|cAFGAF|GEGAFG|GFGEDCD|EGEFGFG:||dededBAB|=cAGBAGA|cBAGBcd|cBGBABc|degfded|c2AGBdc|BAGGFGD|EFGEGFG:||:|df|g2agfge|dBBdABA|G2Bdedc|d2GBA=cG|BABGGAB|d2deddd|cdedged|dBG2BA2|d2edcBA|d2g2def|dcAGBGABA:||G3Bcdefg|g2dcde|dcBGGGFDD||EGFEFGDCCD|||BGG|EDGG2|DDDG2CBG|ADGEDDC|B,2GDCDC|EDCEGFDG||EDDDDCDDCGGG||D4|EDECEGGEGD|BGAGBDGF|EGG3|EGDCEDDEF|DGD2ED|DCEFGAG|EGADDCE|DEEDG|DEDD3D|ED3CEDC:|ddEDEFG|EFEDFG|D4|]
+
+
+</script>
+
+
+<pre>X: 27
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | c A B A G E | E G E G B d | e2 f g e d | c2 A G A G E :| E G E2 B d | B G G A B d d | c d e d c A G | E G A B A A G | A G E G E E G | E D E G B A d | e d c B d e d | B A G A B2 B | G2 G E G G E | | E G G A G G E D | E G e d e d B | c B G A B G E | G E E D E D D | E2 G E D B, D | E D G E G (3 B G | E E G E A B d G | E B G E G A G | | E D D G E E E D | G E G D E D d | E G B G B G A | E G D G E D E | E D B E G E d | E D c E G E D G | E C D E G E | D G E A G E E F | E G F G E E d | e B E G3 G | E A G A E E G G | E2 E G E F E | E E E G =F E E G D | E E D B G E D :| | E E A G2 E G B E D | | E E C E G E3 G E G | d e G E G F E G | G E D D E D E E G/ | | E d E G E B E G A E D | D E G D D E G A | | E A E G E C E D E B G | G3 E E G B | E G > E E E E A B G | F G E F/ B E G | | D D E E E F D E E D D D | | G E3 E G E c E D E c | E E d E E G2 | E3 E D |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 27
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|cABAGE|EGEGBd|e2fged|c2AGAGE:|EGE2Bd|BGGABdd|cdedcAG|EGABAAG|AGEGEEG|EDEGBAd|edcBded|BAGAB2B|G2GEGGE||EGGAGGED|EGededB|cBGABGE|GEEDEDD|E2GEDB,D|EDGEG(3BG|EEGEABdG|EBGEGAG||EDDGEEED|GEGDEDd|EGBGBGA|EGDGEDE|EDBEGEd|EDcEGEDG|ECDEGE|DGEAGEEF|EGFGEEd|eBEG3G|EAGAEEGG|E2EGEFE|EEEG=FEEGD|EEDBGED:||EEAG2EGBED||EECEGE3GEG|deGEGFEG|GEDDEDEEG/||EdEGEBEGAED|DEGDDEGA||EAEGECEDEBG|G3EEGB|EG>EEEEABG|FGEF/BEG||DDEEEFDEEDDD||GE3EGEcEDEc|EEdEEG2|E3ED|
+
+
+</script>
+
+
+<pre>X: 28
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | c2 B2 A G | A2 A G F E | A2 G A B d d | c A G E c E | F G E D E D D | C E D2 D G A | A2 B c d e d | c B A G E F G | A G F G E2 D2 :||: E F G A G A B | c A B c A G B | c E D G E F E | C E F G E F D | E F G2 A G E | D G A G E D D D | E C E D3 D | E D D2 D E D | E G E G A B A G | c B c A B d e | c B G E F A G | G3 E F D D | | C E E D D E D F | G E D C D D D E | C D E D3 | E D E C D C3 | | D E F G F E G E F | C E C E E C C D | E E D C E C D | D3 D E F D2 | | D2 E G G D D3 E | F E F G3 | D G G D E D E E D | | E F D E D C C D E G | E D C A, D D D D |] | E F E D C G A D D | D E D G A E C D D | F E D D C D | G E C D3 E D | D C E D C2 D | E A G D3 | D3 E G E D | G A G D C D E C E | | D G E D G3 D3 | | E E E D E G A E D D G E | C C E D E F E C | D C D C D A, | E G3 D D D C E | D C C E C G | D E G E E D B | D D D3 | c A F G E E C E F | E D3 G E D |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 28
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|c2B2AG|A2AGFE|A2GABdd|cAGEcE|FGEDEDD|CED2DGA|A2Bcded|cBAGEFG|AGFGE2D2:||:EFGAGAB|cABcAGB|cEDGEFE|CEFGEFD|EFG2AGE|DGAGEDDD|ECED3D|EDD2DED|EGEGABAG|cBcABde|cBGEFAG|G3EFDD||CEEDDEDF|GEDCDDDE|CDED3|EDECDC3||DEFGFEGEF|CECEECCD|EEDCECD|D3DEFD2||D2EGGDD3E|FEFG3|DGGDEDEED||EFDEDCCDEG|EDCA,DDDD|]|EFEDCGADD|DEDGAECDD|FEDDCD|GECD3ED|DCEDC2D|EAGD3|D3EGED|GAGDCDECE||DGEDG3D3||EEEDEGAEDDGE|CCEDEFEC|DCDCDA,|EG3DDDCE|DCCECG|DEGEEDB|DDD3|cAFGEECEF|ED3GED|]
+
+
+</script>
+
+
+<pre>X: 29
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e2 d B A B | A G G2 E D | E2 E F A B | e2 f d e d | e > d B A A B d d | e d c B A B A | G A G G E D D D | E D E D D E D | G A B A G E D | F G A G E G D | E G G A G B d | | e2 e2 d e d B | B A G A B d c | d e f g a g g | e d B A G B A | E D D G E D E | G E G G E G E D :||: E D G G A B G | E G A B c d e | d e d c A B A B G |] A G B c d g | e G G B d3 B | A B G E G B d B | E G E G A G A G | E D G B d d e | e G d e d e d G | e d e G B A G G | E E D G E G, D D | | E G D E D G A B D D | G E D A B D E D |] | E G B G D B E D G | E F G E D B D | E/ G A G D D E G E | E D B G A G, | E G3 G E G | E A G E E G E2 | E G d E G E E D | | G A E G G G G E E2 | D E G D D D D E | E G, E D D | D E D E G A D D | C E G E F G D E | | E E G G D E E G A E D | D C D E G | D E E D D2 D | | D E F G G E A G B G E | G D E G G B A/2 | G E F/ G E D C E | E E E D E C | D E/ D E G/2 | E D3 D G E E/ | A G E F D | G G B E/ G E G2 | E/ D D E E B G E A | E G | G E E E G F G E G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 29
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|e2dBAB|AGG2ED|E2EFAB|e2fded|e>dBAABdd|edcBABA|GAGGEDDD|EDEDDED|GABAGED|FGAGEGD|EGGAGBd||e2e2dedB|BAGABdc|defgagg|edBAGBA|EDDGEDE|GEGGEGED:||:EDGGABG|EGABcde|dedcABABG|]AGBcdg|eGGBd3B|ABGEGBdB|EGEGAGAG|EDGBdde|eGdededG|edeGBAGG|EEDGEG,DD||EGDEDGABDD|GEDABDED|]|EGBGDBEDG|EFGEDBD|E/GAGDDEGE|EDBGAG,|EG3GEG|EAGEEGE2|EGdEGEED||GAEGGGGEE2|DEGDDDDE|EG,EDD|DEDEGADD|CEGEFGDE||EEGGDEEGAED|DCDEG|DEEDD2D||DEFGGEAGBGE|GDEGGBA/2|GEF/GEDCE|EEEDEC|DE/DEG/2|ED3DGEE/|AGEFD|GGBE/GEG2|E/DDEEBGEA|EG|GEEEGFGEG
+
+</script>
+
+
+<pre>X: 30
+R: waltz
+M: 3/4
+K: Gmaj
+B2 B A B d | e2 B A G B | d2 B A2 | G2 G E D E | D E G F G A | B2 B A A G B d | A B d e d e f | g2 g e d B G | | A G B G E D D E | G A B A G E B | G2 B A D G E | D D E G A G B/ d/ | g B A G G E G | G A G E D G E/ d/c/ | | |: d g g g e d d B | d e f g d B A A | G A A G E G E | G B d e f d e | d B G G G E/ E/ G E/ | D E D D G B/ G/ A/ G/ B/ | d/ B G B A A/ G E G B | G A E G E G G E | d B A G D E/ B/ G E | | G D E G G A G A B/ d | e/ g f/ g/ g/ e e d B A/2 | G A/ B/ A G E E G E/ G/ D | | G E G D E D G A B d/ d/ e/ | | g e d e/ f/ e/ d/2 g/2 B/2 B G | G G G B/ A/ B A/ c/ B/ d e/ B/2 | g B/2 G E E D E/ G | G E D/ G E D B/ G A/ G | | E3 G E G A/ D/ G/ G/2 G/2 | | G/ E G A B G/ B B/ c/ d/4 | | | |: |: e d2 e/2 B d/2 G G/2 B A/3/2 B | e/2 G B/2 A/ G A B | A/2 B E D E G/2 E/2 | D E | | E F G E G e/2 | B G A/2 E ^G/ A/2 G D E E/ G A | G E A/ G G E D | D D D D E E | | D E E G G/c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 30
+R:waltz
+M:3/4
+K:Gmaj
+B2BABd|e2BAGB|d2BA2|G2GEDE|DEGFGA|B2BAAGBd|ABdedef|g2gedBG||AGBGEDDE|GABAGEB|G2BADGE|DDEGAGB/d/|gBAGGEG|GAGEDGE/d/c/|||:dgggeddB|defgdBAA|GAAGEGE|GBdefde|dBGGGE/E/GE/|DEDDGB/G/A/G/B/|d/BGBAA/GEGB|GAEGEGGE|dBAGDE/B/GE||GDEGGAGAB/d|e/gf/g/g/eedBA/2|GA/B/AGEEGE/G/D||GEGDEDGABd/d/e/||gede/f/e/d/2g/2B/2BG|GGGB/A/BA/c/B/de/B/2|gB/2GEEDE/G|GED/GEDB/GA/G||E3GEGA/D/G/G/2G/2||G/EGABG/BB/c/d/4||||:|:ed2e/2Bd/2GG/2BA/3/2B|e/2GB/2A/GAB|A/2BEDEG/2E/2|DE||EFGEGe/2|BGA/2E^G/A/2GDEE/GA|GEA/GGED|DDDDEE||DEEGG/c
+
+</script>
+
+</p><h3 id="prompt6">Prompt 6 - R: slip jig	M: 9/8	K: Emin	|: B2 E G2 E F3 |</h3>
+<p>
+<pre>X: 31
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 A G F E D F | c B A G F G E F | B2 E E G2 B A | B2 G E G E D D F | E D D D D G G F G :||: c B A B c A F A | B c A G F F E D D2 :||: c d e f g e f d e | f d e f2 e f d c B | A F G F F F E E D F :||: | A G3 B G A B c B | c B B A d c B A F | G3 F E D A B c d | c B c B A c A B E E F | G E D E D D E D F D D2 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 31
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|B2AGFEDF|cBAGFGEF|B2EEG2BA|B2GEGEDDF|EDDDDGGFG:||:cBABcAFA|BcAGFFEDD2:||:cdefgefde|fdef2efdcB|AFGFFFEEDF:||:|AG3BGABcB|cBBAdcBAF|G3FEDABcd|cBcBAcABEEF|GEDEDDEDFDD2:||
+
+
+</script>
+
+
+<pre>X: 32
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B > c B A G E E E | F D D D D F D D | B2 G E G2 A B | c B A B A G A2 :||: B < B G B A B c B | A3 A G E D D D :||: B2 G B A A G E2 | B A G G E E D D E2 | c B c B A A c B A | c B G A B A A B c | B A B G E D E D D C D :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 32
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|B>cBAGEEE|FDDDDFDD|B2GEG2AB|cBABAGA2:||:B<BGBABcB|A3AGEDDD:||:B2GBAAGE2|BAGGEEDDE2|cBcBAAcBA|cBGABAABc|BABGEDEDDCD:||
+
+
+</script>
+
+
+<pre>X: 33
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B B d B A F E | D E F G A F E D | B2 B A B A F A | B d B c B A F G E | D C E D3 :||: d e f e d c B A | d e f g f e d B A | B c d e f d c B c | d e d B c d B A G | D E D E F D E D D D D | B c B c B e d c A | d B c A B A B F G E :||: D E F E F G B A G F | E C E F E E D D c B | A F G A B c d c B | E F E D E D2 A G E | A F D E E D E d c B :||: | A2 B c e d c e d B | A2 F E F E B A G E F | G E D C E F D D D E | D D C E C D3 | | D E C E D D E F A G B A F | G F E D B2 D E D | D E c B c d2 B c B | | A3 A F E F D B A G A B | G E F G E D E A E3 | D C D E F F D C D | | E F G D E F B c B d e d c d B | e f e c A B e d B d | A F E G E D D3 | G E E D C D3 :| | D E E F G F E F A B c A G | | E E E D F E D D C D D3 :||: | D E G E F D G E E3 | | E D E E E F B G E D F B D E D |] | E F A E F A d c B d F E D C | A B A A F G B G F E | E E D3 | E F D F E E F D3 | D E3 | A3 G B A B B d A B | A d c A B c B G | c B c A E D3 G E E | | E G E c d B G E G E E E E3 |] | D E2 B</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 33
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|BBdBAFE|DEFGAFED|B2BABAFA|BdBcBAFGE|DCED3:||:defedcBA|defgfedBA|BcdefdcBc|dedBcdBAG|DEDEFDEDDDD|BcBcBedcA|dBcABABFGE:||:DEFEFGBAGF|ECEFEEDDcB|AFGABcdcB|EFEDED2AGE|AFDEEDEdcB:||:|A2BcedcedB|A2FEFEBAGEF|GEDCEFDDDE|DDCECD3||DECEDDEFAGBAF|GFEDB2DED|DEcBcd2BcB||A3AFEFDBAGAB|GEFGEDEAE3|DCDEFFDCD||EFGDEFBcBdedcdB|efecABedBd|AFEGEDD3|GEEDCD3:||DEEFGFEFABcAG||EEEDFEDDCDD3:||:|DEGEFDGEE3||EDEEEFBGEDFBDED|]|EFAEFAdcBdFEDC|ABAAFGBGFE|EED3|EFDFEEFD3|DE3|A3GBABBdAB|AdcABcBG|cBcAED3GEE||EGEcdBGEGEEEE3|]|DE2B
+
+</script>
+
+
+<pre>X: 34
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B2 E E G E G E | F E D E F G A F | E F E D C E D E | F D G A B c A B G | F D E F D E D E D :||: B d c B A B A c B | A G F A B c d c B | c B A G E E G G E E | F G A B A B c B A | B c B c A F G E D E :||: E F G F G E G A G E | E F G E F D =c B c A | B A G F E D B G A G | E F D D E D D E F A G | F G E A B c e d c B c | A G E F G D E D3 :| | |: B d c d e f d e f e d | B A B B G B A G3 | B c d e d e f g f e d B | c e d B A G A B G E | D E F E F G B c d B A | E F A D E G A F G B A | F G F E F D F E D D :||: | E F F G A G A c B c B G E E D | E F B d e d c3 | | f B A B G B c B d B A B D | E E F G G E G F A G E G | E c B A c d E D E G E F | | E F d E F G3 E C D C E2 :||: | | A3 B c d3 B A F G F F G E | | E c A d E F D A B A F D E3 | D E D G F E G E D F D | E C D E D C F E E D E E | | D F G B G E F E G B A B E D | D E E D D3 | E F/ E/ G/ A/ D/2 F/2 E/3/2 | | A/2 G/2 G E/2 E F/2 G F/2/2 G | E/2 B/2 E D E/2 G A/2 | E/4/2 B > B/2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 34
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|B2EEGEGE|FEDEFGAF|EFEDCEDE|FDGABcABG|FDEFDEDED:||:BdcBABAcB|AGFABcdcB|cBAGEEGGEE|FGABABcBA|BcBcAFGEDE:||:EFGFGEGAGE|EFGEFD=cBcA|BAGFEDBGAG|EFDDEDDEFAG|FGEABcedcBc|AGEFGDED3:|||:Bdcdefdefed|BABBGBAG3|BcdedefgfedB|cedBAGABGE|DEFEFGBcdBA|EFADEGAFGBA|FGFEFDFEDD:||:|EFFGAGAcBcBGEED|EFBdedc3||fBABGBcBdBABD|EEFGGEGFAGEG|EcBAcdEDEGEF||EFdEFG3ECDCE2:||:||A3Bcd3BAFGFFGE||EcAdEFDABAFDE3|DEDGFEGEDFD|ECDEDCFEEDEE||DFGBGEFEGBABED|DEEDD3|EF/E/G/A/D/2F/2E/3/2||A/2G/2GE/2EF/2GF/2/2G|E/2B/2EDE/2GA/2|E/4/2B>B/2
+
+</script>
+
+
+<pre>X: 35
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B3 B A G E D | E D G A B A G F | A G E F G E E D | B2 B A G G2 E | 1 F E E D D D E D E :| 2 F E E C D G A G F |] |: |: B2 B G B A G2 B | c B c B A G A B c | B2 c A B c A d B A | B G F E D2 E D E D | | G B B A G B A B c d e | f2 B G A G A F A G | B d g2 B A A F G A | B A G D E D D E E D E | | B2 G B A2 B c d B A G | A B G E D D B B A A G | | B d e d B A B A B d e A | B d B A F A E D E d | B A B G G E D E E G | | E D D G A E D D A G A G d d B | | B A D E D G E D A E D G D E | E D E G E G A D D3 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 35
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|B3BAGED|EDGABAGF|AGEFGEED|B2BAGG2E|1FEEDDDEDE:|2FEECDGAGF|]|:|:B2BGBAG2B|cBcBAGABc|B2cABcAdBA|BGFED2EDED||GBBAGBABcde|f2BGAGAFAG|Bdg2BAAFGA|BAGDEDDEEDE||B2GBA2BcdBAG|ABGEDDBBAAG||BdedBABABdeA|BdBAFAEDEd|BABGGEDEEG||EDDGAEDDAGAGddB||BADEDGEDAEDGDE|EDEGEGADD3|||
+
+
+</script>
+
+
+<pre>X: 36
+R: slip jig
+M: 9/8
+K: Emin
+|: B2 E G2 E F3 | B G B B A G E3/2/2/ | B G A G B d e f g | B G E2 E G G2 E E F G2 :||: B3 d B A G B A | B c B A B A B G E | F D E F G E F G A E :||: B/ g/ f/ g/2 e e g2 d B/2/ c/2/4/2/3/2 B/2 | B B G A A G B G E E D | B/2 A/2/ B/2 e2 d B A B B A | G F G E D E F D E E D :||: B/2 B G E/ B/ d e/2 d B G B A/2 B | B/ c/ d/2 B A G/2 E D E D E8 | B/ A/2 G E/2 E E G G A G F E D | E/2 B E/2 G B/2 E G E D D B/2 G/2 | E/ E/2 F G/2 A G E E E D E | D E F/2 E/2 D E D3/2 G G/2 :| | B G3/2 e/2 e d B/ c B/2 d e d B3/2 c/2 B d | | B G G E E/2 A B/2 D3/ A/ G/2 G3/4/ E/4/ B/4/4/3/4 | | B/ B/ A G3/ B/ c d/2 G A/2 E d/2 E3/4 G/4/ F/2 | G/2 B3/3/3 G/2/ A/4/ G/4 | B/4 E/2 c A/2 c B/4 | G/ B/3/ A F/2 G D E3/3 | | G/ E G E/ E E2 D/2 E F/ E/ A/3/ G/3/ E/ D/2 | | B d/2 > B/2 c d/ e/2 B2 B/4 d/2 | A/2 A2 G/</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 36
+R:slipjig
+M:9/8
+K:Emin
+|:B2EG2EF3|BGBBAGE3/2/2/|BGAGBdefg|BGE2EGG2EEFG2:||:B3dBAGBA|BcBABABGE|FDEFGEFGAE:||:B/g/f/g/2eeg2dB/2/c/2/4/2/3/2B/2|BBGAAGBGEED|B/2A/2/B/2e2dBABBA|GFGEDEFDEED:||:B/2BGE/B/de/2dBGBA/2B|B/c/d/2BAG/2EDEDE8|B/A/2GE/2EEGGAGFED|E/2BE/2GB/2EGEDDB/2G/2|E/E/2FG/2AGEEEDE|DEF/2E/2DED3/2GG/2:||BG3/2e/2edB/cB/2dedB3/2c/2Bd||BGGEE/2AB/2D3/A/G/2G3/4/E/4/B/4/4/3/4||B/B/AG3/B/cd/2GA/2Ed/2E3/4G/4/F/2|G/2B3/3/3G/2/A/4/G/4|B/4E/2cA/2cB/4|G/B/3/AF/2GDE3/3||G/EGE/EE2D/2EF/E/A/3/G/3/E/D/2||Bd/2>B/2cd/e/2B2B/4d/2|A/2A2G/
+
+</script>
+
+</p><h3 id="prompt7">Prompt 7 - R: jig	M: 6/8	K: Dmix	f e d c A G |</h3>
+<p>
+<pre>X: 37
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A3 A G G | A B c d e f | g d e d c B | c B A G E G | A G A G G A G | E C C C C E :| A2 B d e f g | | |: a g d e f d e | d e d d c B A | G E G G A B G | E E G A B d e | g d c B d c B |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 37
+R:jig
+M:6/8
+K:Dmix
+fedcAG|A3AGG|ABcdef|gdedcB|cBAGEG|AGAGGAG|ECCCCE:|A2Bdefg|||:agdefde|deddcBA|GEGGABG|EEGABde|gdcBdcB|]
+
+
+</script>
+
+
+<pre>X: 38
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A B A G A B | A B c d B A | B c d e f g | f e d c B A G | B c B c d c A | A B G A G A G | F E D G2 :||: e f g e d c e | f e f g f d c | B ^c d c B G A | A G F G A G E F | E D D D D2 :||: e d c d e c e | e d c G A d B | d c B c A A A G | G A G G G A G B | c d e d c g e | d c d B G A A G F | E G A G2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 38
+R:jig
+M:6/8
+K:Dmix
+fedcAG|ABAGAB|ABcdBA|Bcdefg|fedcBAG|BcBcdcA|ABGAGAG|FEDG2:||:efgedce|fefgfdc|B^cdcBGA|AGFGAGEF|EDDDD2:||:edcdece|edcGAdB|dcBcAAAG|GAGGGAGB|cdedcge|dcdBGAAGF|EGAG2:|
+
+
+</script>
+
+
+<pre>X: 39
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | A G F E D D | c B A G E G | A B A G F G | A d d c A F G | F D D D D E D | c d c A A G | E G E D D D C | E G A G F D D :| | |: B A G B G E G B | A B d c B A | B A G A G E E G | F E D E D D E F | G d d e d c d | B A B A A G E | E G B d c A B | A G E D E G E G :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 39
+R:jig
+M:6/8
+K:Dmix
+fedcAG|AGFEDD|cBAGEG|ABAGFG|AddcAFG|FDDDDED|cdcAAG|EGEDDDC|EGAGFDD:|||:BAGBGEGB|ABdcBA|BAGAGEEG|FEDEDDEF|Gddedcd|BABAAGE|EGBdcAB|AGEDEGEG:||
+
+
+</script>
+
+
+<pre>X: 40
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | B A G E D F | G E G E D G | B d d e g e | d B A G A B | A B A G G E D | B G E D D G B | B d B G A B d | 1 B A G F G E D :| 2 B A G3 e d | | |: d e d (3 d e e d | d B G G G A B G | d B d e g d e | d ^c d e d B G | A B G E G D D B | B G d B G B d | e d e d e g g e | a g e d e f d B | G A B A B G G E | B d e d d e d | e g d (3 e d e e | d e d g e d B A | G E D E D D3 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 40
+R:jig
+M:6/8
+K:Dmix
+fedcAG|BAGEDF|GEGEDG|Bddege|dBAGAB|ABAGGED|BGEDDGB|BdBGABd|1BAGFGED:|2BAG3ed|||:ded(3deed|dBGGGABG|dBdegde|d^cdedBG|ABGEGDDB|BGdBGBd|ededegge|agedefdB|GABABGGE|Bdedded|egd(3edee|dedgedBA|GEDEDD3||
+
+
+</script>
+
+
+<pre>X: 41
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F D D E F A | B G E F G A | F E D E F G | F G3 (3 B c d | f e d c B A G | A G F D E F D | G G G G2 F G | (3 c B A c B A d | B G D D E C D :||: A2 B A G B c | d f c B A A G | B G A B c A d | c B A B A A B | c B G E G A G | c A B c B A E | D G G G c d B | c A G G G3 | c B c B c A G :||: A G G E E D C | D D D E D D D D | E D G G A B G | A A G B A G E D | G A G G c B c | B G B A B G E D E | D D E G G A G E | D E D E D G E D :||: D D D G G B A | | A E c A A B D D c d | c A c A c B G G | G G c E G E D D | D D G E A B c | A G E G G E D C D | | A B G G G E G E E C | D E E C D C D E | | D E G D D D B, D D D C D :| | A G G F D B D D | A G e D G E F D D | | D D3 D G G3 |] | D D B A G F G A A G G | A B A G A G A | G G A E G E G | | D G E G D E D3 | E D D G F D D D |] E G E F E D D |] | G D D G B A D D D A | d G A G B D | G e d B G A | d B A G G B G G :| | E B c A A G E E G | A c B E G E B E | D C D D | G E G3 | D B c B G A3 | c A A3 | A G A B A B d | A G B G E C C D | D E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 41
+R:jig
+M:6/8
+K:Dmix
+fedcAG|FDDEFA|BGEFGA|FEDEFG|FG3(3Bcd|fedcBAG|AGFDEFD|GGGG2FG|(3cBAcBAd|BGDDECD:||:A2BAGBc|dfcBAAG|BGABcAd|cBABAAB|cBGEGAG|cABcBAE|DGGGcdB|cAGGG3|cBcBcAG:||:AGGEEDC|DDDEDDDD|EDGGABG|AAGBAGED|GAGGcBc|BGBABGEDE|DDEGGAGE|DEDEDGED:||:DDDGGBA||AEcAABDDcd|cAcAcBGG|GGcEGEDD|DDGEABc|AGEGGEDCD||ABGGGEGEEC|DEECDCDE||DEGDDDB,DDDCD:||AGGFDBDD|AGeDGEFDD||DD3DGG3|]|DDBAGFGAAGG|ABAGAGA|GGAEGEG||DGEGDED3|EDDGFDDD|]EGEFEDD|]|GDDGBADDDA|dGAGBD|GedBGA|dBAGGBGG:||EBcAAGEEG|AcBEGEBE|DCDD|GEG3|DBcBGA3|cAA3|AGABABd|AGBGECCD|DE
+
+</script>
+
+
+<pre>X: 42
+R: jig
+M: 6/8
+K: Dmix
+f e d c A G | F E E E E | D D D D A G | A F G E2 F | G3 G F E | D3 G A F G | E3 E G E | D F G A d c | A d d c A A G | c A F E E2 E :||: B3 c B c B | d B B A G E E | B D G E2 D E | B A G A G E D E | | c B A G c A G E | c B G E D D E | G3 D2 B | d3 d2 D | | e3 e d e d | d B A G B E E | G A G A B A G | E D E D D D E G | | B3 d B c B A | G A F E2 E E | | D3 D G A G | | d3 e d B G E | d B G G E G E E D | G A B d e c | d B g d B c A G |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 42
+R:jig
+M:6/8
+K:Dmix
+fedcAG|FEEEE|DDDDAG|AFGE2F|G3GFE|D3GAFG|E3EGE|DFGAdc|AddcAAG|cAFEE2E:||:B3cBcB|dBBAGEE|BDGE2DE|BAGAGEDE||cBAGcAGE|cBGEDDE|G3D2B|d3d2D||e3eded|dBAGBEE|GAGABAG|EDEDDDEG||B3dBcBA|GAFE2EE||D3DGAG||d3edBGE|dBGGEGEED|GABdec|dBgdBcAG|]
+
+
+</script>
+
+</p><h3 id="prompt8">Prompt 8 - R: reel	M: 4/4	K: Dmin	A,2 D A, F A, D A, |</h3>
+<p>
+<pre>X: 43
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | E D E E G E E | D F G A B A G F | E D F D B, D D E F | E C E E G A B c | E D C E G A c B A | E D G B A B A B c :||: d e d c B A G A G | A B A A G E D D E D | A B G A G E G E G :||: A G B d e d g d B | A B d A G A B d c | d e d B A G B A G | G E D E D E G B A c | d B A A B d e f g | e d c A B G E D G E | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 43
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|EDEEGEE|DFGABAGF|EDFDB,DDEF|ECEEGABc|EDCEGAcBA|EDGBABABc:||:dedcBAGAG|ABAAGEDDED|ABGAGEGEG:||:AGBdedgdB|ABdAGABdc|dedBAGBAG|GEDEDEGBAc|dBAABdefg|edcABGEDGE||
+
+
+</script>
+
+
+<pre>X: 44
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | C E E C C C E | A,2 D D A B G E | E C E G E C C E :| A,2 A A B c A G E | G E E C E C C D E | A G A B c2 d c A | G E G E G G E G B | A G E F D G A B d | (3 B c d (3 B B A G A G E E | E E C G E C E D E | G G E E D C D E G | A E D E G B c d e | e g e d c A c A A B | G E C D G E G A G | A A G E G F G E D | E E G E D C E D2 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 44
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|CEECCCE|A,2DDABGE|ECEGECCE:|A,2AABcAGE|GEECECCDE|AGABc2dcA|GEGEGGEGB|AGEFDGABd|(3Bcd(3BBAGAGEE|EECGECEDE|GGEEDCDEG|AEDEGBcde|egedcAcAAB|GECDGEGAG|AAGEGFGED|EEGEDCED2||
+
+
+</script>
+
+
+<pre>X: 45
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | B A G E D B, C | D D D D A, D D D | B A F D F G E C | D C C D C G A B | A G A F D E D E C | F D D D E D D D G :| | |: A G F G A B c E E | A G E F D E C E C | G A G A B A G A A | G F G E D C D C A, | G F D D E F D C E C :||: A G E d c A B c A | c A G E c G E C E | G E d A d G B c d | c G E G E C D D C E | | A G G E F G E G A c B | A2 A G E C C E C :| | D G E F E D C C E D C | D E F G, D D E C D E | D D C D D D B D G, D | | B A B A d f d c B d A G | A G F D E c D C E F | G E D D C C C D E E | | D E D C E D D F G D D D C | | C D C C F D G E C G E C F | D C D G E G C D D | | E D C G E E D C2 C E C E D | | D C E G E D E D F G C E D G | D D E G G C D C E E | D C G, D C D2 | | E G E G G E D G E D2 | E D D E E C D A G E G | G E E C C D D2 | D D G E E G, C B, | | D D3 D G E A G G C E E C E G | D C2 E D D2 G | E D E F/ G E D | D D4 | E D F D E G E E E G E F | | D3 d c E D F A D D D2 E C E B | | G E G3 G E G B c D C D | | A E D D > G E D4 | |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 45
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|BAGEDB,C|DDDDA,DDD|BAFDFGEC|DCCDCGAB|AGAFDEDEC|FDDDEDDDG:|||:AGFGABcEE|AGEFDECEC|GAGABAGAA|GFGEDCDCA,|GFDDEFDCEC:||:AGEdcABcA|cAGEcGECE|GEdAdGBcd|cGEGECDDCE||AGGEFGEGAcB|A2AGECCEC:||DGEFEDCCEDC|DEFG,DDECDE|DDCDDDBDG,D||BABAdfdcBdAG|AGFDEcDCEF|GEDDCCCDEE||DEDCEDDFGDDDC||CDCCFDGECGECF|DCDGEGCDD||EDCGEEDC2CECED||DCEGEDEDFGCEDG|DDEGGCDCEE|DCG,DCD2||EGEGGEDGED2|EDDEECDAGEG|GEECCDD2|DDGEEG,CB,||DD3DGEAGGCEECEG|DC2EDD2G|EDEF/GED|DD4|EDFDEGEEEGEF||D3dcEDFADDD2ECEB||GEG3GEGBcDCD||AEDD>GED4||
+
+</script>
+
+
+<pre>X: 46
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | G E F D E C C | D C D D F A A F | G G F E D E C E | D C C D E C D C | D E F D D F D C E | G E C D D G A c A | G A B d c E E C E :||: D G E F G E D D C | G E E F D C C E E | D F E D C D C D E G | G E D C A G A G E C | D D D D F G F E E C | G B c d c B A E G :| G2 G E D3 G F G | | B d c d c d e f d e f | g e d c B c A c A B |2 G E C E D C E E C |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 46
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|GEFDECC|DCDDFAAF|GGFEDECE|DCCDECDC|DEFDDFDCE|GECDDGAcA|GABdcEECE:||:DGEFGEDDC|GEEFDCCEE|DFEDCDCDEG|GEDCAGAGEC|DDDDFGFEEC|GBcdcBAEG:|G2GED3GFG||Bdcdcdefdef|gedcBcAcAB|2GECEDCEEC|]
+
+
+</script>
+
+
+<pre>X: 47
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | G G F E D C E | d =c A B G G A B | (3 B c d B A G F D D | E D E D C C E E | D F G F E G A B G | A G F A B G A B A | (3 G B A G E D D D D :| | |: A D D D d e d d e d | A D D E D D E F D | G D E D G E D B, E | D E D E G D E2 | B A G A B d e d e | d B A B A G (3 B A G | A B c A B G F D E D :| | | |: A d | B d B G B d e B G B | A G E E D D B d g e | d e d B A A B d B A | A2 A D E A B A A G | F G A A B G E E G | E F D D E E4 | G E D C D E D3 | | A G G E G E D E3 G | D E G E B G D E G G | D D E G A D D B E D | (3 D E D B G E D G G | E D D C E E D C G E | | D E C D E E D G D D D E | D D D A D D4 :| | A G B G A G E2 D G E G | D G E F E D D2 | D D3 E D3 E | | A A G E G G E D2 D D2 E G | | E D B A G B E D D G E E E | A D E D4 | E G E G3 B D E C | G E G D D E3 | | E G D F G E G A E D D | G E E F D E G B E G | A E D3 B G E G F | | G E B E D E E G E E C D D | D D B,3 E D | | | | A E3 G E G4 | E D C A G E C D d E D E F | E D G3 E D E | E D</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 47
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|GGFEDCE|d=cABGGAB|(3BcdBAGFDD|EDEDCCEE|DFGFEGABG|AGFABGABA|(3GBAGEDDDD:|||:ADDDdedded|ADDEDDEFD|GDEDGEDB,E|DEDEGDE2|BAGABdede|dBABAG(3BAG|ABcABGFDED:||||:Ad|BdBGBdeBGB|AGEEDDBdge|dedBAABdBA|A2ADEABAAG|FGAABGEEG|EFDDEE4|GEDCDED3||AGGEGEDE3G|DEGEBGDEGG|DDEGADDBED|(3DEDBGEDGG|EDDCEEDCGE||DECDEEDGDDDE|DDDADD4:||AGBGAGE2DGEG|DGEFEDD2|DD3ED3E||AAGEGGED2DD2EG||EDBAGBEDDGEEE|ADED4|EGEG3BDEC|GEGDDE3||EGDFGEGAEDD|GEEFDEGBEG|AED3BGEGF||GEBEDEEGEECDD|DDB,3ED||||AE3GEG4|EDCAGECDdEDEF|EDG3EDE|ED
+
+</script>
+
+
+<pre>X: 48
+R: reel
+M: 4/4
+K: Dmin
+A,2 D A, F A, D A, | C G E F G F G | A B A G A B c | d c A F E D C D :||: A,2 A D A B d f | e c A B c A B A | d B A F E C D C D | E C E G F G F E G | A, D D D A A B d e | d c d B A G E F D :| | |: B A G F E D E D C B | =c D B A G B d e c | B A G c B A G G E E | D D D D C D2 D D G | A D D A D D E G B d | e c B A B c B A c | d4 A e d e d | [c B A G (3 A G E D C E | D E F G A G F D C D :| 2 D D D E D D D4 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 48
+R:reel
+M:4/4
+K:Dmin
+A,2DA,FA,DA,|CGEFGFG|ABAGABc|dcAFEDCD:||:A,2ADABdf|ecABcABA|dBAFECDCD|ECEGFGFEG|A,DDDAABde|dcdBAGEFD:|||:BAGFEDEDCB|=cDBAGBdec|BAGcBAGGEE|DDDDCD2DDG|ADDADDEGBd|ecBABcBAc|d4Aeded|[cBAG(3AGEDCE|DEFGAGFDCD:|2DDDEDDD4||
+
+
+</script>
+
+</p><h3 id="prompt9">Prompt 9 - R: jig	M: 6/8	K: Adow	|: a3 b a g |</h3>
+<p>
+<pre>X: 49
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f2 d e f g | d2 d c A B | A G F E D E | D F G A B A | d c d e f d | A B G A G E F | G3 G2 :| | |: e f g f e c A | d e f e d c B | A B c A B A G | A B A B A A B | d e d c A G A | B A G A G A B | G3 d2 d |] |: e d B c B A A G | F G F G A G B | d c B A G E C | D F E D D D E F | D D D D2 E F | | |: D E D D F G B A | G A G G A F G | A G B c B G E | D B G A B c B | E D G A G F G | D E D2 E D | D E C D C D D E | B, D D F B A G B A |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 49
+R:jig
+M:6/8
+K:Adow
+|:a3bag|f2defg|d2dcAB|AGFEDE|DFGABA|dcdefd|ABGAGEF|G3G2:|||:efgfecA|defedcB|ABcABAG|ABABAAB|dedcAGA|BAGAGAB|G3d2d|]|:edBcBAAG|FGFGAGB|dcBAGEC|DFEDDDEF|DDDD2EF|||:DEDDFGBA|GAGGAFG|AGBcBGE|DBGABcB|EDGAGFG|DED2ED|DECDCDDE|B,DDFBAGBA|]
+
+
+</script>
+
+
+<pre>X: 50
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f d c A A G | c d c A G G | A F G A B c | d c d f d e | f d e d c A | c d B A G G G | 1 A G E G E F G :| 2 A G E D G c A | | |: g2 a g b a a | g f d e e d c | d B G A G E F | G E G A B G A | G E C D B c B | A G A F G E D | G E D D E F G | A G E c B A G | B c A G E E F | A G2 B A G c | A G F E G E D :| | |: E D E D G3 | B c B c B A B | c A c B c A B | G B A G E d c | E F G E G F G | E D F G G E G | E E D D D E D | E D E G B G A B | A A G E2 d | | e d B A B G E D E | D D E c B d c B | c G E D B c A c | E D D B A G B A | G F G E E G D | E G E G D D C E | | D E D E E D c B c d | e d e d B G3 | | e2 B A B A G F G D | B G E G3 | E D C D E G E c | E E G E2 G E | | E D B G E E D E C D D | E c D E D B, | E3 G E D3 | E G D E D D2 | E E E D B D3 | A G B E3 | E E A d c2 B A | | c B A A G B G E F E D | e D E D C | E D G E D C E D | | E E d e D3 | D E G3 E D E2 | | E2 B E G E E E G G | E G G E F B A G3 | G c A G | E2 G G E3 | A D B G c B G | E F E E G3</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 50
+R:jig
+M:6/8
+K:Adow
+|:a3bag|fdcAAG|cdcAGG|AFGABc|dcdfde|fdedcA|cdBAGGG|1AGEGEFG:|2AGEDGcA|||:g2agbaa|gfdeedc|dBGAGEF|GEGABGA|GECDBcB|AGAFGED|GEDDEFG|AGEcBAG|BcAGEEF|AG2BAGc|AGFEGED:|||:EDEDG3|BcBcBAB|cAcBcAB|GBAGEdc|EFGEGFG|EDFGGEG|EEDDDED|EDEGBGAB|AAGE2d||edBABGEDE|DDEcBdcB|cGEDBcAc|EDDBAGBA|GFGEEGD|EGEGDDCE||DEDEEDcBcd|ededBG3||e2BABAGFGD|BGEG3|EDCDEGEc|EEGE2GE||EDBGEEDECDD|EcDEDB,|E3GED3|EGDEDD2|EEEDBD3|AGBE3|EEAdc2BA||cBAAGBGEFED|eDEDC|EDGEDCED||EEdeD3|DEG3EDE2||E2BEGEEEGG|EGGEFBAG3|GcAG|E2GGE3|ADBGcBG|EFEEG3
+
+</script>
+
+
+<pre>X: 51
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f d e f g e | B A G B d B | A A A G E D | E D G A B d | e d B A G F G | A G E F G E D :||: A G G A B A | G G G A G B e | d c d e d B G | A A G A G E E D | G G E G G B d | d e d e d A B | A G G E F D D :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 51
+R:jig
+M:6/8
+K:Adow
+|:a3bag|fdefge|BAGBdB|AAAGED|EDGABd|edBAGFG|AGEFGED:||:AGGABA|GGGAGBe|dcdedBG|AAGAGEED|GGEGGBd|dededAB|AGGEFDD:|
+
+
+</script>
+
+
+<pre>X: 52
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f e d c A B | c A A B G E | D E D D D D | D D D E D E | G A A B d e | c A B c d e f | | g B A G A B d | G A B G A B A | G A G A/ B/ c/ d d | B A B G G E G | D E G G G2 :||: B c d d e f g | g3 e d e | d B B A B A B | e3 e d B | A G A A G A d | d d B B G E G :||: A G E G B c d | c A G A c A e | d c A G G E D | D E d G G A B | A d B G E D E D | G E G G B A G | E G G E d B d | B G B d e d e f/ | g3 d e d B/ c A | G E D G A B c/ B/ d | e d B G B A B c | d B A B d G E G |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 52
+R:jig
+M:6/8
+K:Adow
+|:a3bag|fedcAB|cAABGE|DEDDDD|DDDEDE|GAABde|cABcdef||gBAGABd|GABGABA|GAGA/B/c/dd|BABGGEG|DEGGG2:||:Bcddefg|g3ede|dBBABAB|e3edB|AGAAGAd|ddBBGEG:||:AGEGBcd|cAGAcAe|dcAGGED|DEdGGAB|AdBGEDED|GEGGBAG|EGGEdBd|BGBdedef/|g3dedB/cA|GEDGABc/B/d|edBGBABc|dBABdGEG|]
+
+
+</script>
+
+
+<pre>X: 53
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f a f e f a b d | c e e c d e | ^c d c A G E D | F G A F E D F | G E C E G E E | E G G G A2 G :||: d e d c A A c | d3 d e d | c A A B c A A | d c A B c d c | d e d e d B d | c B A G E E D | D D D A A A G :||: E G B c B A B | c A c e A A G | c A G A G E F | G2 A G B c d | e d c B G E D G | E G E G A G, D | G E G G E G E | D D E D D D D2 :| | G E D B c d B | c d e e d e | f e a g e f g | f e d c d e d f | G B A A G E C D | E G B d B c d e f | | g e d c e a g g e | d c B A A B G E | d c d B A B G | A G B A G A c B | d E A G E G D | D E D E D B, D D |] | G E E G E D D2 B, | c G E G2 G E E E | | D E G E c G E F G E | F G E G F E D | | E D E G A A B A G B | E G | E E D E E D D B, | E G A B E D D C | E G d B A G G E | E D d B D | E E G A D D E | E E F G A G | E D D E E E D G E | | E G3 | G E F E D E F G G E D :| | E E2 G E G B G E E F | E E C E D E | D G D E D | E D2 D | E g E D E C E | E B A G D D D | E A G, | E D3 | E G C A G E A B A | A G E3 | E A B G D</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 53
+R:jig
+M:6/8
+K:Adow
+|:a3bag|fafefabd|ceecde|^cdcAGED|FGAFEDF|GECEGEE|EGGGA2G:||:dedcAAc|d3ded|cAABcAA|dcABcdc|dededBd|cBAGEED|DDDAAAG:||:EGBcBAB|cAceAAG|cAGAGEF|G2AGBcd|edcBGEDG|EGEGAG,D|GEGGEGE|DDEDDDD2:||GEDBcdB|cdeede|feagefg|fedcdedf|GBAAGECD|EGBdBcdef||gedceagge|dcBAABGE|dcdBABG|AGBAGAcB|dEAGEGD|DEDEDB,DD|]|GEEGEDD2B,|cGEG2GEEE||DEGEcGEFGE|FGEGFED||EDEGAABAGB|EG|EEDEEDDB,|EGABEDDC|EGdBAGGE|EDdBD|EEGADDE|EEFGAG|EDDEEEDGE||EG3|GEFEDEFGGED:||EE2GEGBGEEF|EECEDE|DGDED|ED2D|EgEDECE|EBAGDDD|EAG,|ED3|EGCAGEABA|AGE3|EABGD
+
+</script>
+
+
+<pre>X: 54
+R: jig
+M: 6/8
+K: Adow
+|: a3 b a g | f a2 g b a g g g g e g g g d | f2 a3 | d B A G E G | d3 B A B | A G G E D G E | E D D E G B d | g f e d g B A | d3 d B A c | B A G A B A B G | A G E D D3 :||: c B A G B A G | A B A G G A B | c E G E D E D | G E D B G G E | c B A B A A B | d c B A A G E | D G F G E D2 | | e d | e f g d B A B d | e d B A A A G | E D E G E E D | d g d e d e d | d e e d B d B A | A G A G B G E | e d e g d B d | B e d B G A G E |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 54
+R:jig
+M:6/8
+K:Adow
+|:a3bag|fa2gbaggggegggd|f2a3|dBAGEG|d3BAB|AGGEDGE|EDDEGBd|gfedgBA|d3dBAc|BAGABABG|AGEDD3:||:cBAGBAG|ABAGGAB|cEGEDED|GEDBGGE|cBABAAB|dcBAAGE|DGFGED2||ed|efgdBABd|edBAAAG|EDEGEED|dgdeded|deedBdBA|AGAGBGE|edegdBd|BedBGAGE|]
+
+
+</script>
+
+</p><h3 id="prompt10">Prompt 10 - R: reel	M: 4/4	K: Dmaj	A |: F A (3 A A A B A F A</h3>
+<p>
+<pre>X: 55
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F E D E C E E | F A D F A D B A | =c d c A B A B A | c A B G G B G E G | 1 E F E D F G E E D :| 2 E F E E D F D D2 | | |: f e d e d B A B | c d e f g e d e f | g e d c B A A B c | d c A G A F D D D2 |] |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 55
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FEDECEE|FADFADBA|=cdcABABA|cABGGBGEG|1EFEDFGEED:|2EFEEDFDD2|||:fededBAB|cdefgedef|gedcBAABc|dcAGAFDDD2|]|
+
+
+</script>
+
+
+<pre>X: 56
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F E D E F G E | F A d c A B A | F A A G E F G A | F D E D E D3 :||: e f g f e d e f | d B A B d e f g | e f e d B A c A e | =c A G A G E D D D2 :||: e c d e f d e f2 | g f e f d c A A2 | e f g e d e e f g :||: f g e f d B A2 | A B c d e d f g e | f d f e d c A G A2 | E G B c d A2 G A | E D D E F D D D E2 | E F D E E D D2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 56
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FEDEFGE|FAdcABA|FAAGEFGA|FDEDED3:||:efgfedef|dBABdefg|efedBAcAe|=cAGAGEDDD2:||:ecdefdef2|gfefdcAA2|efgedeefg:||:fgefdBA2|ABcdedfge|fdfedcAGA2|EGBcdA2GA|EDDEFDDDE2|EFDEEDD2:|
+
+
+</script>
+
+
+<pre>X: 57
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F F F A B A B | c d e f g e d B | c A A A F E F E | F F E D E D A B | A F E G E D F E2 :||: f d e d B A3 B | c e c d c A B A c | B A G F E D2 B A | A F D E F E D F G | f d e f d B A F E | f d d2 B A A F G | B A F D D E D2 :||: | f d c d e c d e d c | B d e f e d B e d | c A B =c d e d e f | g e c d f e d e d | d B A B A G E F G E F | D E F G A D F G E | d E F D D F E D D2 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 57
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FFFABAB|cdefgedB|cAAAFEFE|FFEDEDAB|AFEGEDFE2:||:fdedBA3B|cecdcABAc|BAGFED2BA|AFDEFEDFG|fdefdBAFE|fdd2BAAFG|BAFDDED2:||:|fdcdecdedc|BdefedBed|cAB=cdedef|gecdfeded|dBABAGEFGEF|DEFGADFGE|dEFDDFEDD2:||
+
+
+</script>
+
+
+<pre>X: 58
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F E D F A B A | F A D F A A F A :| F E D D F A d e | f d c d c B A G | F E E D F E F D E | D E D D D E D E D :||: A A A A G A c d e | e d e f g f d c A | B A G A F E F G E | D F E D E2 F D E :| | | |: B d c d e f a g f e | f g f e d c A2 | B A d B c A B A G E | F E F E D2 F D D E | | F D D D F D E G E D E | F D E D F D D F E E | G E F D D2 F E D | F D F D B E D D A | F D G E D D E E D :||: B D d D F F E D C E | | D B F D E F D G B D E | E F D F E G D E D | D E F F D E E F D | E D D C D D B E C E |] | D E E G F D D3 D F E | | E D E F G F D F G E D C D | D D E F E G E G B | D D3/ E/ G F D E/ D D E/ E/ D/ D/ E/ E D | | D E G A F D D G E F E F A B | D E3 D E D B/ D D | | E E D E G D C D E D4 | | | D F D F A D D F G F E E E D | E G E/ E F E/ D C D/ D D/ D E/ G/ E/ F/ | | E F G A E D E/ C D E E/ D E D C | E F E E/ E G/ D E G | | D D C E D D | D A G E D B D D D D | (3 G E F/ E D D/ E D E E | E D A G D D E3 | | D G E G E E D D4 |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 58
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FEDFABA|FADFAAFA:|FEDDFAde|fdcdcBAG|FEEDFEFDE|DEDDDEDED:||:AAAAGAcde|edefgfdcA|BAGAFEFGE|DFEDE2FDE:||||:Bdcdefagfe|fgfedcA2|BAdBcABAGE|FEFED2FDDE||FDDDFDEGEDE|FDEDFDDFEE|GEFDD2FED|FDFDBEDDA|FDGEDDEED:||:BDdDFFEDCE||DBFDEFDGBDE|EFDFEGDED|DEFFDEEFD|EDDCDDBECE|]|DEEGFDD3DFE||EDEFGFDFGEDCD|DDEFEGEGB|DD3/E/GFDE/DDE/E/D/D/E/ED||DEGAFDDGEFEFAB|DE3DEDB/DD||EEDEGDCDED4|||DFDFADDFGFEEED|EGE/EFE/DCD/DD/DE/G/E/F/||EFGAEDE/CDEE/DEDC|EFEE/EG/DEG||DDCEDD|DAGEDBDDDD|(3GEF/EDD/EDEE|EDAGDDE3||DGEGEEDD4|
+
+</script>
+
+
+<pre>X: 59
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | B d e f c B A | F A G F D E F G | A B A B A G E F | F A A (3 B A B c A F | A B d e a g f e d | 1 A G G F G A B A :| 2 A G F G F G2 D2 | | |: f g a g g f e g | f d e f d c B A G | A G F A G B d c e | f g a f g f e f2 | f g e f d B A G A F | G A B G F G B A G F | A G B F G F D D2 | f e f g f g e d2 | f d B G A F A A F F | | G F G E F G F E G F G | E F G G E3 G | | f g3 a g f g f d e | f d c A G B A F G F | | D D F D E D D D D E F | | B e f g a b a g f d f | g f d A G B c A G F |] | A G A G F E F D E G F D | C C D E D E G, D F | | E D D C C D D D C D C D d, D | E G D c D D E D F | E E G E G E C D G D2 | E F D D G E D E D | B G B D E C G E D | E F d E G E F D C | E D4 | | E G G E F E F G A G A D E F D | E D F D4 | E d E F G E D D4 | d E D2 | B d d E F A G E G B A | d G F F G A F G E | (3 E E D | D D D3 F D E C D D | B,3 D D D | E4 | | A G E D C E D2 D D D B,3 | | | d E G G3 D C E G G A B D D E E G | (3 D D E G E D G | E D C D E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 59
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|BdefcBA|FAGFDEFG|ABABAGEF|FAA(3BABcAF|ABdeagfed|1AGGFGABA:|2AGFGFG2D2|||:fgaggfeg|fdefdcBAG|AGFAGBdce|fgafgfef2|fgefdBAGAF|GABGFGBAGF|AGBFGFDD2|fefgfged2|fdBGAFAAFF||GFGEFGFEGFG|EFGGE3G||fg3agfgfde|fdcAGBAFGF||DDFDEDDDDEF||Befgabagfdf|gfdAGBcAGF|]|AGAGFEFDEGFD|CCDEDEG,DF||EDDCCDDDCDCDd,D|EGDcDDEDF|EEGEGECDGD2|EFDDGEDED|BGBDECGED|EFdEGEFDC|ED4||EGGEFEFGAGADEFD|EDFD4|EdEFGEDD4|dED2|BddEFAGEGBA|dGFFGAFGE|(3EED|DDD3FDECDD|B,3DDD|E4||AGEDCED2DDDB,3|||dEGG3DCEGGABDDEEG|(3DDEGEDG|EDCDE
+
+</script>
+
+
+<pre>X: 60
+R: reel
+M: 4/4
+K: Dmaj
+A |: F A (3 A A A B A F A | F G E D E F E D | F A D F A D D D | F E D F G E c E | F d A F A B A G | F D E D E E F E F | F A d c A B A B | d2 d e f g (3 e e e e | d B A G E E E F G :||: A B d c d e f d e | f B B B A A B c A | A B c d e g e e e c | d B B A G F E D D D :||: d A B d e f e f d | e d c d B A B G A B | A B A d e f f d e f | e d B A c d e e f | d B c d c A d B A d | e B A G A E E E E2 | D E D F D E F G E F | | |: G D F G F G E G E D C D | D F D D F D F D B | G F G F D E G F E G | G F D D E C D D C D B, | G F E E G E F G F E | | G D C D C D D D D E F D E C | G F A D E F A F D D | G F F G E E G F D | G D D E D C E C D F | | G E D D E E D D C E D C2 | | G3 D G F D C D F D G E F D | | G F B G F D G F G D B G E C D | | E D G E D G D E D D3 | | G G F G4 | G E F E E D3 D D D C | | | E G E G D F D C E F D G D D D2 | D3 E F D D C B,3 | G E G B c D E | G A G E D3 G E | | E E D E3 A G E c B c A G | D E C E G E E D | D D E G D E G E C | E D D | E D C4 | G D E3 G E F</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 60
+R:reel
+M:4/4
+K:Dmaj
+A|:FA(3AAABAFA|FGEDEFED|FADFADDD|FEDFGEcE|FdAFABAG|FDEDEEFEF|FAdcABAB|d2defg(3eeee|dBAGEEEFG:||:ABdcdefde|fBBBAABcA|ABcdegeeec|dBBAGFEDDD:||:dABdefefd|edcdBABGAB|ABAdeffdef|edBAcdeef|dBcdcAdBAd|eBAGAEEEE2|DEDFDEFGEF|||:GDFGFGEGEDCD|DFDDFDFDB|GFGFDEGFEG|GFDDECDDCDB,|GFEEGEFGFE||GDCDCDDDDEFDEC|GFADEFAFDD|GFFGEEGFD|GDDEDCECDF||GEDDEEDDCEDC2||G3DGFDCDFDGEFD||GFBGFDGFGDBGECD||EDGEDGDEDD3||GGFG4|GEFEED3DDDC|||EGEGDFDCEFDGDDD2|D3EFDDCB,3|GEGBcDE|GAGED3GE||EEDE3AGEcBcAG|DECEGEED|DDEGDEGEC|EDD|EDC4|GDE3GEF
+
+</script>
+
+</p><h3 id="prompt11">Prompt 11 - R: jig</h3>
+<p>
+<pre>X: 61
+R: jig
+MMM R 6
+K: Dmajor
+|: D D D F A D | D F A B A B | A F F E F E | F E F B A F | D D D D B D | D D F D D3 :| d c B A B A | A F E F F E E | F D D D G F G | F E D D D3 :||: D F A F A B | d c B c A B A F E | D F E F D E F E E F | G B A F D E C | D D E D D2 G :||: A B c d c B d | B A B c A G A B | F D E D F D3 | D D C D D3 | | d c d A F A F E E E | D D B, D B D A F | d c D D D2 D3 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 61
+R:jig
+MMMR6
+K:Dmajor
+|:DDDFAD|DFABAB|AFFEFE|FEFBAF|DDDDBD|DDFDD3:|dcBABA|AFEFFEE|FDDDGFG|FEDDD3:||:DFAFAB|dcBcABAFE|DFEFDEFEEF|GBAFDEC|DDEDD2G:||:ABcdcBd|BABcAGAB|FDEDFD3|DDCDD3||dcdAFAFEEE|DDB,DBDAF|dcDDD2D3|]
+
+
+</script>
+
+
+<pre>X: 62
+R: jig
+M: 6/8
+KKKK|: A B c B A G | E3 G A B | c B c B c A | A B c A A G | A B A B c d | e c B c c d | d c B c d c :||: d3 d e d | c A c A A A G :| | A B G B d d a | g e d c B A | B G B c d e d c | d3 d c B G | A G B d e d e | d c A c d d c | B G A B c e d | e d c A A2 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 62
+R:jig
+M:6/8
+KKKK|:ABcBAG|E3GAB|cBcBcA|ABcAAG|ABABcd|ecBccd|dcBcdc:||:d3ded|cAcAAAG:||ABGBdda|gedcBA|BGBcdedc|d3dcBG|AGBdede|dcAcddc|BGABced|edcAA2:||
+
+
+</script>
+
+
+<pre>X: 63
+R: jig
+M RM: 6
+M: Gmajor
+|: D E G A B G | A G F E D | E G A G B G | D E G B A G | A/ B/ c/ d B A G B | A G E G A A G | E G E E D D :||: E G A c B G | E F G A G A G | e d c B G B G :||: A G B A B G B | G A G F G A B | d e d B A B d | e d e d e2 c | B G G E D G A G :||: B G A B c d e | g2 f e d e f g | f g e d B d B A | B G A G E D D D | E E G A d B G A | E G G E G E D E | E G B c B G G | E E D E D D3 :| | |: B G G A B B d B G | B G B A F G B e | d e f d e f/2 g/2 d d/2 B/2 d/2 d B/2 e/2 d e/2 B A/2 B G/2 A/2 d | B G E E G E G D B,3 | B G3 | B D E G D D3 | | A B/ c G E E E D3 | A/ G E/ E/ G E G G D E D | A B A B B G A/2 G E/2 G/2 E/2 E G A/4 | B E G E/3/2 B c/2 c/2 B E/2 B2 G/4 E/2 c | | B G/ E G E > G E D3 D E/2 | B G D E G E2 G E E/2 D E D F/2 E3/2 | E G/2 B d/2 E E/4 A/2 E D D/2 B | B2 G E2 E/ F/2 G3/2 G2 E/4/2 E F/2 | | B D D E G3 G/2 G B/2 G4/2 B3/2 E2 B/4/4 G/2 D D E/4 E2 E3 | | | B3/3 G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 63
+R:jig
+MRM:6
+M:Gmajor
+|:DEGABG|AGFED|EGAGBG|DEGBAG|A/B/c/dBAGB|AGEGAAG|EGEEDD:||:EGAcBG|EFGAGAG|edcBGBG:||:AGBABGB|GAGFGAB|dedBABd|edede2c|BGGEDGAG:||:BGABcde|g2fedefg|fgedBdBA|BGAGEDDD|EEGAdBGA|EGGEGEDE|EGBcBGG|EEDEDD3:|||:BGGABBdBG|BGBAFGBe|defdef/2g/2dd/2B/2d/2dB/2e/2de/2BA/2BG/2A/2d|BGEEGEGDB,3|BG3|BDEGDD3||AB/cGEEED3|A/GE/E/GEGGDED|ABABBGA/2GE/2G/2E/2EGA/4|BEGE/3/2Bc/2c/2BE/2B2G/4E/2c||BG/EGE>GED3DE/2|BGDEGE2GEE/2DEDF/2E3/2|EG/2Bd/2EE/4A/2EDD/2B|B2GE2E/F/2G3/2G2E/4/2EF/2||BDDEG3G/2GB/2G4/2B3/2E2B/4/4G/2DDE/4E2E3|||B3/3G
+
+</script>
+
+
+<pre>X: 64
+R: jig
+MM 6/8
+KKKK Edorian
+D B, D D E | D B A F B | A B c d e d | f d f d B A | D B, A B A c | B A B c B A | d e f d B d e | f d e d B A :||: A B d c d B | A F A F A B A | A B A B G B A | B A F E E D E | F E G F D E D :||: d e f g f d c | d c B A B A G | E F E D E C D | F E D B, D E D | D E A F D E E D | G F E D D3 | B A G A B B d B | F E F E E E D :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 64
+R:jig
+MM6/8
+KKKKEdorian
+DB,DDE|DBAFB|ABcded|fdfdBA|DB,ABAc|BABcBA|defdBde|fdedBA:||:ABdcdB|AFAFABA|ABABGBA|BAFEEDE|FEGFDED:||:defgfdc|dcBABAG|EFEDECD|FEDB,DED|DEAFDEED|GFEDD3|BAGABBdB|FEFEEED:||
+
+
+</script>
+
+
+<pre>X: 65
+R: jig
+MMM: 6
+K: Gmajor
+d |: B2 d B A A | B2 B A A G | B2 d c B A | D F G A B A | B A G F G A | B c d e f g e | d B A G A B c | d2 B A G2 :||: d g d g g d B | A B G A B d c | d g d B A B A :||: d g g e d B d | g g d d B A d | e c A B c B d | c e d c B c B A :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 65
+R:jig
+MMM:6
+K:Gmajor
+d|:B2dBAA|B2BAAG|B2dcBA|DFGABA|BAGFGA|Bcdefge|dBAGABc|d2BAG2:||:dgdggdB|ABGABdc|dgdBABA:||:dggedBd|ggddBAd|ecABcBd|cedcBcBA:||
+
+
+</script>
+
+
+<pre>X: 66
+R: jig
+MM R: 6
+M: Dmajor
+|: d2 f e d B | A F E D E F | d2 f d e d | d B A B A B | A D F E D F | D F A F E F | E E E G B d | B A B d B A F | E3 d2 :||: f | g f e f d e f | g e f e d e f g | f e f e f g f | f e e d e c d | d f d e B A B B | A G F E D2 F :||: d F D E D F G | D F F A B d A F | d F D D D D F G B | d F E D D E D | F D F A B c A F | D E E G A E E F | D D F D D3 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 66
+R:jig
+MMR:6
+M:Dmajor
+|:d2fedB|AFEDEF|d2fded|dBABAB|ADFEDF|DFAFEF|EEEGBd|BABdBAF|E3d2:||:f|gfefdef|gefedefg|fefefgf|feedecd|dfdeBABB|AGFED2F:||:dFDEDFG|DFFABdAF|dFDDDDFGB|dFEDDED|FDFABcAF|DEEGAEEF|DDFDD3:||
+
+
+</script>
+
+</p><h3 id="prompt12">Prompt 12 - R: reel</h3>
+<p>
+<pre>X: 67
+R: reel
+MMM: 4
+K: Dmajor
+A d E F D D D | D D F D D E D | B d e f e d B | A D D F F D D F | G E C D E F G E | B A B A B E B | A B A G2 G E D F | 1 G E E C D D E E D :| 2 G E E D C D D D2 | | |: e g g e f d f d B | c d c B A G E F G | A2 A F A B d e | f e d c d e f d B A | G F G E D D D F G | F D E D A F D D B | c A G E G A F G E F | G A G E D E D D E | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 67
+R:reel
+MMM:4
+K:Dmajor
+AdEFDDD|DDFDDED|BdefedB|ADDFFDDF|GECDEFGE|BABABEB|ABAG2GEDF|1GEECDDEED:|2GEEDCDDD2|||:eggefdfdB|cdcBAGEFG|A2AFABde|fedcdefdBA|GFGEDDDFG|FDEDAFDDB|cAGEGAFGEF|GAGEDEDDE||
+
+
+</script>
+
+
+<pre>X: 68
+R: reel
+MMM: 4
+K:DEE F G F E D B | c A F G E D B, | E F G F D E C | E F E F E D F | c A G F E E D B :| | c A c A G E G F D | E F F G A B c d | c A B G E F E E B | e c A A G E F G A | c A d c d E F D B | | c E F G E F D E B c | c A E F D A B c B | c e d c A G B c | A B G A B d B c d :| | B | c | d | d2 e d B A B2 | c A A B c A d e | c E G E F A G F | G F E F D F E D E | F G E d c B A B c | B G E E E D2 B d | c e c A G c B c B A | G E F F D E F D C | | E F D G F A F D E E3 | G F G E G E E F G | A G F G F G3 B | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 68
+R:reel
+MMM:4
+K:DEEFGFEDB|cAFGEDB,|EFGFDEC|EFEFEDF|cAGFEEDB:||cAcAGEGFD|EFFGABcd|cABGEFEEB|ecAAGEFGA|cAdcdEFDB||cEFGEFDEBc|cAEFDABcB|cedcAGBc|ABGABdBcd:||B|c|d|d2edBAB2|cAABcAde|cEGEFAGF|GFEFDFEDE|FGEdcBABc|BGEEED2Bd|cecAGcBcBA|GEFFDEFDC||EFDGFAFDEE3|GFGEGEEFG|AGFGFG3B|||
+
+
+</script>
+
+
+<pre>X: 69
+R: reel
+MMM: 4
+KKKg2 B2 G2 G2 | F2 A2 B c d | c2 A2 c B A | E E2 g e d B | c2 c B c B A G | F2 D2 B A B G | E E E2 G2 E D | F F2 D E F A F | E E G A B c B2 | c2 e d c B2 A F | G2 c B2 G4 :||: B A B c d e f g | e g f g f d e d B A | B c d c B c2 B c | B A B A c B A F E | E E D D2 G2 B A | d2 B3 B A G2 | B A G B A B d c B | c d B A G3 G | | E F G E G2 E F E D | D E F D E F G F E | D G E2 E F G A F | B A2 G4 | | B A | A F F E E D F E F G | B A c A B A B E A | G E F G B F E D E | | D E D D E D E F3 D | D G D E F E F E A F | D E E F G d E F G2 | | A G F G E D E G B E E E G | E F D G E F E G F E F | | E E C D E E D E D2 E F | E G B G D E G A G E F | |: E E D G E D F G E F2 | | G F E E E F E E F3 G2 | E G E F D B E E G F | E D E E G E G E D | E F E C E G E E G2 | G E G A E F E2 | | D3 G E F F E G E C E D | | E D D F E G A D E G E c B c | | A B G E D D B D3 B E G E |] | | A2 G A B A G A B E F E3 G | E G A3 A | E F3 B c B E G | D E A E3 D |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 69
+R:reel
+MMM:4
+KKKg2B2G2G2|F2A2Bcd|c2A2cBA|EE2gedB|c2cBcBAG|F2D2BABG|EEE2G2ED|FF2DEFAF|EEGABcB2|c2edcB2AF|G2cB2G4:||:BABcdefg|egfgfdedBA|BcdcBc2Bc|BABAcBAFE|EEDD2G2BA|d2B3BAG2|BAGBABdcB|cdBAG3G||EFGEG2EFED|DEFDEFGFE|DGE2EFGAF|BA2G4||BA|AFFEEDFEFG|BAcABABEA|GEFGBFEDE||DEDDEDEF3D|DGDEFEFEAF|DEEFGdEFG2||AGFGEDEGBEEEG|EFDGEFEGFEF||EECDEEDED2EF|EGBGDEGAGEF||:EEDGEDFGEF2||GFEEEFEEF3G2|EGEFDBEEGF|EDEEGEGED|EFECEGEEG2|GEGAEFE2||D3GEFFEGECED||EDDFEGADEGEcBc||ABGEDDBD3BEGE|]||A2GABAGABEFE3G|EGA3A|EF3BcBEG|DEAE3D|
+
+
+</script>
+
+
+<pre>X: 70
+R: reel
+MMM: 4
+KKKcc E E D E2 E | D E D E D B A | B A B c A F E | E E D D E D D | E E E D G E D G | A G E A B c d e | d B A B A F E E | D F A G E D D D2 | | E D E G E D E E G B | A G B A B d c d B | A F G E D2 | E D D G E E D2 D :||: A2 F G A B c B | A D A B c c A G B | c A B c G A B d B | c d c B A2 B c B A | c A A B G A B A G | E D C E D D4 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 70
+R:reel
+MMM:4
+KKKccEEDE2E|DEDEDBA|BABcAFE|EEDDEDD|EEEDGEDG|AGEABcde|dBABAFEE|DFAGEDDD2||EDEGEDEEGB|AGBABdcdB|AFGED2|EDDGEED2D:||:A2FGABcB|ADABccAGB|cABcGABdB|cdcBA2BcBA|cAABGABAG|EDCEDD4||
+
+
+</script>
+
+
+<pre>X: 71
+R: reel
+MMM R 4
+K: Dmajor
+|: A B c d c B A | c B B A B c A | F B c d e f g | f a f e c B A :||: B A B B A c B | A F E F E F A F | E D F D F E F B | A B A B A c d e | f a e c c B A c A | B c B A B G2 :||: f d f e c A B A | B A B d B A B2 | f d f a f a f f e | f d e c B B c A B | A A B d c d3 A :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 71
+R:reel
+MMMR4
+K:Dmajor
+|:ABcdcBA|cBBABcA|FBcdefg|fafecBA:||:BABBAcB|AFEFEFAF|EDFDFEFB|ABABAcde|faeccBAcA|BcBABG2:||:fdfecABA|BABdBAB2|fdfafaffe|fdecBBcAB|AABdcd3A:||
+
+
+</script>
+
+
+<pre>X: 72
+R: reel
+M: 4/4
+KKK Dmajor
+|: A G F E D D E | F A G F G A d B | A G F D E D D F | A G E D B G A B | c E E E D D D D E :||: A G F A G E F G | c B A G A B c d e | c d c A A B A G F | E D E D B c B B A | c A G F F G E D2 :||: A G A d d d d B G | A G B c A F G E F | G A G E G D D D F D | E D G A B G B G A | c B c A G E E D C E | D E D A D D D2 :| | A G G B d e f g d e | d e f d c A G A F | E E D E F G D D2 | E D B A G B G B A B | G A B A A B c e d | e d e d c A B A d B A | E E E F G E2 | E E G E D E2 E D D | | D E G G A B B G A G B A G | A B G A A B G E D | E G A G D D3 | | E D D B G B c d E D3 | E D C D E D4 |] | A G A G G G E A B c B A | G d B A G G F G E E | | D G G E D D G E D3 D | D E E D G B c B, | G E D G D D G A G | | B G A E D G E F D E G E B | D D A G E A E D | D D D G D2 | | E G E G E E G D E D E E G | D G E G B G G | (3 E D D2 D D E D | | E E F D G A A G A E G E | A G D E G D B | E3 E D E G | | E3 G A G A D B c d | E G G E G A B d | E D A G A A D | E E A2 E D | A G3 E G D2 A G | E D2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 72
+R:reel
+M:4/4
+KKKDmajor
+|:AGFEDDE|FAGFGAdB|AGFDEDDF|AGEDBGAB|cEEEDDDDE:||:AGFAGEFG|cBAGABcde|cdcAABAGF|EDEDBcBBA|cAGFFGED2:||:AGAddddBG|AGBcAFGEF|GAGEGDDDFD|EDGABGBGA|cBcAGEEDCE|DEDADDD2:||AGGBdefgde|defdcAGAF|EEDEFGDD2|EDBAGBGBAB|GABAABced|ededcABAdBA|EEEFGE2|EEGEDE2EDD||DEGGABBGAGBAG|ABGAABGED|EGAGDD3||EDDBGBcdED3|EDCDED4|]|AGAGGGEABcBA|GdBAGGFGEE||DGGEDDGED3D|DEEDGBcB,|GEDGDDGAG||BGAEDGEFDEGEB|DDAGEAED|DDDGD2||EGEGEEGDEDEEG|DGEGBGG|(3EDD2DDED||EEFDGAAGAEGE|AGDEGDB|E3EDEG||E3GAGADBcd|EGGEGABd|EDAGAAD|EEA2ED|AG3EGD2AG|ED2
+
+</script>
+
+</p><h3 id="prompt13">Prompt 13 - R: polka</h3>
+<p>
+<pre>X: 73
+R: polka
+MMM: 2
+KKK:D E F G E | D2 D E | F D E F E | G E G E G | E E E E | F F D E D | D E F G A | B A G E G :| B d B A B | A B c E E | A B A B A | B d d B A | G E E E D2 | | E E D E E E G | A G E D E | E G E E D D | B d B d B | A G B A B G :| | E E G E D D D | | E D E D D E | B A B d e | d B A G B | A E E D A E | E E A E E E |] A G A B c | d B G E G A | E E F D E G | D D E E D | E G B d B G | A B d B B A | A G A E E G |] D E E G D | E E2 E G E | E D D A E D | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 73
+R:polka
+MMM:2
+KKK:DEFGE|D2DE|FDEFE|GEGEG|EEEE|FFDED|DEFGA|BAGEG:|BdBAB|ABcEE|ABABA|BddBA|GEEED2||EEDEEEG|AGEDE|EGEEDD|BdBdB|AGBABG:||EEGEDDD||EDEDDE|BABde|dBAGB|AEEDAE|EEAEEE|]AGABc|dBGEGA|EEFDEG|DDEED|EGBdBG|ABdBBA|AGAEEG|]DEEGD|EE2EGE|EDDAED||
+
+
+</script>
+
+
+<pre>X: 74
+R: polka
+MM R: 2
+M: Dmajor
+F G E F2 | D F A B A | B A B A F | A B c B A | F G E F E | D F D D F | D F E F2 :||: A | d f d e f d | e d c A B | F G A B A B | c B B A F E | G E F F E F | D D D2 :| | D F F A G F | D d B D E F | E E F E F E :| | A F G A F E D | D E F D F A | D D F B D F | E D F A F E :| A F A B d A | d c B c B c | B A F G F E | E E D E F E |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 74
+R:polka
+MMR:2
+M:Dmajor
+FGEF2|DFABA|BABAF|ABcBA|FGEFE|DFDDF|DFEF2:||:A|dfdefd|edcAB|FGABAB|cBBAFE|GEFFEF|DDD2:||DFFAGF|DdBDEF|EEFEFE:||AFGAFED|DEFDFA|DDFBDF|EDFAFE:|AFABdA|dcBcBc|BAFGFE|EEDEFE|]
+
+
+</script>
+
+
+<pre>X: 75
+R: polka
+MMM: 2
+KKK R|: B > A | B2 A B | c > B A G B | A > F E D E | F A B A B | d2 B A A | B > A A B d | c > e d c B A | 1 B A A G2 :| 2 B A A B c | | d2 d d > d d | c d e f g | d B A G A2 | | c > A A F E D | E2 F E D C | E F G E D D | E F E D D E | E F A B c B | d e f e d c | d B G A B A | B A G G B2 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 75
+R:polka
+MMM:2
+KKKR|:B>A|B2AB|c>BAGB|A>FEDE|FABAB|d2BAA|B>AABd|c>edcBA|1BAAG2:|2BAABc||d2dd>dd|cdefg|dBAGA2||c>AAFED|E2FEDC|EFGEDD|EFEDDE|EFABcB|defedc|dBGABA|BAGGB2||
+
+
+</script>
+
+
+<pre>X: 76
+R: polka
+MMM: 2
+KKKcA B B A B | c d B A B2 A B2 | c d e f e2 B2 A2 | c A B A B B2 A A B B A3 :||: f2 g f e2 f2 f e2 c2 a | f2 g e d B2 A4 | c A A B A G2 A2 B2 :| | c d c B2 c2 e2 c B2 | A F A B A F E3 F E2 | c B A B A E2 G2 B A4 | | | |: e2 f e d B c2 e4 | d c B A2 B A2 c4 | e4 e d2 f2 e2 | e2 f g f e4 f2 e4 d2 | d4 B2 c B4 | A B A4 E2 F2 E2 F D E2 | | c d2 c B A G4 B2 E4 | | B4 B2 B2 B4 G2 B2 | B4 c2 B4 B4 | B4 A4 E4 | c4 B4 B F2 E4 E2 | E4 E4 D2 F2 | E3 D4 E F E2 E E2 G4 B4 E4 :| E4 E6 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 76
+R:polka
+MMM:2
+KKKcABBAB|cdBAB2AB2|cdefe2B2A2|cABABB2AABBA3:||:f2gfe2f2fe2c2a|f2gedB2A4|cAABAG2A2B2:||cdcB2c2e2cB2|AFABAFE3FE2|cBABAE2G2BA4||||:e2fedBc2e4|dcBA2BA2c4|e4ed2f2e2|e2fgfe4f2e4d2|d4B2cB4|ABA4E2F2E2FDE2||cd2cBAG4B2E4||B4B2B2B4G2B2|B4c2B4B4|B4A4E4|c4B4BF2E4E2|E4E4D2F2|E3D4EFE2EE2G4B4E4:|E4E6|||
+
+
+</script>
+
+
+<pre>X: 77
+R: polka
+MMMMKK: 2A|:|: D D D E F | G F D D | F D F E F | D F A B c | d c A F D | G F G E F | A F F D F | D D D D F E :||: F D E F E F F | A d B c A | B/ c/ d A B c A :||: B d c B c | B/ A/ B/ B/ c A B c/ A/ G/ | B G E E E D F | E D D D2 :||: A/ B A B c B | d d d d/ B/ A B/ A | B d c A B/ c | B d B c B c/ B/ | B/ d/ c/ B A A B c :||: d e f g f a | a f g e d c | d B c/ d/ B B c B/ A :||: A/ G B G E D G/ E/ | D D B D D F/ B/ G/ A/ F/ G/ E | D D E D C D | D E D E D D | D D C D2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 77
+R:polka
+MMMMKK:2A|:|:DDDEF|GFDD|FDFEF|DFABc|dcAFD|GFGEF|AFFDF|DDDDFE:||:FDEFEFF|AdBcA|B/c/dABcA:||:BdcBc|B/A/B/B/cABc/A/G/|BGEEEDF|EDDD2:||:A/BABcB|dddd/B/AB/A|BdcAB/c|BdBcBc/B/|B/d/c/BAABc:||:defgfa|afgedc|dBc/d/BBcB/A:||:A/GBGEDG/E/|DDBDDF/B/G/A/F/G/E|DDEDCD|DEDEDD|DDCD2:|
+
+
+</script>
+
+
+<pre>X: 78
+R: polka
+MMM 3/4 Dmajor
+KKG2 A B B | c d e c B | A D F E D | F D F D E | F D E D D | E D D E D | D F D2 A | F D D E2 :||: c B A B c | B c A B c A | B c B A G A | B A G2 B A | B E F F E D2 :| | |: g e d d d d | c A A B c e | d c A B A B | c B A F E D F | B c d e f g | e d c B A c | B A B A G e | d B A F A B |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 78
+R:polka
+MMM3/4Dmajor
+KKG2ABB|cdecB|ADFED|FDFDE|FDEDD|EDDED|DFD2A|FDDE2:||:cBABc|BcABcA|BcBAGA|BAG2BA|BEFFED2:|||:gedddd|cAABce|dcABAB|cBAFEDF|Bcdefg|edcBAc|BABAGe|dBAFAB|
+
+
+</script>
+
+</p><h3 id="prompt14">Prompt 14 - R: waltz</h3>
+<p>
+<pre>X: 79
+R: waltz
+MMM: 3
+KKKK|: c B | A2 B A B G | A2 A B A B | A B A G E D | E2 B A G2 | A2 a g f e | d2 B A A B A | A2 G E E D E | D E C D E D2 :||: c | d B A B c d e | d B d B A G B | A G A B d c d e2 | d B G A B A A G | A G E E E D D B | E2 E D D E D | D G G E2 D E2 :||: | G2 G B A B A2 | G2 A B G2 | G B A G A G A | B d e d c d B A | G A B G E D E2 | G A G E F D E | G E E C D D E | E D D C D E G | D E D G G A B E | D G E G E D D2 | | E2 A2 G A B2 | G c B A B e d | e d c B G A G | G B B A G G E D :||: | D2 E G D E G E F | D E F G E D2 | D E G D D E G A G B c | | B E D E E D2 G A G2 B | | E E D G E E G E E A G | E D E D E G G E | D2 G E D B, D | E D C D D2 B, E G | E E G G B c B A | E D G B A E D | G E D G A B D E D |] | E E E G A E D E A G E | A G G3 | E D F G E E2 | E D B E D2 E D E |] | A G3 | B A B d B d E D3 | D G B2 G | E G B A c d B c | E D2 D | E A B A E E E F | E E3 | E E F E D | A G B D E E E | E G E G | A E D2 ^G E D |2 G E G3 E D | B d | E G3 |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 79
+R:waltz
+MMM:3
+KKKK|:cB|A2BABG|A2ABAB|ABAGED|E2BAG2|A2agfe|d2BAABA|A2GEEDE|DECDED2:||:c|dBABcde|dBdBAGB|AGABdcde2|dBGABAAG|AGEEEDDB|E2EDDED|DGGE2DE2:||:|G2GBABA2|G2ABG2|GBAGAGA|BdedcdBA|GABGEDE2|GAGEFDE|GEECDDE|EDDCDEG|DEDGGABE|DGEGEDD2||E2A2GAB2|GcBABed|edcBGAG|GBBAGGED:||:|D2EGDEGEF|DEFGED2|DEGDDEGAGBc||BEDEED2GAG2B||EEDGEEGEEAG|EDEDEGGE|D2GEDB,D|EDCDD2B,EG|EEGGBcBA|EDGBAED|GEDGABDED|]|EEEGAEDEAGE|AGG3|EDFGEE2|EDBED2EDE|]|AG3|BABdBdED3|DGB2G|EGBAcdBc|ED2D|EABAEEEF|EE3|EEFED|AGBDEEE|EGEG|AED2^GED|2GEG3ED|Bd|EG3|
+
+
+</script>
+
+
+<pre>X: 80
+R: waltz
+MMM: 3
+K: Adorian
+|: A2 B A B A | A2 B c B A | d2 B A G F | E2 G B B B | A A2 B B A | c2 B A A B A G | F G E D E F G | A2 G B A G B | A B c d e f g | f2 B A2 c B | c B2 e2 d2 :||: c e d c B A G2 | A B A B c B c | B A G E D D E F | E F G2 E F D | G2 B A (3 B F G | E F D E F E F G E | D2 G2 B c A | B c B2 c d B | c A G E G E F | D E D E D D B, D | E F E D C E F D :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 80
+R:waltz
+MMM:3
+K:Adorian
+|:A2BABA|A2BcBA|d2BAGF|E2GBBB|AA2BBA|c2BAABAG|FGEDEFG|A2GBAGB|ABcdefg|f2BA2cB|cB2e2d2:||:cedcBAG2|ABABcBc|BAGEDDEF|EFG2EFD|G2BA(3BFG|EFDEFEFGE|D2G2BcA|BcB2cdB|cAGEGEF|DEDEDDB,D|EFEDCEFD:||
+
+
+</script>
+
+
+<pre>X: 81
+R: waltz
+MM 3/4
+KKKK: Dmajor
+|: E F G E2 | F2 D2 F2 | A2 E F G A | B2 A G E2 :||: f g f e d c | B A G F G F | A2 F A G E > F | E D E F G B A | B A D G E D2 :| e2 e c d c B | A B A G E D D2 :| | |: d2 e2 d c B A | d2 c B A G2 | e2 e2 e d c B2 | A B c d c A B2 | G E D E D2 c B | d c B G E F G F G | A B G E D G2 | E D G E F D2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 81
+R:waltz
+MM3/4
+KKKK:Dmajor
+|:EFGE2|F2D2F2|A2EFGA|B2AGE2:||:fgfedc|BAGFGF|A2FAGE>F|EDEFGBA|BADGED2:|e2ecdcB|ABAGEDD2:|||:d2e2dcBA|d2cBAG2|e2e2edcB2|ABcdcAB2|GEDED2cB|dcBGEFGFG|ABGEDG2|EDGEFD2:|
+
+
+</script>
+
+
+<pre>X: 82
+R: waltz
+MM R: 3/K: Gmajor
+G A |: B2 B A G E | D E F G A B | c2 B A B E | D G A B d e | d B2 B d B | A A B c A B A | G2 D E G A B :||: A B c d B c | B G A B G E E | F G A G A B c | A B c B A B G | A B A B d B A | A B G A G E D | E D D G A A B | G2 E F G E E E | D D E B d B c B | A B d c B c A | G A B A G A G | E D E G E G E | G E E G A A G B | | G D D G E G A | B c d c B A c B | c B A G G E E D | | G2 G A B B A G | G A G B A B A c | G A E G E A G | D E G G A B/ B/ c/ | | |: d B G B G A E D E | E D3 G A G G | G E G B A G B d | d B G A F G E | A B B G A A E E | E G E D E D E2 | | D E D D E D A G B B c | d e G G B A d | B G B c B c B e | d G A B D E2 G | | D G E D G E A B G B/ c | | | |: B B G | G2 B G E D B G E | B G E G3 G E G | G B G B A A G E G2 | | E D B D G E B/ B d/2 B/2 B | d/2 G A/ c/2 B d/ B/2 c/2 c | | B G3 A G3 | B G2 B A2 B B/2 G3/2 B c/2 G/2 B2 G2 | B4/2 B3/2 G B/2 | | B4 G E3 | B3 G E2 G/ E/2 B E F/2 G E > F | G B A4/2 G4 G2 B/4</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 82
+R:waltz
+MMR:3/K:Gmajor
+GA|:B2BAGE|DEFGAB|c2BABE|DGABde|dB2BdB|AABcABA|G2DEGAB:||:ABcdBc|BGABGEE|FGAGABc|ABcBABG|ABABdBA|ABGAGED|EDDGAAB|G2EFGEEE|DDEBdBcB|ABdcBcA|GABAGAG|EDEGEGE|GEEGAAGB||GDDGEGA|BcdcBAcB|cBAGGEED||G2GABBAG|GAGBABAc|GAEGEAG|DEGGAB/B/c/|||:dBGBGAEDE|ED3GAGG|GEGBAGBd|dBGAFGE|ABBGAAEE|EGEDEDE2||DEDDEDAGBBc|deGGBAd|BGBcBcBe|dGABDE2G||DGEDGEABGB/c||||:BBG|G2BGEDBGE|BGEG3GEG|GBGBAAGEG2||EDBDGEB/Bd/2B/2B|d/2GA/c/2Bd/B/2c/2c||BG3AG3|BG2BA2BB/2G3/2Bc/2G/2B2G2|B4/2B3/2GB/2||B4GE3|B3GE2G/E/2BEF/2GE>F|GBA4/2G4G2B/4
+
+</script>
+
+
+<pre>X: 83
+R: waltz
+MMM: 3
+KKKKG A B A2 B A | G2 E D C E | B A B A G E | D E C D E G | A B A B G B | A B c B A A G | G2 G A G E D | A B G A B A F | E G E D E D E | D3 G A B d | e f g f e d B | A G A B3 B A | d e c B A G A G | A G F G E D D | G2 d e d B G | c B A B d B2 | A G E G E G (3 | D F G A B c d | e g f g f d e c | d c B A2 G2 | B A G G E D2 | E D D3 B c | B A d B A B c | d e f g d B A G | E G A D E G E | A G B d B A A | G A B G E D B | d A G E E D D D | B A A B A (3 A G | B A2 A G E F G | E F G E G A B | (3 B A G B A G (3 G A | | B A c B G B A B B A G2 | | G3 B A B2 G A B2 | | | e G | e2 a g a g e g e2 | e a g e d B d | d e2 a3 g e/2 g/2 e/2 e f/2 e2 g2 e/4 e/2 d/2 e4 e/4 d4 e3 e/2 B/2 e3 e >33 c/2 E E/2 e d33 B/2 B G/2 e A/2 G3 G/2 E3 G/4 E2 E/2 G4 e2 E/4 E3 G4 E E4 E3 E4 E2 G E3 E D3 E3 E2 E3 E E3 E3 G3 E E E D2 E D4 E3 B E3 E/2 E F3 E3 A3 E4 B/4 E/2 | E2 B/4 d2 E3 B/4 G3 G3 D2 E2 E2</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 83
+R:waltz
+MMM:3
+KKKKGABA2BA|G2EDCE|BABAGE|DECDEG|ABABGB|ABcBAAG|G2GAGED|ABGABAF|EGEDEDE|D3GABd|efgfedB|AGAB3BA|decBAGAG|AGFGEDD|G2dedBG|cBABdB2|AGEGEG(3|DFGABcd|egfgfdec|dcBA2G2|BAGGED2|EDD3Bc|BAdBABc|defgdBAG|EGADEGE|AGBdBAA|GABGEDB|dAGEEDDD|BAABA(3AG|BA2AGEFG|EFGEGAB|(3BAGBAG(3GA||BAcBGBABBAG2||G3BAB2GAB2|||eG|e2agagege2|eagedBd|de2a3ge/2g/2e/2ef/2e2g2e/4e/2d/2e4e/4d4e3e/2B/2e3e>33c/2EE/2ed33B/2BG/2eA/2G3G/2E3G/4E2E/2G4e2E/4E3G4EE4E3E4E2GE3ED3E3E2E3EE3E3G3EEED2ED4E3BE3E/2EF3E3A3E4B/4E/2|E2B/4d2E3B/4G3G3D2E2E2
+
+</script>
+
+
+<pre>X: 84
+R: waltz
+MMM 3/4 Dmajor
+KKK: Gmajor
+D E D B A | D E D D D D | D D E D E G | A G E D D F | E E D D G A | B c A G E G | D D D E G E G :| A G A B A B c | A G B A B G E | D E E D G A B | A G A G E E G | E D D E E E G G | A A G E F G E | G E D B d B A B | | A G G E G E D G E | | E D G B G E G B | A B d e d e g | d B A G E B G | E G E A B A G B | G E G A B G B | E D E D G D D E | D D G E G G E d | | A B A A G B d e f | g3 e d e d | B G G B d B d G | A B c d e g d B | d e2 d e c d B | A e d B G E E D | E E E D E E G E | E D2 D D E2 | | | B4 B3 A G E2 A | G A G3 E G E2 | B A B E G3 | D E G A G A3 | B A G A E G E B E | | D E c B E D E F G D2 | E D B G E D E2 (3 | G E E E E C D | | D G E D C D E A D E G G B | D D3 G E D | G E F E G E E A E | | G E C E D D B A G D | E D (3 E D E A G E |3 G E E F G | E E G A D | E G D E D4 | E G A C D D E F | A E D E3 | D G3 D E E3 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 84
+R:waltz
+MMM3/4Dmajor
+KKK:Gmajor
+DEDBA|DEDDDD|DDEDEG|AGEDDF|EEDDGA|BcAGEG|DDDEGEG:|AGABABc|AGBABGE|DEEDGAB|AGAGEEG|EDDEEEGG|AAGEFGE|GEDBdBAB||AGGEGEDGE||EDGBGEGB|ABdedeg|dBAGEBG|EGEABAGB|GEGABGB|EDEDGDDE|DDGEGGEd||ABAAGBdef|g3eded|BGGBdBdG|ABcdegdB|de2decdB|AedBGEED|EEEDEEGE|ED2DDE2|||B4B3AGE2A|GAG3EGE2|BABEG3|DEGAGA3|BAGAEGEBE||DEcBEDEFGD2|EDBGEDE2(3|GEEEECD||DGEDCDEADEGGB|DD3GED|GEFEGEEAE||GECEDDBAGD|ED(3EDEAGE|3GEEFG|EEGAD|EGDED4|EGACDDEF|AEDE3|DG3DEE3|||
+
+
+</script>
+
+</p><h3 id="prompt15">Prompt 15 - R: hornpipe</h3>
+<p>
+<pre>X: 85
+R: hornpipe
+MMM 4 4
+KKKK: Gmajor
+|: d2 B A2 E F | D E F E E F | G A B d e f g | a f e d B A G | D E G A B A E F | E C B, E G F E E | D E D D2 D E D :||: d c B A G A B G | A B c d e f e d c | d e d =c d e f d B | A B A G F E G E2 | A G A G E E A B d | e f g e f d e d c B | A G G2 G2 :||: c B d | d e f a g g f g e d B | c B A B G A B c A B c | d2 d c B c d B A F | G E F G F E D2 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 85
+R:hornpipe
+MMM44
+KKKK:Gmajor
+|:d2BA2EF|DEFEEF|GABdefg|afedBAG|DEGABAEF|ECB,EGFEE|DEDD2DED:||:dcBAGABG|ABcdefedc|ded=cdefdB|ABAGFEGE2|AGAGEEABd|efgefdedcB|AGG2G2:||:cBd|defaggfgedB|cBABGABcABc|d2dcBcdBAF|GEFGFED2||
+
+
+</script>
+
+
+<pre>X: 86
+R: hornpipe
+MM 4/4
+KKKK: Dmajor
+|: A2 A2 A G E | F G A B d e2 | A2 A A E D E | F D E D E D D | E D2 E D D E E | F E G A B A B A | (3 B A B c d e d e c | d3 A d2 :| A B d c d e f e A | (2 A B c B A G F G E E | D D E D F G A F A | B c d B A A B d f | e d c A G F D E G | E D D D3 D D F G | B A (3 B c B d e e d f | g e d B A G A G E E :| | D D D E F A2 A c A | B A B G (3 B d e f g e | f d e f d c d d e | f g e d c B A d e | d e f (3 e d B B A ( B A G E G | D E D C D F G D D E | | E F G E D D F A F G E | D E F G A G B A B d | e F D G A G F E F | B d c B c B e d e | g e f d e c B A B e | f e d e d B d (3 B G E | E F D E F D F G2 | | | |: A | B d | d c F E A G B c B c A F G | E G A E A G G E E D | D C E F E G E D E C | E F A E D D2 | E G E F G G E2 | E D E G E G E E B A G | E F | E D G E D B D G D D D D | | E D B E D G B D E D G A D | E G B F A G E F | A G E D G F G B | E D C E D3 G A E D | E E G3 | | E G F D D B G E D3 | E D | A G A B G E F D2 | G E D F D F E E D D B d | E G D E D B, G E |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 86
+R:hornpipe
+MM4/4
+KKKK:Dmajor
+|:A2A2AGE|FGABde2|A2AAEDE|FDEDEDD|ED2EDDEE|FEGABABA|(3BABcdedec|d3Ad2:|ABdcdefeA|(2ABcBAGFGEE|DDEDFGAFA|BcdBAABdf|edcAGFDEG|EDDD3DDFG|BA(3BcBdeedf|gedBAGAGEE:||DDDEFA2AcA|BABG(3Bdefge|fdefdcdde|fgedcBAde|def(3edBBA(BAGEG|DEDCDFGDDE||EFGEDDFAFGE|DEFGAGBABd|eFDGAGFEF|BdcBcBede|gefdecBABe|fededBd(3BGE|EFDEFDFG2||||:A|Bd|dcFEAGBcBcAFG|EGAEAGGEED|DCEFEGEDEC|EFAEDD2|EGEFGGE2|EDEGEGEEBAG|EF|EDGEDBDGDDDD||EDBEDGBDEDGAD|EGBFAGEF|AGEDGFGB|EDCED3GAED|EEG3||EGFDDBGED3|ED|AGABGEFD2|GEDFDFEEDDBd|EGDEDB,GE|
+
+</script>
+
+
+<pre>X: 87
+R: hornpipe
+MMM2 4
+K: Gmajor
+D E G A A G A | B2 B2 A D | B2 d e g (3 f e d | B G B A G E D | D E G A G A A A | B G A B G E D E | D E C D D2 D D :| | B G G B d e g d B | c B A G B A (3 G E D D | B G E G E G G E D :| | A B A B A G A (3 A G E | G E G B d g d c B | A B G A G E G D D | E G B A A B A ( A A B | G E E G E D (3 G D D D | | B G | | c A B G c B A A G E A | d B A G G B G B d | B A G F D G B d B | g3 d e d B G E d | B d c B A B G (3 G | G E F G E G A B d B d | | e2 e g e d B d e d | e d (3 e g d e d e g | d e f g d e B A B2 | e d B A B d c A B A | G E D G E D B D C | | | G E2 E G E E D G D E D | E D E G E A G E2 D E F | G E =c D E G D E G | | E G E2 G E G F E D E D E F E G | E G G A B A3 | | e3 e G A B c B G B G | E E G G G A G B G E E | E G D F E G E C | E G3 G E G,3 | | E2 E2 D D E D D E |] | D | E A B D E G G B A B D G E E B | | D B A G2 G E D2 D | E d B G A2 | E G A E F E D | C D E G B G A E E G | (3 E D D D E E D | G E3 E =c,3 E E D E E E | | D E E G D3 E D | A G E E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 87
+R:hornpipe
+MMM24
+K:Gmajor
+DEGAAGA|B2B2AD|B2deg(3fed|BGBAGED|DEGAGAAA|BGABGEDE|DECDD2DD:||BGGBdegdB|cBAGBA(3GEDD|BGEGEGGED:||ABABAGA(3AGE|GEGBdgdcB|ABGAGEGDD|EGBAABA(AAB|GEEGED(3GDDD||BG||cABGcBAAGEA|dBAGGBGBd|BAGFDGBdB|g3dedBGEd|BdcBABG(3G|GEFGEGABdBd||e2egedBded|ed(3egdedeg|defgdeBAB2|edBABdcABA|GEDGEDBDC|||GE2EGEEDGDED|EDEGEAGE2DEF|GE=cDEGDEG||EGE2GEGFEDEDEFEG|EGGABA3||e3eGABcBGBG|EEGGGAGBGEE|EGDFEGEC|EG3GEG,3||E2E2DDEDDE|]|D|EABDEGGBABDGEEB||DBAG2GED2D|EdBGA2|EGAEFED|CDEGBGAEEG|(3EDDDEED|GE3E=c,3EEDEEE||DEEGD3ED|AGEE
+
+</script>
+
+
+<pre>X: 88
+R: hornpipe
+MMM E E|:|:|:|:A |: B c B d c B | e c A B c B c | (3 B c B A B c d e | d c B A G B c | d c A F A B c | B c B B d c d | 1 (3 B A G F G F E D :||: (3 B G G G B c d c B c B | (3 c B A d c B e c B | A G F E F G A B | ( A G F A G F D E D D :||: (2 B c d B B c d g | f d G A B c A B | c E (3 c c d c A B2 | B G E B c c B c e | d B A B (3 B B B B c e c B c A | (3 G G G G2 :||: (3 G B G G d B d (3 B d g B G F D D G | (3 D G G G F E d B c B G | ( (3 B E D (3 G E A G G E D E D | D G F G B G B A G A B G | | (3 F A G A G F2 D E D2 :||: | | |: A c B c d A G c B c G | E G E c B B c A G | F E A G B G E D D | (3 C E D B G (3 G A G E D C E | | (2 G G G E G A G A c B G G E | (3 E F E A B A G4 | E G C D E D E C D E G E | | F G E G E G B G c B F G | ( D B G G B G F E G | (2 B G E G G F G2 | F E D E G G2 F D | B G B G ( F E D D E D :| 2 E G B, D B G E C D | | | | |: F G B | |: A B G B c B2 B G G | G G B A B G E F D E F | E G3 G E D | | F D E G D F G D E F D D | A/ G G F A B G A B A | | B c A c B A c B d</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 88
+R:hornpipe
+MMMEE|:|:|:|:A|:BcBdcB|ecABcBc|(3BcBABcde|dcBAGBc|dcAFABc|BcBBdcd|1(3BAGFGFED:||:(3BGGGBcdcBcB|(3cBAdcBecB|AGFEFGAB|(AGFAGFDEDD:||:(2BcdBBcdg|fdGABcAB|cE(3ccdcAB2|BGEBccBce|dBAB(3BBBBcecBcA|(3GGGG2:||:(3GBGGdBd(3BdgBGFDDG|(3DGGGFEdBcBG|((3BED(3GEAGGEDED|DGFGBGBAGABG||(3FAGAGF2DED2:||:|||:AcBcdAGcBcG|EGEcBBcAG|FEAGBGEDD|(3CEDBG(3GAGEDCE||(2GGGEGAGAcBGGE|(3EFEABAG4|EGCDEDECDEGE||FGEGEGBGcBFG|(DBGGBGFEG|(2BGEGGFG2|FEDEGG2FD|BGBG(FEDDED:|2EGB,DBGECD|||||:FGB||:ABGBcB2BGG|GGBABGEFDEF|EG3GED||FDEGDFGDEFDD|A/GGFABGABA||BcAcBAcBd
+
+</script>
+
+
+<pre>X: 89
+R: hornpipe
+MMM2 4
+K: Dmajor
+| A F E D F A B | A F E E D F E | D F D F A A B | c A c B d c B | A B c A B A F E | F E D C D F A F | E D F D E D D F E :||: A F E A c d e f | g f e d c d e c | A F D F D D2 F A | A F A A c d f e c | d e c d c B A F G | A F G E D3 D2 :| | A F F E D D D F A2 | A F B d c d c A F | B E D C E D D E D F | E C D D D D G F D E | A F c d A B A B c | d c B d e c B A G | A G E D D C D D F | | E D C F E D E D E F D | E G C D D E G D F A | G E C D E G F D2 | | A F | A F2 A D E D G F E D | D D D E F E D2 | B c D E D C B, D C A, | | A B G G E D E E D E C D | E C E D C G E D C | E C A D E C E C D2 | E D D2 D4 | | | A c A F G c A B c e d B A B G E | E D E3 E D C C | E D A F G D E D | E F D D E C C D D | C E D E2 | A c E D D3 F E D |] | A B A G E E D C A E D | B G E D F G E F D E F | | D C E E D D | E D2 C E D G, D D D C E | | D F E D G E D G B,3 G | B, E C E G E D | c E A G E G D | E E D2 E G E E C E | E E G C E D | A G G E A G | E E E E D | F G E C E E E C D C E G | | E C C E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 89
+R:hornpipe
+MMM24
+K:Dmajor
+|AFEDFAB|AFEEDFE|DFDFAAB|cAcBdcB|ABcABAFE|FEDCDFAF|EDFDEDDFE:||:AFEAcdef|gfedcdec|AFDFDD2FA|AFAAcdfec|decdcBAFG|AFGED3D2:||AFFEDDDFA2|AFBdcdcAF|BEDCEDDEDF|ECDDDDGFDE|AFcdABABc|dcBdecBAG|AGEDDCDDF||EDCFEDEDEFD|EGCDDEGDFA|GECDEGFD2||AF|AF2ADEDGFED|DDDEFED2|BcDEDCB,DCA,||ABGGEDEEDECD|ECEDCGEDC|ECADECECD2|EDD2D4|||AcAFGcABcedBABGE|EDE3EDCC|EDAFGDED|EFDDECCDD|CEDE2|AcEDD3FED|]|ABAGEEDCAED|BGEDFGEFDEF||DCEEDD|ED2CEDG,DDDCE||DFEDGEDGB,3G|B,ECEGED|cEAGEGD|EED2EGEECE|EEGCED|AGGEAG|EEEED|FGECEEECDCEG||ECCE
+
+</script>
+
+
+<pre>X: 90
+R: hornpipe
+MMM: 4
+K: 4
+|: D E D F2 E F | E2 B A B A G | E D F A B A F | A B A B c d B | A G E D E2 D E F | G E D F G A B A | B A F G E2 D2 :||: B G A B d B A G E | F D F F G A F B G | A B G E D2 D3 :||: B G B A B G A G | F D E D2 F G A G F | E E D D F G E F G | E E C D E F G A D2 | B G A d B B A G F E | F G E D D2 D2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 90
+R:hornpipe
+MMM:4
+K:4
+|:DEDF2EF|E2BABAG|EDFABAF|ABABcdB|AGEDE2DEF|GEDFGABA|BAFGE2D2:||:BGABdBAGE|FDFFGAFBG|ABGED2D3:||:BGBABGAG|FDED2FGAGF|EEDDFGEFG|EECDEFGAD2|BGAdBBAGFE|FGEDD2D2:|
+
+
+</script>
+
+</p><h3 id="prompt16">Prompt 16 - R: slip jig</h3>
+<p>
+<pre>X: 91
+R: slip jig
+MM2|:
+K: Dmajor
+|: D E F A d A B | c B A F A F E D | D F D D E F E D :||: A d c A B c d | A B c A F G E D B | c d e c A B A G E | D F F D D D E d d :||: d e f e d c d B | A B A F D D G E D | F D D C D D E2 D :||: A B c B A G B A G | A B G A d e f g f e | d c B A B c e d c | d2 f d e d =c d B c | A B B A G F E D D D :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 91
+R:slipjig
+MM2|:
+K:Dmajor
+|:DEFAdAB|cBAFAFED|DFDDEFED:||:AdcABcd|ABcAFGEDB|cdecABAGE|DFFDDDEdd:||:defedcdB|ABAFDDGED|FDDCDDE2D:||:ABcBAGBAG|ABGAdefgfe|dcBABcedc|d2fded=cdBc|ABBAGFEDDD:|
+
+
+</script>
+
+
+<pre>X: 92
+R: slip jig
+MMMf|:|:|:AA2 B A G A A | d > d B A G E D | E D D E G A | d B A B d B A | d c A G E G E D :||: d B A d B B d | e d B A A A A | G A d B A e A A | B G A B A d e B | e d e d B d B B A :||: d B G A2 B A A | | |: B d A G B d B G B | F A G E E D E D :||: D F G A B d e f | g d B A2 B c d | e A A A B A A G A | B A G B A B G E D :| | |: D2 B G E d B G E G | D F G D E D D D D | D G D D D E D E G | | d2 B G B d e d e f g | d B G G B d A B A | G E D E E D D2 | | D2 B d B d e g d B G | B G E E G E G D D :||: | E D F G E D D F B D D D |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 92
+R:slipjig
+MMMf|:|:|:AA2BAGAA|d>dBAGED|EDDEGA|dBABdBA|dcAGEGED:||:dBAdBBd|edBAAAA|GAdBAeAA|BGABAdeB|ededBdBBA:||:dBGA2BAA|||:BdAGBdBGB|FAGEEDED:||:DFGABdef|gdBA2Bcd|eAAABAAGA|BAGBABGED:|||:D2BGEdBGEG|DFGDEDDDD|DGDDDEDEG||d2BGBdedefg|dBGGBdABA|GEDEEDD2||D2BdBdegdBG|BGEEGEGDD:||:|EDFGEDDFBDDD|]
+
+
+</script>
+
+
+<pre>X: 93
+R: slip jig
+MM R 6
+K: Amixolydian
+|: A > G A B c A B | c > A A > G E G E | D > G A > A B c d | e > f e d c A B G | A > G G A B A G A | A G A A B c B G | c > B B c B A G2 :||: e2 e2 g e2 e | B2 d e d c B A2 | e2 A A A A2 c A | G A G A B G B A G | c2 B c B B A G B | e2 e e2 g2 e | f2 e2 e d c e d | c A A A G A2 A :||: A G A G B c d e | d2 B G B c B2 B | e d c d e c B A B A | A2 A A3 A2 A | G B A A A B d e c | d B G B G B B A A G | e2 d c B c B c d B | A G B B c A G B A2 :| | e2 g (3 e e2 e f e d e | e2 (3 e d e c A A G B d | e2 B c G B A B G2 d | e c B c e B A B e G | f2 B A G G A2 B | | e2 a e g3 e f e2 e c | B A G E2 G A B | | c B A d B A G F G E E D | E D E G B A3 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 93
+R:slipjig
+MMR6
+K:Amixolydian
+|:A>GABcAB|c>AA>GEGE|D>GA>ABcd|e>fedcABG|A>GGABAGA|AGAABcBG|c>BBcBAG2:||:e2e2ge2e|B2dedcBA2|e2AAAA2cA|GAGABGBAG|c2BcBBAGB|e2ee2g2e|f2e2edced|cAAAGA2A:||:AGAGBcde|d2BGBcB2B|edcdecBABA|A2AA3A2A|GBAAABdec|dBGBGBBAAG|e2dcBcBcdB|AGBBcAGBA2:||e2g(3ee2efede|e2(3edecAAGBd|e2BcGBABG2d|ecBceBABeG|f2BAGGA2B||e2aeg3efe2ec|BAGE2GAB||cBAdBAGFGEED|EDEGBA3|||
+
+
+</script>
+
+
+<pre>X: 94
+R: slip jig
+MMM 4
+KKKK: Amajor
+|: E E G B A G E | D E D E D D D | E F G A B A G | A B e c B A A G | E D E F G E E E | D D E E G A B B | A B c d e c A B c | B A G2 G2 :||: D F G A G F G A F | E D F G B c B A G F | G E D F A G E E D G | G E G E D G E D E G | D D D E G A A B B A | G E F G B G A B G | E G E G A G E G D D D :||: | G E A B A B d B A G d | G3 A G F A G A F G | E F D G B c d A B A | E D D E F E D D B D | G E c B d c B A B A A | G F D E G E E G E d | G E E F E F G2 E D :| | E2 D B c B d B c B c d | e e d c A c B A c B c | A G A B c A B A d B c | | A3 A G E F D E D F D E | G E d B c A G E D D2 | | G E B d B G A G B c2 B D | E G B G E G F G E D | E D G G E D B G E D |] | E E D E ^c B A G B G2 B c | E B E G E A G E A | E G F D D E D3 | | E E F G F G B A B G E2 c B/ c/2 | | E G A d G E F E E D D4 | | E D C E D E E F A G B A2 | E G G E A c B G E E | | E C D E E D | | E F E A G F E D E c B c B G B G B D | | A G E B E E G | E E G G B c G E E2 | E E E C D | E E c B E E E E G3 | E F A E E E D</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 94
+R:slipjig
+MMM4
+KKKK:Amajor
+|:EEGBAGE|DEDEDDD|EFGABAG|ABecBAAG|EDEFGEEE|DDEEGABB|ABcdecABc|BAG2G2:||:DFGAGFGAF|EDFGBcBAGF|GEDFAGEEDG|GEGEDGEDEG|DDDEGAABBA|GEFGBGABG|EGEGAGEGDDD:||:|GEABABdBAGd|G3AGFAGAFG|EFDGBcdABA|EDDEFEDDBD|GEcBdcBABAA|GFDEGEEGEd|GEEFEFG2ED:||E2DBcBdBcBcd|eedcAcBAcBc|AGABcABAdBc||A3AGEFDEDFDE|GEdBcAGEDD2||GEBdBGAGBc2BD|EGBGEGFGED|EDGGEDBGED|]|EEDE^cBAGBG2Bc|EBEGEAGEA|EGFDDED3||EEFGFGBABGE2cB/c/2||EGAdGEFEEDD4||EDCEDEEFAGBA2|EGGEAcBGEE||ECDEED||EFEAGFEDEcBcBGBGBD||AGEBEEG|EEGGBcGEE2|EEECD|EEcBEEEEG3|EFAEEED
+
+</script>
+
+
+<pre>X: 95
+R: slip jig
+MM RK:K:: Dmajor
+|: A B A F E D F A | d e d B A B d | A B A B A A F E | D E F E D E F2 | d e e d c B A B | A B d B A A B A | d c d A B A G F E D :||: D E F G A B c d | d e f d B A F F E | d B A G A B A D F | G E F G D D E D :||: d B d B c d A F D | D E D F G A F D E F | d B d c d e f e d c | d c B e d c d2 A | d B c B A A2 A G | D E E F G E D2 D :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 95
+R:slipjig
+MMRK:K::Dmajor
+|:ABAFEDFA|dedBABd|ABABAAFE|DEFEDEF2|deedcBAB|ABdBAABA|dcdABAGFED:||:DEFGABcd|defdBAFFE|dBAGABADF|GEFGDDED:||:dBdBcdAFD|DEDFGAFDEF|dBdcdefedc|dcBedcd2A|dBcBAA2AG|DEEFGED2D:||
+
+
+</script>
+
+
+<pre>X: 96
+R: slip jig
+MM 4/8
+KKKK: Dmajor
+|: A B A F F E | F D F D F F E F | F E E D D D D B | c B A B A A F E | D F D E D D F D D :||: B c d e f d e c | d c d B A F D D D | E F A B c d c B A | B c d A B A d c B | c d B c d B2 A F | E F E D D G F D D2 :||: | B c B A F E E F E F F | B c A B2 A D D2 D | E2 F D D E D F D G2 | B c e d c B c B2 A | d c B e c A A B c A | E F D D G E D D2 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 96
+R:slipjig
+MM4/8
+KKKK:Dmajor
+|:ABAFFE|FDFDFFEF|FEEDDDDB|cBABAAFE|DFDEDDFDD:||:Bcdefdec|dcdBAFDDD|EFABcdcBA|BcdABAdcB|cdBcdB2AF|EFEDDGFDD2:||:|BcBAFEEFEFF|BcAB2ADD2D|E2FDDEDFDG2|BcedcBcB2A|dcBecAABcA|EFDDGEDD2:||
+
+
+</script>
+
+</p><h3 id="prompt17">Prompt 17 - M: 4/4</h3>
+<p>
+<pre>X: 97
+M: 4/4
+K: Dmajor
+K: Gmajor
+|: d2 G2 A G | F2 E D2 A B | c2 c B A G E | D2 G2 G A G | E2 E D D2 E | F2 D2 A G2 :||: B2 c d2 d2 | e2 c B c A G E :||: G2 A2 B A G | B2 G2 B A A G | A2 c B d2 B A | G2 A B A2 G E | F D2 E D4 :||: B2 A B G A G E E | D A E F E D D E | D4 D2 D2 D | B2 c A B2 A G E :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 97
+M:4/4
+K:Dmajor
+K:Gmajor
+|:d2G2AG|F2ED2AB|c2cBAGE|D2G2GAG|E2EDD2E|F2D2AG2:||:B2cd2d2|e2cBcAGE:||:G2A2BAG|B2G2BAAG|A2cBd2BA|G2ABA2GE|FD2ED4:||:B2ABGAGEE|DAEFEDDE|D4D2D2D|B2cAB2AGE:|
+
+
+</script>
+
+
+<pre>X: 98
+M: 4/4
+K: Gmajor
+K: Dmajor
+|: A/ G/ | F G A F | E F G B | c/ B/ c/ B A A G E | F G D F A | B/ c A/ B/ A G E F | E G E E | F/ G/ F/ A/ G F/ A B c | B/ A/ c/ d/ B A G E :||: F/ | | A2 A A G/ | B A G c/ B B2 | A/ A/ B c/ d c B A | G G E F G2 :||: A | d e f/ g/ f/ e/ d B2 | c/ d e/ c e g A B G | F G/ A/ A G/ F A |] | G A B c B A G3 | F G B/ A B/ c B2 A | B A/ G G/ F E F | A/ G E E E E2 :||: D E F | G2 d e | f e d c A G F D | E F D F G B A | B c d e d c B c | d e d B G2 | B A B G G A2 | | A B G E E D2 | | | F G | E G G E E F G E G A | B G c | d c B e d c d c B | c B A A F G2 | E D D F D2 | B G E G E G | F2 G E G B G B | A G E D E D D | E D E F E F G G | A G c B c d2 e | f c A A G2 E2 | F G E D2 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 98
+M:4/4
+K:Gmajor
+K:Dmajor
+|:A/G/|FGAF|EFGB|c/B/c/BAAGE|FGDFA|B/cA/B/AGEF|EGEE|F/G/F/A/GF/ABc|B/A/c/d/BAGE:||:F/||A2AAG/|BAGc/BB2|A/A/Bc/dcBA|GGEFG2:||:A|def/g/f/e/dB2|c/de/cegABG|FG/A/AG/FA|]|GABcBAG3|FGB/AB/cB2A|BA/GG/FEF|A/GEEEE2:||:DEF|G2de|fedcAGFD|EFDFGBA|BcdedcBc|dedBG2|BABGGA2||ABGEED2|||FG|EGGEEFGEGA|BGc|dcBedcdcB|cBAAFG2|EDDFD2|BGEGEG|F2GEGBGB|AGEDEDD|EDEFEFGG|AGcBcd2e|fcAAG2E2|FGED2|]
+
+
+</script>
+
+
+<pre>X: 99
+M: 4/4
+K: Adorian
+K: Dmajor
+|: A | d2 f d f e d | A2 A2 B A d | c2 d A B A B d | A F E2 E2 E :||: A | d e f g e2 | d2 B A A B d B | A G F E D2 D2 :||: A | B2 A G B2 A B | c2 A B A2 E2 | D2 A B d e2 d | c B A B A G E2 :||: d | d3 c B A2 B2 | A2 B c B c A B | A B A A A B A c | d2 c B A A2 B | A2 F E D E2 F D | E2 E D2 E2 :||: A2 | d3 e e2 d B2 | d e a2 f2 e2 | f2 f2 g f e2 | e2 f2 d3 | A2 e2 A2 A G | A2 G B A2 G A | A2 E E D2 A2 | E D2 F E2 D2 | E2 D4 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 99
+M:4/4
+K:Adorian
+K:Dmajor
+|:A|d2fdfed|A2A2BAd|c2dABABd|AFE2E2E:||:A|defge2|d2BAABdB|AGFED2D2:||:A|B2AGB2AB|c2ABA2E2|D2ABde2d|cBABAGE2:||:d|d3cBA2B2|A2BcBcAB|ABAAABAc|d2cBAA2B|A2FEDE2FD|E2ED2E2:||:A2|d3ee2dB2|dea2f2e2|f2f2gfe2|e2f2d3|A2e2A2AG|A2GBA2GA|A2EED2A2|ED2FE2D2|E2D4|||
+
+
+</script>
+
+
+<pre>X: 100
+M: 4/4
+K: Gmajor
+K: Dminor
+A |: B F D E F D E | F G F2 A G F | F G G E F D D | B G G A B c A | B G A B G E F | G E E D G A B A | B d c A B2 G2 :||: d e d e d B A | c A A G A2 G A | d e d c B A G G | A G B A B G A F :||: G E D E G A B d | e2 e d c A2 G | A F G E A G A B | c A G E E F G A B :||: c d e g f g e | d e f g a f d B A G | c A B c d e f e d | e d c e d c d B A :||: G A F G A c B c | d e g g f g > e f g | f d c B d2 G A G | | B G E D D2 B c A B | G E D2 G A E A B | A G E D G E G A | B D G E D3 A | B A G E G E F G B | A E D D3 A B | d e c A G F G A | c d e e d B G D2 | | A G F E D E D E F G | E D E E D4 | D3 F E D4 :||: A G A G E F B | E D D E D A E D | D E B G E G F D E E | | G2 D E D D G D D3 | | G E G B A G A A G E A B c | G E2 G E G D3 | G E F E D G D | E D C E G E D C | G E A E D E3 | G D E D G3 | G A G A E D3 | E G E G G E D | | A A G G E E E D C D E D | G E C E D D D | E E D D4 | E D3 B G E | G E3 G E D c | E D4 D E2 | D3 G E E G D E | E D G B,3 | | A4 | A3 B G A G3 E G E |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 100
+M:4/4
+K:Gmajor
+K:Dminor
+A|:BFDEFDE|FGF2AGF|FGGEFDD|BGGABcA|BGABGEF|GEEDGABA|BdcAB2G2:||:dededBA|cAAGA2GA|dedcBAGG|AGBABGAF:||:GEDEGABd|e2edcA2G|AFGEAGAB|cAGEEFGAB:||:cdegfge|defgafdBAG|cABcdefed|edcedcdBA:||:GAFGAcBc|deggfg>efg|fdcBd2GAG||BGEDD2BcAB|GED2GAEAB|AGEDGEGA|BDGED3A|BAGEGEFGB|AEDD3AB|decAGFGA|cdeedBGD2||AGFEDEDEFG|EDEED4|D3FED4:||:AGAGEFB|EDDEDAED|DEBGEGFDEE||G2DEDDGDD3||GEGBAGAAGEABc|GE2GEGD3|GEFEDGD|EDCEGEDC|GEAEDE3|GDEDG3|GAGAED3|EGEGGED||AAGGEEEDCDED|GECEDDD|EEDD4|ED3BGE|GE3GEDc|ED4DE2|D3GEEGDE|EDGB,3||A4|A3BGAG3EGE|
+
+</script>
+
+
+<pre>X: 101
+M: 4/4
+M: Amixolydian
+K: Dmajor
+A2 A > B c2 | d > c B > c d2 A | B A G F D2 A | A2 A > A B c2 :| e > f e2 d > e f | e2 c d B B2 | e > f g e c A2 A | G2 A2 A4 :| | B A | B2 B G2 E2 G2 | B2 G2 D2 F2 | E2 E2 B A2 c | B A B c d2 B2 | A2 B c d4 | E2 c2 A4 | B2 A2 G2 F2 E | B2 c A A4 | E G2 E G2 D4 | E C E2 D4 :||: A F G E2 E F | G2 E F E D2 E2 | G2 G3 E F G2 | E F D2 E F D D | E D C D2 E G E | F D2 D2 E D2 | E D2 A2 B G A2 | E E D E D2 D E | E D E E D2 C2 | E G E D2 G2 E | D E C E D D2 D | E2 D2 D4 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 101
+M:4/4
+M:Amixolydian
+K:Dmajor
+A2A>Bc2|d>cB>cd2A|BAGFD2A|A2A>ABc2:|e>fe2d>ef|e2cdBB2|e>fgecA2A|G2A2A4:||BA|B2BG2E2G2|B2G2D2F2|E2E2BA2c|BABcd2B2|A2Bcd4|E2c2A4|B2A2G2F2E|B2cAA4|EG2EG2D4|ECE2D4:||:AFGE2EF|G2EFED2E2|G2G3EFG2|EFD2EFDD|EDCD2EGE|FD2D2ED2|ED2A2BGA2|EEDED2DE|EDEED2C2|EGED2G2E|DECEDD2D|E2D2D4|]
+
+
+</script>
+
+
+<pre>X: 102
+M: 4/4
+K: Gmajor
+K: Dmajor
+|: F E D2 D E F | G2 B A G F G | E D2 F G E F | A d A d c d e | f e d e f3 | F E D E F G A B | c B A G E D F G | A2 B c d e d e | d c B A F E D :||: E D F A B c d c | d e f g f e d c | B A G B A G A B c | d B G E D2 E2 :||: | F G A G B c d B c | A B A G G B A B | (3 d c B c d A F A G | E F A G F A2 A B | F G E D E3 E :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 102
+M:4/4
+K:Gmajor
+K:Dmajor
+|:FED2DEF|G2BAGFG|ED2FGEF|AdAdcde|fedef3|FEDEFGAB|cBAGEDFG|A2Bcdede|dcBAFED:||:EDFABcdc|defgfedc|BAGBAGABc|dBGED2E2:||:|FGAGBcdBc|ABAGGBAB|(3dcBcdAFAG|EFAGFA2AB|FGEDE3E:||
+
+
+</script>
+
+</p><h3 id="prompt18">Prompt 18 - M: 6/8</h3>
+<p>
+<pre>X: 103
+M: 6/8
+M: 4
+K: Dmajor
+|: D F A A2 A | d e f e d B A | d A B A G F E | D F A F A G | A A A A2 B A | B A B A F E F | D F E D D2 :||: E D D F A B c | d e d c e f e | d e e d c B A | g f d e f d e | f g f e f e2 :||: f e d c A A F | G B A B c d c B | A F D F E F E F :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 103
+M:6/8
+M:4
+K:Dmajor
+|:DFAA2A|defedBA|dABAGFE|DFAFAG|AAAA2BA|BABAFEF|DFEDD2:||:EDDFABc|dedcefe|deedcBA|gfdefde|fgfefe2:||:fedcAAF|GBABcdcB|AFDFEFEF:|
+
+
+</script>
+
+
+<pre>X: 104
+M: 6/8
+K: Dmajor
+K: Adorian
+|: A E E D E E | A G E G E D E | G E E D D E G | A E E G E E | D D D E D E A | A G A B A G A | A B c A G E E :||: E E E G B G E | E E E D A B G | A B A B G A B | A G B A G E D | E E G A B G E E :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 104
+M:6/8
+K:Dmajor
+K:Adorian
+|:AEEDEE|AGEGEDE|GEEDDEG|AEEGEE|DDDEDEA|AGABAGA|ABcAGEE:||:EEEGBGE|EEEDABG|ABABGAB|AGBAGED|EEGABGEE:|
+
+
+</script>
+
+
+<pre>X: 105
+M: 6/8
+M: Dmajor
+K: Dmajor
+|: A/ B/ | c A F E D E | F/ G/ F E D F A | B c d A B c A | F/ A/ B A F E E D | E F D E D2 | F/ E/ F E F E D2 :||: f | g e f e d c B | A B c d e c A | d A B A G A B | E F G E D2 :| | |: d c d A F A F | d B A B A F G | A B A B c e f | g a g f e a2 d | c B A B G A B c | B A G E D D2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 105
+M:6/8
+M:Dmajor
+K:Dmajor
+|:A/B/|cAFEDE|F/G/FEDFA|BcdABcA|F/A/BAFEED|EFDED2|F/E/FEFED2:||:f|gefedcB|ABcdecA|dABAGAB|EFGED2:|||:dcdAFAF|dBABAFG|ABABcef|gagfea2d|cBABGABc|BAGEDD2:|
+
+
+</script>
+
+
+<pre>X: 106
+M: 6/8
+M: 4
+K: Dmajor
+|: d c A2 F E | D F G A B A | d c A F E E | F E E D F E F | D F A A B A B | c A A F E2 F | F E F D E F E :||: E G B c d e f | g e c B A B c d | e c A A B c e | d c B A G B2 :||: | g d B d c d e d | e f e f g e f g | f d e A A B F A | E G B A B d e f g :| |: e c A c B c A A c | d B G A G B E D | E (3 A G B c A B c2 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 106
+M:6/8
+M:4
+K:Dmajor
+|:dcA2FE|DFGABA|dcAFEE|FEEDFEF|DFAABAB|cAAFE2F|FEFDEFE:||:EGBcdef|gecBABcd|ecAABce|dcBAGB2:||:|gdBdcded|efefgefg|fdeAABFA|EGBABdefg:||:ecAcBcAAc|dBGAGBED|E(3AGBcABc2||
+
+
+</script>
+
+
+<pre>X: 107
+M: 6/8
+M: Gmajor
+K: Fmajor
+|: A > B A B c A | B/ c/ d e f e d | c > B A G E D C | A > B c B c A F | B/ A/ B A B A B/ c A | d > B c d e d e | f/ d/ c A B2 :||: f/ e/ f/ f e d e c A | A/ B/ A G/ A B A G A | B c B A F G2 e | f e d c d e c | d c G A B d B | c A B c d2 :||: e g g d e f d | e c A c A A G A |] e c A e c A A | A B/ A d c B A B G | A G c e c A B G/ c/ | d e d c A d c A | G A B c B d e | d c A B A c A G | B A G G B c d | e g g f e c A G |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 107
+M:6/8
+M:Gmajor
+K:Fmajor
+|:A>BABcA|B/c/defed|c>BAGEDC|A>BcBcAF|B/A/BABAB/cA|d>Bcdede|f/d/cAB2:||:f/e/f/fedecA|A/B/AG/ABAGA|BcBAFG2e|fedcdec|dcGABdB|cABcd2:||:eggdefd|ecAcAAGA|]ecAecAA|AB/AdcBABG|AGcecABG/c/|dedcAdcA|GABcBde|dcABAcAG|BAGGBcd|eggfecAG|]
+
+
+</script>
+
+
+<pre>X: 108
+M: 6/8
+M: Gmajor
+K: Adorian
+|: E2 A B c d | B2 A B G E | D E F G A B | A2 B c d B c | B2 d B G F D | E2 A G A B c | d2 B G A B A | B A B G A G E | C G F A G F A :||: G2 B c B c B | c B c d c B2 | A G F G A F F | G B A B c B A | G A B G2 B A | c B A G A G A :||: d B G B d G B | c d B A G B A G | E2 G A B d c B | A G A F G A G2 | | A B c A G A2 B | E A G G F G E | F G A2 G E2 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 108
+M:6/8
+M:Gmajor
+K:Adorian
+|:E2ABcd|B2ABGE|DEFGAB|A2BcdBc|B2dBGFD|E2AGABc|d2BGABA|BABGAGE|CGFAGFA:||:G2BcBcB|cBcdcB2|AGFGAFF|GBABcBA|GABG2BA|cBAGAGA:||:dBGBdGB|cdBAGBAG|E2GABdcB|AGAFGAG2||ABcAGA2B|EAGGFGE|FGA2GE2||
+
+
+</script>
+
+</p><h3 id="prompt19">Prompt 19 - M: 3/4</h3>
+<p>
+<pre>X: 109
+M: 3/4
+K: Dmajor
+K: Gmajor
+|: D2 G2 A B | A2 G2 F G | D2 D2 G A B | c2 B A G F E | D2 G F G2 | D2 F D2 A B :||: A2 G A2 B A | G A B G2 A G B | A B G A B c d | c2 A G2 G2 :||: B A G A B A A | G2 B A B A G B A | A2 B G A G B E | D A B A F G A B :| | A2 A B c A B c | d2 B G g2 B A A G | G A G A G2 A2 | A B A B c B A A2 | G A2 G F B A G | D3 D2 D D2 | E F D G4 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 109
+M:3/4
+K:Dmajor
+K:Gmajor
+|:D2G2AB|A2G2FG|D2D2GAB|c2BAGFE|D2GFG2|D2FD2AB:||:A2GA2BA|GABG2AGB|ABGABcd|c2AG2G2:||:BAGABAA|G2BABAGBA|A2BGAGBE|DABAFGAB:||A2ABcABc|d2BGg2BAAG|GAGAG2A2|ABABcBAA2|GA2GFBAG|D3D2DD2|EFDG4||
+
+
+</script>
+
+
+<pre>X: 110
+M: 3/4
+K: Dmajor
+K: Gmajor
+|: D2 A > B | d2 A > F E > F | G2 G > B G > F G > B | A > A F > E2 D > B | c > B A > F A > F | E2 E2 E > F > B | F2 A > c B > A G > E | F2 G2 E2 :||: d2 d2 e > d | e2 c > B > B A2 G | E2 G2 e > f g > e | d2 d > B A B > A2 | G2 E > B G2 d > e | f2 A2 c2 A2 :||: d > e > f d2 d B | c2 d > f e > f c2 | d2 c > c d > e f > G | A2 B > A F2 G A | B2 G2 G2 d2 | e > f e d2 d c2 | B2 B2 G4 | | F2 F2 E D2 D2 | B A B G2 B2 | F2 E2 F2 D2 :||: E2 G4 E | | F4 E G F F E F | E F E D2 A F2 | E2 F E2 D2 F | E A G2 F E F2 | F E3 E D2 | F G F E D F G B, C | E F G4 | E F D E D E2 D3 | | E2 D4 D2 E F E F G | E F A G2 E F G,2 | E G F E F D2 | E F F E D E D2 B, | E2 C E2 D E F | | E3 E2 G F E3 G | E G2 A2 E F2 E | F E D3 D D2 | D2 G2 D4 | | E4 E4 | F E F E A2 E | E D F E2 E D E F E | E E F E E E D | E D E E F G2 F | F E E D E3 E | E3 G F G E | E2 B2 D2 G3 | E F3 G | D3 E2 E F D | E2 c B A2 | E3 B A2 F E A G |</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 110
+M:3/4
+K:Dmajor
+K:Gmajor
+|:D2A>B|d2A>FE>F|G2G>BG>FG>B|A>AF>E2D>B|c>BA>FA>F|E2E2E>F>B|F2A>cB>AG>E|F2G2E2:||:d2d2e>d|e2c>B>BA2G|E2G2e>fg>e|d2d>BAB>A2|G2E>BG2d>e|f2A2c2A2:||:d>e>fd2dB|c2d>fe>fc2|d2c>cd>ef>G|A2B>AF2GA|B2G2G2d2|e>fed2dc2|B2B2G4||F2F2ED2D2|BABG2B2|F2E2F2D2:||:E2G4E||F4EGFFEF|EFED2AF2|E2FE2D2F|EAG2FEF2|FE3ED2|FGFEDFGB,C|EFG4|EFDEDE2D3||E2D4D2EFEFG|EFAG2EFG,2|EGFEFD2|EFFEDED2B,|E2CE2DEF||E3E2GFE3G|EG2A2EF2E|FED3DD2|D2G2D4||E4E4|FEFEA2E|EDFE2EDEFE|EEFEEED|EDEEFG2F|FEEDE3E|E3GFGE|E2B2D2G3|EF3G|D3E2EFD|E2cBA2|E3BA2FEAG|
+
+</script>
+
+
+<pre>X: 111
+M: 3/4
+K: Dmajor
+K: Gmajor
+B |: d2 d B A G E | F D E D E D | D B, E G B d c | d2 d e d B A | G2 E G B G A | B c d B A F E D | F D D E D2 :||: d2 d g e d B | A F D D F E D D | d2 c d B c A | B A G F G2 E2 | d2 B A G A G E :||: F D E F D D2 | d F G A B G F E | F E D E F G E D | d B c d e f d c | B A F D G A B c | B c A B c A G E D :||: D E D D2 A B | d d c A B G A G | A D F D D D2 E | D G G B d B G A F | D E F E D B A B | G D E D4 | | d2 f d e d3 e | f d d c B A G B | c B A B c d A F E | D E D F D3 | d c d B G F G E | D D E F A D3 | | d B A B G G A B A G | D E G B A B A F G | A G G F G A G F E :| | G B A G G B G D G B | A G F D D B A G2 | | B A B d B c B G A B d | A G E G A2 A G F | G B G c E G E D D E | | A2 G F E D2 B c d2 | D B2 D2 A2 | B G A E D D4 | B3 B G B A4 | | | G3 G E D E2 D3 B c | A G B A c B A F | G4 | E4 c B A2 | D c D2 D3 E F | F D3 E D | | A G2 E D E d B A E D | B G E A c A G d B | B A A G E F E | A G A B E D D D | E E D2 E A | D E E D D3 | E G3 E | G A G G E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 111
+M:3/4
+K:Dmajor
+K:Gmajor
+B|:d2dBAGE|FDEDED|DB,EGBdc|d2dedBA|G2EGBGA|BcdBAFED|FDDED2:||:d2dgedB|AFDDFEDD|d2cdBcA|BAGFG2E2|d2BAGAGE:||:FDEFDD2|dFGABGFE|FEDEFGED|dBcdefdc|BAFDGABc|BcABcAGED:||:DEDD2AB|ddcABGAG|ADFDDD2E|DGGBdBGAF|DEFEDBAB|GDED4||d2fded3e|fddcBAGB|cBABcdAFE|DEDFD3|dcdBGFGE|DDEFAD3||dBABGGABAG|DEGBABAFG|AGGFGAGFE:||GBAGGBGDGB|AGFDDBAG2||BABdBcBGABd|AGEGA2AGF|GBGcEGEDDE||A2GFED2Bcd2|DB2D2A2|BGAEDD4|B3BGBA4|||G3GEDE2D3Bc|AGBAcBAF|G4|E4cBA2|DcD2D3EF|FD3ED||AG2EDEdBAED|BGEAcAGdB|BAAGEFE|AGABEDDD|EED2EA|DEEDD3|EG3E|GAGGE
+
+</script>
+
+
+<pre>X: 112
+M: 3/4
+K: Dmajor
+K: Amixolydian
+|: A2 A/ B/ c d e f | g2 g f e d | c B c d e2 f | e c B c2 B c | d2 A/ G/ F G A B d | c A A A B c d | c/ d/ c B A G F G :||: E2 c A G A B | c A B c B A E E | D2 E F G A2 G | E G A B A B c | c A F G A G2 :||: E F G E A2 | E2 c B A2 G B | A B c A B A G c | E F G G E2 G B2 | E E D B A B G | A G A F G E2 | E c A A G A2 :||: A A c B c B c A | B G G A B2 A2 | e d c B A B A c | B G E E B G B2 :||: E2 E E D G G B | E G E D E G B | c B A F G2 G A | E E E D E F D2 | E A G E D A B2 | C E A B G2 A B | E E G E G E2 D2 | | E D E D D E F G B E A | E G B A G E A B | B A G A G E E D2 | c B E G E E G B G | E E A G A E G E | E G D E G2 G B E | | E E2 E D D F G E E A | D E G D B c B E E | E D C E G E A G | E A E G A E D2 B | E D2 E G E B | E C E G G E D B | E A A G E G2 A G | A E G B c B2 | B A B E D E E G | E D D G E G G B E > | E G2 E D E2 | D E A G3 | | E2 E2 E G B E D B E | E E F G3 | E G G A G A A G B e | B A A G G E G | G E E E3 E G | | E A2 E E E G D2 E D</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 112
+M:3/4
+K:Dmajor
+K:Amixolydian
+|:A2A/B/cdef|g2gfed|cBcde2f|ecBc2Bc|d2A/G/FGABd|cAAABcd|c/d/cBAGFG:||:E2cAGAB|cABcBAEE|D2EFGA2G|EGABABc|cAFGAG2:||:EFGEA2|E2cBA2GB|ABcABAGc|EFGGE2GB2|EEDBABG|AGAFGE2|EcAAGA2:||:AAcBcBcA|BGGAB2A2|edcBABAc|BGEEBGB2:||:E2EEDGGB|EGEDEGB|cBAFG2GA|EEEDEFD2|EAGEDAB2|CEABG2AB|EEGEGE2D2||EDEDDEFGBEA|EGBAGEAB|BAGAGEED2|cBEGEEGBG|EEAGAEGE|EGDEG2GBE||EE2EDDFGEEA|DEGDBcBEE|EDCEGEAG|EAEGAED2B|ED2EGEB|ECEGGEDB|EAAGEG2AG|AEGBcB2|BABEDEEG|EDDGEGGBE>|EG2EDE2|DEAG3||E2E2EGBEDBE|EEFG3|EGGAGAAGBe|BAAGGEG|GEEE3EG||EA2EEEGD2ED
+
+</script>
+
+
+<pre>X: 113
+M: 3/4
+K: Gmajor
+K: Dmajor
+c |: d B A G F D D | D E F G A B | c d e d B A | G E E E2 E | C E E G A B c | d B A B G A F D | G E F G E D2 :||: B A G A B A B | A G A d B G A G | E E E E D2 E F | G2 G A B E A B | E E G E D3 | | G E D D E D D D D | G A B G G E2 | G E G E E D E F | D D D E B A B c :||: d e f g a g f | e d c B c A B c A | B G A B d e f | e A A A B d B A A | G A G A G E2 E F E | | G B A G E D B A B d | e d B G e e d B | A B A G G E G A A | B d e d e d g | f g e d B c A G | B G E G D E D E D | | G2 E D D2 E D G E F | | G A F G E E A G A A B c :| | G B G E D E G3 E F G | G E A G E3 E | G E B G A2 B d | G2 B G E E d B | G B E E D D B A | D E D3 E D D | E E D G3 E D G | | G F G E G G E D4 | G E2 G A G G A | G B c B A B A2 | G3 E E D | G B d D E E D B c | E E3 E D E E G | | A B G E F D E E3 | G E3 G E E B E | | E E2 G E G B G A E E E | E E B G E2 D | G3 D E D2 | E D E4 | | G3 G E D G B E D E | G A D3 G E | E D D3 E | E3 D E G E2 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 113
+M:3/4
+K:Gmajor
+K:Dmajor
+c|:dBAGFDD|DEFGAB|cdedBA|GEEE2E|CEEGABc|dBABGAFD|GEFGED2:||:BAGABAB|AGAdBGAG|EEEED2EF|G2GABEAB|EEGED3||GEDDEDDDD|GABGGE2|GEGEEDEF|DDDEBABc:||:defgagf|edcBcABcA|BGABdef|eAAABdBAA|GAGAGE2EFE||GBAGEDBABd|edBGeedB|ABAGGEGAA|Bdededg|fgedBcAG|BGEGDEDED||G2EDD2EDGEF||GAFGEEAGAABc:||GBGEDEG3EFG|GEAGE3E|GEBGA2Bd|G2BGEEdB|GBEEDDBA|DED3EDD|EEDG3EDG||GFGEGGED4|GE2GAGGA|GBcBABA2|G3EED|GBdDEEDBc|EE3EDEEG||ABGEFDEE3|GE3GEEBE||EE2GEGBGAEEE|EEBGE2D|G3DED2|EDE4||G3GEDGBEDE|GAD3GE|EDD3E|E3DEGE2|]
+
+
+</script>
+
+
+<pre>X: 114
+M: 3/4
+K: Adorian
+K: Dmajor
+A G |: F D D A B c | A G F E D2 | F D D/ E/ D D D2 | A G E D E D2 :||: c A G A B c d | e2 d c A G E | F D E D3 :||: c A B c B A G | c A G F G A F | E E D D D D4 | E2 E D D2 c | d c B A B c A | B A G G A B d | c A B A B A G E :||: c A E D D3 | | |: A B c e d c d e | e c A G B A G e | d e d e d c A B | c A E A A2 A2 | A A G E E D2 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 114
+M:3/4
+K:Adorian
+K:Dmajor
+AG|:FDDABc|AGFED2|FDD/E/DDD2|AGEDED2:||:cAGABcd|e2dcAGE|FDED3:||:cABcBAG|cAGFGAF|EEDDDD4|E2EDD2c|dcBABcA|BAGGABd|cABABAGE:||:cAEDD3|||:ABcedcde|ecAGBAGe|dededcAB|cAEAA2A2|AAGEED2:||
+
+
+</script>
+
+</p><h3 id="prompt20">Prompt 20 - M: 2/4</h3>
+<p>
+<pre>X: 115
+M: 2/4
+K: Dmajor
+K: Gmajor
+|: A B A G E E | D G B d B A | G B d e2 d | B G A B A A | E E E D E E | C A B A B A | E G E D2 E :||: B d d B A G | E F G E D D2 | B d d e2 c A | B G B A G A G | B d e d c B A | F G A B c A G | c A B A2 B A | B d B G2 B A :||: d e d e2 e d | c A G E F A G | A B A/ d/ e/ f/ g e c A | A B G A G E D E | D D D2 E E D | E E D D D E E :||: D B d e e d e | d d B G A F A G B | E F D D2 B c | d e d B A B d e | e d B G B d c | B A G B A2 E | D F G E E D2 | E D D E D2 D | E D E D E3 | | A E D E F D E E E E | E E F D4 | E E C E D E2 | A B d B d e3 | e d e d d B B A | A G B E D D G | | E E G E F D2 E D D | E G D E D D B, | E E d E D E A | D E E D4 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 115
+M:2/4
+K:Dmajor
+K:Gmajor
+|:ABAGEE|DGBdBA|GBde2d|BGABAA|EEEDEE|CABABA|EGED2E:||:BddBAG|EFGEDD2|Bdde2cA|BGBAGAG|BdedcBA|FGABcAG|cABA2BA|BdBG2BA:||:dede2ed|cAGEFAG|ABA/d/e/f/gecA|ABGAGEDE|DDD2EED|EEDDDEE:||:DBdeede|ddBGAFAGB|EFDD2Bc|dedBABde|edBGBdc|BAGBA2E|DFGEED2|EDDED2D|EDEDE3||AEDEFDEEEE|EEFD4|EECEDE2|ABdBde3|ededdBBA|AGBEDDG||EEGEFD2EDD|EGDEDDB,|EEdEDEA|DEED4||
+
+
+</script>
+
+
+<pre>X: 116
+M: 2/4
+M: Gmajor
+K: Amajor
+|: A B c B c e | A B c A B c | d B B c A A | B A B c d e | f e e c B c | B A A B c e c | d c B A B A E | F A A B B c e :||: f g f e d c B | c B c A2 A A | d e d c d e f | f g f g f d d c | c B A F E E E | F B c d2 B2 :||: c A B A B2 | A G G B A B d | c A B2 G A B | c A c A c e c e | c B B A B G A | G F E D2 B c | A G B A G B c | |: B A G G E G2 | | E C D G E D3 | E C G B c B A | B c A G A B A2 | A B A G A G B | c/ d/4 | A/2 c/2 d e c d B c B | A G E G B A A G | E D E G B G B | E C B c d B A c | d G A G E2 G | | E E F E D E D E E D | E G B c A3 | | A G A E C B A B B A | G E A G E D2 | E D D E E G B | B c d c B c d | c B G E E D E C | | E F A G G A B G B c d |] | e c A G E E G E D | B c B G B E C B | E D c B c G A c | E G E E E G A | B E E D C B A | | E D C E G E G E A3 | B c D E G E | E G A3 E E E D :| | E F G E E A G G D B | E G3 E | E E E E C E C D | E E D D3 | F B G E D E | G E E F G B A | E E G3 | G E D G E G | E E B G B A |: E3 | E E3 E E B | E3 | A,3 G E</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 116
+M:2/4
+M:Gmajor
+K:Amajor
+|:ABcBce|ABcABc|dBBcAA|BABcde|feecBc|BAABcec|dcBABAE|FAABBce:||:fgfedcB|cBcA2AA|dedcdef|fgfgfddc|cBAFEEE|FBcd2B2:||:cABAB2|AGGBABd|cAB2GAB|cAcAcece|cBBABGA|GFED2Bc|AGBAGBc||:BAGGEG2||ECDGED3|ECGBcBA|BcAGABA2|ABAGAGB|c/d/4|A/2c/2decdBcB|AGEGBAAG|EDEGBGB|ECBcdBAc|dGAGE2G||EEFEDEDEED|EGBcA3||AGAECBABBA|GEAGED2|EDDEEGB|BcdcBcd|cBGEEDEC||EFAGGABGBcd|]|ecAGEEGED|BcBGBECB|EDcBcGAc|EGEEEGA|BEEDCBA||EDCEGEGEA3|BcDEGE|EGA3EEED:||EFGEEAGGDB|EG3E|EEEECECD|EEDD3|FBGEDE|GEEFGBA|EEG3|GEDGEG|EEBGBA|:E3|EE3EEB|E3|A,3GE
+
+</script>
+
+
+<pre>X: 117
+M: 2/4
+K: Amixolydian
+K: Dmajor
+|: d | A F A A F | E E F G F E | D D D D E D | A F G E F E | F E E F D | A A B c A B | A F d A F D | E E G E F D2 :||: e | f e d c B A | B A B c d e f | g e f d B A G | B A F G F G E | F G A B c B c | d e e f d c B | A G F G A2 :||: f | d e c d c B c B | d e f e f g f | d B A F E D E | F A A B A B A | d e d c A G B | A B A G E F G | F G F A B c | A G B A F D2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 117
+M:2/4
+K:Amixolydian
+K:Dmajor
+|:d|AFAAF|EEFGFE|DDDDED|AFGEFE|FEEFD|AABcAB|AFdAFD|EEGEFD2:||:e|fedcBA|BABcdef|gefdBAG|BAFGFGE|FGABcBc|deefdcB|AGFGA2:||:f|decdcBcB|defefgf|dBAFEDE|FAABABA|dedcAGB|ABAGEFG|FGFABc|AGBAFD2:|
+
+
+</script>
+
+
+<pre>X: 118
+M: 2/4
+K: Adorian
+K: Dmajor
+A B d d B A | G2 F G2 A | B d c B A G | A G E D E D | A2 A B d e | d e f d B A G :||: d e d e f g | f g e d c d | e c A d c B G | d e d c B c A | d e c d e e f | g f g e f g e | f g f e d c A | G3 B c d e | f d c B2 A2 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 118
+M:2/4
+K:Adorian
+K:Dmajor
+ABddBA|G2FG2A|BdcBAG|AGEDED|A2ABde|defdBAG:||:dedefg|fgedcd|ecAdcBG|dedcBcA|decdeef|gfgefge|fgfedcA|G3Bcde|fdcB2A2||
+
+
+</script>
+
+
+<pre>X: 119
+M: 2/4
+K: Dmajor
+K: Gmajor
+|: B A G F E D | E G A B c d | B A G E D D | E D D B c d :||: e f d e d B | A B A G B A G | E G E D E D D :||: E G A G B c d B | e f d c B A G :||: A G B d B d B | c e e d c B G | A G F G A B d | e f g e d B G | E E D D E D E | E G B c A G A B | E G D E D3 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 119
+M:2/4
+K:Dmajor
+K:Gmajor
+|:BAGFED|EGABcd|BAGEDD|EDDBcd:||:efdedB|ABAGBAG|EGEDEDD:||:EGAGBcdB|efdcBAG:||:AGBdBdB|ceedcBG|AGFGABd|efgedBG|EEDDEDE|EGBcAGAB|EGDED3:||
+
+
+</script>
+
+
+<pre>X: 120
+M: 2/4
+|: B > > > > B|: B > c/ B/ c/ d/ A/ B/ | G > B B > c d > B/ c > | B > A G/ B/ A > B > A/ G// B/ :||: d > B d/ c/ B > B | c > B A A2 :||: B/ c - c/ d c/ B A | G > G c/ d d B/ c | B > B c A2 :||: G > B/ | B > e d/ g/ f/ d e/ f/ | d B G2 G2 :||: A > B c B > A | c/ d > e c e/ f > B/ e/ c/ | B A > B A2 G2 | E > B B c > B > B/ A/ | [1 B > e > c B A > c | B A G2 :| [2 B > B e d B > B > G | | |: G2 F G G2 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 120
+M:2/4
+|:B>>>>B|:B>c/B/c/d/A/B/|G>BB>cd>B/c>|B>AG/B/A>B>A/G//B/:||:d>Bd/c/B>B|c>BAA2:||:B/c-c/dc/BA|G>Gc/ddB/c|B>BcA2:||:G>B/|B>ed/g/f/de/f/|dBG2G2:||:A>BcB>A|c/d>ece/f>B/e/c/|BA>BA2G2|E>BBc>B>B/A/|[1B>e>cBA>c|BAG2:|[2B>BedB>B>G|||:G2FGG2|]
+
+
+</script>
+
+</p><h3 id="prompt21">Prompt 21 - M: 9/8</h3>
+<p>
+<pre>X: 121
+M: 9/8
+K: Adorian
+K: Dmajor
+D D D D D F D | A D D D E F G | A B A G E F D | D D D A D F D :| D E E G A B G | A G E G B A G | A D E E E G E G | A/ A/ B A G A2 G A | A B c d e2 d e | d e f g f e d B | A B d e d2 A A | G A G E E G B G | | A2 d B A G B A | A G A G A B A2 | G A B d B A B G |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 121
+M:9/8
+K:Adorian
+K:Dmajor
+DDDDDFD|ADDDEFG|ABAGEFD|DDDADFD:|DEEGABG|AGEGBAG|ADEEEGEG|A/A/BAGA2GA|ABcde2de|defgfedB|ABded2AA|GAGEEGBG||A2dBAGBA|AGAGABA2|GABdBABG|]
+
+
+</script>
+
+
+<pre>X: 122
+M: 9/8
+K: Dmajor
+K: Gmajor
+|: A | B/ c/ B A d/ c/ A/ | B > c B A G/ E/ | D/ G/ A/ A/ B/ c d/ | B < A A d/ e/ d/ c B A | B > G G A/ B d/ c A/ G/ E | D/2 G/ A B/ G/ F/ E/ F G2 :||: | B > A B/ c B/ A/ c/ d/ | e d c B/ c A2 | A/ G B/ A G/ F G/ E D/ E/ :||: | D/ B/ A > G/ A E G B/ c | d e f g g f/ e/ c/ c/ | B A B A G2 E2 :| | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 122
+M:9/8
+K:Dmajor
+K:Gmajor
+|:A|B/c/BAd/c/A/|B>cBAG/E/|D/G/A/A/B/cd/|B<AAd/e/d/cBA|B>GGA/Bd/cA/G/E|D/2G/AB/G/F/E/FG2:||:|B>AB/cB/A/c/d/|edcB/cA2|A/GB/AG/FG/ED/E/:||:|D/B/A>G/AEGB/c|defggf/e/c/c/|BABAG2E2:|||
+
+
+</script>
+
+
+<pre>X: 123
+M: 9/8
+K: Gmajor
+K: Dmajor
+|: D2 D E F A B | A2 A F E A B | c B A F D2 E | F A B c d A B |A B c A F D F A | B c A B G F D :||: A2 F A d e f | g f e c d c B A | B A G F E D2 E :||: F A B A B A F A | E F A A B A c B | A F A F E D B A | E D F A B B A F | A B A A B c B A :||: d2 c | B A F G E D D2 | | B c B c A G B A F F | A F D c B A B c | d2 c A B A G E | D3 D2 E E :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 123
+M:9/8
+K:Gmajor
+K:Dmajor
+|:D2DEFAB|A2AFEAB|cBAFD2E|FABcdAB|ABcAFDFA|BcABGFD:||:A2FAdef|gfecdcBA|BAGFED2E:||:FABABAFA|EFAABAcB|AFAFEDBA|EDFABBAF|ABAABcBA:||:d2c|BAFGEDD2||BcBcAGBAFF|AFDcBABc|d2cABAGE|D3D2EE:|
+
+
+</script>
+
+
+<pre>X: 124
+M: 9/8
+K: Dmajor
+K: Gmajor
+|: E | D2 E D E D | E2 A A B c A | B c d e f d e f | e c A G E D3 :| | B2 c A B c d2 | B c A B A B c | B c B A B A2 B | A B c B c d B2 :||: | A F D E F D G F E | B2 A G A B c e | B c e d c B A G | F E D E F G F E F | B2 D B c d c d | B c E A G2 :||: e | f d e c B A c d e | f e d c e A c d2 f | g B c A G A G B | e c d c B d c B2 | A F E F D2 G2 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 124
+M:9/8
+K:Dmajor
+K:Gmajor
+|:E|D2EDED|E2AABcA|Bcdefdef|ecAGED3:||B2cABcd2|BcABABc|BcBABA2B|ABcBcdB2:||:|AFDEFDGFE|B2AGABce|BcedcBAG|FEDEFGFEF|B2DBcdcd|BcEAG2:||:e|fdecBAcde|fedceAcd2f|gBcAGAGB|ecdcBdcB2|AFEFD2G2|||
+
+
+</script>
+
+
+<pre>X: 125
+M: 9/8
+K: Dmajor
+K: Adorian
+G F G A B d e | d B d e f g e | d/ c/ B A G A B c | d B G B d e e | d e d B d c A B | d B A G B A d e | f e d e f e d B | d d e f a g e g | d/ e/ f/ g/ f d e d d c A :||: B/ c/ d B B A G2 B | B d c B d e c d | B/ c B A G e d e c | A/ B/ A/ c d e f d e f | g/ f/ e d c d e g e c | d/ B/ c d c B A2 B | A/ c/ A G B c d e c A | B/ B/ d e f/ g e d B G2 | B/ d c B e e d c A2 | B A G G B d c d | | |: e/ f e/ g d e f2 g e | f/ g f/ e/ g f e d c B | B A/ c B2 e f d B A | e/ f g e d e e f g | d e f f e d2 f/ e | d g e/ f d c d3 | e/ e/ c/ f/ d e d c e f g/ f | e/ g/ e d e d f g e e d | d c B G B A3 | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 125
+M:9/8
+K:Dmajor
+K:Adorian
+GFGABde|dBdefge|d/c/BAGABc|dBGBdee|dedBdcAB|dBAGBAde|fedefedB|ddefageg|d/e/f/g/fdeddcA:||:B/c/dBBAG2B|BdcBdecd|B/cBAGedec|A/B/A/cdefdef|g/f/edcdegec|d/B/cdcBA2B|A/c/AGBcdecA|B/B/def/gedBG2|B/dcBeedcA2|BAGGBdcd|||:e/fe/gdef2ge|f/gf/e/gfedcB|BA/cB2efdBA|e/fgedeefg|deffed2f/e|dge/fdcd3|e/e/c/f/dedcefg/f|e/g/ededfgeed|dcBGBA3|||
+
+
+</script>
+
+
+<pre>X: 126
+M: 9/8
+K: Dmajor
+K: Gmajor
+B2 G2 B A G | F E D2 c A G | E D D2 c B A | B2 G2 G2 A | B d e d c A2 | B2 A B A G B A | G2 B2 A2 A G | B d g f e d c B | A2 G2 F2 G2 :||: e2 d c B A B | c2 B A B2 B c | d c B G A2 G A B | A B c A B A c d | e2 d e d2 B c A | B G A B d e f e | d c d e d B c B A :||: c B A F A B c d | c A B c B c A G A | G B A G G G2 A B | d c e d c d B c | A B G A G A B c | B A G A c B A G2 | d c A F B A B c2 | A B A B A2 B c d :||: c B c B d e e d | d B B c B G B A B G | F G B c B e c B c | e3 d e f g e | f e d e f d e d e c | d2 B A F2 e d c | B G F G F E D D3 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 126
+M:9/8
+K:Dmajor
+K:Gmajor
+B2G2BAG|FED2cAG|EDD2cBA|B2G2G2A|BdedcA2|B2ABAGBA|G2B2A2AG|BdgfedcB|A2G2F2G2:||:e2dcBAB|c2BAB2Bc|dcBGA2GAB|ABcABAcd|e2ded2BcA|BGABdefe|dcdedBcBA:||:cBAFABcd|cABcBcAGA|GBAGGG2AB|dcedcdBc|ABGAGABc|BAGAcBAG2|dcAFBABc2|ABABA2Bcd:||:cBcBdeed|dBBcBGBABG|FGBcBecBc|e3defge|fedefdedec|d2BAF2edc|BGFGFEDD3||
+
+
+</script>
+
+</p><h3 id="prompt22">Prompt 22 - G</h3>
+<p>
+<pre>X: 127
+G R: hornpipe
+M: 9/8
+KK: Gmajor
+|: B2 G2 A G F G | F2 B A F2 A | B2 G A2 G F G F G A | B d c d B2 A G B c d c B B2 c A F G | | F2 A G2 B A G F | E2 D G2 A B c A G2 :| B2 G B c B c B G4 | | (3 B c B A B c d e f e A2 c B c d | e2 G B G2 E c B c c B G2 c B A F G4 | F2 (3 B A B A B2 B c d A B G2 B G B2 G4 | B2 d c B A G A c B A c B c2 c B B A4 | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 127
+GR:hornpipe
+M:9/8
+KK:Gmajor
+|:B2G2AGFG|F2BAF2A|B2GA2GFGFGA|BdcdB2AGBcdcBB2cAFG||F2AG2BAGF|E2DG2ABcAG2:|B2GBcBcBG4||(3BcBABcdefeA2cBcd|e2GBG2EcBccBG2cBAFG4|F2(3BABAB2BcdABG2BGB2G4|B2dcBAGAcBAcBc2cBBA4||
+
+
+</script>
+
+
+<pre>X: 128
+G R: jig
+M: 9/8
+K: Gmajor
+|: D E D E G A | B A G A B2 e | d B G B B A G | D E D G A G A | G E D E2 B d | B A B A B2 A | 1 B A G E G2 B :| 2 B A G2 B c d | | e2 e f e d B A | d d d d2 B A | B G E D B d e g | e2 d B A B d e | d e e d B G A B | A B A A B G A G | B A A G E2 B c | | d | e2 g e f g2 d B | e d B d B A G D | E G B A G G E G | B d B G2 B d e d | e d c B A G F G | B G A F G2 B G | | D E G D E2 D E G | G B2 G E G A B G | E D D E3 | G B G B A A2 B | A G A G2 G A G G | B c A G E B G | A G E D G2 B E | | D G B G E G E G B d | E G E D D2 B G E | D G A B B d g e | d c B G A A G B A | G A G F E G D2 |] |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 128
+GR:jig
+M:9/8
+K:Gmajor
+|:DEDEGA|BAGAB2e|dBGBBAG|DEDGAGA|GEDE2Bd|BABAB2A|1BAGEG2B:|2BAG2Bcd||e2efedBA|dddd2BA|BGEDBdeg|e2dBABde|deedBGAB|ABAABGAG|BAAGE2Bc||d|e2gefg2dB|edBdBAGD|EGBAGGEG|BdBG2Bded|edcBAGFG|BGAFG2BG||DEGDE2DEG|GB2GEGABG|EDDE3|GBGBAA2B|AGAG2GAGG|BcAGEBG|AGEDG2BE||DGBGEGEGBd|EGEDD2BGE|DGABBdge|dcBGAAGBA|GAGFEGD2|]|
+
+
+</script>
+
+
+<pre>X: 129
+G R: slideM: 4/8
+K: Dmajor
+|: d2 A F D F A | B2 B A B2 A G | F G A B A F D E | F E D C E D2 :| d2 A2 c A2 A | B A F G A F D D2 | d2 G F E D2 F A | F E E D2 B2 A2 :||: d2 A B A B d2 | c d e f d c A2 c | d2 B A G A B G A | F D C E E D4 :| |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 129
+GR:slideM:4/8
+K:Dmajor
+|:d2AFDFA|B2BAB2AG|FGABAFDE|FEDCED2:|d2A2cA2A|BAFGAFDD2|d2GFED2FA|FEED2B2A2:||:d2ABABd2|cdefdcA2c|d2BAGABGA|FDCEED4:||
+
+
+</script>
+
+
+<pre>X: 130
+G R: jig
+M: 9/8
+K: Gmajor
+|: e | d B2 A G E | G B A G E D G | B B B d A G E :||: B | A d e g e d B | A B A G G E D | B G B d B G E | B B A A G E2 :||: B | G B d d e d B d | B A G A G E G | B A A A G A E2 :||: G B | A G B e d B G B | d e g f g e d e | d e d g d B d B | B A B A A2 G E | D G B d e e d B :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 130
+GR:jig
+M:9/8
+K:Gmajor
+|:e|dB2AGE|GBAGEDG|BBBdAGE:||:B|AdegedB|ABAGGED|BGBdBGE|BBAAGE2:||:B|GBddedBd|BAGAGEG|BAAAGAE2:||:GB|AGBedBGB|degfgede|dedgdBdB|BABAA2GE|DGBdeedB:|
+
+
+</script>
+
+
+<pre>X: 131
+G R: jig
+M: 9/8
+K: Dmajor
+|: e A A B G E | G B A G E D | E F G A B c A | G B/ c/ d B G A B | G B d e B A | G A A G E E D | G B B G A2 B :||: c e c B A G B | c e e c B G A G | E F D E F G F G | A B c B A B2 B | c A A G A2 A :||: d c B A/ B/ c A/ B B | G E G B c B c A B | c d c B G c B G | B c A A A/ B G A/ B | G A G G E E G A | G G B c E E D2 :||: d B G B G B c | d c B B G2 G B/ B | A G B G G B G | A G A G E F G E | D D E F D B G A | B c d B G2 B d | c B A A G G B2 A :||: c B A c B c B | c B G B2 B G G | G E D B G E D D | E G G G F G A G F | | G B G E G E D E F B | G G4 G2 G G B :||: | A B G B B c B G G A B/ c | d B c A G A B G | G A B E G G B E G | G B c D E E G E E | G G G E D3 | G G F B G D E D | B G B A B G A A B | | G A E G G A G B c d c d | c A B c G B c A2 | G B E D E G E G | | G E E E D E E D A G B ^c | d B G G2 B G2 :| | e2 G A G A F G E D2 | | E G E F D D E G D E A B | D E G3 G E E F | | A4 - A G G G3 B c d | | G2 G E E3 E F G3 | E G B G A e | A G G4 | A B A B c d G B A A B c</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 131
+GR:jig
+M:9/8
+K:Dmajor
+|:eAABGE|GBAGED|EFGABcA|GB/c/dBGAB|GBdeBA|GAAGEED|GBBGA2B:||:cecBAGB|ceecBGAG|EFDEFGFG|ABcBAB2B|cAAGA2A:||:dcBA/B/cA/BB|GEGBcBcAB|cdcBGcBG|BcAAA/BGA/B|GAGGEEGA|GGBcEED2:||:dBGBGBc|dcBBG2GB/B|AGBGGBG|AGAGEFGE|DDEFDBGA|BcdBG2Bd|cBAAGGB2A:||:cBAcBcB|cBGB2BGG|GEDBGEDD|EGGGFGAGF||GBGEGEDEFB|GG4G2GGB:||:|ABGBBcBGGAB/c|dBcAGABG|GABEGGBEG|GBcDEEGEE|GGGED3|GGFBGDED|BGBABGAAB||GAEGGAGBcdcd|cABcGBcA2|GBEDEGEG||GEEEDEEDAGB^c|dBGG2BG2:||e2GAGAFGED2||EGEFDDEGDEAB|DEG3GEEF||A4-AGGG3Bcd||G2GEE3EFG3|EGBGAe|AGG4|ABABcdGBAABc
+
+</script>
+
+
+<pre>X: 132
+G R: jig
+M: 9/8
+K: Dmajor
+|: A/ A/ A A F A F A | B A B/ c/ d B A F | D E F D F A | A/ A F A A F E | F E d c B A F :||: A B c d e c A | A B c e c A A | A d d e c B A | A A B c B A A F | E F E D A2 :||: E F A B A B A/ c/ | d A B c A2 F F | E E F G B A B c | B A c d e2 f g | f e d c B c A B | A G F D3 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 132
+GR:jig
+M:9/8
+K:Dmajor
+|:A/A/AAFAFA|BAB/c/dBAF|DEFDFA|A/AFAAFE|FEdcBAF:||:ABcdecA|ABcecAA|AddecBA|AABcBAAF|EFEDA2:||:EFABABA/c/|dABcA2FF|EEFGBABc|BAcde2fg|fedcBcAB|AGFD3:|
+
+
+</script>
+
+</p><h3 id="prompt23">Prompt 23 - e</h3>
+<p>
+<pre>X: 133
+e R: jig
+M: 9/8
+K: Dmajor
+|: A A A f d2 B | A d A B A G E | F E D F G2 A | A A A B A F E | F D D F G A B | A A B d A B G | A F D E2 F G2 :||: A c B d c d e | f g f g e d c d | F A G A F G A F | G A B A B c d e :||: f g f d e d B d | e a a g f e d c A | B c B A G A B2 | A F G F G A G E D | A A F E F G A E | f g e f d c A G | A A G A G F G2 :|
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 133
+eR:jig
+M:9/8
+K:Dmajor
+|:AAAfd2B|AdABAGE|FEDFG2A|AAABAFE|FDDFGAB|AABdABG|AFDE2FG2:||:AcBdcde|fgfgedcd|FAGAFGAF|GABABcde:||:fgfdedBd|eaagfedcA|BcBAGAB2|AFGFGAGED|AAFEFGAE|fgefdcAG|AAGAGFG2:|
+
+
+</script>
+
+
+<pre>X: 134
+e: reel
+M: 4/4
+K: Gmajor
+A B | d2 d e f d B A | B d e f g e e g | d2 A G F G A B | d g e f g d B A :| B | d B d e d B A G | A2 A G G A d e | d B A B A A G A | B G G d e d g f | d B G A B d B A2 | A2 B A B G A G E | | A2 e d e f e g2 | d B B A G G (3 E G E | D E D E D D E D | | B d d e f f g e d | d B2 A G B A G E D | G A B A G A G A B B | G E G E G A B G2 | | (3 B c B A G (3 B A G B d | (3 d e g f d (3 e d B d | e d B (3 G A B (3 d B A A B | A G D A D3 D E | | |
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 134
+e:reel
+M:4/4
+K:Gmajor
+AB|d2defdBA|Bdefgeeg|d2AGFGAB|dgefgdBA:|B|dBdedBAG|A2AGGAde|dBABAAGA|BGGdedgf|dBGABdBA2|A2BABGAGE||A2edefeg2|dBBAGG(3EGE|DEDEDDED||Bddeffged|dB2AGBAGED|GABAGAGABB|GEGEGABG2||(3BcBAG(3BAGBd|(3degfd(3edBd|edB(3GAB(3dBAAB|AGDAD3DE|||
+
+
+</script>
+
+
+<pre>X: 135
+e: reel
+M: 4/4
+K: Dmajor
+|: A A A A2 A2 | d A B A A B d | A A A d e2 d B | A A B A B2 A B | A B A G A B d e | f g e d d B A A2 :||: f e d B A B d f | g2 g g e d B d | B A G B d d B d e :||: f e e d B e e e | f e d e B A B A2 | f e f e d c A2 | A A F G A B A d e | g f g e f d B A2 :||: A A B c B A B g | f e c d e d B c d | A B G B A B c d e | e d B B A B G d e | d e f e a f e d f | e d e d c B A A G |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 135
+e:reel
+M:4/4
+K:Dmajor
+|:AAAA2A2|dABAABd|AAAde2dB|AABAB2AB|ABAGABde|fgeddBAA2:||:fedBABdf|g2ggedBd|BAGBddBde:||:feedBeee|fedeBABA2|fefedcA2|AAFGABAde|gfgefdBA2:||:AABcBABg|fecdedBcd|ABGBABcde|edBBABGde|defeafedf|ededcBAAG|]
+
+
+</script>
+
+
+<pre>X: 136
+e R: jig
+M: 9/8
+K: Gmajor
+|: d B G G A B d | d B G A B D E | D E G E G B d | e g e d B A G | G/ A/ B c d G A B | d B A B G G B d :||: g e d g e d e g | f d e B A B d e | g e d c A3 :||: e d e d B G B d d | e d e B G A c d | e A G A B G E E | D D D D B G A G B | c E E B c B A c B | d e d c B A G2 | G A B A G E D E :||: D E2 E G A A A | G A G G A G A G/ A B/ c/ | | |: e d B c A B c e e d | e e d e c d e d e | f d B A d B c d | B G A F G E D3 | G A E F G E F G | G A F A G E E E | G A A G G G A D | G E G G A A B G B | G E E G E E D D :| | G A D D A D D2 E G D | d B c G A G3 | | G2 G E A G A E E G G | A B A B c B c B | G A c B G A2 G A | G E D D D3 | | d e2 e d e e d B d e e | c B G B c A G E G | G2 B G E F D G E | G E F E G E D | | |: G3 G E A B G A3 B | G B A G A3 | G G A E G E F A E | | G A3 G E G A B c A | A G E F2 G E G D E | G B G E > E G E A | G G E E A G E | | A G A D G E E F G G E D G | E G A G2 D D2 | G E A D E2 D3 :| 2 D2 G A G | | |: A A D E G D3 G G E G E | |: G A E A c E G B c B G</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 136
+eR:jig
+M:9/8
+K:Gmajor
+|:dBGGABd|dBGABDE|DEGEGBd|egedBAG|G/A/BcdGAB|dBABGGBd:||:gedgedeg|fdeBABde|gedcA3:||:ededBGBdd|edeBGAcd|eAGABGEE|DDDDBGAGB|cEEBcBAcB|dedcBAG2|GABAGEDE:||:DE2EGAAA|GAGGAGAG/AB/c/|||:edBcABceed|eedecdede|fdBAdBcd|BGAFGED3|GAEFGEFG|GAFAGEEE|GAAGGGAD|GEGGAABGB|GEEGEEDD:||GADDADD2EGD|dBcGAG3||G2GEAGAEEGG|ABABcBcB|GAcBGA2GA|GEDDD3||de2edeedBdee|cBGBcAGEG|G2BGEFDGE|GEFEGED|||:G3GEABGA3B|GBAGA3|GGAEGEFAE||GA3GEGABcA|AGEF2GEGDE|GBGE>EGEA|GGEEAGE||AGADGEEFGGEDG|EGAG2DD2|GEADE2D3:|2D2GAG|||:AADEGD3GGEGE||:GAEAcEGBcBG
+
+</script>
+
+
+<pre>X: 137
+e R: jig
+M: 9/8
+K: Dmajor
+|: A F A F E F A | B A B A B c d | e f e d c B A | A F A B c A B | A F E E F E F | B A A B A F A :||: e f g e f g a | f d B A B d B A | e f g f e f e a | f g e c e2 c :||: d e f d B G B A | F A d c d B c d e | f g f g e d c d | d e f g g e c B | c d e e f d2 B | A B c B A F D2 A :||: B A F G F E F D | B A G F D E F G | B A D F G F A B | B A F E D4 | B A c B A A F A | F G E C D E F E | B A E F D E C D | B, A B c D3 B | | A B G F D F E F G A | B G F E D3 :| | A B A A G F E3 F | B G A F G A B A | B g g f d B d e d | f g a a f d d c B | A e c e F D2 G A | G F E A B A G A | A G F G B A G E F E :| | A G E E F G B E F G E | B G E G B D C D3 | | A G A G E c B B A G c B | (3 B A G G F A F D E | A G B c d E F G F | E E D A G E D D E | D2 A2 B A G4 | | A2 B G G E F A G B A D | E B c A G B D | (3 E A E F A B2 A2 | B G4 | A B d c B e d c | B A d c B G3 B | A G c A G F/ E E G |] | A G3 B A F/ F E D F G | A G2 E D | B4 | A G4 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 137
+eR:jig
+M:9/8
+K:Dmajor
+|:AFAFEFA|BABABcd|efedcBA|AFABcAB|AFEEFEF|BAABAFA:||:efgefga|fdBABdBA|efgfefea|fgece2c:||:defdBGBA|FAdcdBcde|fgfgedcd|defggecB|cdeefd2B|ABcBAFD2A:||:BAFGFEFD|BAGFDEFG|BADFGFAB|BAFED4|BAcBAAFA|FGECDEFE|BAEFDECD|B,ABcD3B||ABGFDFEFGA|BGFED3:||ABAAGFE3F|BGAFGABA|BggfdBded|fgaafddcB|AeceFD2GA|GFEABAGA|AGFGBAGEFE:||AGEEFGBEFGE|BGEGBDCD3||AGAGEcBBAGcB|(3BAGGFAFDE|AGBcdEFGF|EEDAGEDDE|D2A2BAG4||A2BGGEFAGBAD|EBcAGBD|(3EAEFAB2A2|BG4|ABdcBedc|BAdcBG3B|AGcAGF/EEG|]|AG3BAF/FEDFG|AG2ED|B4|AG4|]
+
+
+</script>
+
+
+<pre>X: 138
+e R: jig
+M: 9/8
+K: Gmajor
+|: A | G2 F G2 A | B2 A G2 F | G2 G A B G | F D E D2 A | G B d A B G A | B A G B A2 G | F G F G2 :||: A | B d d e f d d B | A B A G E2 D | E D G A B A B d | e d e f g2 B d | A B G E A G A B | A G E D2 :||: A A | B G G G B d2 B | A A2 A G E F G | E D E F G2 G | E G G2 B B A G | E F G E D3 | G E F D2 G A2 | B A B A2 A2 B | G G A G2 G2 :| | G G | G B G B d c2 B | B G B c A3 | G2 B c B d B A2 | G2 A G A E D2 | G B c B2 G A G | G E G B A G2 A B | G E D E D G3 | G G B c2 B A G A | G G E D G2 B | E D B c B A G F D | B G A A G A2 G :| | A G G B B d G2 B G2 G |] |: A A G G E G2 f | | |: g2 g e d B c B G G2 A2 | | d G B d e f2 B A B2 B | c B d c d3 B2 B c | c3 G A G E G | G A B2 G E D B3 | | G A G B G A G A G G3 | F G E2 B c2 G | G2 E G G E3 | E G2 E D3 |]
+</pre>
+
+<script type="text/vnd.abc">
+%abc-2.2
+%%pagewidth 14cm
+%%bgcolor white
+%%topspace 0
+%%composerspace 0
+%%leftmargin 0.8cm
+%%rightmargin 0.8cm
+
+X: 138
+eR:jig
+M:9/8
+K:Gmajor
+|:A|G2FG2A|B2AG2F|G2GABG|FDED2A|GBdABGA|BAGBA2G|FGFG2:||:A|BddefddB|ABAGE2D|EDGABABd|edefg2Bd|ABGEAGAB|AGED2:||:AA|BGGGBd2B|AA2AGEFG|EDEFG2G|EGG2BBAG|EFGED3|GEFD2GA2|BABA2A2B|GGAG2G2:||GG|GBGBdc2B|BGBcA3|G2BcBdBA2|G2AGAED2|GBcB2GAG|GEGBAG2AB|GEDEDG3|GGBc2BAGA|GGEDG2B|EDBcBAGFD|BGAAGA2G:||AGGBBdG2BG2G|]|:AAGGEG2f|||:g2gedBcBGG2A2||dGBdef2BAB2B|cBdcd3B2Bc|c3GAGEG|GAB2GEDB3||GAGBGAGAGG3|FGE2Bc2G|G2EGGE3|EG2ED3|]
+
+
+</script>
+
+</p></body>
+</html>
