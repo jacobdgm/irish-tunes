@@ -25,3 +25,11 @@ models:
         description: Initial run for cooleys
       b:
         description: Longer training time than cooleys-a
+  drowsy_maggie:
+    dataset: tunes_v2
+    description: Using the improved tokenization but with windows-based training data
+    versions: 
+      a:
+        description: Initial run for drowsy_maggie
+      b:
+        description: Longer training time than drowsy_maggie-a
