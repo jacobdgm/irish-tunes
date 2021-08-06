@@ -33,3 +33,11 @@ models:
         description: Initial run for drowsy_maggie
       b:
         description: Longer training time than drowsy_maggie-a
+  earls_chair:
+    dataset: folk_rnn
+    description: Using the larger and simplified folk_rnn dataset to train a baseline model
+    versions: 
+      a:
+        description: Initial run for earls_chair
+      b:
+        description: Longer training time than earls_chair-a
